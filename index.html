@@ -35,14 +35,24 @@
 
         <section aria-labelledby="intro-heading" class="section">
           <h2 id="intro-heading">Intro</h2>
-          <!-- TODO: Replace this intro text with your own content -->
           <p>
-            I was excited to see IBM’s Granite Speech 4.1 2b on the Huggingface Open ASR Leaderboard - the Plus variant in particular offers an appealing alternative to the industry-standard WhisperX pipelines used for audio Transcription and Diarization (T&D). Appealing because it’s not a pipeline; in comparison to WhisperX, which wraps Faster Whisper in Voice Activity Detection (VAD), phoneme alignment and pyannote.audio diarization to produce accurate word-level timestamps and speaker attribution, Granite Speech Plus promises all of that natively. No need to wrap anything in anything, or wonder what obscure param in your pipeline is causing poor performance; ostensibly you should be able to put multi-speaker audio in and get timestamped, speaker attributed transcriptions out. Enticing stuff.
-
-            I was encouraged in my enthusiasm by an array of blog posts, videos and tweets reviewing the model and pointing out the same benefits that I have. This wealth of positive, seemingly editorial content meant that when I tried out the model and found it performed poorly on my test set, I assumed I had made some trivial user error(s) and spent much longer than I had intended fiddling with it. Frustratingly, I wasn’t able to improve its performance, and I returned to the reviews with renewed skepticism, looking for specific advice. I couldn’t find any: no tuned params, implementation details, or crucially, any examples of it working on real audio clips.
-
-            The cynical explanation of this is that it is now so easy to produce editorial-seeming content that it encourages reviews which haven’t actually tested out the things they are recommending, and my poor results are an accurate reflection of the current model’s real world performance. I hope that isn’t the case, as I remain excited by the premise of this model, so I’m publishing my results here in the hope that they produce that magical phenomenon of instantly summoning a person to correct someone being Wrong On The Internet. If you have had good results with this model, please let me know how; I will be indebted to you for the help. And if you have struggled with it like me, then I hope you feel less alone seeing this.
+            I was excited to see IBM’s Granite Speech 4.1 2b on the
+            <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">Huggingface Open ASR Leaderboard</a>
+            — the
+            <a href="https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus">Plus variant</a>
+            in particular offers an appealing alternative to the industry-standard WhisperX pipelines used for audio Transcription and Diarization (T&amp;D). Appealing because it’s <em>not</em> a pipeline; in comparison to WhisperX, which wraps Faster Whisper in Voice Activity Detection (VAD), phoneme alignment and pyannote.audio diarization to produce accurate word-level timestamps and speaker attribution, Granite Speech Plus promises all of that natively. No need to wrap anything in anything, or wonder what obscure param in your pipeline is causing poor performance; ostensibly you should be able to put multi-speaker audio in and get timestamped, speaker attributed transcriptions out. Enticing stuff.
           </p>
+
+          <p>
+            I was encouraged in my enthusiasm by an array of blog posts, videos and tweets reviewing the model and pointing out the same benefits that I have. This wealth of positive, seemingly editorial content meant that when I tried out the model and found it performed poorly on my test set, I assumed I had made some trivial user error(s) and spent much longer than I had intended fiddling with it. Frustratingly, I wasn’t able to improve its performance, and I returned to the reviews with renewed skepticism, looking for specific advice. I couldn’t find any: no tuned params, implementation details, or crucially, any examples of it working on real audio clips.
+          </p>
+
+          <p>
+            The cynical explanation of this is that it is now so easy to produce editorial-seeming content that it encourages reviews which haven’t actually tested out the things they are recommending, and my poor results are an accurate reflection of the current model’s real world performance. I hope that isn’t the case, as I remain excited by the premise of this model, so I’m publishing my results here in the hope that they produce that magical phenomenon of instantly summoning a person to correct someone being Wrong On The Internet. If you have had good results with this model, please let me know how; I will be indebted to you for the help. And if you have struggled with it like me, then I hope you feel
+            <a href="https://xkcd.com/979/">less alone</a>
+            seeing this.
+          </p>
+
         </section>
 
         <section aria-labelledby="audio-heading" class="section">
