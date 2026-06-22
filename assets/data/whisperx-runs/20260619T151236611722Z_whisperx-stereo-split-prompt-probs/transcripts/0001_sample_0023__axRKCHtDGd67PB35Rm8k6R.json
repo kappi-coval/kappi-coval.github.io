@@ -1,0 +1,354 @@
+{
+  "elapsed_seconds": 2.949,
+  "input": {
+    "audio_filename": "sample_0023__axRKCHtDGd67PB35Rm8k6R.wav",
+    "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0023__axRKCHtDGd67PB35Rm8k6R.wav",
+    "manifest_conversation_id": "axRKCHtDGd67PB35Rm8k6R",
+    "manifest_row_number": 24,
+    "manifest_sample_id": "sample_0023",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-19T15:13:05.189950+00:00",
+  "result": {
+    "full_text": "Hello? Hi, this is Ann. Are you with Lion Logistics, LLC? Yes, I'm calling about Cartersville, Georgia. Hi, this is Ann. Are you with Lion Logistics, LLC?",
+    "metadata": {
+      "alignment_enabled": false,
+      "channel_num_speakers": 1,
+      "initial_prompt": "This is a conversation transcript between a user and an agent.",
+      "is_stereo": true,
+      "language": "en",
+      "num_channels": 2,
+      "num_speakers": 2,
+      "processing_time": 2.138,
+      "requested_num_speakers": 2,
+      "step_timings": {
+        "channel_0_processing_time": 1.014,
+        "channel_1_processing_time": 1.125
+      },
+      "stereo_channel_recombine_strategy": "chronological_by_timestamp",
+      "stereo_channel_split_enabled": true,
+      "stereo_channel_summaries": [
+        {
+          "channel_index": 0,
+          "channel_name": "left",
+          "error": null,
+          "language": "en",
+          "processing_time": 1.014,
+          "segments_count": 2,
+          "speaker": "SPEAKER_00",
+          "words_count": 7
+        },
+        {
+          "channel_index": 1,
+          "channel_name": "right",
+          "error": null,
+          "language": "en",
+          "processing_time": 1.125,
+          "segments_count": 2,
+          "speaker": "SPEAKER_01",
+          "words_count": 20
+        }
+      ],
+      "stereo_input": {
+        "duration_seconds": 15.82,
+        "frame_count": 253120,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "source_num_channels": 2
+      },
+      "stereo_mode": "reconcile",
+      "stereo_mode_ignored": true,
+      "stereo_reconciliation": "split_channels_then_chronological_merge",
+      "vad_enabled": false
+    },
+    "segments": [
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.4800000000000004,
+        "end": 3.12,
+        "speaker": "SPEAKER_00",
+        "start": 2.6399999999999997,
+        "text": "Hello?",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 3.12,
+            "mean_magnitude": 0.0019499583868309855,
+            "probability": 0.71533203125,
+            "speaker": "SPEAKER_00",
+            "start": 2.6399999999999997,
+            "word": "Hello?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 2.8999999999999986,
+        "end": 6.6,
+        "speaker": "SPEAKER_01",
+        "start": 3.700000000000001,
+        "text": "Hi, this is Ann. Are you with Lion Logistics, LLC?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 4.14,
+            "mean_magnitude": 0.01975385472178459,
+            "probability": 0.7177734375,
+            "speaker": "SPEAKER_01",
+            "start": 3.700000000000001,
+            "word": "Hi,"
+          },
+          {
+            "end": 4.34,
+            "mean_magnitude": 0.09513992816209793,
+            "probability": 0.97216796875,
+            "speaker": "SPEAKER_01",
+            "start": 4.2,
+            "word": "this"
+          },
+          {
+            "end": 4.46,
+            "mean_magnitude": 0.07032694667577744,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_01",
+            "start": 4.34,
+            "word": "is"
+          },
+          {
+            "end": 4.66,
+            "mean_magnitude": 0.08898194134235382,
+            "probability": 0.308349609375,
+            "speaker": "SPEAKER_01",
+            "start": 4.46,
+            "word": "Ann."
+          },
+          {
+            "end": 5.26,
+            "mean_magnitude": 0.01403761375695467,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_01",
+            "start": 4.82,
+            "word": "Are"
+          },
+          {
+            "end": 5.4,
+            "mean_magnitude": 0.11663154512643814,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 5.26,
+            "word": "you"
+          },
+          {
+            "end": 5.56,
+            "mean_magnitude": 0.09262840449810028,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_01",
+            "start": 5.4,
+            "word": "with"
+          },
+          {
+            "end": 5.8,
+            "mean_magnitude": 0.1098547950387001,
+            "probability": 0.9140625,
+            "speaker": "SPEAKER_01",
+            "start": 5.56,
+            "word": "Lion"
+          },
+          {
+            "end": 6.26,
+            "mean_magnitude": 0.04899844154715538,
+            "probability": 0.986328125,
+            "speaker": "SPEAKER_01",
+            "start": 5.8,
+            "word": "Logistics,"
+          },
+          {
+            "end": 6.6,
+            "mean_magnitude": 0.046756986528635025,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 6.38,
+            "word": "LLC?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.34,
+        "end": 10.84,
+        "speaker": "SPEAKER_00",
+        "start": 7.5,
+        "text": "Yes, I'm calling about Cartersville, Georgia.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 7.98,
+            "mean_magnitude": 0.0018538713920861483,
+            "probability": 0.919921875,
+            "speaker": "SPEAKER_00",
+            "start": 7.5,
+            "word": "Yes,"
+          },
+          {
+            "end": 8.28,
+            "mean_magnitude": 0.02798982709646225,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 8.02,
+            "word": "I'm"
+          },
+          {
+            "end": 8.4,
+            "mean_magnitude": 0.02026163786649704,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 8.28,
+            "word": "calling"
+          },
+          {
+            "end": 8.64,
+            "mean_magnitude": 0.03251945972442627,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 8.4,
+            "word": "about"
+          },
+          {
+            "end": 10.48,
+            "mean_magnitude": 0.02713170275092125,
+            "probability": 0.8720703125,
+            "speaker": "SPEAKER_00",
+            "start": 8.64,
+            "word": "Cartersville,"
+          },
+          {
+            "end": 10.84,
+            "mean_magnitude": 0.018228895962238312,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 10.5,
+            "word": "Georgia."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 6.559999999999999,
+        "end": 15.2,
+        "speaker": "SPEAKER_01",
+        "start": 8.64,
+        "text": "Hi, this is Ann. Are you with Lion Logistics, LLC?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 9.08,
+            "mean_magnitude": 0.012666207738220692,
+            "probability": 0.9638671875,
+            "speaker": "SPEAKER_01",
+            "start": 8.64,
+            "word": "Hi,"
+          },
+          {
+            "end": 9.28,
+            "mean_magnitude": 0.02326578088104725,
+            "probability": 0.97802734375,
+            "speaker": "SPEAKER_01",
+            "start": 9.08,
+            "word": "this"
+          },
+          {
+            "end": 9.6,
+            "mean_magnitude": 0.002488726284354925,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 9.28,
+            "word": "is"
+          },
+          {
+            "end": 10.02,
+            "mean_magnitude": 0.002741368720307946,
+            "probability": 0.9912109375,
+            "speaker": "SPEAKER_01",
+            "start": 9.6,
+            "word": "Ann."
+          },
+          {
+            "end": 13.8,
+            "mean_magnitude": 0.033257368952035904,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_01",
+            "start": 13.36,
+            "word": "Are"
+          },
+          {
+            "end": 13.96,
+            "mean_magnitude": 0.06701773405075073,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 13.8,
+            "word": "you"
+          },
+          {
+            "end": 14.1,
+            "mean_magnitude": 0.09881948679685593,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 13.96,
+            "word": "with"
+          },
+          {
+            "end": 14.34,
+            "mean_magnitude": 0.08844681084156036,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 14.1,
+            "word": "Lion"
+          },
+          {
+            "end": 14.8,
+            "mean_magnitude": 0.06154099106788635,
+            "probability": 0.999267578125,
+            "speaker": "SPEAKER_01",
+            "start": 14.34,
+            "word": "Logistics,"
+          },
+          {
+            "end": 15.2,
+            "mean_magnitude": 0.03942732512950897,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 14.98,
+            "word": "LLC?"
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      "SPEAKER_00",
+      "SPEAKER_01"
+    ],
+    "timeline": [
+      [
+        2.6399999999999997,
+        3.12
+      ],
+      [
+        3.700000000000001,
+        6.6
+      ],
+      [
+        7.5,
+        10.84
+      ],
+      [
+        8.64,
+        15.2
+      ]
+    ]
+  },
+  "status": "ok"
+}

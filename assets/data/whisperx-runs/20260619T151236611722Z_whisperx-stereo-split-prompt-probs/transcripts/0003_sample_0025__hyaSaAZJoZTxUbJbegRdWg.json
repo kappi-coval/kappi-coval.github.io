@@ -1,0 +1,610 @@
+{
+  "elapsed_seconds": 8.287,
+  "input": {
+    "audio_filename": "sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+    "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+    "manifest_conversation_id": "hyaSaAZJoZTxUbJbegRdWg",
+    "manifest_row_number": 26,
+    "manifest_sample_id": "sample_0025",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-19T15:13:18.395232+00:00",
+  "result": {
+    "full_text": "Transcription by CastingWords Hello? Thank you. Hey, Ann here with Avuma Transfer. Press star any time to connect to the carrier. Press pound then key in your extension to get the notes and a DM. to leave a voicemail. Press the pound key to return to the queue or you may hang up.",
+    "metadata": {
+      "alignment_enabled": false,
+      "channel_num_speakers": 1,
+      "initial_prompt": "This is a conversation transcript between a user and an agent.",
+      "is_stereo": true,
+      "language": "en",
+      "num_channels": 2,
+      "num_speakers": 2,
+      "processing_time": 7.03,
+      "requested_num_speakers": 2,
+      "step_timings": {
+        "channel_0_processing_time": 5.472,
+        "channel_1_processing_time": 1.558
+      },
+      "stereo_channel_recombine_strategy": "chronological_by_timestamp",
+      "stereo_channel_split_enabled": true,
+      "stereo_channel_summaries": [
+        {
+          "channel_index": 0,
+          "channel_name": "left",
+          "error": null,
+          "language": "en",
+          "processing_time": 5.472,
+          "segments_count": 3,
+          "speaker": "SPEAKER_00",
+          "words_count": 23
+        },
+        {
+          "channel_index": 1,
+          "channel_name": "right",
+          "error": null,
+          "language": "en",
+          "processing_time": 1.558,
+          "segments_count": 4,
+          "speaker": "SPEAKER_01",
+          "words_count": 30
+        }
+      ],
+      "stereo_input": {
+        "duration_seconds": 64.84,
+        "frame_count": 1037440,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "source_num_channels": 2
+      },
+      "stereo_mode": "reconcile",
+      "stereo_mode_ignored": true,
+      "stereo_reconciliation": "split_channels_then_chronological_merge",
+      "vad_enabled": false
+    },
+    "segments": [
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.5199999999999996,
+        "end": 14.82,
+        "speaker": "SPEAKER_00",
+        "start": 13.3,
+        "text": "Transcription by CastingWords",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 14.3,
+            "mean_magnitude": 0.0945197343826294,
+            "probability": 0.18334197998046875,
+            "speaker": "SPEAKER_00",
+            "start": 13.3,
+            "word": "Transcription"
+          },
+          {
+            "end": 14.32,
+            "mean_magnitude": 0.09440002590417862,
+            "probability": 0.95947265625,
+            "speaker": "SPEAKER_00",
+            "start": 14.3,
+            "word": "by"
+          },
+          {
+            "end": 14.82,
+            "mean_magnitude": 0.07978762686252594,
+            "probability": 0.86065673828125,
+            "speaker": "SPEAKER_00",
+            "start": 14.32,
+            "word": "CastingWords"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.3999999999999986,
+        "end": 18.6,
+        "speaker": "SPEAKER_01",
+        "start": 17.200000000000003,
+        "text": "Hello?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 18.6,
+            "mean_magnitude": 0.0025163174141198397,
+            "probability": 0.72119140625,
+            "speaker": "SPEAKER_01",
+            "start": 17.200000000000003,
+            "word": "Hello?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.799999999999997,
+        "end": 42.74,
+        "speaker": "SPEAKER_00",
+        "start": 39.940000000000005,
+        "text": "Thank you.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 41.34,
+            "mean_magnitude": 0.05359358713030815,
+            "probability": 0.10137939453125,
+            "speaker": "SPEAKER_00",
+            "start": 39.940000000000005,
+            "word": "Thank"
+          },
+          {
+            "end": 42.74,
+            "mean_magnitude": 0.07148784399032593,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 41.34,
+            "word": "you."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.9600000000000009,
+        "end": 54.32,
+        "speaker": "SPEAKER_01",
+        "start": 52.36,
+        "text": "Hey, Ann here with Avuma Transfer.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 52.86,
+            "mean_magnitude": 0.002884906716644764,
+            "probability": 0.61865234375,
+            "speaker": "SPEAKER_01",
+            "start": 52.36,
+            "word": "Hey,"
+          },
+          {
+            "end": 53.36,
+            "mean_magnitude": 0.013610091991722584,
+            "probability": 0.54541015625,
+            "speaker": "SPEAKER_01",
+            "start": 52.86,
+            "word": "Ann"
+          },
+          {
+            "end": 53.62,
+            "mean_magnitude": 0.024343762546777725,
+            "probability": 0.9873046875,
+            "speaker": "SPEAKER_01",
+            "start": 53.36,
+            "word": "here"
+          },
+          {
+            "end": 53.84,
+            "mean_magnitude": 0.022388752549886703,
+            "probability": 0.96044921875,
+            "speaker": "SPEAKER_01",
+            "start": 53.62,
+            "word": "with"
+          },
+          {
+            "end": 54.08,
+            "mean_magnitude": 0.014798871241509914,
+            "probability": 0.6295166015625,
+            "speaker": "SPEAKER_01",
+            "start": 53.84,
+            "word": "Avuma"
+          },
+          {
+            "end": 54.32,
+            "mean_magnitude": 0.010025191120803356,
+            "probability": 0.93798828125,
+            "speaker": "SPEAKER_01",
+            "start": 54.08,
+            "word": "Transfer."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 2.8200000000000003,
+        "end": 57.52,
+        "speaker": "SPEAKER_01",
+        "start": 54.7,
+        "text": "Press star any time to connect to the carrier.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 55.1,
+            "mean_magnitude": 0.008183646015822887,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_01",
+            "start": 54.7,
+            "word": "Press"
+          },
+          {
+            "end": 55.34,
+            "mean_magnitude": 0.007106931880116463,
+            "probability": 0.61279296875,
+            "speaker": "SPEAKER_01",
+            "start": 55.1,
+            "word": "star"
+          },
+          {
+            "end": 56.3,
+            "mean_magnitude": 0.007616011425852776,
+            "probability": 0.409423828125,
+            "speaker": "SPEAKER_01",
+            "start": 55.34,
+            "word": "any"
+          },
+          {
+            "end": 56.56,
+            "mean_magnitude": 0.01585443876683712,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 56.3,
+            "word": "time"
+          },
+          {
+            "end": 56.78,
+            "mean_magnitude": 0.01731073297560215,
+            "probability": 0.9912109375,
+            "speaker": "SPEAKER_01",
+            "start": 56.56,
+            "word": "to"
+          },
+          {
+            "end": 56.98,
+            "mean_magnitude": 0.0078464699909091,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 56.78,
+            "word": "connect"
+          },
+          {
+            "end": 57.16,
+            "mean_magnitude": 0.007735400926321745,
+            "probability": 0.98828125,
+            "speaker": "SPEAKER_01",
+            "start": 56.98,
+            "word": "to"
+          },
+          {
+            "end": 57.24,
+            "mean_magnitude": 0.008165526203811169,
+            "probability": 0.9921875,
+            "speaker": "SPEAKER_01",
+            "start": 57.16,
+            "word": "the"
+          },
+          {
+            "end": 57.52,
+            "mean_magnitude": 0.014376973733305931,
+            "probability": 0.9814453125,
+            "speaker": "SPEAKER_01",
+            "start": 57.24,
+            "word": "carrier."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 3.299999999999997,
+        "end": 60.82,
+        "speaker": "SPEAKER_01",
+        "start": 57.52,
+        "text": "Press pound then key in your extension to get the notes and a DM.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 58.0,
+            "mean_magnitude": 0.010077758692204952,
+            "probability": 0.11724853515625,
+            "speaker": "SPEAKER_01",
+            "start": 57.52,
+            "word": "Press"
+          },
+          {
+            "end": 58.38,
+            "mean_magnitude": 0.010512301698327065,
+            "probability": 0.2142333984375,
+            "speaker": "SPEAKER_01",
+            "start": 58.0,
+            "word": "pound"
+          },
+          {
+            "end": 58.6,
+            "mean_magnitude": 0.013987939804792404,
+            "probability": 0.72607421875,
+            "speaker": "SPEAKER_01",
+            "start": 58.38,
+            "word": "then"
+          },
+          {
+            "end": 58.82,
+            "mean_magnitude": 0.010392406024038792,
+            "probability": 0.9697265625,
+            "speaker": "SPEAKER_01",
+            "start": 58.6,
+            "word": "key"
+          },
+          {
+            "end": 59.06,
+            "mean_magnitude": 0.013188441284000874,
+            "probability": 0.822265625,
+            "speaker": "SPEAKER_01",
+            "start": 58.82,
+            "word": "in"
+          },
+          {
+            "end": 59.2,
+            "mean_magnitude": 0.016679340973496437,
+            "probability": 0.97119140625,
+            "speaker": "SPEAKER_01",
+            "start": 59.06,
+            "word": "your"
+          },
+          {
+            "end": 59.48,
+            "mean_magnitude": 0.009236539714038372,
+            "probability": 0.9765625,
+            "speaker": "SPEAKER_01",
+            "start": 59.2,
+            "word": "extension"
+          },
+          {
+            "end": 59.82,
+            "mean_magnitude": 0.009808899834752083,
+            "probability": 0.95849609375,
+            "speaker": "SPEAKER_01",
+            "start": 59.48,
+            "word": "to"
+          },
+          {
+            "end": 59.94,
+            "mean_magnitude": 0.006988859269768,
+            "probability": 0.9931640625,
+            "speaker": "SPEAKER_01",
+            "start": 59.82,
+            "word": "get"
+          },
+          {
+            "end": 60.08,
+            "mean_magnitude": 0.0077730449847877026,
+            "probability": 0.95556640625,
+            "speaker": "SPEAKER_01",
+            "start": 59.94,
+            "word": "the"
+          },
+          {
+            "end": 60.3,
+            "mean_magnitude": 0.015294031240046024,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_01",
+            "start": 60.08,
+            "word": "notes"
+          },
+          {
+            "end": 60.46,
+            "mean_magnitude": 0.004682099912315607,
+            "probability": 0.52001953125,
+            "speaker": "SPEAKER_01",
+            "start": 60.3,
+            "word": "and"
+          },
+          {
+            "end": 60.58,
+            "mean_magnitude": 0.013788605108857155,
+            "probability": 0.9189453125,
+            "speaker": "SPEAKER_01",
+            "start": 60.46,
+            "word": "a"
+          },
+          {
+            "end": 60.82,
+            "mean_magnitude": 0.009804192930459976,
+            "probability": 0.87548828125,
+            "speaker": "SPEAKER_01",
+            "start": 60.58,
+            "word": "DM."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.819999999999993,
+        "end": 64.82,
+        "speaker": "SPEAKER_00",
+        "start": 60.0,
+        "text": "to leave a voicemail. Press the pound key to return to the queue or you may hang up.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 60.08,
+            "mean_magnitude": 0.12136747688055038,
+            "probability": 0.33837890625,
+            "speaker": "SPEAKER_00",
+            "start": 60.0,
+            "word": "to"
+          },
+          {
+            "end": 60.4,
+            "mean_magnitude": 0.054156798869371414,
+            "probability": 0.943359375,
+            "speaker": "SPEAKER_00",
+            "start": 60.08,
+            "word": "leave"
+          },
+          {
+            "end": 60.58,
+            "mean_magnitude": 0.061440203338861465,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 60.4,
+            "word": "a"
+          },
+          {
+            "end": 61.14,
+            "mean_magnitude": 0.0489286370575428,
+            "probability": 0.98046875,
+            "speaker": "SPEAKER_00",
+            "start": 60.58,
+            "word": "voicemail."
+          },
+          {
+            "end": 62.24,
+            "mean_magnitude": 0.005025944672524929,
+            "probability": 0.974609375,
+            "speaker": "SPEAKER_00",
+            "start": 61.84,
+            "word": "Press"
+          },
+          {
+            "end": 62.46,
+            "mean_magnitude": 0.022992515936493874,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 62.24,
+            "word": "the"
+          },
+          {
+            "end": 62.66,
+            "mean_magnitude": 0.028077945113182068,
+            "probability": 0.5908203125,
+            "speaker": "SPEAKER_00",
+            "start": 62.46,
+            "word": "pound"
+          },
+          {
+            "end": 62.9,
+            "mean_magnitude": 0.0265006385743618,
+            "probability": 0.9892578125,
+            "speaker": "SPEAKER_00",
+            "start": 62.66,
+            "word": "key"
+          },
+          {
+            "end": 63.12,
+            "mean_magnitude": 0.036765098571777344,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 62.9,
+            "word": "to"
+          },
+          {
+            "end": 63.32,
+            "mean_magnitude": 0.029918022453784943,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 63.12,
+            "word": "return"
+          },
+          {
+            "end": 63.58,
+            "mean_magnitude": 0.03269362077116966,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 63.32,
+            "word": "to"
+          },
+          {
+            "end": 63.7,
+            "mean_magnitude": 0.027624813839793205,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 63.58,
+            "word": "the"
+          },
+          {
+            "end": 63.86,
+            "mean_magnitude": 0.007233417127281427,
+            "probability": 0.69775390625,
+            "speaker": "SPEAKER_00",
+            "start": 63.7,
+            "word": "queue"
+          },
+          {
+            "end": 64.14,
+            "mean_magnitude": 0.04062119871377945,
+            "probability": 0.82177734375,
+            "speaker": "SPEAKER_00",
+            "start": 63.86,
+            "word": "or"
+          },
+          {
+            "end": 64.32,
+            "mean_magnitude": 0.032553672790527344,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 64.14,
+            "word": "you"
+          },
+          {
+            "end": 64.46,
+            "mean_magnitude": 0.05141089856624603,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 64.32,
+            "word": "may"
+          },
+          {
+            "end": 64.66,
+            "mean_magnitude": 0.03300357237458229,
+            "probability": 0.9755859375,
+            "speaker": "SPEAKER_00",
+            "start": 64.46,
+            "word": "hang"
+          },
+          {
+            "end": 64.82,
+            "mean_magnitude": 0.059840332716703415,
+            "probability": 0.7216796875,
+            "speaker": "SPEAKER_00",
+            "start": 64.66,
+            "word": "up."
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      "SPEAKER_00",
+      "SPEAKER_01"
+    ],
+    "timeline": [
+      [
+        13.3,
+        14.82
+      ],
+      [
+        17.200000000000003,
+        18.6
+      ],
+      [
+        39.940000000000005,
+        42.74
+      ],
+      [
+        52.36,
+        54.32
+      ],
+      [
+        54.7,
+        57.52
+      ],
+      [
+        57.52,
+        60.82
+      ],
+      [
+        60.0,
+        64.82
+      ]
+    ]
+  },
+  "status": "ok"
+}

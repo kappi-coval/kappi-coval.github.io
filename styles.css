@@ -100,23 +100,22 @@ audio {
   margin-top: 0.4rem;
 }
 
-.sample-grid {
-  display: grid;
-  gap: 0.75rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.sample-comparisons {
   margin-top: 0.75rem;
+  display: grid;
+  gap: 1rem;
 }
 
-.sample-card {
+.sample-section {
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 0.65rem 0.75rem 0.7rem;
+  padding: 0.8rem;
   background: var(--surface);
 }
 
 .sample-title {
   margin: 0;
-  font-size: 0.98rem;
+  font-size: 1rem;
   line-height: 1.25;
 }
 
@@ -127,22 +126,35 @@ audio {
   overflow-wrap: anywhere;
 }
 
-.transcript-list {
-  margin-top: 0.75rem;
-  display: grid;
-  gap: 0.9rem;
+.sample-player {
+  margin-top: 0.35rem;
 }
 
-.transcript-block {
+.transcript-compare-grid {
+  margin-top: 0.65rem;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.transcript-card {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 0.75rem;
   background: var(--surface);
 }
 
-.transcript-title {
+.transcript-card-title {
   margin: 0;
   font-size: 0.98rem;
+}
+
+.transcript-card--granite .transcript-card-title {
+  color: #4b5cc4;
+}
+
+.transcript-card--whisperx .transcript-card-title {
+  color: #0b7a62;
 }
 
 .transcript-meta,

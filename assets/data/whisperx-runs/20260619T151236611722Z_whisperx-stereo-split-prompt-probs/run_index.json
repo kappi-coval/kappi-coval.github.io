@@ -1,0 +1,833 @@
+{
+  "arguments": {
+    "audio_filename": [],
+    "enable_alignment": false,
+    "enable_vad": false,
+    "glob": "**/*.wav",
+    "initial_prompt": "This is a conversation transcript between a user and an agent.",
+    "input_dir": "/workspace/backend/tmp/whisperx_examples/input",
+    "label": "whisperx-stereo-split-prompt-probs",
+    "limit": null,
+    "manifest_path": "/workspace/backend/tmp/whisperx_examples/manifest.csv",
+    "manifest_row": [],
+    "num_speakers": 2,
+    "output_root": "/workspace/backend/tmp/whisperx_examples/runs",
+    "sample_id": [],
+    "split_stereo_channels": true,
+    "stereo_mode": "reconcile",
+    "stereo_mode_ignored": true
+  },
+  "duplicate_inputs": [
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0023__axRKCHtDGd67PB35Rm8k6R.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0024__jsYiaPoX8VQWuu7JsiXR4U.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0027__XW6VDqxsJWgU7RRfKH5Wcd.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0028__9JCXLukNsZQn7s3i7NDcou.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0039__SuH8aBSNvBfBcMoYSmNfUg.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0051__9vxLA6mhSnBDs7WfZ4F8sb.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    }
+  ],
+  "entries": [
+    {
+      "audio_filename": "sample_0023__axRKCHtDGd67PB35Rm8k6R.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0023__axRKCHtDGd67PB35Rm8k6R.wav",
+      "error_message": "",
+      "index": 1,
+      "manifest_conversation_id": "axRKCHtDGd67PB35Rm8k6R",
+      "manifest_row_number": 24,
+      "manifest_sample_id": "sample_0023",
+      "processing_time_seconds": 2.138,
+      "segments_count": 4,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0001_sample_0023__axRKCHtDGd67PB35Rm8k6R.json"
+    },
+    {
+      "audio_filename": "sample_0024__jsYiaPoX8VQWuu7JsiXR4U.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0024__jsYiaPoX8VQWuu7JsiXR4U.wav",
+      "error_message": "",
+      "index": 2,
+      "manifest_conversation_id": "jsYiaPoX8VQWuu7JsiXR4U",
+      "manifest_row_number": 25,
+      "manifest_sample_id": "sample_0024",
+      "processing_time_seconds": 8.284,
+      "segments_count": 30,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0002_sample_0024__jsYiaPoX8VQWuu7JsiXR4U.json"
+    },
+    {
+      "audio_filename": "sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+      "error_message": "",
+      "index": 3,
+      "manifest_conversation_id": "hyaSaAZJoZTxUbJbegRdWg",
+      "manifest_row_number": 26,
+      "manifest_sample_id": "sample_0025",
+      "processing_time_seconds": 7.03,
+      "segments_count": 7,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0003_sample_0025__hyaSaAZJoZTxUbJbegRdWg.json"
+    },
+    {
+      "audio_filename": "sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+      "error_message": "",
+      "index": 4,
+      "manifest_conversation_id": "3njwgqaHnuWH2RUqD3diFQ",
+      "manifest_row_number": 27,
+      "manifest_sample_id": "sample_0026",
+      "processing_time_seconds": 7.548,
+      "segments_count": 19,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0004_sample_0026__3njwgqaHnuWH2RUqD3diFQ.json"
+    },
+    {
+      "audio_filename": "sample_0027__XW6VDqxsJWgU7RRfKH5Wcd.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0027__XW6VDqxsJWgU7RRfKH5Wcd.wav",
+      "error_message": "",
+      "index": 5,
+      "manifest_conversation_id": "XW6VDqxsJWgU7RRfKH5Wcd",
+      "manifest_row_number": 28,
+      "manifest_sample_id": "sample_0027",
+      "processing_time_seconds": 11.635,
+      "segments_count": 46,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0005_sample_0027__XW6VDqxsJWgU7RRfKH5Wcd.json"
+    },
+    {
+      "audio_filename": "sample_0028__9JCXLukNsZQn7s3i7NDcou.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0028__9JCXLukNsZQn7s3i7NDcou.wav",
+      "error_message": "",
+      "index": 6,
+      "manifest_conversation_id": "9JCXLukNsZQn7s3i7NDcou",
+      "manifest_row_number": 29,
+      "manifest_sample_id": "sample_0028",
+      "processing_time_seconds": 9.998,
+      "segments_count": 26,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0006_sample_0028__9JCXLukNsZQn7s3i7NDcou.json"
+    },
+    {
+      "audio_filename": "sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+      "error_message": "",
+      "index": 7,
+      "manifest_conversation_id": "8NLMTLRVat2wQPisfAqowJ",
+      "manifest_row_number": 34,
+      "manifest_sample_id": "sample_0033",
+      "processing_time_seconds": 3.455,
+      "segments_count": 8,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0007_sample_0033__8NLMTLRVat2wQPisfAqowJ.json"
+    },
+    {
+      "audio_filename": "sample_0039__SuH8aBSNvBfBcMoYSmNfUg.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0039__SuH8aBSNvBfBcMoYSmNfUg.wav",
+      "error_message": "",
+      "index": 8,
+      "manifest_conversation_id": "SuH8aBSNvBfBcMoYSmNfUg",
+      "manifest_row_number": 40,
+      "manifest_sample_id": "sample_0039",
+      "processing_time_seconds": 11.770037651062012,
+      "segments_count": 32,
+      "source": "manifest",
+      "speakers_count": 3,
+      "status": "ok",
+      "transcript_json": "transcripts/0008_sample_0039__SuH8aBSNvBfBcMoYSmNfUg.json"
+    },
+    {
+      "audio_filename": "sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+      "error_message": "",
+      "index": 9,
+      "manifest_conversation_id": "Wxdx298DmHs6wXpc9Mxr2e",
+      "manifest_row_number": 45,
+      "manifest_sample_id": "sample_0044",
+      "processing_time_seconds": 2.5747673511505127,
+      "segments_count": 7,
+      "source": "manifest",
+      "speakers_count": 1,
+      "status": "ok",
+      "transcript_json": "transcripts/0009_sample_0044__Wxdx298DmHs6wXpc9Mxr2e.json"
+    },
+    {
+      "audio_filename": "sample_0051__9vxLA6mhSnBDs7WfZ4F8sb.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0051__9vxLA6mhSnBDs7WfZ4F8sb.wav",
+      "error_message": "",
+      "index": 10,
+      "manifest_conversation_id": "9vxLA6mhSnBDs7WfZ4F8sb",
+      "manifest_row_number": 52,
+      "manifest_sample_id": "sample_0051",
+      "processing_time_seconds": 5.348374366760254,
+      "segments_count": 15,
+      "source": "manifest",
+      "speakers_count": 3,
+      "status": "ok",
+      "transcript_json": "transcripts/0010_sample_0051__9vxLA6mhSnBDs7WfZ4F8sb.json"
+    }
+  ],
+  "manifest_skipped": [
+    {
+      "audio_filename": "sample_0001__FP4hcokjgjGczsKRf4RG6g.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0001__FP4hcokjgjGczsKRf4RG6g.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0001__FP4hcokjgjGczsKRf4RG6g.wav, /workspace/backend/tmp/whisperx_examples/sample_0001__FP4hcokjgjGczsKRf4RG6g.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0001__FP4hcokjgjGczsKRf4RG6g.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0001__FP4hcokjgjGczsKRf4RG6g.wav, /workspace/backend/tmp/whisperx_examples/sample_0001__FP4hcokjgjGczsKRf4RG6g.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0001__FP4hcokjgjGczsKRf4RG6g.wav)",
+      "row_number": 2,
+      "sample_id": "sample_0001",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0002__HaNjPGiW2kxkJZoyF3KQRM.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0002__HaNjPGiW2kxkJZoyF3KQRM.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0002__HaNjPGiW2kxkJZoyF3KQRM.wav, /workspace/backend/tmp/whisperx_examples/sample_0002__HaNjPGiW2kxkJZoyF3KQRM.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0002__HaNjPGiW2kxkJZoyF3KQRM.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0002__HaNjPGiW2kxkJZoyF3KQRM.wav, /workspace/backend/tmp/whisperx_examples/sample_0002__HaNjPGiW2kxkJZoyF3KQRM.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0002__HaNjPGiW2kxkJZoyF3KQRM.wav)",
+      "row_number": 3,
+      "sample_id": "sample_0002",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0003__JfNJdR9HEfvPMk9Wh9VWKX.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0003__JfNJdR9HEfvPMk9Wh9VWKX.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0003__JfNJdR9HEfvPMk9Wh9VWKX.wav, /workspace/backend/tmp/whisperx_examples/sample_0003__JfNJdR9HEfvPMk9Wh9VWKX.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0003__JfNJdR9HEfvPMk9Wh9VWKX.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0003__JfNJdR9HEfvPMk9Wh9VWKX.wav, /workspace/backend/tmp/whisperx_examples/sample_0003__JfNJdR9HEfvPMk9Wh9VWKX.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0003__JfNJdR9HEfvPMk9Wh9VWKX.wav)",
+      "row_number": 4,
+      "sample_id": "sample_0003",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0004__ZLg2V59649kmwNnNczH3MG.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0004__ZLg2V59649kmwNnNczH3MG.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0004__ZLg2V59649kmwNnNczH3MG.wav, /workspace/backend/tmp/whisperx_examples/sample_0004__ZLg2V59649kmwNnNczH3MG.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0004__ZLg2V59649kmwNnNczH3MG.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0004__ZLg2V59649kmwNnNczH3MG.wav, /workspace/backend/tmp/whisperx_examples/sample_0004__ZLg2V59649kmwNnNczH3MG.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0004__ZLg2V59649kmwNnNczH3MG.wav)",
+      "row_number": 5,
+      "sample_id": "sample_0004",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0005__dTzV887ayq5muuEjGHsPxP.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0005__dTzV887ayq5muuEjGHsPxP.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0005__dTzV887ayq5muuEjGHsPxP.wav, /workspace/backend/tmp/whisperx_examples/sample_0005__dTzV887ayq5muuEjGHsPxP.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0005__dTzV887ayq5muuEjGHsPxP.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0005__dTzV887ayq5muuEjGHsPxP.wav, /workspace/backend/tmp/whisperx_examples/sample_0005__dTzV887ayq5muuEjGHsPxP.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0005__dTzV887ayq5muuEjGHsPxP.wav)",
+      "row_number": 6,
+      "sample_id": "sample_0005",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0006__XQ4kYt5HFLmrt6RJ5bhKKJ.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0006__XQ4kYt5HFLmrt6RJ5bhKKJ.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0006__XQ4kYt5HFLmrt6RJ5bhKKJ.wav, /workspace/backend/tmp/whisperx_examples/sample_0006__XQ4kYt5HFLmrt6RJ5bhKKJ.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0006__XQ4kYt5HFLmrt6RJ5bhKKJ.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0006__XQ4kYt5HFLmrt6RJ5bhKKJ.wav, /workspace/backend/tmp/whisperx_examples/sample_0006__XQ4kYt5HFLmrt6RJ5bhKKJ.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0006__XQ4kYt5HFLmrt6RJ5bhKKJ.wav)",
+      "row_number": 7,
+      "sample_id": "sample_0006",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0007__QdYcL9FVGsP3nHickBumaC.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0007__QdYcL9FVGsP3nHickBumaC.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0007__QdYcL9FVGsP3nHickBumaC.wav, /workspace/backend/tmp/whisperx_examples/sample_0007__QdYcL9FVGsP3nHickBumaC.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0007__QdYcL9FVGsP3nHickBumaC.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0007__QdYcL9FVGsP3nHickBumaC.wav, /workspace/backend/tmp/whisperx_examples/sample_0007__QdYcL9FVGsP3nHickBumaC.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0007__QdYcL9FVGsP3nHickBumaC.wav)",
+      "row_number": 8,
+      "sample_id": "sample_0007",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0008__KY3XyGG7UrbvFHyD3JjjiE.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0008__KY3XyGG7UrbvFHyD3JjjiE.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0008__KY3XyGG7UrbvFHyD3JjjiE.wav, /workspace/backend/tmp/whisperx_examples/sample_0008__KY3XyGG7UrbvFHyD3JjjiE.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0008__KY3XyGG7UrbvFHyD3JjjiE.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0008__KY3XyGG7UrbvFHyD3JjjiE.wav, /workspace/backend/tmp/whisperx_examples/sample_0008__KY3XyGG7UrbvFHyD3JjjiE.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0008__KY3XyGG7UrbvFHyD3JjjiE.wav)",
+      "row_number": 9,
+      "sample_id": "sample_0008",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0009__bJp8LZHjhoWUKAvexgVEhq.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0009__bJp8LZHjhoWUKAvexgVEhq.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0009__bJp8LZHjhoWUKAvexgVEhq.wav, /workspace/backend/tmp/whisperx_examples/sample_0009__bJp8LZHjhoWUKAvexgVEhq.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0009__bJp8LZHjhoWUKAvexgVEhq.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0009__bJp8LZHjhoWUKAvexgVEhq.wav, /workspace/backend/tmp/whisperx_examples/sample_0009__bJp8LZHjhoWUKAvexgVEhq.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0009__bJp8LZHjhoWUKAvexgVEhq.wav)",
+      "row_number": 10,
+      "sample_id": "sample_0009",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0010__AaERc8w8VTWX5SJAMvrDB7.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0010__AaERc8w8VTWX5SJAMvrDB7.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0010__AaERc8w8VTWX5SJAMvrDB7.wav, /workspace/backend/tmp/whisperx_examples/sample_0010__AaERc8w8VTWX5SJAMvrDB7.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0010__AaERc8w8VTWX5SJAMvrDB7.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0010__AaERc8w8VTWX5SJAMvrDB7.wav, /workspace/backend/tmp/whisperx_examples/sample_0010__AaERc8w8VTWX5SJAMvrDB7.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0010__AaERc8w8VTWX5SJAMvrDB7.wav)",
+      "row_number": 11,
+      "sample_id": "sample_0010",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0011__DUcrnbcG4xr2TQoMzX9FQR.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0011__DUcrnbcG4xr2TQoMzX9FQR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0011__DUcrnbcG4xr2TQoMzX9FQR.wav, /workspace/backend/tmp/whisperx_examples/sample_0011__DUcrnbcG4xr2TQoMzX9FQR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0011__DUcrnbcG4xr2TQoMzX9FQR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0011__DUcrnbcG4xr2TQoMzX9FQR.wav, /workspace/backend/tmp/whisperx_examples/sample_0011__DUcrnbcG4xr2TQoMzX9FQR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0011__DUcrnbcG4xr2TQoMzX9FQR.wav)",
+      "row_number": 12,
+      "sample_id": "sample_0011",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0012__MkXFcsWNFM4KQVeST7WEpP.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0012__MkXFcsWNFM4KQVeST7WEpP.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0012__MkXFcsWNFM4KQVeST7WEpP.wav, /workspace/backend/tmp/whisperx_examples/sample_0012__MkXFcsWNFM4KQVeST7WEpP.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0012__MkXFcsWNFM4KQVeST7WEpP.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0012__MkXFcsWNFM4KQVeST7WEpP.wav, /workspace/backend/tmp/whisperx_examples/sample_0012__MkXFcsWNFM4KQVeST7WEpP.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0012__MkXFcsWNFM4KQVeST7WEpP.wav)",
+      "row_number": 13,
+      "sample_id": "sample_0012",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0013__JwkKvMkwDaQo8gbMLP8udz.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0013__JwkKvMkwDaQo8gbMLP8udz.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0013__JwkKvMkwDaQo8gbMLP8udz.wav, /workspace/backend/tmp/whisperx_examples/sample_0013__JwkKvMkwDaQo8gbMLP8udz.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0013__JwkKvMkwDaQo8gbMLP8udz.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0013__JwkKvMkwDaQo8gbMLP8udz.wav, /workspace/backend/tmp/whisperx_examples/sample_0013__JwkKvMkwDaQo8gbMLP8udz.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0013__JwkKvMkwDaQo8gbMLP8udz.wav)",
+      "row_number": 14,
+      "sample_id": "sample_0013",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0014__TnVWL7HtxpPmMjKcAWKm3c.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0014__TnVWL7HtxpPmMjKcAWKm3c.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0014__TnVWL7HtxpPmMjKcAWKm3c.wav, /workspace/backend/tmp/whisperx_examples/sample_0014__TnVWL7HtxpPmMjKcAWKm3c.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0014__TnVWL7HtxpPmMjKcAWKm3c.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0014__TnVWL7HtxpPmMjKcAWKm3c.wav, /workspace/backend/tmp/whisperx_examples/sample_0014__TnVWL7HtxpPmMjKcAWKm3c.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0014__TnVWL7HtxpPmMjKcAWKm3c.wav)",
+      "row_number": 15,
+      "sample_id": "sample_0014",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0015__BBoUeQ8JSyb7Mc9EXX4s6d.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0015__BBoUeQ8JSyb7Mc9EXX4s6d.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0015__BBoUeQ8JSyb7Mc9EXX4s6d.wav, /workspace/backend/tmp/whisperx_examples/sample_0015__BBoUeQ8JSyb7Mc9EXX4s6d.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0015__BBoUeQ8JSyb7Mc9EXX4s6d.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0015__BBoUeQ8JSyb7Mc9EXX4s6d.wav, /workspace/backend/tmp/whisperx_examples/sample_0015__BBoUeQ8JSyb7Mc9EXX4s6d.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0015__BBoUeQ8JSyb7Mc9EXX4s6d.wav)",
+      "row_number": 16,
+      "sample_id": "sample_0015",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0016__QnfXkx4KTneYturiRuWRrd.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0016__QnfXkx4KTneYturiRuWRrd.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0016__QnfXkx4KTneYturiRuWRrd.wav, /workspace/backend/tmp/whisperx_examples/sample_0016__QnfXkx4KTneYturiRuWRrd.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0016__QnfXkx4KTneYturiRuWRrd.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0016__QnfXkx4KTneYturiRuWRrd.wav, /workspace/backend/tmp/whisperx_examples/sample_0016__QnfXkx4KTneYturiRuWRrd.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0016__QnfXkx4KTneYturiRuWRrd.wav)",
+      "row_number": 17,
+      "sample_id": "sample_0016",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0017__H6bK5B7y3EGYppNJU9wRix.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0017__H6bK5B7y3EGYppNJU9wRix.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0017__H6bK5B7y3EGYppNJU9wRix.wav, /workspace/backend/tmp/whisperx_examples/sample_0017__H6bK5B7y3EGYppNJU9wRix.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0017__H6bK5B7y3EGYppNJU9wRix.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0017__H6bK5B7y3EGYppNJU9wRix.wav, /workspace/backend/tmp/whisperx_examples/sample_0017__H6bK5B7y3EGYppNJU9wRix.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0017__H6bK5B7y3EGYppNJU9wRix.wav)",
+      "row_number": 18,
+      "sample_id": "sample_0017",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0018__HTvvWV8WMJtShcHyFuLTgT.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0018__HTvvWV8WMJtShcHyFuLTgT.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0018__HTvvWV8WMJtShcHyFuLTgT.wav, /workspace/backend/tmp/whisperx_examples/sample_0018__HTvvWV8WMJtShcHyFuLTgT.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0018__HTvvWV8WMJtShcHyFuLTgT.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0018__HTvvWV8WMJtShcHyFuLTgT.wav, /workspace/backend/tmp/whisperx_examples/sample_0018__HTvvWV8WMJtShcHyFuLTgT.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0018__HTvvWV8WMJtShcHyFuLTgT.wav)",
+      "row_number": 19,
+      "sample_id": "sample_0018",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0019__f8i2zHrRUVt6bxg8hixPiB.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0019__f8i2zHrRUVt6bxg8hixPiB.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0019__f8i2zHrRUVt6bxg8hixPiB.wav, /workspace/backend/tmp/whisperx_examples/sample_0019__f8i2zHrRUVt6bxg8hixPiB.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0019__f8i2zHrRUVt6bxg8hixPiB.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0019__f8i2zHrRUVt6bxg8hixPiB.wav, /workspace/backend/tmp/whisperx_examples/sample_0019__f8i2zHrRUVt6bxg8hixPiB.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0019__f8i2zHrRUVt6bxg8hixPiB.wav)",
+      "row_number": 20,
+      "sample_id": "sample_0019",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0020__fbm7Znbat9konwdDoxG8d2.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0020__fbm7Znbat9konwdDoxG8d2.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0020__fbm7Znbat9konwdDoxG8d2.wav, /workspace/backend/tmp/whisperx_examples/sample_0020__fbm7Znbat9konwdDoxG8d2.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0020__fbm7Znbat9konwdDoxG8d2.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0020__fbm7Znbat9konwdDoxG8d2.wav, /workspace/backend/tmp/whisperx_examples/sample_0020__fbm7Znbat9konwdDoxG8d2.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0020__fbm7Znbat9konwdDoxG8d2.wav)",
+      "row_number": 21,
+      "sample_id": "sample_0020",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0021__QeJxeW5JGYa6CCv45zaZ9V.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0021__QeJxeW5JGYa6CCv45zaZ9V.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0021__QeJxeW5JGYa6CCv45zaZ9V.wav, /workspace/backend/tmp/whisperx_examples/sample_0021__QeJxeW5JGYa6CCv45zaZ9V.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0021__QeJxeW5JGYa6CCv45zaZ9V.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0021__QeJxeW5JGYa6CCv45zaZ9V.wav, /workspace/backend/tmp/whisperx_examples/sample_0021__QeJxeW5JGYa6CCv45zaZ9V.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0021__QeJxeW5JGYa6CCv45zaZ9V.wav)",
+      "row_number": 22,
+      "sample_id": "sample_0021",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0022__aVgcQU39xzBoX9dH6Tzokm.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0022__aVgcQU39xzBoX9dH6Tzokm.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0022__aVgcQU39xzBoX9dH6Tzokm.wav, /workspace/backend/tmp/whisperx_examples/sample_0022__aVgcQU39xzBoX9dH6Tzokm.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0022__aVgcQU39xzBoX9dH6Tzokm.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0022__aVgcQU39xzBoX9dH6Tzokm.wav, /workspace/backend/tmp/whisperx_examples/sample_0022__aVgcQU39xzBoX9dH6Tzokm.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0022__aVgcQU39xzBoX9dH6Tzokm.wav)",
+      "row_number": 23,
+      "sample_id": "sample_0022",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0029__EsDuWNtgfvg3iJm6AtVdFF.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0029__EsDuWNtgfvg3iJm6AtVdFF.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0029__EsDuWNtgfvg3iJm6AtVdFF.wav, /workspace/backend/tmp/whisperx_examples/sample_0029__EsDuWNtgfvg3iJm6AtVdFF.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0029__EsDuWNtgfvg3iJm6AtVdFF.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0029__EsDuWNtgfvg3iJm6AtVdFF.wav, /workspace/backend/tmp/whisperx_examples/sample_0029__EsDuWNtgfvg3iJm6AtVdFF.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0029__EsDuWNtgfvg3iJm6AtVdFF.wav)",
+      "row_number": 30,
+      "sample_id": "sample_0029",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0030__Wj4a5nuKbmNeHzGmXqu9z2.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0030__Wj4a5nuKbmNeHzGmXqu9z2.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0030__Wj4a5nuKbmNeHzGmXqu9z2.wav, /workspace/backend/tmp/whisperx_examples/sample_0030__Wj4a5nuKbmNeHzGmXqu9z2.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0030__Wj4a5nuKbmNeHzGmXqu9z2.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0030__Wj4a5nuKbmNeHzGmXqu9z2.wav, /workspace/backend/tmp/whisperx_examples/sample_0030__Wj4a5nuKbmNeHzGmXqu9z2.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0030__Wj4a5nuKbmNeHzGmXqu9z2.wav)",
+      "row_number": 31,
+      "sample_id": "sample_0030",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0031__fBQvuphR5Z8yVwApHqA6Ee.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0031__fBQvuphR5Z8yVwApHqA6Ee.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0031__fBQvuphR5Z8yVwApHqA6Ee.wav, /workspace/backend/tmp/whisperx_examples/sample_0031__fBQvuphR5Z8yVwApHqA6Ee.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0031__fBQvuphR5Z8yVwApHqA6Ee.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0031__fBQvuphR5Z8yVwApHqA6Ee.wav, /workspace/backend/tmp/whisperx_examples/sample_0031__fBQvuphR5Z8yVwApHqA6Ee.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0031__fBQvuphR5Z8yVwApHqA6Ee.wav)",
+      "row_number": 32,
+      "sample_id": "sample_0031",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0032__PWK834u4TTEvLPQBEMAKav.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0032__PWK834u4TTEvLPQBEMAKav.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0032__PWK834u4TTEvLPQBEMAKav.wav, /workspace/backend/tmp/whisperx_examples/sample_0032__PWK834u4TTEvLPQBEMAKav.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0032__PWK834u4TTEvLPQBEMAKav.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0032__PWK834u4TTEvLPQBEMAKav.wav, /workspace/backend/tmp/whisperx_examples/sample_0032__PWK834u4TTEvLPQBEMAKav.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0032__PWK834u4TTEvLPQBEMAKav.wav)",
+      "row_number": 33,
+      "sample_id": "sample_0032",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0034__AeYoeAwvLgAddopcwyFpEz.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0034__AeYoeAwvLgAddopcwyFpEz.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0034__AeYoeAwvLgAddopcwyFpEz.wav, /workspace/backend/tmp/whisperx_examples/sample_0034__AeYoeAwvLgAddopcwyFpEz.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0034__AeYoeAwvLgAddopcwyFpEz.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0034__AeYoeAwvLgAddopcwyFpEz.wav, /workspace/backend/tmp/whisperx_examples/sample_0034__AeYoeAwvLgAddopcwyFpEz.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0034__AeYoeAwvLgAddopcwyFpEz.wav)",
+      "row_number": 35,
+      "sample_id": "sample_0034",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0035__ksGWQxaEPHr5GgVKjyZQLg.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0035__ksGWQxaEPHr5GgVKjyZQLg.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0035__ksGWQxaEPHr5GgVKjyZQLg.wav, /workspace/backend/tmp/whisperx_examples/sample_0035__ksGWQxaEPHr5GgVKjyZQLg.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0035__ksGWQxaEPHr5GgVKjyZQLg.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0035__ksGWQxaEPHr5GgVKjyZQLg.wav, /workspace/backend/tmp/whisperx_examples/sample_0035__ksGWQxaEPHr5GgVKjyZQLg.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0035__ksGWQxaEPHr5GgVKjyZQLg.wav)",
+      "row_number": 36,
+      "sample_id": "sample_0035",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0036__Z6HoPRCxXzTuDBEqkNTr62.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0036__Z6HoPRCxXzTuDBEqkNTr62.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0036__Z6HoPRCxXzTuDBEqkNTr62.wav, /workspace/backend/tmp/whisperx_examples/sample_0036__Z6HoPRCxXzTuDBEqkNTr62.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0036__Z6HoPRCxXzTuDBEqkNTr62.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0036__Z6HoPRCxXzTuDBEqkNTr62.wav, /workspace/backend/tmp/whisperx_examples/sample_0036__Z6HoPRCxXzTuDBEqkNTr62.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0036__Z6HoPRCxXzTuDBEqkNTr62.wav)",
+      "row_number": 37,
+      "sample_id": "sample_0036",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0037__ZcCFf2YmnrZAV8zETHhpxG.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0037__ZcCFf2YmnrZAV8zETHhpxG.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0037__ZcCFf2YmnrZAV8zETHhpxG.wav, /workspace/backend/tmp/whisperx_examples/sample_0037__ZcCFf2YmnrZAV8zETHhpxG.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0037__ZcCFf2YmnrZAV8zETHhpxG.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0037__ZcCFf2YmnrZAV8zETHhpxG.wav, /workspace/backend/tmp/whisperx_examples/sample_0037__ZcCFf2YmnrZAV8zETHhpxG.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0037__ZcCFf2YmnrZAV8zETHhpxG.wav)",
+      "row_number": 38,
+      "sample_id": "sample_0037",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0038__Yw6p7oA4bFvKrCcPg3n2sj.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0038__Yw6p7oA4bFvKrCcPg3n2sj.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0038__Yw6p7oA4bFvKrCcPg3n2sj.wav, /workspace/backend/tmp/whisperx_examples/sample_0038__Yw6p7oA4bFvKrCcPg3n2sj.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0038__Yw6p7oA4bFvKrCcPg3n2sj.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0038__Yw6p7oA4bFvKrCcPg3n2sj.wav, /workspace/backend/tmp/whisperx_examples/sample_0038__Yw6p7oA4bFvKrCcPg3n2sj.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0038__Yw6p7oA4bFvKrCcPg3n2sj.wav)",
+      "row_number": 39,
+      "sample_id": "sample_0038",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0040__2wMnswkPZ4A5U5N4aCfq6L.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0040__2wMnswkPZ4A5U5N4aCfq6L.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0040__2wMnswkPZ4A5U5N4aCfq6L.wav, /workspace/backend/tmp/whisperx_examples/sample_0040__2wMnswkPZ4A5U5N4aCfq6L.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0040__2wMnswkPZ4A5U5N4aCfq6L.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0040__2wMnswkPZ4A5U5N4aCfq6L.wav, /workspace/backend/tmp/whisperx_examples/sample_0040__2wMnswkPZ4A5U5N4aCfq6L.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0040__2wMnswkPZ4A5U5N4aCfq6L.wav)",
+      "row_number": 41,
+      "sample_id": "sample_0040",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0041__hczXnEk6F6fXU4FVdDq43Y.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0041__hczXnEk6F6fXU4FVdDq43Y.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0041__hczXnEk6F6fXU4FVdDq43Y.wav, /workspace/backend/tmp/whisperx_examples/sample_0041__hczXnEk6F6fXU4FVdDq43Y.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0041__hczXnEk6F6fXU4FVdDq43Y.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0041__hczXnEk6F6fXU4FVdDq43Y.wav, /workspace/backend/tmp/whisperx_examples/sample_0041__hczXnEk6F6fXU4FVdDq43Y.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0041__hczXnEk6F6fXU4FVdDq43Y.wav)",
+      "row_number": 42,
+      "sample_id": "sample_0041",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0042__352i2w6pnEGwTcJwaVQrbK.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0042__352i2w6pnEGwTcJwaVQrbK.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0042__352i2w6pnEGwTcJwaVQrbK.wav, /workspace/backend/tmp/whisperx_examples/sample_0042__352i2w6pnEGwTcJwaVQrbK.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0042__352i2w6pnEGwTcJwaVQrbK.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0042__352i2w6pnEGwTcJwaVQrbK.wav, /workspace/backend/tmp/whisperx_examples/sample_0042__352i2w6pnEGwTcJwaVQrbK.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0042__352i2w6pnEGwTcJwaVQrbK.wav)",
+      "row_number": 43,
+      "sample_id": "sample_0042",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0043__3QFDwC5gdfrGqcCsyHQncb.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0043__3QFDwC5gdfrGqcCsyHQncb.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0043__3QFDwC5gdfrGqcCsyHQncb.wav, /workspace/backend/tmp/whisperx_examples/sample_0043__3QFDwC5gdfrGqcCsyHQncb.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0043__3QFDwC5gdfrGqcCsyHQncb.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0043__3QFDwC5gdfrGqcCsyHQncb.wav, /workspace/backend/tmp/whisperx_examples/sample_0043__3QFDwC5gdfrGqcCsyHQncb.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0043__3QFDwC5gdfrGqcCsyHQncb.wav)",
+      "row_number": 44,
+      "sample_id": "sample_0043",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0045__PSktsU3hMxSQJGhVUNqjze.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0045__PSktsU3hMxSQJGhVUNqjze.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0045__PSktsU3hMxSQJGhVUNqjze.wav, /workspace/backend/tmp/whisperx_examples/sample_0045__PSktsU3hMxSQJGhVUNqjze.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0045__PSktsU3hMxSQJGhVUNqjze.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0045__PSktsU3hMxSQJGhVUNqjze.wav, /workspace/backend/tmp/whisperx_examples/sample_0045__PSktsU3hMxSQJGhVUNqjze.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0045__PSktsU3hMxSQJGhVUNqjze.wav)",
+      "row_number": 46,
+      "sample_id": "sample_0045",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0046__aoqR2ps49mvEuV3RvMKsdB.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0046__aoqR2ps49mvEuV3RvMKsdB.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0046__aoqR2ps49mvEuV3RvMKsdB.wav, /workspace/backend/tmp/whisperx_examples/sample_0046__aoqR2ps49mvEuV3RvMKsdB.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0046__aoqR2ps49mvEuV3RvMKsdB.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0046__aoqR2ps49mvEuV3RvMKsdB.wav, /workspace/backend/tmp/whisperx_examples/sample_0046__aoqR2ps49mvEuV3RvMKsdB.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0046__aoqR2ps49mvEuV3RvMKsdB.wav)",
+      "row_number": 47,
+      "sample_id": "sample_0046",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0047__dErxN9whD69ubCWZRgGSKh.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0047__dErxN9whD69ubCWZRgGSKh.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0047__dErxN9whD69ubCWZRgGSKh.wav, /workspace/backend/tmp/whisperx_examples/sample_0047__dErxN9whD69ubCWZRgGSKh.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0047__dErxN9whD69ubCWZRgGSKh.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0047__dErxN9whD69ubCWZRgGSKh.wav, /workspace/backend/tmp/whisperx_examples/sample_0047__dErxN9whD69ubCWZRgGSKh.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0047__dErxN9whD69ubCWZRgGSKh.wav)",
+      "row_number": 48,
+      "sample_id": "sample_0047",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0048__gr6CprA6WuizUx2jUFs2Ew.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0048__gr6CprA6WuizUx2jUFs2Ew.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0048__gr6CprA6WuizUx2jUFs2Ew.wav, /workspace/backend/tmp/whisperx_examples/sample_0048__gr6CprA6WuizUx2jUFs2Ew.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0048__gr6CprA6WuizUx2jUFs2Ew.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0048__gr6CprA6WuizUx2jUFs2Ew.wav, /workspace/backend/tmp/whisperx_examples/sample_0048__gr6CprA6WuizUx2jUFs2Ew.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0048__gr6CprA6WuizUx2jUFs2Ew.wav)",
+      "row_number": 49,
+      "sample_id": "sample_0048",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0049__nH6jBBEHY7HFxzVhWdcQH6.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0049__nH6jBBEHY7HFxzVhWdcQH6.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0049__nH6jBBEHY7HFxzVhWdcQH6.wav, /workspace/backend/tmp/whisperx_examples/sample_0049__nH6jBBEHY7HFxzVhWdcQH6.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0049__nH6jBBEHY7HFxzVhWdcQH6.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0049__nH6jBBEHY7HFxzVhWdcQH6.wav, /workspace/backend/tmp/whisperx_examples/sample_0049__nH6jBBEHY7HFxzVhWdcQH6.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0049__nH6jBBEHY7HFxzVhWdcQH6.wav)",
+      "row_number": 50,
+      "sample_id": "sample_0049",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0050__DvcM8LTyYFB4otMNJxxs6i.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0050__DvcM8LTyYFB4otMNJxxs6i.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0050__DvcM8LTyYFB4otMNJxxs6i.wav, /workspace/backend/tmp/whisperx_examples/sample_0050__DvcM8LTyYFB4otMNJxxs6i.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0050__DvcM8LTyYFB4otMNJxxs6i.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0050__DvcM8LTyYFB4otMNJxxs6i.wav, /workspace/backend/tmp/whisperx_examples/sample_0050__DvcM8LTyYFB4otMNJxxs6i.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0050__DvcM8LTyYFB4otMNJxxs6i.wav)",
+      "row_number": 51,
+      "sample_id": "sample_0050",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0052__GTTXriQ8pFZN6M7PwWnith.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0052__GTTXriQ8pFZN6M7PwWnith.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0052__GTTXriQ8pFZN6M7PwWnith.wav, /workspace/backend/tmp/whisperx_examples/sample_0052__GTTXriQ8pFZN6M7PwWnith.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0052__GTTXriQ8pFZN6M7PwWnith.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0052__GTTXriQ8pFZN6M7PwWnith.wav, /workspace/backend/tmp/whisperx_examples/sample_0052__GTTXriQ8pFZN6M7PwWnith.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0052__GTTXriQ8pFZN6M7PwWnith.wav)",
+      "row_number": 53,
+      "sample_id": "sample_0052",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0053__ajY8CW7Kou4mMkFJjCrXoh.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0053__ajY8CW7Kou4mMkFJjCrXoh.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0053__ajY8CW7Kou4mMkFJjCrXoh.wav, /workspace/backend/tmp/whisperx_examples/sample_0053__ajY8CW7Kou4mMkFJjCrXoh.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0053__ajY8CW7Kou4mMkFJjCrXoh.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0053__ajY8CW7Kou4mMkFJjCrXoh.wav, /workspace/backend/tmp/whisperx_examples/sample_0053__ajY8CW7Kou4mMkFJjCrXoh.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0053__ajY8CW7Kou4mMkFJjCrXoh.wav)",
+      "row_number": 54,
+      "sample_id": "sample_0053",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0054__NeUPv38JFQEan8cEXGvnRG.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0054__NeUPv38JFQEan8cEXGvnRG.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0054__NeUPv38JFQEan8cEXGvnRG.wav, /workspace/backend/tmp/whisperx_examples/sample_0054__NeUPv38JFQEan8cEXGvnRG.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0054__NeUPv38JFQEan8cEXGvnRG.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0054__NeUPv38JFQEan8cEXGvnRG.wav, /workspace/backend/tmp/whisperx_examples/sample_0054__NeUPv38JFQEan8cEXGvnRG.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0054__NeUPv38JFQEan8cEXGvnRG.wav)",
+      "row_number": 55,
+      "sample_id": "sample_0054",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0055__8Xy2Ji4Gk7AvP6wzd3uu53.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0055__8Xy2Ji4Gk7AvP6wzd3uu53.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0055__8Xy2Ji4Gk7AvP6wzd3uu53.wav, /workspace/backend/tmp/whisperx_examples/sample_0055__8Xy2Ji4Gk7AvP6wzd3uu53.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0055__8Xy2Ji4Gk7AvP6wzd3uu53.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0055__8Xy2Ji4Gk7AvP6wzd3uu53.wav, /workspace/backend/tmp/whisperx_examples/sample_0055__8Xy2Ji4Gk7AvP6wzd3uu53.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0055__8Xy2Ji4Gk7AvP6wzd3uu53.wav)",
+      "row_number": 56,
+      "sample_id": "sample_0055",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0056__bArMeAqxPRUKGgMGoBWJJx.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0056__bArMeAqxPRUKGgMGoBWJJx.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0056__bArMeAqxPRUKGgMGoBWJJx.wav, /workspace/backend/tmp/whisperx_examples/sample_0056__bArMeAqxPRUKGgMGoBWJJx.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0056__bArMeAqxPRUKGgMGoBWJJx.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0056__bArMeAqxPRUKGgMGoBWJJx.wav, /workspace/backend/tmp/whisperx_examples/sample_0056__bArMeAqxPRUKGgMGoBWJJx.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0056__bArMeAqxPRUKGgMGoBWJJx.wav)",
+      "row_number": 57,
+      "sample_id": "sample_0056",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0057__WjL7d6GN6mm6vSypNzeqLH.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0057__WjL7d6GN6mm6vSypNzeqLH.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0057__WjL7d6GN6mm6vSypNzeqLH.wav, /workspace/backend/tmp/whisperx_examples/sample_0057__WjL7d6GN6mm6vSypNzeqLH.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0057__WjL7d6GN6mm6vSypNzeqLH.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0057__WjL7d6GN6mm6vSypNzeqLH.wav, /workspace/backend/tmp/whisperx_examples/sample_0057__WjL7d6GN6mm6vSypNzeqLH.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0057__WjL7d6GN6mm6vSypNzeqLH.wav)",
+      "row_number": 58,
+      "sample_id": "sample_0057",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0058__jRfU8vyuJUxtpJJfiTiSuY.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0058__jRfU8vyuJUxtpJJfiTiSuY.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0058__jRfU8vyuJUxtpJJfiTiSuY.wav, /workspace/backend/tmp/whisperx_examples/sample_0058__jRfU8vyuJUxtpJJfiTiSuY.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0058__jRfU8vyuJUxtpJJfiTiSuY.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0058__jRfU8vyuJUxtpJJfiTiSuY.wav, /workspace/backend/tmp/whisperx_examples/sample_0058__jRfU8vyuJUxtpJJfiTiSuY.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0058__jRfU8vyuJUxtpJJfiTiSuY.wav)",
+      "row_number": 59,
+      "sample_id": "sample_0058",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0059__aCfDHMu5uvkBb3oSzQUenP.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0059__aCfDHMu5uvkBb3oSzQUenP.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0059__aCfDHMu5uvkBb3oSzQUenP.wav, /workspace/backend/tmp/whisperx_examples/sample_0059__aCfDHMu5uvkBb3oSzQUenP.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0059__aCfDHMu5uvkBb3oSzQUenP.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0059__aCfDHMu5uvkBb3oSzQUenP.wav, /workspace/backend/tmp/whisperx_examples/sample_0059__aCfDHMu5uvkBb3oSzQUenP.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0059__aCfDHMu5uvkBb3oSzQUenP.wav)",
+      "row_number": 60,
+      "sample_id": "sample_0059",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0060__irucB8CCfQdauNw74yzzCR.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0060__irucB8CCfQdauNw74yzzCR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0060__irucB8CCfQdauNw74yzzCR.wav, /workspace/backend/tmp/whisperx_examples/sample_0060__irucB8CCfQdauNw74yzzCR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0060__irucB8CCfQdauNw74yzzCR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0060__irucB8CCfQdauNw74yzzCR.wav, /workspace/backend/tmp/whisperx_examples/sample_0060__irucB8CCfQdauNw74yzzCR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0060__irucB8CCfQdauNw74yzzCR.wav)",
+      "row_number": 61,
+      "sample_id": "sample_0060",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0061__UNycfWodbs5nAaLvR5KZaR.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0061__UNycfWodbs5nAaLvR5KZaR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0061__UNycfWodbs5nAaLvR5KZaR.wav, /workspace/backend/tmp/whisperx_examples/sample_0061__UNycfWodbs5nAaLvR5KZaR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0061__UNycfWodbs5nAaLvR5KZaR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0061__UNycfWodbs5nAaLvR5KZaR.wav, /workspace/backend/tmp/whisperx_examples/sample_0061__UNycfWodbs5nAaLvR5KZaR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0061__UNycfWodbs5nAaLvR5KZaR.wav)",
+      "row_number": 62,
+      "sample_id": "sample_0061",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0062__XX8kmh4UuYkUzmTmHrgXyX.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0062__XX8kmh4UuYkUzmTmHrgXyX.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0062__XX8kmh4UuYkUzmTmHrgXyX.wav, /workspace/backend/tmp/whisperx_examples/sample_0062__XX8kmh4UuYkUzmTmHrgXyX.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0062__XX8kmh4UuYkUzmTmHrgXyX.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0062__XX8kmh4UuYkUzmTmHrgXyX.wav, /workspace/backend/tmp/whisperx_examples/sample_0062__XX8kmh4UuYkUzmTmHrgXyX.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0062__XX8kmh4UuYkUzmTmHrgXyX.wav)",
+      "row_number": 63,
+      "sample_id": "sample_0062",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0063__UiVuqbSFPH6KF4y8ekbmRc.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0063__UiVuqbSFPH6KF4y8ekbmRc.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0063__UiVuqbSFPH6KF4y8ekbmRc.wav, /workspace/backend/tmp/whisperx_examples/sample_0063__UiVuqbSFPH6KF4y8ekbmRc.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0063__UiVuqbSFPH6KF4y8ekbmRc.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0063__UiVuqbSFPH6KF4y8ekbmRc.wav, /workspace/backend/tmp/whisperx_examples/sample_0063__UiVuqbSFPH6KF4y8ekbmRc.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0063__UiVuqbSFPH6KF4y8ekbmRc.wav)",
+      "row_number": 64,
+      "sample_id": "sample_0063",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0064__RPSbLH2zKh9VSyaGd8V9gg.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0064__RPSbLH2zKh9VSyaGd8V9gg.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0064__RPSbLH2zKh9VSyaGd8V9gg.wav, /workspace/backend/tmp/whisperx_examples/sample_0064__RPSbLH2zKh9VSyaGd8V9gg.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0064__RPSbLH2zKh9VSyaGd8V9gg.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0064__RPSbLH2zKh9VSyaGd8V9gg.wav, /workspace/backend/tmp/whisperx_examples/sample_0064__RPSbLH2zKh9VSyaGd8V9gg.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0064__RPSbLH2zKh9VSyaGd8V9gg.wav)",
+      "row_number": 65,
+      "sample_id": "sample_0064",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0065__Z4ujZ5WwUYXZ7iwaCCKVgn.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0065__Z4ujZ5WwUYXZ7iwaCCKVgn.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0065__Z4ujZ5WwUYXZ7iwaCCKVgn.wav, /workspace/backend/tmp/whisperx_examples/sample_0065__Z4ujZ5WwUYXZ7iwaCCKVgn.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0065__Z4ujZ5WwUYXZ7iwaCCKVgn.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0065__Z4ujZ5WwUYXZ7iwaCCKVgn.wav, /workspace/backend/tmp/whisperx_examples/sample_0065__Z4ujZ5WwUYXZ7iwaCCKVgn.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0065__Z4ujZ5WwUYXZ7iwaCCKVgn.wav)",
+      "row_number": 66,
+      "sample_id": "sample_0065",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0066__9fCWazBtEP9UFNH7QasCMm.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0066__9fCWazBtEP9UFNH7QasCMm.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0066__9fCWazBtEP9UFNH7QasCMm.wav, /workspace/backend/tmp/whisperx_examples/sample_0066__9fCWazBtEP9UFNH7QasCMm.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0066__9fCWazBtEP9UFNH7QasCMm.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0066__9fCWazBtEP9UFNH7QasCMm.wav, /workspace/backend/tmp/whisperx_examples/sample_0066__9fCWazBtEP9UFNH7QasCMm.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0066__9fCWazBtEP9UFNH7QasCMm.wav)",
+      "row_number": 67,
+      "sample_id": "sample_0066",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0067__cQ2mwBJWE7NNUYUfiMiFZf.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0067__cQ2mwBJWE7NNUYUfiMiFZf.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0067__cQ2mwBJWE7NNUYUfiMiFZf.wav, /workspace/backend/tmp/whisperx_examples/sample_0067__cQ2mwBJWE7NNUYUfiMiFZf.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0067__cQ2mwBJWE7NNUYUfiMiFZf.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0067__cQ2mwBJWE7NNUYUfiMiFZf.wav, /workspace/backend/tmp/whisperx_examples/sample_0067__cQ2mwBJWE7NNUYUfiMiFZf.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0067__cQ2mwBJWE7NNUYUfiMiFZf.wav)",
+      "row_number": 68,
+      "sample_id": "sample_0067",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0068__YMxKmB39YfeoBKX4T85jQZ.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0068__YMxKmB39YfeoBKX4T85jQZ.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0068__YMxKmB39YfeoBKX4T85jQZ.wav, /workspace/backend/tmp/whisperx_examples/sample_0068__YMxKmB39YfeoBKX4T85jQZ.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0068__YMxKmB39YfeoBKX4T85jQZ.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0068__YMxKmB39YfeoBKX4T85jQZ.wav, /workspace/backend/tmp/whisperx_examples/sample_0068__YMxKmB39YfeoBKX4T85jQZ.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0068__YMxKmB39YfeoBKX4T85jQZ.wav)",
+      "row_number": 69,
+      "sample_id": "sample_0068",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0069__QLo3yw7X46qkUvj8FnNwSs.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0069__QLo3yw7X46qkUvj8FnNwSs.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0069__QLo3yw7X46qkUvj8FnNwSs.wav, /workspace/backend/tmp/whisperx_examples/sample_0069__QLo3yw7X46qkUvj8FnNwSs.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0069__QLo3yw7X46qkUvj8FnNwSs.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0069__QLo3yw7X46qkUvj8FnNwSs.wav, /workspace/backend/tmp/whisperx_examples/sample_0069__QLo3yw7X46qkUvj8FnNwSs.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0069__QLo3yw7X46qkUvj8FnNwSs.wav)",
+      "row_number": 70,
+      "sample_id": "sample_0069",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0070__kZKqiVmdamEy35wkTGGDjK.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0070__kZKqiVmdamEy35wkTGGDjK.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0070__kZKqiVmdamEy35wkTGGDjK.wav, /workspace/backend/tmp/whisperx_examples/sample_0070__kZKqiVmdamEy35wkTGGDjK.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0070__kZKqiVmdamEy35wkTGGDjK.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0070__kZKqiVmdamEy35wkTGGDjK.wav, /workspace/backend/tmp/whisperx_examples/sample_0070__kZKqiVmdamEy35wkTGGDjK.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0070__kZKqiVmdamEy35wkTGGDjK.wav)",
+      "row_number": 71,
+      "sample_id": "sample_0070",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0071__N2wURJMsvnUcxyb4utSkvz.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0071__N2wURJMsvnUcxyb4utSkvz.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0071__N2wURJMsvnUcxyb4utSkvz.wav, /workspace/backend/tmp/whisperx_examples/sample_0071__N2wURJMsvnUcxyb4utSkvz.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0071__N2wURJMsvnUcxyb4utSkvz.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0071__N2wURJMsvnUcxyb4utSkvz.wav, /workspace/backend/tmp/whisperx_examples/sample_0071__N2wURJMsvnUcxyb4utSkvz.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0071__N2wURJMsvnUcxyb4utSkvz.wav)",
+      "row_number": 72,
+      "sample_id": "sample_0071",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0072__72EuZayJ2TkFJYAUkH5t8T.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0072__72EuZayJ2TkFJYAUkH5t8T.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0072__72EuZayJ2TkFJYAUkH5t8T.wav, /workspace/backend/tmp/whisperx_examples/sample_0072__72EuZayJ2TkFJYAUkH5t8T.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0072__72EuZayJ2TkFJYAUkH5t8T.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0072__72EuZayJ2TkFJYAUkH5t8T.wav, /workspace/backend/tmp/whisperx_examples/sample_0072__72EuZayJ2TkFJYAUkH5t8T.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0072__72EuZayJ2TkFJYAUkH5t8T.wav)",
+      "row_number": 73,
+      "sample_id": "sample_0072",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0073__ZuN5J4DLwyGHGBHyHxo2Kr.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0073__ZuN5J4DLwyGHGBHyHxo2Kr.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0073__ZuN5J4DLwyGHGBHyHxo2Kr.wav, /workspace/backend/tmp/whisperx_examples/sample_0073__ZuN5J4DLwyGHGBHyHxo2Kr.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0073__ZuN5J4DLwyGHGBHyHxo2Kr.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0073__ZuN5J4DLwyGHGBHyHxo2Kr.wav, /workspace/backend/tmp/whisperx_examples/sample_0073__ZuN5J4DLwyGHGBHyHxo2Kr.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0073__ZuN5J4DLwyGHGBHyHxo2Kr.wav)",
+      "row_number": 74,
+      "sample_id": "sample_0073",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0074__BPG7Z2T4u5io92gDzenLwR.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0074__BPG7Z2T4u5io92gDzenLwR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0074__BPG7Z2T4u5io92gDzenLwR.wav, /workspace/backend/tmp/whisperx_examples/sample_0074__BPG7Z2T4u5io92gDzenLwR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0074__BPG7Z2T4u5io92gDzenLwR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0074__BPG7Z2T4u5io92gDzenLwR.wav, /workspace/backend/tmp/whisperx_examples/sample_0074__BPG7Z2T4u5io92gDzenLwR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0074__BPG7Z2T4u5io92gDzenLwR.wav)",
+      "row_number": 75,
+      "sample_id": "sample_0074",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0075__9rB9kToaAWAS9MXggEGyHH.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0075__9rB9kToaAWAS9MXggEGyHH.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0075__9rB9kToaAWAS9MXggEGyHH.wav, /workspace/backend/tmp/whisperx_examples/sample_0075__9rB9kToaAWAS9MXggEGyHH.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0075__9rB9kToaAWAS9MXggEGyHH.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0075__9rB9kToaAWAS9MXggEGyHH.wav, /workspace/backend/tmp/whisperx_examples/sample_0075__9rB9kToaAWAS9MXggEGyHH.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0075__9rB9kToaAWAS9MXggEGyHH.wav)",
+      "row_number": 76,
+      "sample_id": "sample_0075",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0076__Q3wwYfwQpRzHMReJh8GxiT.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0076__Q3wwYfwQpRzHMReJh8GxiT.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0076__Q3wwYfwQpRzHMReJh8GxiT.wav, /workspace/backend/tmp/whisperx_examples/sample_0076__Q3wwYfwQpRzHMReJh8GxiT.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0076__Q3wwYfwQpRzHMReJh8GxiT.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0076__Q3wwYfwQpRzHMReJh8GxiT.wav, /workspace/backend/tmp/whisperx_examples/sample_0076__Q3wwYfwQpRzHMReJh8GxiT.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0076__Q3wwYfwQpRzHMReJh8GxiT.wav)",
+      "row_number": 77,
+      "sample_id": "sample_0076",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0077__AxhdXcqwWNfHvbyj8KQzCx.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0077__AxhdXcqwWNfHvbyj8KQzCx.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0077__AxhdXcqwWNfHvbyj8KQzCx.wav, /workspace/backend/tmp/whisperx_examples/sample_0077__AxhdXcqwWNfHvbyj8KQzCx.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0077__AxhdXcqwWNfHvbyj8KQzCx.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0077__AxhdXcqwWNfHvbyj8KQzCx.wav, /workspace/backend/tmp/whisperx_examples/sample_0077__AxhdXcqwWNfHvbyj8KQzCx.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0077__AxhdXcqwWNfHvbyj8KQzCx.wav)",
+      "row_number": 78,
+      "sample_id": "sample_0077",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0078__NDrVABV6FxadpA4dVVPqSo.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0078__NDrVABV6FxadpA4dVVPqSo.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0078__NDrVABV6FxadpA4dVVPqSo.wav, /workspace/backend/tmp/whisperx_examples/sample_0078__NDrVABV6FxadpA4dVVPqSo.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0078__NDrVABV6FxadpA4dVVPqSo.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0078__NDrVABV6FxadpA4dVVPqSo.wav, /workspace/backend/tmp/whisperx_examples/sample_0078__NDrVABV6FxadpA4dVVPqSo.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0078__NDrVABV6FxadpA4dVVPqSo.wav)",
+      "row_number": 79,
+      "sample_id": "sample_0078",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0079__YRN9KZw3n59F6WYtDoVwaE.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0079__YRN9KZw3n59F6WYtDoVwaE.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0079__YRN9KZw3n59F6WYtDoVwaE.wav, /workspace/backend/tmp/whisperx_examples/sample_0079__YRN9KZw3n59F6WYtDoVwaE.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0079__YRN9KZw3n59F6WYtDoVwaE.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0079__YRN9KZw3n59F6WYtDoVwaE.wav, /workspace/backend/tmp/whisperx_examples/sample_0079__YRN9KZw3n59F6WYtDoVwaE.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0079__YRN9KZw3n59F6WYtDoVwaE.wav)",
+      "row_number": 80,
+      "sample_id": "sample_0079",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0080__Y9JE4YTdXtR2GFT4rH9ef3.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0080__Y9JE4YTdXtR2GFT4rH9ef3.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0080__Y9JE4YTdXtR2GFT4rH9ef3.wav, /workspace/backend/tmp/whisperx_examples/sample_0080__Y9JE4YTdXtR2GFT4rH9ef3.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0080__Y9JE4YTdXtR2GFT4rH9ef3.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0080__Y9JE4YTdXtR2GFT4rH9ef3.wav, /workspace/backend/tmp/whisperx_examples/sample_0080__Y9JE4YTdXtR2GFT4rH9ef3.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0080__Y9JE4YTdXtR2GFT4rH9ef3.wav)",
+      "row_number": 81,
+      "sample_id": "sample_0080",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0081__iG74noxyQacXZStApruGL5.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0081__iG74noxyQacXZStApruGL5.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0081__iG74noxyQacXZStApruGL5.wav, /workspace/backend/tmp/whisperx_examples/sample_0081__iG74noxyQacXZStApruGL5.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0081__iG74noxyQacXZStApruGL5.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0081__iG74noxyQacXZStApruGL5.wav, /workspace/backend/tmp/whisperx_examples/sample_0081__iG74noxyQacXZStApruGL5.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0081__iG74noxyQacXZStApruGL5.wav)",
+      "row_number": 82,
+      "sample_id": "sample_0081",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0082__kg3qSR8uMV2A8EDaTFEX62.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0082__kg3qSR8uMV2A8EDaTFEX62.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0082__kg3qSR8uMV2A8EDaTFEX62.wav, /workspace/backend/tmp/whisperx_examples/sample_0082__kg3qSR8uMV2A8EDaTFEX62.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0082__kg3qSR8uMV2A8EDaTFEX62.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0082__kg3qSR8uMV2A8EDaTFEX62.wav, /workspace/backend/tmp/whisperx_examples/sample_0082__kg3qSR8uMV2A8EDaTFEX62.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0082__kg3qSR8uMV2A8EDaTFEX62.wav)",
+      "row_number": 83,
+      "sample_id": "sample_0082",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0083__f36HgbUawACSrC3M2S9kZm.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0083__f36HgbUawACSrC3M2S9kZm.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0083__f36HgbUawACSrC3M2S9kZm.wav, /workspace/backend/tmp/whisperx_examples/sample_0083__f36HgbUawACSrC3M2S9kZm.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0083__f36HgbUawACSrC3M2S9kZm.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0083__f36HgbUawACSrC3M2S9kZm.wav, /workspace/backend/tmp/whisperx_examples/sample_0083__f36HgbUawACSrC3M2S9kZm.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0083__f36HgbUawACSrC3M2S9kZm.wav)",
+      "row_number": 84,
+      "sample_id": "sample_0083",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0084__fkb59Kvz8Mb6jg8qH7Ebss.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0084__fkb59Kvz8Mb6jg8qH7Ebss.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0084__fkb59Kvz8Mb6jg8qH7Ebss.wav, /workspace/backend/tmp/whisperx_examples/sample_0084__fkb59Kvz8Mb6jg8qH7Ebss.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0084__fkb59Kvz8Mb6jg8qH7Ebss.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0084__fkb59Kvz8Mb6jg8qH7Ebss.wav, /workspace/backend/tmp/whisperx_examples/sample_0084__fkb59Kvz8Mb6jg8qH7Ebss.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0084__fkb59Kvz8Mb6jg8qH7Ebss.wav)",
+      "row_number": 85,
+      "sample_id": "sample_0084",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0085__RQr5KdwQ832m9r2QVKdjK5.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0085__RQr5KdwQ832m9r2QVKdjK5.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0085__RQr5KdwQ832m9r2QVKdjK5.wav, /workspace/backend/tmp/whisperx_examples/sample_0085__RQr5KdwQ832m9r2QVKdjK5.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0085__RQr5KdwQ832m9r2QVKdjK5.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0085__RQr5KdwQ832m9r2QVKdjK5.wav, /workspace/backend/tmp/whisperx_examples/sample_0085__RQr5KdwQ832m9r2QVKdjK5.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0085__RQr5KdwQ832m9r2QVKdjK5.wav)",
+      "row_number": 86,
+      "sample_id": "sample_0085",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0086__oRiYUnzuAFQnyYy6nMg5Ro.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0086__oRiYUnzuAFQnyYy6nMg5Ro.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0086__oRiYUnzuAFQnyYy6nMg5Ro.wav, /workspace/backend/tmp/whisperx_examples/sample_0086__oRiYUnzuAFQnyYy6nMg5Ro.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0086__oRiYUnzuAFQnyYy6nMg5Ro.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0086__oRiYUnzuAFQnyYy6nMg5Ro.wav, /workspace/backend/tmp/whisperx_examples/sample_0086__oRiYUnzuAFQnyYy6nMg5Ro.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0086__oRiYUnzuAFQnyYy6nMg5Ro.wav)",
+      "row_number": 87,
+      "sample_id": "sample_0086",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0087__hc56hGtQPZtGdQere7tV66.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0087__hc56hGtQPZtGdQere7tV66.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0087__hc56hGtQPZtGdQere7tV66.wav, /workspace/backend/tmp/whisperx_examples/sample_0087__hc56hGtQPZtGdQere7tV66.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0087__hc56hGtQPZtGdQere7tV66.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0087__hc56hGtQPZtGdQere7tV66.wav, /workspace/backend/tmp/whisperx_examples/sample_0087__hc56hGtQPZtGdQere7tV66.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0087__hc56hGtQPZtGdQere7tV66.wav)",
+      "row_number": 88,
+      "sample_id": "sample_0087",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0088__RufHyqCSzEmLT6SCTAN6f9.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0088__RufHyqCSzEmLT6SCTAN6f9.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0088__RufHyqCSzEmLT6SCTAN6f9.wav, /workspace/backend/tmp/whisperx_examples/sample_0088__RufHyqCSzEmLT6SCTAN6f9.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0088__RufHyqCSzEmLT6SCTAN6f9.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0088__RufHyqCSzEmLT6SCTAN6f9.wav, /workspace/backend/tmp/whisperx_examples/sample_0088__RufHyqCSzEmLT6SCTAN6f9.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0088__RufHyqCSzEmLT6SCTAN6f9.wav)",
+      "row_number": 89,
+      "sample_id": "sample_0088",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0089__Dpa4xh2cFEi69sBDPZcU4o.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0089__Dpa4xh2cFEi69sBDPZcU4o.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0089__Dpa4xh2cFEi69sBDPZcU4o.wav, /workspace/backend/tmp/whisperx_examples/sample_0089__Dpa4xh2cFEi69sBDPZcU4o.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0089__Dpa4xh2cFEi69sBDPZcU4o.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0089__Dpa4xh2cFEi69sBDPZcU4o.wav, /workspace/backend/tmp/whisperx_examples/sample_0089__Dpa4xh2cFEi69sBDPZcU4o.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0089__Dpa4xh2cFEi69sBDPZcU4o.wav)",
+      "row_number": 90,
+      "sample_id": "sample_0089",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0090__BaMjdZtQUxkfTnF7miCHhR.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0090__BaMjdZtQUxkfTnF7miCHhR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0090__BaMjdZtQUxkfTnF7miCHhR.wav, /workspace/backend/tmp/whisperx_examples/sample_0090__BaMjdZtQUxkfTnF7miCHhR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0090__BaMjdZtQUxkfTnF7miCHhR.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0090__BaMjdZtQUxkfTnF7miCHhR.wav, /workspace/backend/tmp/whisperx_examples/sample_0090__BaMjdZtQUxkfTnF7miCHhR.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0090__BaMjdZtQUxkfTnF7miCHhR.wav)",
+      "row_number": 91,
+      "sample_id": "sample_0090",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0091__fiFgHjuqfXJcZNFWqLwj5b.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0091__fiFgHjuqfXJcZNFWqLwj5b.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0091__fiFgHjuqfXJcZNFWqLwj5b.wav, /workspace/backend/tmp/whisperx_examples/sample_0091__fiFgHjuqfXJcZNFWqLwj5b.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0091__fiFgHjuqfXJcZNFWqLwj5b.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0091__fiFgHjuqfXJcZNFWqLwj5b.wav, /workspace/backend/tmp/whisperx_examples/sample_0091__fiFgHjuqfXJcZNFWqLwj5b.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0091__fiFgHjuqfXJcZNFWqLwj5b.wav)",
+      "row_number": 92,
+      "sample_id": "sample_0091",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0092__77gjqVF4W6dztigjn2E6FS.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0092__77gjqVF4W6dztigjn2E6FS.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0092__77gjqVF4W6dztigjn2E6FS.wav, /workspace/backend/tmp/whisperx_examples/sample_0092__77gjqVF4W6dztigjn2E6FS.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0092__77gjqVF4W6dztigjn2E6FS.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0092__77gjqVF4W6dztigjn2E6FS.wav, /workspace/backend/tmp/whisperx_examples/sample_0092__77gjqVF4W6dztigjn2E6FS.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0092__77gjqVF4W6dztigjn2E6FS.wav)",
+      "row_number": 93,
+      "sample_id": "sample_0092",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0093__eUjoBKCg6XcqotVghanfwP.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0093__eUjoBKCg6XcqotVghanfwP.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0093__eUjoBKCg6XcqotVghanfwP.wav, /workspace/backend/tmp/whisperx_examples/sample_0093__eUjoBKCg6XcqotVghanfwP.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0093__eUjoBKCg6XcqotVghanfwP.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0093__eUjoBKCg6XcqotVghanfwP.wav, /workspace/backend/tmp/whisperx_examples/sample_0093__eUjoBKCg6XcqotVghanfwP.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0093__eUjoBKCg6XcqotVghanfwP.wav)",
+      "row_number": 94,
+      "sample_id": "sample_0093",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0094__R4nmh3cBMKAPwVo97jgToy.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0094__R4nmh3cBMKAPwVo97jgToy.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0094__R4nmh3cBMKAPwVo97jgToy.wav, /workspace/backend/tmp/whisperx_examples/sample_0094__R4nmh3cBMKAPwVo97jgToy.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0094__R4nmh3cBMKAPwVo97jgToy.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0094__R4nmh3cBMKAPwVo97jgToy.wav, /workspace/backend/tmp/whisperx_examples/sample_0094__R4nmh3cBMKAPwVo97jgToy.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0094__R4nmh3cBMKAPwVo97jgToy.wav)",
+      "row_number": 95,
+      "sample_id": "sample_0094",
+      "source": "manifest"
+    },
+    {
+      "audio_filename": "sample_0095__L7Asd9siaQUiuzqcSe3KBT.wav",
+      "reason": "could not find file (attempted: /workspace/backend/tmp/whisperx_examples/audio/sample_0095__L7Asd9siaQUiuzqcSe3KBT.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0095__L7Asd9siaQUiuzqcSe3KBT.wav, /workspace/backend/tmp/whisperx_examples/sample_0095__L7Asd9siaQUiuzqcSe3KBT.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0095__L7Asd9siaQUiuzqcSe3KBT.wav, /workspace/backend/tmp/whisperx_examples/audio/sample_0095__L7Asd9siaQUiuzqcSe3KBT.wav, /workspace/backend/tmp/whisperx_examples/sample_0095__L7Asd9siaQUiuzqcSe3KBT.wav, /workspace/backend/tmp/whisperx_examples/input/sample_0095__L7Asd9siaQUiuzqcSe3KBT.wav)",
+      "row_number": 96,
+      "sample_id": "sample_0095",
+      "source": "manifest"
+    }
+  ],
+  "pre_warm_seconds": 28.578,
+  "run_directory": "/workspace/backend/tmp/whisperx_examples/runs/20260619T151236611722Z_whisperx-stereo-split-prompt-probs",
+  "run_finished_at": "2026-06-19T15:14:27.728767+00:00",
+  "run_started_at": "2026-06-19T15:12:36.611856+00:00",
+  "summary": {
+    "duplicates_skipped": 10,
+    "errors": 0,
+    "manifest_rows_skipped": 85,
+    "ok": 10,
+    "total_inputs_discovered": 20,
+    "total_unique_inputs": 10
+  }
+}

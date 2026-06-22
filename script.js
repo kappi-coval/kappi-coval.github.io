@@ -150,6 +150,7 @@ function appendWordNodes(line, wordNodes, playerId, { fallbackStart = null, fall
     if (line.childNodes.length > 0) {
       line.appendChild(document.createTextNode(" "));
     }
+
     line.appendChild(link);
     hasWords = true;
   });
@@ -162,9 +163,10 @@ function groupWordsBySpeaker(words) {
   let current = null;
 
   words.forEach((word) => {
-    if (!current || current.speaker !== word.speaker) {
+    const speaker = word.speaker || "SPEAKER";
+    if (!current || current.speaker !== speaker) {
       current = {
-        speaker: word.speaker || "SPEAKER",
+        speaker,
         words: [],
       };
       groups.push(current);
@@ -176,10 +178,9 @@ function groupWordsBySpeaker(words) {
   return groups;
 }
 
-function buildTranscriptLines(result, playerId) {
-  const timeline = Array.isArray(result?.timeline) ? result.timeline : [];
-  const segments = Array.isArray(result?.segments) ? result.segments : [];
-  const words = timeline
+function extractTimelineWords(timeline) {
+  const items = Array.isArray(timeline) ? timeline : [];
+  return items
     .filter(
       (item) =>
         item &&
@@ -188,23 +189,70 @@ function buildTranscriptLines(result, playerId) {
         Number.isFinite(item.start) &&
         Number.isFinite(item.end)
     )
+    .map((item, position) => ({
+      text: item.text,
+      start: item.start,
+      end: item.end,
+      speaker: typeof item.speaker === "string" ? item.speaker : null,
+      index: Number.isFinite(item.index) ? item.index : position,
+    }))
     .sort((a, b) => a.start - b.start);
+}
+
+function extractSegmentWords(segment) {
+  const words = Array.isArray(segment?.words) ? segment.words : [];
+
+  return words
+    .map((word, position) => {
+      const text =
+        typeof word?.word === "string"
+          ? word.word
+          : typeof word?.text === "string"
+            ? word.text
+            : "";
+      if (!text.trim() || !Number.isFinite(word?.start) || !Number.isFinite(word?.end)) {
+        return null;
+      }
+
+      return {
+        text: text.trim(),
+        start: word.start,
+        end: word.end,
+        speaker:
+          typeof word?.speaker === "string"
+            ? word.speaker
+            : typeof segment?.speaker === "string"
+              ? segment.speaker
+              : null,
+        index: Number.isFinite(word?.index) ? word.index : position,
+      };
+    })
+    .filter(Boolean);
+}
+
+function buildTranscriptLines(result, playerId) {
+  const segments = Array.isArray(result?.segments) ? result.segments : [];
+  const timelineWords = extractTimelineWords(result?.timeline);
 
   const lines = [];
   let usedSegmentFallback = false;
 
-  if (words.length > 0 && segments.length > 0) {
-    const usedWordIndexes = new Set();
+  if (timelineWords.length > 0 && segments.length > 0) {
+    const words = timelineWords.map((word, position) => ({
+      ...word,
+      __key: Number.isFinite(word.index) ? `idx:${word.index}` : `pos:${position}`,
+    }));
+
+    const usedWordKeys = new Set();
     const epsilon = 0.03;
 
     segments.forEach((segment) => {
-      if (!Number.isFinite(segment.start) || !Number.isFinite(segment.end)) {
+      if (!Number.isFinite(segment?.start) || !Number.isFinite(segment?.end)) {
         return;
       }
 
       const segmentWords = words.filter((word) => {
-        const wordIndex = Number.isFinite(word.index) ? word.index : null;
-        if (wordIndex !== null && usedWordIndexes.has(wordIndex)) {
+        if (usedWordKeys.has(word.__key)) {
           return false;
         }
 
@@ -213,40 +261,37 @@ function buildTranscriptLines(result, playerId) {
           return false;
         }
 
-        if (wordIndex !== null) {
-          usedWordIndexes.add(wordIndex);
-        }
-
+        usedWordKeys.add(word.__key);
         return true;
       });
 
-      const line = createTranscriptLine({ speaker: segment.speaker || segmentWords[0]?.speaker });
-      const appendedWords = appendWordNodes(line, segmentWords, playerId);
+      const line = createTranscriptLine({
+        speaker:
+          typeof segment?.speaker === "string" && segment.speaker
+            ? segment.speaker
+            : segmentWords[0]?.speaker,
+      });
 
-      if (appendedWords) {
+      if (appendWordNodes(line, segmentWords, playerId)) {
         lines.push(line);
         return;
       }
 
-      if (typeof segment.text === "string" && segment.text.trim()) {
+      if (typeof segment?.text === "string" && segment.text.trim()) {
         const fallbackTokens = segment.text.trim().split(/\s+/);
-        const appendedFallback = appendWordNodes(line, fallbackTokens, playerId, {
-          fallbackStart: segment.start,
-          fallback: true,
-        });
-
-        if (appendedFallback) {
+        if (
+          appendWordNodes(line, fallbackTokens, playerId, {
+            fallbackStart: segment.start,
+            fallback: true,
+          })
+        ) {
           usedSegmentFallback = true;
           lines.push(line);
         }
       }
     });
 
-    const leftovers = words.filter((word) => {
-      const wordIndex = Number.isFinite(word.index) ? word.index : null;
-      return wordIndex === null || !usedWordIndexes.has(wordIndex);
-    });
-
+    const leftovers = words.filter((word) => !usedWordKeys.has(word.__key));
     groupWordsBySpeaker(leftovers).forEach((group) => {
       const line = createTranscriptLine({ speaker: group.speaker });
       if (appendWordNodes(line, group.words, playerId)) {
@@ -260,8 +305,8 @@ function buildTranscriptLines(result, playerId) {
     };
   }
 
-  if (words.length > 0) {
-    groupWordsBySpeaker(words).forEach((group) => {
+  if (timelineWords.length > 0) {
+    groupWordsBySpeaker(timelineWords).forEach((group) => {
       const line = createTranscriptLine({ speaker: group.speaker });
       if (appendWordNodes(line, group.words, playerId)) {
         lines.push(line);
@@ -274,13 +319,54 @@ function buildTranscriptLines(result, playerId) {
     };
   }
 
-  if (segments.length > 0) {
-    segments.forEach((segment) => {
-      if (!Number.isFinite(segment.start) || typeof segment.text !== "string" || !segment.text.trim()) {
+  const segmentsWithWords = segments.map((segment) => ({
+    segment,
+    words: extractSegmentWords(segment),
+  }));
+
+  if (segmentsWithWords.some((item) => item.words.length > 0)) {
+    segmentsWithWords.forEach(({ segment, words }) => {
+      const line = createTranscriptLine({
+        speaker:
+          typeof segment?.speaker === "string" && segment.speaker
+            ? segment.speaker
+            : words[0]?.speaker,
+      });
+
+      if (appendWordNodes(line, words, playerId)) {
+        lines.push(line);
         return;
       }
 
-      const line = createTranscriptLine({ speaker: segment.speaker || "SPEAKER" });
+      if (Number.isFinite(segment?.start) && typeof segment?.text === "string" && segment.text.trim()) {
+        const fallbackTokens = segment.text.trim().split(/\s+/);
+        if (
+          appendWordNodes(line, fallbackTokens, playerId, {
+            fallbackStart: segment.start,
+            fallback: true,
+          })
+        ) {
+          usedSegmentFallback = true;
+          lines.push(line);
+        }
+      }
+    });
+
+    return {
+      lines,
+      usedSegmentFallback,
+    };
+  }
+
+  if (segments.length > 0) {
+    segments.forEach((segment) => {
+      if (!Number.isFinite(segment?.start) || typeof segment?.text !== "string" || !segment.text.trim()) {
+        return;
+      }
+
+      const line = createTranscriptLine({
+        speaker: typeof segment?.speaker === "string" && segment.speaker ? segment.speaker : "SPEAKER",
+      });
       const fallbackTokens = segment.text.trim().split(/\s+/);
       if (
         appendWordNodes(line, fallbackTokens, playerId, {
@@ -325,7 +411,7 @@ function deriveSampleId(entry) {
     return entry.manifest_sample_id.trim();
   }
 
-  const filename = typeof entry?.audio_filename === "string" ? entry.audio_filename : "";
+  const filename = typeof entry?.audio_filename === "string" ? entry.audio_filename.trim() : "";
   const prefixMatch = filename.match(/^(sample_\d+)/i);
   if (prefixMatch) {
     return prefixMatch[1];
@@ -334,9 +420,73 @@ function deriveSampleId(entry) {
   return filename.replace(/\.[^.]+$/, "") || "sample";
 }
 
+function deriveAudioFilename(entry) {
+  return typeof entry?.audio_filename === "string" ? entry.audio_filename.trim() : "";
+}
+
 function dirname(path) {
   const slashIndex = path.lastIndexOf("/");
   return slashIndex >= 0 ? path.slice(0, slashIndex) : ".";
+}
+
+function normalizeJoinValue(value) {
+  return typeof value === "string" ? value.trim().toLowerCase() : "";
+}
+
+function deriveJoinKeys(entry) {
+  const keys = [];
+
+  const sampleId = deriveSampleId(entry);
+  if (sampleId) {
+    keys.push(`sample:${normalizeJoinValue(sampleId)}`);
+  }
+
+  const audioFilename = deriveAudioFilename(entry);
+  if (audioFilename) {
+    keys.push(`audio:${normalizeJoinValue(audioFilename)}`);
+  }
+
+  return keys.length > 0 ? keys : [`entry:${entry?.index ?? "unknown"}`];
+}
+
+function toDomIdFragment(value) {
+  return String(value || "sample")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9_-]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "sample";
+}
+
+function parseSampleNumber(sampleId) {
+  const match = typeof sampleId === "string" ? sampleId.match(/sample_(\d+)/i) : null;
+  return match ? Number(match[1]) : Number.NaN;
+}
+
+function compareSampleGroups(a, b) {
+  const numA = parseSampleNumber(a.sampleId);
+  const numB = parseSampleNumber(b.sampleId);
+
+  if (Number.isFinite(numA) && Number.isFinite(numB) && numA !== numB) {
+    return numA - numB;
+  }
+
+  const sampleA = typeof a.sampleId === "string" ? a.sampleId : "";
+  const sampleB = typeof b.sampleId === "string" ? b.sampleId : "";
+  if (sampleA !== sampleB) {
+    return sampleA.localeCompare(sampleB);
+  }
+
+  const filenameA = typeof a.audioFilename === "string" ? a.audioFilename : "";
+  const filenameB = typeof b.audioFilename === "string" ? b.audioFilename : "";
+  if (filenameA !== filenameB) {
+    return filenameA.localeCompare(filenameB);
+  }
+
+  return (a.sortIndex ?? Number.POSITIVE_INFINITY) - (b.sortIndex ?? Number.POSITIVE_INFINITY);
+}
+
+function buildAudioPath(audioFilename) {
+  return `assets/audio/granite-golden-set/${audioFilename}`;
 }
 
 async function fetchJson(path) {
@@ -344,134 +494,285 @@ async function fetchJson(path) {
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`);
   }
+
   return response.json();
 }
 
-function createTranscriptBlock({ entry, transcriptResult, transcriptRelPath }) {
-  const sampleId = deriveSampleId(entry);
-  const playerId = `player-${sampleId}`;
-  const article = document.createElement("article");
-  article.className = "transcript-block";
-  article.id = `transcript-${sampleId}`;
+async function loadRunIndex(runIndexPath) {
+  const runIndex = await fetchJson(runIndexPath);
+  return Array.isArray(runIndex?.entries) ? runIndex.entries : [];
+}
 
-  const heading = document.createElement("h3");
-  heading.className = "transcript-title";
-  heading.textContent = sampleId;
-  article.appendChild(heading);
+async function loadTranscriptForEntry(runBasePath, entry) {
+  if (!entry) {
+    return {
+      status: "missing-entry",
+    };
+  }
 
-  const meta = document.createElement("p");
-  meta.className = "transcript-meta";
-  const filename = entry?.audio_filename || "";
-  const segmentsCount = Number.isFinite(entry?.segments_count) ? entry.segments_count : 0;
-  const speakersCount = Number.isFinite(entry?.speakers_count) ? entry.speakers_count : 0;
-  meta.textContent = `${filename} • ${segmentsCount} segments • ${speakersCount} speakers`;
-  article.appendChild(meta);
+  const transcriptRelPath = typeof entry?.transcript_json === "string" ? entry.transcript_json.trim() : "";
+  if (!transcriptRelPath) {
+    return {
+      status: "missing-transcript",
+    };
+  }
+
+  try {
+    const transcriptPayload = await fetchJson(`${runBasePath}/${transcriptRelPath}`);
+    return {
+      status: "ok",
+      result: transcriptPayload?.result || {},
+    };
+  } catch (error) {
+    return {
+      status: "error",
+      error,
+    };
+  }
+}
+
+function createTranscriptCard({ title, variant, transcriptState, playerId }) {
+  const card = document.createElement("section");
+  card.className = `transcript-card transcript-card--${variant}`;
+
+  const heading = document.createElement("h4");
+  heading.className = "transcript-card-title";
+  heading.textContent = title;
+  card.appendChild(heading);
 
   const content = document.createElement("div");
   content.className = "transcript-content";
 
-  const { lines, usedSegmentFallback } = buildTranscriptLines(transcriptResult, playerId);
-  if (lines.length === 0) {
-    const empty = document.createElement("p");
-    empty.className = "caption";
-    empty.textContent = "No transcript words available for this sample.";
-    content.appendChild(empty);
+  if (transcriptState.status === "ok") {
+    const { lines, usedSegmentFallback } = buildTranscriptLines(transcriptState.result, playerId);
+    if (lines.length === 0) {
+      const empty = document.createElement("p");
+      empty.className = "caption";
+      empty.textContent = "No transcript words available for this sample.";
+      content.appendChild(empty);
+    } else {
+      lines.forEach((line) => content.appendChild(line));
+    }
+
+    if (usedSegmentFallback) {
+      const fallbackNote = document.createElement("p");
+      fallbackNote.className = "caption transcript-fallback-note";
+      fallbackNote.textContent =
+        "Word-level timestamps were incomplete; segment-start fallback links were used for some tokens.";
+      content.appendChild(fallbackNote);
+    }
   } else {
-    lines.forEach((line) => content.appendChild(line));
+    const message = document.createElement("p");
+    message.className = "caption";
+
+    if (transcriptState.status === "missing-entry") {
+      message.textContent = `No ${title.toLowerCase()} available for this sample.`;
+    } else if (transcriptState.status === "missing-transcript") {
+      message.textContent = `${title} could not be loaded for this sample.`;
+    } else {
+      const details = transcriptState.error instanceof Error ? transcriptState.error.message : "Unknown error";
+      message.textContent = `Unable to load ${title.toLowerCase()}: ${details}`;
+    }
+
+    content.appendChild(message);
   }
 
-  if (usedSegmentFallback) {
-    const fallbackNote = document.createElement("p");
-    fallbackNote.className = "caption transcript-fallback-note";
-    fallbackNote.textContent = "Timeline word timestamps were incomplete; segment-start fallback links were used for some tokens.";
-    content.appendChild(fallbackNote);
-  }
-
-  const sourceNote = document.createElement("p");
-  sourceNote.className = "caption transcript-source";
-  sourceNote.textContent = `Source: ${transcriptRelPath}`;
-  content.appendChild(sourceNote);
-
-  article.appendChild(content);
-  return article;
+  card.appendChild(content);
+  return card;
 }
 
-function renderTranscriptErrorBlock(entry, transcriptRelPath, error) {
-  const sampleId = deriveSampleId(entry);
+function createSampleSection({ group, graniteState, whisperxState }) {
+  const sampleId = group.sampleId || "sample";
+  const audioFilename = group.audioFilename || "";
+  const domIdSuffix = toDomIdFragment(sampleId);
+  const playerId = `player-${domIdSuffix}`;
+
   const article = document.createElement("article");
-  article.className = "transcript-block";
-  article.id = `transcript-${sampleId}`;
+  article.className = "sample-section";
+  article.id = `sample-section-${domIdSuffix}`;
 
   const heading = document.createElement("h3");
-  heading.className = "transcript-title";
+  heading.className = "sample-title";
   heading.textContent = sampleId;
   article.appendChild(heading);
 
-  const message = document.createElement("p");
-  message.className = "caption";
-  message.textContent = `Unable to load transcript (${transcriptRelPath}): ${error.message}`;
-  article.appendChild(message);
+  if (audioFilename) {
+    const filename = document.createElement("p");
+    filename.className = "sample-filename";
+    filename.textContent = audioFilename;
+    article.appendChild(filename);
+  }
 
+  const playerWrap = document.createElement("div");
+  playerWrap.className = "sample-player";
+
+  if (audioFilename) {
+    const audio = document.createElement("audio");
+    audio.id = playerId;
+    audio.controls = true;
+    audio.preload = "metadata";
+    audio.src = buildAudioPath(audioFilename);
+    audio.textContent = "Your browser does not support the audio element.";
+    playerWrap.appendChild(audio);
+  } else {
+    const missingAudio = document.createElement("p");
+    missingAudio.className = "caption";
+    missingAudio.textContent = "Audio file is unavailable for this sample.";
+    playerWrap.appendChild(missingAudio);
+  }
+
+  article.appendChild(playerWrap);
+
+  const transcriptGrid = document.createElement("div");
+  transcriptGrid.className = "transcript-compare-grid";
+  transcriptGrid.appendChild(
+    createTranscriptCard({
+      title: "Granite transcript",
+      variant: "granite",
+      transcriptState: graniteState,
+      playerId,
+    })
+  );
+  transcriptGrid.appendChild(
+    createTranscriptCard({
+      title: "WhisperX transcript",
+      variant: "whisperx",
+      transcriptState: whisperxState,
+      playerId,
+    })
+  );
+
+  article.appendChild(transcriptGrid);
   return article;
 }
 
-async function renderGraniteTranscripts() {
-  const container = document.getElementById("granite-transcripts");
+function attachEntryToGroups(groupsByKey, groups, entry, side) {
+  if (!entry || typeof entry !== "object") {
+    return;
+  }
+
+  const joinKeys = deriveJoinKeys(entry);
+  let group = null;
+
+  joinKeys.forEach((key) => {
+    if (!group && groupsByKey.has(key)) {
+      group = groupsByKey.get(key);
+    }
+  });
+
+  if (!group) {
+    group = {
+      sampleId: deriveSampleId(entry),
+      audioFilename: deriveAudioFilename(entry),
+      graniteEntry: null,
+      whisperxEntry: null,
+      sortIndex: Number.isFinite(entry?.index) ? entry.index : Number.POSITIVE_INFINITY,
+    };
+    groups.push(group);
+  }
+
+  if (!group.sampleId) {
+    group.sampleId = deriveSampleId(entry);
+  }
+  if (!group.audioFilename) {
+    group.audioFilename = deriveAudioFilename(entry);
+  }
+
+  const entryIndex = Number.isFinite(entry?.index) ? entry.index : Number.POSITIVE_INFINITY;
+  group.sortIndex = Math.min(group.sortIndex, entryIndex);
+
+  if (side === "granite") {
+    group.graniteEntry = entry;
+  } else {
+    group.whisperxEntry = entry;
+  }
+
+  joinKeys.forEach((key) => {
+    groupsByKey.set(key, group);
+  });
+}
+
+function buildSampleGroups(graniteEntries, whisperxEntries) {
+  const groupsByKey = new Map();
+  const groups = [];
+
+  graniteEntries.forEach((entry) => {
+    attachEntryToGroups(groupsByKey, groups, entry, "granite");
+  });
+
+  whisperxEntries.forEach((entry) => {
+    attachEntryToGroups(groupsByKey, groups, entry, "whisperx");
+  });
+
+  return groups.sort(compareSampleGroups);
+}
+
+async function renderSampleComparisons() {
+  const container = document.getElementById("sample-comparisons");
   if (!(container instanceof HTMLElement)) {
     return;
   }
 
-  const runIndexPath = container.getAttribute("data-run-index");
-  if (!runIndexPath) {
+  const graniteRunIndexPath = container.getAttribute("data-granite-run-index");
+  const whisperxRunIndexPath = container.getAttribute("data-whisperx-run-index");
+  if (!graniteRunIndexPath || !whisperxRunIndexPath) {
     container.innerHTML = "";
-    const message = document.createElement("p");
-    message.className = "caption";
-    message.textContent = "No Granite run index path configured.";
-    container.appendChild(message);
+    const missingConfig = document.createElement("p");
+    missingConfig.className = "caption";
+    missingConfig.textContent = "Run index paths are not configured.";
+    container.appendChild(missingConfig);
     return;
   }
 
   container.innerHTML = "";
 
-  let runIndex;
-  try {
-    runIndex = await fetchJson(runIndexPath);
-  } catch (error) {
-    const message = document.createElement("p");
-    message.className = "caption";
-    message.textContent = `Failed to load Granite run index: ${error.message}`;
-    container.appendChild(message);
+  const [graniteRunResult, whisperxRunResult] = await Promise.allSettled([
+    loadRunIndex(graniteRunIndexPath),
+    loadRunIndex(whisperxRunIndexPath),
+  ]);
+
+  const graniteEntries = graniteRunResult.status === "fulfilled" ? graniteRunResult.value : [];
+  const whisperxEntries = whisperxRunResult.status === "fulfilled" ? whisperxRunResult.value : [];
+
+  if (graniteRunResult.status === "rejected") {
+    const warning = document.createElement("p");
+    warning.className = "caption";
+    warning.textContent = `Failed to load Granite run index: ${graniteRunResult.reason?.message || "Unknown error"}`;
+    container.appendChild(warning);
+  }
+
+  if (whisperxRunResult.status === "rejected") {
+    const warning = document.createElement("p");
+    warning.className = "caption";
+    warning.textContent = `Failed to load WhisperX run index: ${whisperxRunResult.reason?.message || "Unknown error"}`;
+    container.appendChild(warning);
+  }
+
+  const groups = buildSampleGroups(graniteEntries, whisperxEntries);
+  if (groups.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "caption";
+    empty.textContent = "No samples were available for comparison.";
+    container.appendChild(empty);
     return;
   }
 
-  const entries = Array.isArray(runIndex?.entries) ? runIndex.entries : [];
-  if (entries.length === 0) {
-    const message = document.createElement("p");
-    message.className = "caption";
-    message.textContent = "No transcript entries were found in the Granite run index.";
-    container.appendChild(message);
-    return;
-  }
+  const graniteRunBasePath = dirname(graniteRunIndexPath);
+  const whisperxRunBasePath = dirname(whisperxRunIndexPath);
 
-  const runBasePath = dirname(runIndexPath);
+  for (const group of groups) {
+    const [graniteState, whisperxState] = await Promise.all([
+      loadTranscriptForEntry(graniteRunBasePath, group.graniteEntry),
+      loadTranscriptForEntry(whisperxRunBasePath, group.whisperxEntry),
+    ]);
 
-  for (const entry of entries) {
-    const transcriptRelPath = typeof entry?.transcript_json === "string" ? entry.transcript_json : "";
-    if (!transcriptRelPath) {
-      continue;
-    }
+    const sampleSection = createSampleSection({
+      group,
+      graniteState,
+      whisperxState,
+    });
 
-    const transcriptPath = `${runBasePath}/${transcriptRelPath}`;
-
-    try {
-      const transcriptPayload = await fetchJson(transcriptPath);
-      const transcriptResult = transcriptPayload?.result || {};
-      const block = createTranscriptBlock({ entry, transcriptResult, transcriptRelPath });
-      container.appendChild(block);
-    } catch (error) {
-      const errorBlock = renderTranscriptErrorBlock(entry, transcriptRelPath, error);
-      container.appendChild(errorBlock);
-    }
+    container.appendChild(sampleSection);
   }
 }
 
@@ -532,6 +833,7 @@ document.addEventListener("DOMContentLoaded", () => {
     history.replaceState(null, "", hash);
   });
 
-  handleInitialHashSeek();
-  renderGraniteTranscripts();
+  renderSampleComparisons().finally(() => {
+    handleInitialHashSeek();
+  });
 });
