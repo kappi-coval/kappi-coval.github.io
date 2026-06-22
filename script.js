@@ -61,6 +61,10 @@ function seekAudio(player, timestamp) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  if (window.hljs) {
+    window.hljs.highlightAll();
+  }
+
   const player = document.getElementById("post-audio");
   if (!(player instanceof HTMLAudioElement)) {
     return;

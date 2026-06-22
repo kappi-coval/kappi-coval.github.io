@@ -8,7 +8,13 @@
       name="description"
       content="Review of Granite Speech model on transcribe and diarize."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -16,12 +22,12 @@
       <article class="post" aria-label="Blog post template">
         <header class="post-header">
           <!-- TODO: Replace with your real post title -->
-          <h1>Granite Speech 4.1 2b Plus T&D Real World Test</h1>
+          <h1>Does Granite Speech T&D Work IRL?</h1>
 
           <!-- TODO: Replace with subtitle, byline, and date -->
           <p class="subtitle">A 100% human-written appeal for discussion on real-world use of the Granite Speech 4.1 2b Plus Model.</p>
           <p class="meta">
-            <span class="byline">By <a href="https://www.thinkkappi.com/">Kappi</a> in my role part time for <a href="https://www.coval.ai/">Coval</a></span>
+            <span class="byline">By <a href="https://www.thinkkappi.com/" target="_blank">Kappi</a> in my role part time for <a href="https://www.coval.ai/" target="_blank">Coval</a></span>
             <span aria-hidden="true">•</span>
             <time datetime="2026-06-22">June 22, 2026</time>
           </p>
@@ -31,8 +37,11 @@
           <h2 id="intro-heading">Intro</h2>
           <!-- TODO: Replace this intro text with your own content -->
           <p>
-            This is a starter intro paragraph. Use it to explain what the post is about,
-            what listeners should focus on, or why the audio matters.
+            I was excited to see IBM’s Granite Speech 4.1 2b on the Huggingface Open ASR Leaderboard - the Plus variant in particular offers an appealing alternative to the industry-standard WhisperX pipelines used for audio Transcription and Diarization (T&D). Appealing because it’s not a pipeline; in comparison to WhisperX, which wraps Faster Whisper in Voice Activity Detection (VAD), phoneme alignment and pyannote.audio diarization to produce accurate word-level timestamps and speaker attribution, Granite Speech Plus promises all of that natively. No need to wrap anything in anything, or wonder what obscure param in your pipeline is causing poor performance; ostensibly you should be able to put multi-speaker audio in and get timestamped, speaker attributed transcriptions out. Enticing stuff.
+
+            I was encouraged in my enthusiasm by an array of blog posts, videos and tweets reviewing the model and pointing out the same benefits that I have. This wealth of positive, seemingly editorial content meant that when I tried out the model and found it performed poorly on my test set, I assumed I had made some trivial user error(s) and spent much longer than I had intended fiddling with it. Frustratingly, I wasn’t able to improve its performance, and I returned to the reviews with renewed skepticism, looking for specific advice. I couldn’t find any: no tuned params, implementation details, or crucially, any examples of it working on real audio clips.
+
+            The cynical explanation of this is that it is now so easy to produce editorial-seeming content that it encourages reviews which haven’t actually tested out the things they are recommending, and my poor results are an accurate reflection of the current model’s real world performance. I hope that isn’t the case, as I remain excited by the premise of this model, so I’m publishing my results here in the hope that they produce that magical phenomenon of instantly summoning a person to correct someone being Wrong On The Internet. If you have had good results with this model, please let me know how; I will be indebted to you for the help. And if you have struggled with it like me, then I hope you feel less alone seeing this.
           </p>
         </section>
 
