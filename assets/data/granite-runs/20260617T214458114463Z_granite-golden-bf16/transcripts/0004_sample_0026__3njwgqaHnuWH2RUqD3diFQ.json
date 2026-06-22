@@ -1,0 +1,1623 @@
+{
+  "elapsed_seconds": 52.186,
+  "input": {
+    "audio_filename": "sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+    "manifest_conversation_id": "3njwgqaHnuWH2RUqD3diFQ",
+    "manifest_row_number": 5,
+    "manifest_sample_id": "sample_0026",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-17T21:47:22.900763+00:00",
+  "result": {
+    "full_text": "thanks for calling freight one can i get your m c number 1 2 8 0 4 0 9 just to confirm is your m c number 1 2 8 0 4 0 9 great do you see a reference number 8 1 9 2 2 just confirming is the reference number 8 1 9 2 2 here's the load ten thousand pounds of dry goods needs a fifty three foot dry van and a dedicated truck pickup is in thomasville north carolina on may first between 8 am and 1 pm deliveries in irving texas on um on may fifth between 8 am and 12 pm we're offering 2000 for this load does that work for you do you have any room in the rate could you repeat that last part for me i just want to make sure i got it right do you have any room in the rate got it you're asking if there's any room in the rate so what rate are you looking for 25 it sounds like there might have been a misunderstanding on the rate",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 80.14,
+          "end_seconds": 80.14,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Thanks for calling freight one can I get your MC number [Speaker 2]: 1 2 8 0 4 0 9 [Speaker 1]: Just to confirm is your MC number 1 2 8 0 4 0 9 [Speaker 2]: Mm-hmm [Speaker 1]: Great do you see a reference number [Speaker 2]: 8 1 9 2 2 [Speaker 1]: Just confirming is the reference number 8 1 9 2 2 [Speaker 2]: Mm-hmm [Speaker 1]: Here's the load 10 000 pounds of dry goods needs a 53 foot dry van and a dedicated truck pickup is in thomasville north carolina on may 1st between 8 a.m. and 1 p.m. deliveries in irving texas on on may 5th between 8 a.m. and 12 p.m we're offering 2 000 for this load does that work for you [Speaker 2]: Do you have any room in the rate [Speaker 1]: Could you repeat that last part for me I just want to make sure I got it right [Speaker 2]: Do you have any room in the rate [Speaker 1]: Got it you're asking if there's any room in the rate so what rate are you looking for [Speaker 2]: 25 [Speaker 1]: It sounds like there might have been a misunderstanding on the rate",
+            "timestamps": "_ [T:179] thanks [T:197] for [T:205] calling [T:235] freight [T:260] one [T:281] can [T:295] i [T:301] get [T:317] your [T:330] m [T:345] c [T:360] number [T:396] _ [T:464] 1 [T:471] 2 [T:489] 8 [T:505] 0 [T:520] 4 [T:545] 0 [T:559] 9 [T:596] _ [T:854] just [T:874] to [T:881] confirm [T:925] is [T:936] your [T:948] m [T:963] c [T:984] number [T:14] 1 [T:32] 2 [T:51] 8 [T:68] 0 [T:95] 4 [T:130] 0 [T:147] 9 [T:185] _ [T:299] great [T:325] do [T:333] you [T:344] see [T:360] a [T:365] reference [T:402] number [T:432] _ [T:744] 8 [T:757] 1 [T:781] 9 [T:809] 2 [T:822] 2 [T:859] _ [T:50] just [T:68] confirming [T:114] is [T:126] the [T:134] reference [T:173] number [T:198] 8 [T:219] 1 [T:239] 9 [T:262] 2 [T:283] 2 [T:328] _ [T:495] here's [T:521] the [T:530] load [T:568] _ [T:608] ten [T:626] thousand [T:658] pounds [T:688] of [T:697] dry [T:723] goods [T:768] needs [T:790] a [T:796] fifty [T:829] three [T:850] foot [T:872] dry [T:898] van [T:924] and [T:936] a [T:942] dedicated [T:3] truck [T:35] _ [T:102] pickup [T:133] is [T:145] in [T:156] thomasville [T:211] north [T:233] carolina [T:287] on [T:306] may [T:324] first [T:363] between [T:400] 8 [T:413] am [T:440] and [T:452] 1 [T:469] pm [T:505] deliveries [T:554] in [T:567] irving [T:599] texas [T:652] on [T:673] _ [T:678] um [T:699] on [T:712] may [T:730] fifth [T:760] between [T:793] 8 [T:810] am [T:837] and [T:848] 12 [T:874] pm [T:916] we're [T:930] offering [T:964] 2000 [T:27] for [T:37] this [T:55] load [T:81] does [T:94] that [T:108] work [T:127] for [T:137] you [T:159] _ [T:310] do [T:321] you [T:333] have [T:354] any [T:370] room [T:390] in [T:400] the [T:410] rate [T:436] _ [T:617] could [T:634] you [T:647] repeat [T:684] that [T:697] last [T:722] part [T:742] for [T:754] me [T:778] _ [T:802] i [T:814] just [T:833] want [T:845] to [T:851] make [T:867] sure [T:884] i [T:889] got [T:906] it [T:914] right [T:939] _ [T:24] do [T:35] you [T:45] have [T:68] any [T:88] room [T:112] in [T:122] the [T:132] rate [T:160] _ [T:284] got [T:308] it [T:325] _ [T:332] you're [T:353] asking [T:384] if [T:394] there's [T:412] any [T:429] room [T:451] in [T:459] the [T:468] rate [T:498] so [T:524] what [T:547] rate [T:568] are [T:575] you [T:592] looking [T:616] for [T:637] _ [T:765] 25 [T:813] _ [T:83] it [T:96] sounds [T:124] like [T:137] there [T:150] might [T:177] have [T:191] been [T:209] a [T:215] misunderstanding [T:327] on [T:343] the [T:350] rate [T:377]"
+          },
+          "speaker_turn_count": 15,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 10.894,
+            "timestamps_seconds": 41.239
+          },
+          "word_count": 183
+        }
+      ],
+      "device": "cuda",
+      "dtype": "float16",
+      "duration_seconds": 80.14,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "downmixed_to_mono": true,
+        "duration_seconds": 80.14,
+        "load_seconds": 0.041,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 1282240,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 52.186,
+      "step_timings": {
+        "generation_seconds": 52.133,
+        "model_load_seconds": 34.508,
+        "preprocessing_seconds": 0.051,
+        "processing_time": 52.133
+      }
+    },
+    "segments": [
+      {
+        "end": 3.96,
+        "speaker": "SPEAKER_00",
+        "start": 1.79,
+        "text": "thanks for calling freight one can i get your m c number"
+      },
+      {
+        "end": 5.96,
+        "speaker": "SPEAKER_01",
+        "start": 4.64,
+        "text": "1 2 8 0 4 0 9"
+      },
+      {
+        "end": 14.32,
+        "speaker": "SPEAKER_00",
+        "start": 8.54,
+        "text": "just to confirm is your m c number 1 2 8 0 4 0 9 great do you see a reference number"
+      },
+      {
+        "end": 18.59,
+        "speaker": "SPEAKER_01",
+        "start": 17.44,
+        "text": "8 1 9 2 2"
+      },
+      {
+        "end": 23.28,
+        "speaker": "SPEAKER_00",
+        "start": 20.5,
+        "text": "just confirming is the reference number 8 1 9 2 2"
+      },
+      {
+        "end": 41.59,
+        "speaker": "SPEAKER_00",
+        "start": 24.95,
+        "text": "here's the load ten thousand pounds of dry goods needs a fifty three foot dry van and a dedicated truck pickup is in thomasville north carolina on may first between 8 am and 1 pm deliveries in irving texas on um on may fifth between 8 am and 12 pm we're offering 2000 for this load does that work for you"
+      },
+      {
+        "end": 44.36,
+        "speaker": "SPEAKER_01",
+        "start": 43.1,
+        "text": "do you have any room in the rate"
+      },
+      {
+        "end": 49.39,
+        "speaker": "SPEAKER_00",
+        "start": 46.17,
+        "text": "could you repeat that last part for me i just want to make sure i got it right"
+      },
+      {
+        "end": 51.6,
+        "speaker": "SPEAKER_01",
+        "start": 50.24,
+        "text": "do you have any room in the rate"
+      },
+      {
+        "end": 56.37,
+        "speaker": "SPEAKER_00",
+        "start": 52.84,
+        "text": "got it you're asking if there's any room in the rate so what rate are you looking for"
+      },
+      {
+        "end": 58.13,
+        "speaker": "SPEAKER_01",
+        "start": 57.65,
+        "text": "25"
+      },
+      {
+        "end": 63.77,
+        "speaker": "SPEAKER_00",
+        "start": 60.83,
+        "text": "it sounds like there might have been a misunderstanding on the rate"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 7,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 37.06
+      },
+      {
+        "segment_count": 5,
+        "speaker": "SPEAKER_01",
+        "total_talk_time_seconds": 5.57
+      }
+    ],
+    "timeline": [
+      {
+        "end": 1.97,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 1.79,
+        "text": "thanks",
+        "type": "word"
+      },
+      {
+        "end": 2.05,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 1.97,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 2.35,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 2.05,
+        "text": "calling",
+        "type": "word"
+      },
+      {
+        "end": 2.6,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 2.35,
+        "text": "freight",
+        "type": "word"
+      },
+      {
+        "end": 2.81,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 2.6,
+        "text": "one",
+        "type": "word"
+      },
+      {
+        "end": 2.95,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 2.81,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 3.01,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 2.95,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 3.17,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 3.01,
+        "text": "get",
+        "type": "word"
+      },
+      {
+        "end": 3.3,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 3.17,
+        "text": "your",
+        "type": "word"
+      },
+      {
+        "end": 3.45,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 3.3,
+        "text": "m",
+        "type": "word"
+      },
+      {
+        "end": 3.6,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 3.45,
+        "text": "c",
+        "type": "word"
+      },
+      {
+        "end": 3.96,
+        "index": 12,
+        "speaker": "SPEAKER_00",
+        "start": 3.6,
+        "text": "number",
+        "type": "word"
+      },
+      {
+        "end": 4.71,
+        "index": 13,
+        "speaker": "SPEAKER_01",
+        "start": 4.64,
+        "text": "1",
+        "type": "word"
+      },
+      {
+        "end": 4.89,
+        "index": 14,
+        "speaker": "SPEAKER_01",
+        "start": 4.71,
+        "text": "2",
+        "type": "word"
+      },
+      {
+        "end": 5.05,
+        "index": 15,
+        "speaker": "SPEAKER_01",
+        "start": 4.89,
+        "text": "8",
+        "type": "word"
+      },
+      {
+        "end": 5.2,
+        "index": 16,
+        "speaker": "SPEAKER_01",
+        "start": 5.05,
+        "text": "0",
+        "type": "word"
+      },
+      {
+        "end": 5.45,
+        "index": 17,
+        "speaker": "SPEAKER_01",
+        "start": 5.2,
+        "text": "4",
+        "type": "word"
+      },
+      {
+        "end": 5.59,
+        "index": 18,
+        "speaker": "SPEAKER_01",
+        "start": 5.45,
+        "text": "0",
+        "type": "word"
+      },
+      {
+        "end": 5.96,
+        "index": 19,
+        "speaker": "SPEAKER_01",
+        "start": 5.59,
+        "text": "9",
+        "type": "word"
+      },
+      {
+        "end": 8.74,
+        "index": 20,
+        "speaker": "SPEAKER_00",
+        "start": 8.54,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 8.81,
+        "index": 21,
+        "speaker": "SPEAKER_00",
+        "start": 8.74,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 9.25,
+        "index": 22,
+        "speaker": "SPEAKER_00",
+        "start": 8.81,
+        "text": "confirm",
+        "type": "word"
+      },
+      {
+        "end": 9.36,
+        "index": 23,
+        "speaker": "SPEAKER_00",
+        "start": 9.25,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 9.48,
+        "index": 24,
+        "speaker": "SPEAKER_00",
+        "start": 9.36,
+        "text": "your",
+        "type": "word"
+      },
+      {
+        "end": 9.63,
+        "index": 25,
+        "speaker": "SPEAKER_00",
+        "start": 9.48,
+        "text": "m",
+        "type": "word"
+      },
+      {
+        "end": 9.84,
+        "index": 26,
+        "speaker": "SPEAKER_00",
+        "start": 9.63,
+        "text": "c",
+        "type": "word"
+      },
+      {
+        "end": 10.14,
+        "index": 27,
+        "speaker": "SPEAKER_00",
+        "start": 9.84,
+        "text": "number",
+        "type": "word"
+      },
+      {
+        "end": 10.32,
+        "index": 28,
+        "speaker": "SPEAKER_00",
+        "start": 10.14,
+        "text": "1",
+        "type": "word"
+      },
+      {
+        "end": 10.51,
+        "index": 29,
+        "speaker": "SPEAKER_00",
+        "start": 10.32,
+        "text": "2",
+        "type": "word"
+      },
+      {
+        "end": 10.68,
+        "index": 30,
+        "speaker": "SPEAKER_00",
+        "start": 10.51,
+        "text": "8",
+        "type": "word"
+      },
+      {
+        "end": 10.95,
+        "index": 31,
+        "speaker": "SPEAKER_00",
+        "start": 10.68,
+        "text": "0",
+        "type": "word"
+      },
+      {
+        "end": 11.3,
+        "index": 32,
+        "speaker": "SPEAKER_00",
+        "start": 10.95,
+        "text": "4",
+        "type": "word"
+      },
+      {
+        "end": 11.47,
+        "index": 33,
+        "speaker": "SPEAKER_00",
+        "start": 11.3,
+        "text": "0",
+        "type": "word"
+      },
+      {
+        "end": 11.85,
+        "index": 34,
+        "speaker": "SPEAKER_00",
+        "start": 11.47,
+        "text": "9",
+        "type": "word"
+      },
+      {
+        "end": 13.25,
+        "index": 35,
+        "speaker": "SPEAKER_00",
+        "start": 12.99,
+        "text": "great",
+        "type": "word"
+      },
+      {
+        "end": 13.33,
+        "index": 36,
+        "speaker": "SPEAKER_00",
+        "start": 13.25,
+        "text": "do",
+        "type": "word"
+      },
+      {
+        "end": 13.44,
+        "index": 37,
+        "speaker": "SPEAKER_00",
+        "start": 13.33,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 13.6,
+        "index": 38,
+        "speaker": "SPEAKER_00",
+        "start": 13.44,
+        "text": "see",
+        "type": "word"
+      },
+      {
+        "end": 13.65,
+        "index": 39,
+        "speaker": "SPEAKER_00",
+        "start": 13.6,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 14.02,
+        "index": 40,
+        "speaker": "SPEAKER_00",
+        "start": 13.65,
+        "text": "reference",
+        "type": "word"
+      },
+      {
+        "end": 14.32,
+        "index": 41,
+        "speaker": "SPEAKER_00",
+        "start": 14.02,
+        "text": "number",
+        "type": "word"
+      },
+      {
+        "end": 17.57,
+        "index": 42,
+        "speaker": "SPEAKER_01",
+        "start": 17.44,
+        "text": "8",
+        "type": "word"
+      },
+      {
+        "end": 17.81,
+        "index": 43,
+        "speaker": "SPEAKER_01",
+        "start": 17.57,
+        "text": "1",
+        "type": "word"
+      },
+      {
+        "end": 18.09,
+        "index": 44,
+        "speaker": "SPEAKER_01",
+        "start": 17.81,
+        "text": "9",
+        "type": "word"
+      },
+      {
+        "end": 18.22,
+        "index": 45,
+        "speaker": "SPEAKER_01",
+        "start": 18.09,
+        "text": "2",
+        "type": "word"
+      },
+      {
+        "end": 18.59,
+        "index": 46,
+        "speaker": "SPEAKER_01",
+        "start": 18.22,
+        "text": "2",
+        "type": "word"
+      },
+      {
+        "end": 20.68,
+        "index": 47,
+        "speaker": "SPEAKER_00",
+        "start": 20.5,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 21.14,
+        "index": 48,
+        "speaker": "SPEAKER_00",
+        "start": 20.68,
+        "text": "confirming",
+        "type": "word"
+      },
+      {
+        "end": 21.26,
+        "index": 49,
+        "speaker": "SPEAKER_00",
+        "start": 21.14,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 21.34,
+        "index": 50,
+        "speaker": "SPEAKER_00",
+        "start": 21.26,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 21.73,
+        "index": 51,
+        "speaker": "SPEAKER_00",
+        "start": 21.34,
+        "text": "reference",
+        "type": "word"
+      },
+      {
+        "end": 21.98,
+        "index": 52,
+        "speaker": "SPEAKER_00",
+        "start": 21.73,
+        "text": "number",
+        "type": "word"
+      },
+      {
+        "end": 22.19,
+        "index": 53,
+        "speaker": "SPEAKER_00",
+        "start": 21.98,
+        "text": "8",
+        "type": "word"
+      },
+      {
+        "end": 22.39,
+        "index": 54,
+        "speaker": "SPEAKER_00",
+        "start": 22.19,
+        "text": "1",
+        "type": "word"
+      },
+      {
+        "end": 22.62,
+        "index": 55,
+        "speaker": "SPEAKER_00",
+        "start": 22.39,
+        "text": "9",
+        "type": "word"
+      },
+      {
+        "end": 22.83,
+        "index": 56,
+        "speaker": "SPEAKER_00",
+        "start": 22.62,
+        "text": "2",
+        "type": "word"
+      },
+      {
+        "end": 23.28,
+        "index": 57,
+        "speaker": "SPEAKER_00",
+        "start": 22.83,
+        "text": "2",
+        "type": "word"
+      },
+      {
+        "end": 25.21,
+        "index": 58,
+        "speaker": "SPEAKER_00",
+        "start": 24.95,
+        "text": "here's",
+        "type": "word"
+      },
+      {
+        "end": 25.3,
+        "index": 59,
+        "speaker": "SPEAKER_00",
+        "start": 25.21,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 25.68,
+        "index": 60,
+        "speaker": "SPEAKER_00",
+        "start": 25.3,
+        "text": "load",
+        "type": "word"
+      },
+      {
+        "end": 26.26,
+        "index": 61,
+        "speaker": "SPEAKER_00",
+        "start": 26.08,
+        "text": "ten",
+        "type": "word"
+      },
+      {
+        "end": 26.58,
+        "index": 62,
+        "speaker": "SPEAKER_00",
+        "start": 26.26,
+        "text": "thousand",
+        "type": "word"
+      },
+      {
+        "end": 26.88,
+        "index": 63,
+        "speaker": "SPEAKER_00",
+        "start": 26.58,
+        "text": "pounds",
+        "type": "word"
+      },
+      {
+        "end": 26.97,
+        "index": 64,
+        "speaker": "SPEAKER_00",
+        "start": 26.88,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 27.23,
+        "index": 65,
+        "speaker": "SPEAKER_00",
+        "start": 26.97,
+        "text": "dry",
+        "type": "word"
+      },
+      {
+        "end": 27.68,
+        "index": 66,
+        "speaker": "SPEAKER_00",
+        "start": 27.23,
+        "text": "goods",
+        "type": "word"
+      },
+      {
+        "end": 27.9,
+        "index": 67,
+        "speaker": "SPEAKER_00",
+        "start": 27.68,
+        "text": "needs",
+        "type": "word"
+      },
+      {
+        "end": 27.96,
+        "index": 68,
+        "speaker": "SPEAKER_00",
+        "start": 27.9,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 28.29,
+        "index": 69,
+        "speaker": "SPEAKER_00",
+        "start": 27.96,
+        "text": "fifty",
+        "type": "word"
+      },
+      {
+        "end": 28.5,
+        "index": 70,
+        "speaker": "SPEAKER_00",
+        "start": 28.29,
+        "text": "three",
+        "type": "word"
+      },
+      {
+        "end": 28.72,
+        "index": 71,
+        "speaker": "SPEAKER_00",
+        "start": 28.5,
+        "text": "foot",
+        "type": "word"
+      },
+      {
+        "end": 28.98,
+        "index": 72,
+        "speaker": "SPEAKER_00",
+        "start": 28.72,
+        "text": "dry",
+        "type": "word"
+      },
+      {
+        "end": 29.24,
+        "index": 73,
+        "speaker": "SPEAKER_00",
+        "start": 28.98,
+        "text": "van",
+        "type": "word"
+      },
+      {
+        "end": 29.36,
+        "index": 74,
+        "speaker": "SPEAKER_00",
+        "start": 29.24,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 29.42,
+        "index": 75,
+        "speaker": "SPEAKER_00",
+        "start": 29.36,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 30.03,
+        "index": 76,
+        "speaker": "SPEAKER_00",
+        "start": 29.42,
+        "text": "dedicated",
+        "type": "word"
+      },
+      {
+        "end": 30.35,
+        "index": 77,
+        "speaker": "SPEAKER_00",
+        "start": 30.03,
+        "text": "truck",
+        "type": "word"
+      },
+      {
+        "end": 31.33,
+        "index": 78,
+        "speaker": "SPEAKER_00",
+        "start": 31.02,
+        "text": "pickup",
+        "type": "word"
+      },
+      {
+        "end": 31.45,
+        "index": 79,
+        "speaker": "SPEAKER_00",
+        "start": 31.33,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 31.56,
+        "index": 80,
+        "speaker": "SPEAKER_00",
+        "start": 31.45,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 32.11,
+        "index": 81,
+        "speaker": "SPEAKER_00",
+        "start": 31.56,
+        "text": "thomasville",
+        "type": "word"
+      },
+      {
+        "end": 32.33,
+        "index": 82,
+        "speaker": "SPEAKER_00",
+        "start": 32.11,
+        "text": "north",
+        "type": "word"
+      },
+      {
+        "end": 32.87,
+        "index": 83,
+        "speaker": "SPEAKER_00",
+        "start": 32.33,
+        "text": "carolina",
+        "type": "word"
+      },
+      {
+        "end": 33.06,
+        "index": 84,
+        "speaker": "SPEAKER_00",
+        "start": 32.87,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 33.24,
+        "index": 85,
+        "speaker": "SPEAKER_00",
+        "start": 33.06,
+        "text": "may",
+        "type": "word"
+      },
+      {
+        "end": 33.63,
+        "index": 86,
+        "speaker": "SPEAKER_00",
+        "start": 33.24,
+        "text": "first",
+        "type": "word"
+      },
+      {
+        "end": 34.0,
+        "index": 87,
+        "speaker": "SPEAKER_00",
+        "start": 33.63,
+        "text": "between",
+        "type": "word"
+      },
+      {
+        "end": 34.13,
+        "index": 88,
+        "speaker": "SPEAKER_00",
+        "start": 34.0,
+        "text": "8",
+        "type": "word"
+      },
+      {
+        "end": 34.4,
+        "index": 89,
+        "speaker": "SPEAKER_00",
+        "start": 34.13,
+        "text": "am",
+        "type": "word"
+      },
+      {
+        "end": 34.52,
+        "index": 90,
+        "speaker": "SPEAKER_00",
+        "start": 34.4,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 34.69,
+        "index": 91,
+        "speaker": "SPEAKER_00",
+        "start": 34.52,
+        "text": "1",
+        "type": "word"
+      },
+      {
+        "end": 35.05,
+        "index": 92,
+        "speaker": "SPEAKER_00",
+        "start": 34.69,
+        "text": "pm",
+        "type": "word"
+      },
+      {
+        "end": 35.54,
+        "index": 93,
+        "speaker": "SPEAKER_00",
+        "start": 35.05,
+        "text": "deliveries",
+        "type": "word"
+      },
+      {
+        "end": 35.67,
+        "index": 94,
+        "speaker": "SPEAKER_00",
+        "start": 35.54,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 35.99,
+        "index": 95,
+        "speaker": "SPEAKER_00",
+        "start": 35.67,
+        "text": "irving",
+        "type": "word"
+      },
+      {
+        "end": 36.52,
+        "index": 96,
+        "speaker": "SPEAKER_00",
+        "start": 35.99,
+        "text": "texas",
+        "type": "word"
+      },
+      {
+        "end": 36.73,
+        "index": 97,
+        "speaker": "SPEAKER_00",
+        "start": 36.52,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 36.99,
+        "index": 98,
+        "speaker": "SPEAKER_00",
+        "start": 36.78,
+        "text": "um",
+        "type": "word"
+      },
+      {
+        "end": 37.12,
+        "index": 99,
+        "speaker": "SPEAKER_00",
+        "start": 36.99,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 37.3,
+        "index": 100,
+        "speaker": "SPEAKER_00",
+        "start": 37.12,
+        "text": "may",
+        "type": "word"
+      },
+      {
+        "end": 37.6,
+        "index": 101,
+        "speaker": "SPEAKER_00",
+        "start": 37.3,
+        "text": "fifth",
+        "type": "word"
+      },
+      {
+        "end": 37.93,
+        "index": 102,
+        "speaker": "SPEAKER_00",
+        "start": 37.6,
+        "text": "between",
+        "type": "word"
+      },
+      {
+        "end": 38.1,
+        "index": 103,
+        "speaker": "SPEAKER_00",
+        "start": 37.93,
+        "text": "8",
+        "type": "word"
+      },
+      {
+        "end": 38.37,
+        "index": 104,
+        "speaker": "SPEAKER_00",
+        "start": 38.1,
+        "text": "am",
+        "type": "word"
+      },
+      {
+        "end": 38.48,
+        "index": 105,
+        "speaker": "SPEAKER_00",
+        "start": 38.37,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 38.74,
+        "index": 106,
+        "speaker": "SPEAKER_00",
+        "start": 38.48,
+        "text": "12",
+        "type": "word"
+      },
+      {
+        "end": 39.16,
+        "index": 107,
+        "speaker": "SPEAKER_00",
+        "start": 38.74,
+        "text": "pm",
+        "type": "word"
+      },
+      {
+        "end": 39.3,
+        "index": 108,
+        "speaker": "SPEAKER_00",
+        "start": 39.16,
+        "text": "we're",
+        "type": "word"
+      },
+      {
+        "end": 39.64,
+        "index": 109,
+        "speaker": "SPEAKER_00",
+        "start": 39.3,
+        "text": "offering",
+        "type": "word"
+      },
+      {
+        "end": 40.27,
+        "index": 110,
+        "speaker": "SPEAKER_00",
+        "start": 39.64,
+        "text": "2000",
+        "type": "word"
+      },
+      {
+        "end": 40.37,
+        "index": 111,
+        "speaker": "SPEAKER_00",
+        "start": 40.27,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 40.55,
+        "index": 112,
+        "speaker": "SPEAKER_00",
+        "start": 40.37,
+        "text": "this",
+        "type": "word"
+      },
+      {
+        "end": 40.81,
+        "index": 113,
+        "speaker": "SPEAKER_00",
+        "start": 40.55,
+        "text": "load",
+        "type": "word"
+      },
+      {
+        "end": 40.94,
+        "index": 114,
+        "speaker": "SPEAKER_00",
+        "start": 40.81,
+        "text": "does",
+        "type": "word"
+      },
+      {
+        "end": 41.08,
+        "index": 115,
+        "speaker": "SPEAKER_00",
+        "start": 40.94,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 41.27,
+        "index": 116,
+        "speaker": "SPEAKER_00",
+        "start": 41.08,
+        "text": "work",
+        "type": "word"
+      },
+      {
+        "end": 41.37,
+        "index": 117,
+        "speaker": "SPEAKER_00",
+        "start": 41.27,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 41.59,
+        "index": 118,
+        "speaker": "SPEAKER_00",
+        "start": 41.37,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 43.21,
+        "index": 119,
+        "speaker": "SPEAKER_01",
+        "start": 43.1,
+        "text": "do",
+        "type": "word"
+      },
+      {
+        "end": 43.33,
+        "index": 120,
+        "speaker": "SPEAKER_01",
+        "start": 43.21,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 43.54,
+        "index": 121,
+        "speaker": "SPEAKER_01",
+        "start": 43.33,
+        "text": "have",
+        "type": "word"
+      },
+      {
+        "end": 43.7,
+        "index": 122,
+        "speaker": "SPEAKER_01",
+        "start": 43.54,
+        "text": "any",
+        "type": "word"
+      },
+      {
+        "end": 43.9,
+        "index": 123,
+        "speaker": "SPEAKER_01",
+        "start": 43.7,
+        "text": "room",
+        "type": "word"
+      },
+      {
+        "end": 44.0,
+        "index": 124,
+        "speaker": "SPEAKER_01",
+        "start": 43.9,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 44.1,
+        "index": 125,
+        "speaker": "SPEAKER_01",
+        "start": 44.0,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 44.36,
+        "index": 126,
+        "speaker": "SPEAKER_01",
+        "start": 44.1,
+        "text": "rate",
+        "type": "word"
+      },
+      {
+        "end": 46.34,
+        "index": 127,
+        "speaker": "SPEAKER_00",
+        "start": 46.17,
+        "text": "could",
+        "type": "word"
+      },
+      {
+        "end": 46.47,
+        "index": 128,
+        "speaker": "SPEAKER_00",
+        "start": 46.34,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 46.84,
+        "index": 129,
+        "speaker": "SPEAKER_00",
+        "start": 46.47,
+        "text": "repeat",
+        "type": "word"
+      },
+      {
+        "end": 46.97,
+        "index": 130,
+        "speaker": "SPEAKER_00",
+        "start": 46.84,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 47.22,
+        "index": 131,
+        "speaker": "SPEAKER_00",
+        "start": 46.97,
+        "text": "last",
+        "type": "word"
+      },
+      {
+        "end": 47.42,
+        "index": 132,
+        "speaker": "SPEAKER_00",
+        "start": 47.22,
+        "text": "part",
+        "type": "word"
+      },
+      {
+        "end": 47.54,
+        "index": 133,
+        "speaker": "SPEAKER_00",
+        "start": 47.42,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 47.78,
+        "index": 134,
+        "speaker": "SPEAKER_00",
+        "start": 47.54,
+        "text": "me",
+        "type": "word"
+      },
+      {
+        "end": 48.14,
+        "index": 135,
+        "speaker": "SPEAKER_00",
+        "start": 48.02,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 48.33,
+        "index": 136,
+        "speaker": "SPEAKER_00",
+        "start": 48.14,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 48.45,
+        "index": 137,
+        "speaker": "SPEAKER_00",
+        "start": 48.33,
+        "text": "want",
+        "type": "word"
+      },
+      {
+        "end": 48.51,
+        "index": 138,
+        "speaker": "SPEAKER_00",
+        "start": 48.45,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 48.67,
+        "index": 139,
+        "speaker": "SPEAKER_00",
+        "start": 48.51,
+        "text": "make",
+        "type": "word"
+      },
+      {
+        "end": 48.84,
+        "index": 140,
+        "speaker": "SPEAKER_00",
+        "start": 48.67,
+        "text": "sure",
+        "type": "word"
+      },
+      {
+        "end": 48.89,
+        "index": 141,
+        "speaker": "SPEAKER_00",
+        "start": 48.84,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 49.06,
+        "index": 142,
+        "speaker": "SPEAKER_00",
+        "start": 48.89,
+        "text": "got",
+        "type": "word"
+      },
+      {
+        "end": 49.14,
+        "index": 143,
+        "speaker": "SPEAKER_00",
+        "start": 49.06,
+        "text": "it",
+        "type": "word"
+      },
+      {
+        "end": 49.39,
+        "index": 144,
+        "speaker": "SPEAKER_00",
+        "start": 49.14,
+        "text": "right",
+        "type": "word"
+      },
+      {
+        "end": 50.35,
+        "index": 145,
+        "speaker": "SPEAKER_01",
+        "start": 50.24,
+        "text": "do",
+        "type": "word"
+      },
+      {
+        "end": 50.45,
+        "index": 146,
+        "speaker": "SPEAKER_01",
+        "start": 50.35,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 50.68,
+        "index": 147,
+        "speaker": "SPEAKER_01",
+        "start": 50.45,
+        "text": "have",
+        "type": "word"
+      },
+      {
+        "end": 50.88,
+        "index": 148,
+        "speaker": "SPEAKER_01",
+        "start": 50.68,
+        "text": "any",
+        "type": "word"
+      },
+      {
+        "end": 51.12,
+        "index": 149,
+        "speaker": "SPEAKER_01",
+        "start": 50.88,
+        "text": "room",
+        "type": "word"
+      },
+      {
+        "end": 51.22,
+        "index": 150,
+        "speaker": "SPEAKER_01",
+        "start": 51.12,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 51.32,
+        "index": 151,
+        "speaker": "SPEAKER_01",
+        "start": 51.22,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 51.6,
+        "index": 152,
+        "speaker": "SPEAKER_01",
+        "start": 51.32,
+        "text": "rate",
+        "type": "word"
+      },
+      {
+        "end": 53.08,
+        "index": 153,
+        "speaker": "SPEAKER_00",
+        "start": 52.84,
+        "text": "got",
+        "type": "word"
+      },
+      {
+        "end": 53.25,
+        "index": 154,
+        "speaker": "SPEAKER_00",
+        "start": 53.08,
+        "text": "it",
+        "type": "word"
+      },
+      {
+        "end": 53.53,
+        "index": 155,
+        "speaker": "SPEAKER_00",
+        "start": 53.32,
+        "text": "you're",
+        "type": "word"
+      },
+      {
+        "end": 53.84,
+        "index": 156,
+        "speaker": "SPEAKER_00",
+        "start": 53.53,
+        "text": "asking",
+        "type": "word"
+      },
+      {
+        "end": 53.94,
+        "index": 157,
+        "speaker": "SPEAKER_00",
+        "start": 53.84,
+        "text": "if",
+        "type": "word"
+      },
+      {
+        "end": 54.12,
+        "index": 158,
+        "speaker": "SPEAKER_00",
+        "start": 53.94,
+        "text": "there's",
+        "type": "word"
+      },
+      {
+        "end": 54.29,
+        "index": 159,
+        "speaker": "SPEAKER_00",
+        "start": 54.12,
+        "text": "any",
+        "type": "word"
+      },
+      {
+        "end": 54.51,
+        "index": 160,
+        "speaker": "SPEAKER_00",
+        "start": 54.29,
+        "text": "room",
+        "type": "word"
+      },
+      {
+        "end": 54.59,
+        "index": 161,
+        "speaker": "SPEAKER_00",
+        "start": 54.51,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 54.68,
+        "index": 162,
+        "speaker": "SPEAKER_00",
+        "start": 54.59,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 54.98,
+        "index": 163,
+        "speaker": "SPEAKER_00",
+        "start": 54.68,
+        "text": "rate",
+        "type": "word"
+      },
+      {
+        "end": 55.24,
+        "index": 164,
+        "speaker": "SPEAKER_00",
+        "start": 54.98,
+        "text": "so",
+        "type": "word"
+      },
+      {
+        "end": 55.47,
+        "index": 165,
+        "speaker": "SPEAKER_00",
+        "start": 55.24,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 55.68,
+        "index": 166,
+        "speaker": "SPEAKER_00",
+        "start": 55.47,
+        "text": "rate",
+        "type": "word"
+      },
+      {
+        "end": 55.75,
+        "index": 167,
+        "speaker": "SPEAKER_00",
+        "start": 55.68,
+        "text": "are",
+        "type": "word"
+      },
+      {
+        "end": 55.92,
+        "index": 168,
+        "speaker": "SPEAKER_00",
+        "start": 55.75,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 56.16,
+        "index": 169,
+        "speaker": "SPEAKER_00",
+        "start": 55.92,
+        "text": "looking",
+        "type": "word"
+      },
+      {
+        "end": 56.37,
+        "index": 170,
+        "speaker": "SPEAKER_00",
+        "start": 56.16,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 58.13,
+        "index": 171,
+        "speaker": "SPEAKER_01",
+        "start": 57.65,
+        "text": "25",
+        "type": "word"
+      },
+      {
+        "end": 60.96,
+        "index": 172,
+        "speaker": "SPEAKER_00",
+        "start": 60.83,
+        "text": "it",
+        "type": "word"
+      },
+      {
+        "end": 61.24,
+        "index": 173,
+        "speaker": "SPEAKER_00",
+        "start": 60.96,
+        "text": "sounds",
+        "type": "word"
+      },
+      {
+        "end": 61.37,
+        "index": 174,
+        "speaker": "SPEAKER_00",
+        "start": 61.24,
+        "text": "like",
+        "type": "word"
+      },
+      {
+        "end": 61.5,
+        "index": 175,
+        "speaker": "SPEAKER_00",
+        "start": 61.37,
+        "text": "there",
+        "type": "word"
+      },
+      {
+        "end": 61.77,
+        "index": 176,
+        "speaker": "SPEAKER_00",
+        "start": 61.5,
+        "text": "might",
+        "type": "word"
+      },
+      {
+        "end": 61.91,
+        "index": 177,
+        "speaker": "SPEAKER_00",
+        "start": 61.77,
+        "text": "have",
+        "type": "word"
+      },
+      {
+        "end": 62.09,
+        "index": 178,
+        "speaker": "SPEAKER_00",
+        "start": 61.91,
+        "text": "been",
+        "type": "word"
+      },
+      {
+        "end": 62.15,
+        "index": 179,
+        "speaker": "SPEAKER_00",
+        "start": 62.09,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 63.27,
+        "index": 180,
+        "speaker": "SPEAKER_00",
+        "start": 62.15,
+        "text": "misunderstanding",
+        "type": "word"
+      },
+      {
+        "end": 63.43,
+        "index": 181,
+        "speaker": "SPEAKER_00",
+        "start": 63.27,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 63.5,
+        "index": 182,
+        "speaker": "SPEAKER_00",
+        "start": 63.43,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 63.77,
+        "index": 183,
+        "speaker": "SPEAKER_00",
+        "start": 63.5,
+        "text": "rate",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

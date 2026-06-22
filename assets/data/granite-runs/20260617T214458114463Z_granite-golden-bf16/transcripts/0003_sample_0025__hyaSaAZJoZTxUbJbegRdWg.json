@@ -1,0 +1,446 @@
+{
+  "elapsed_seconds": 12.564,
+  "input": {
+    "audio_filename": "sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+    "manifest_conversation_id": "hyaSaAZJoZTxUbJbegRdWg",
+    "manifest_row_number": 4,
+    "manifest_sample_id": "sample_0025",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-17T21:47:10.336147+00:00",
+  "result": {
+    "full_text": "hello hey anne here with the business transfer press star anytime to connect to the carrier press the pound and key in your extension to leave a voicemail press the pound key to return to the queue or you may hang up",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 64.84,
+          "end_seconds": 64.84,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Hello. [Speaker 2]: Hey, Anne here with the business transfer. Press star anytime to connect to the carrier. Press the pound and key in your extension. Press two to leave a voicemail. [Speaker 3]: Press the pound key to return to the queue or you may hang up.",
+            "timestamps": "_ [T:1] hello [T:55] _ [T:273] hey [T:292] anne [T:322] here [T:340] with [T:354] the [T:360] business [T:393] transfer [T:432] _ [T:460] press [T:486] star [T:527] _ [T:588] anytime [T:631] to [T:637] connect [T:670] to [T:676] the [T:684] carrier [T:727] _ [T:752] press [T:775] the [T:781] pound [T:814] and [T:827] key [T:850] in [T:862] your [T:874] extension [T:917] _ [T:920] to [T:923] leave [T:944] a [T:949] voicemail [T:8] _ [T:96] press [T:118] the [T:127] pound [T:161] key [T:180] to [T:193] return [T:229] to [T:236] the [T:245] queue [T:282] or [T:296] you [T:306] may [T:320] hang [T:341] up [T:357]"
+          },
+          "speaker_turn_count": 3,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 2.439,
+            "timestamps_seconds": 10.076
+          },
+          "word_count": 42
+        }
+      ],
+      "device": "cuda",
+      "dtype": "float16",
+      "duration_seconds": 64.84,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "downmixed_to_mono": true,
+        "duration_seconds": 64.84,
+        "load_seconds": 0.039,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 1037440,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 12.564,
+      "step_timings": {
+        "generation_seconds": 12.515,
+        "model_load_seconds": 34.508,
+        "preprocessing_seconds": 0.047,
+        "processing_time": 12.515
+      }
+    },
+    "segments": [
+      {
+        "end": 0.55,
+        "speaker": "SPEAKER_00",
+        "start": 0.01,
+        "text": "hello"
+      },
+      {
+        "end": 12.36,
+        "speaker": "SPEAKER_01",
+        "start": 2.73,
+        "text": "hey anne here with the business transfer press star anytime to connect to the carrier press the pound and key in your extension to leave a voicemail press the pound key to return to"
+      },
+      {
+        "end": 13.57,
+        "speaker": "SPEAKER_02",
+        "start": 12.36,
+        "text": "the queue or you may hang up"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 0.54
+      },
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_01",
+        "total_talk_time_seconds": 9.63
+      },
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_02",
+        "total_talk_time_seconds": 1.21
+      }
+    ],
+    "timeline": [
+      {
+        "end": 0.55,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 0.01,
+        "text": "hello",
+        "type": "word"
+      },
+      {
+        "end": 2.92,
+        "index": 2,
+        "speaker": "SPEAKER_01",
+        "start": 2.73,
+        "text": "hey",
+        "type": "word"
+      },
+      {
+        "end": 3.22,
+        "index": 3,
+        "speaker": "SPEAKER_01",
+        "start": 2.92,
+        "text": "anne",
+        "type": "word"
+      },
+      {
+        "end": 3.4,
+        "index": 4,
+        "speaker": "SPEAKER_01",
+        "start": 3.22,
+        "text": "here",
+        "type": "word"
+      },
+      {
+        "end": 3.54,
+        "index": 5,
+        "speaker": "SPEAKER_01",
+        "start": 3.4,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 3.6,
+        "index": 6,
+        "speaker": "SPEAKER_01",
+        "start": 3.54,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 3.93,
+        "index": 7,
+        "speaker": "SPEAKER_01",
+        "start": 3.6,
+        "text": "business",
+        "type": "word"
+      },
+      {
+        "end": 4.32,
+        "index": 8,
+        "speaker": "SPEAKER_01",
+        "start": 3.93,
+        "text": "transfer",
+        "type": "word"
+      },
+      {
+        "end": 4.86,
+        "index": 9,
+        "speaker": "SPEAKER_01",
+        "start": 4.6,
+        "text": "press",
+        "type": "word"
+      },
+      {
+        "end": 5.27,
+        "index": 10,
+        "speaker": "SPEAKER_01",
+        "start": 4.86,
+        "text": "star",
+        "type": "word"
+      },
+      {
+        "end": 6.31,
+        "index": 11,
+        "speaker": "SPEAKER_01",
+        "start": 5.88,
+        "text": "anytime",
+        "type": "word"
+      },
+      {
+        "end": 6.37,
+        "index": 12,
+        "speaker": "SPEAKER_01",
+        "start": 6.31,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 6.7,
+        "index": 13,
+        "speaker": "SPEAKER_01",
+        "start": 6.37,
+        "text": "connect",
+        "type": "word"
+      },
+      {
+        "end": 6.76,
+        "index": 14,
+        "speaker": "SPEAKER_01",
+        "start": 6.7,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 6.84,
+        "index": 15,
+        "speaker": "SPEAKER_01",
+        "start": 6.76,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 7.27,
+        "index": 16,
+        "speaker": "SPEAKER_01",
+        "start": 6.84,
+        "text": "carrier",
+        "type": "word"
+      },
+      {
+        "end": 7.75,
+        "index": 17,
+        "speaker": "SPEAKER_01",
+        "start": 7.52,
+        "text": "press",
+        "type": "word"
+      },
+      {
+        "end": 7.81,
+        "index": 18,
+        "speaker": "SPEAKER_01",
+        "start": 7.75,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 8.14,
+        "index": 19,
+        "speaker": "SPEAKER_01",
+        "start": 7.81,
+        "text": "pound",
+        "type": "word"
+      },
+      {
+        "end": 8.27,
+        "index": 20,
+        "speaker": "SPEAKER_01",
+        "start": 8.14,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 8.5,
+        "index": 21,
+        "speaker": "SPEAKER_01",
+        "start": 8.27,
+        "text": "key",
+        "type": "word"
+      },
+      {
+        "end": 8.62,
+        "index": 22,
+        "speaker": "SPEAKER_01",
+        "start": 8.5,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 8.74,
+        "index": 23,
+        "speaker": "SPEAKER_01",
+        "start": 8.62,
+        "text": "your",
+        "type": "word"
+      },
+      {
+        "end": 9.17,
+        "index": 24,
+        "speaker": "SPEAKER_01",
+        "start": 8.74,
+        "text": "extension",
+        "type": "word"
+      },
+      {
+        "end": 9.23,
+        "index": 25,
+        "speaker": "SPEAKER_01",
+        "start": 9.2,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 9.44,
+        "index": 26,
+        "speaker": "SPEAKER_01",
+        "start": 9.23,
+        "text": "leave",
+        "type": "word"
+      },
+      {
+        "end": 9.49,
+        "index": 27,
+        "speaker": "SPEAKER_01",
+        "start": 9.44,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 10.08,
+        "index": 28,
+        "speaker": "SPEAKER_01",
+        "start": 9.49,
+        "text": "voicemail",
+        "type": "word"
+      },
+      {
+        "end": 11.18,
+        "index": 29,
+        "speaker": "SPEAKER_01",
+        "start": 10.96,
+        "text": "press",
+        "type": "word"
+      },
+      {
+        "end": 11.27,
+        "index": 30,
+        "speaker": "SPEAKER_01",
+        "start": 11.18,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 11.61,
+        "index": 31,
+        "speaker": "SPEAKER_01",
+        "start": 11.27,
+        "text": "pound",
+        "type": "word"
+      },
+      {
+        "end": 11.8,
+        "index": 32,
+        "speaker": "SPEAKER_01",
+        "start": 11.61,
+        "text": "key",
+        "type": "word"
+      },
+      {
+        "end": 11.93,
+        "index": 33,
+        "speaker": "SPEAKER_01",
+        "start": 11.8,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 12.29,
+        "index": 34,
+        "speaker": "SPEAKER_01",
+        "start": 11.93,
+        "text": "return",
+        "type": "word"
+      },
+      {
+        "end": 12.36,
+        "index": 35,
+        "speaker": "SPEAKER_01",
+        "start": 12.29,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 12.45,
+        "index": 36,
+        "speaker": "SPEAKER_02",
+        "start": 12.36,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 12.82,
+        "index": 37,
+        "speaker": "SPEAKER_02",
+        "start": 12.45,
+        "text": "queue",
+        "type": "word"
+      },
+      {
+        "end": 12.96,
+        "index": 38,
+        "speaker": "SPEAKER_02",
+        "start": 12.82,
+        "text": "or",
+        "type": "word"
+      },
+      {
+        "end": 13.06,
+        "index": 39,
+        "speaker": "SPEAKER_02",
+        "start": 12.96,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 13.2,
+        "index": 40,
+        "speaker": "SPEAKER_02",
+        "start": 13.06,
+        "text": "may",
+        "type": "word"
+      },
+      {
+        "end": 13.41,
+        "index": 41,
+        "speaker": "SPEAKER_02",
+        "start": 13.2,
+        "text": "hang",
+        "type": "word"
+      },
+      {
+        "end": 13.57,
+        "index": 42,
+        "speaker": "SPEAKER_02",
+        "start": 13.41,
+        "text": "up",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

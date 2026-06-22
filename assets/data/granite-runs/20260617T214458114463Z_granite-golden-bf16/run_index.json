@@ -1,0 +1,248 @@
+{
+  "arguments": {
+    "audio_filename": [],
+    "chunk_seconds": 240.0,
+    "device": "auto",
+    "glob": "**/*.wav",
+    "input_dir": "/workspace/backend/tmp/granite_examples/input",
+    "label": "granite-golden-bf16",
+    "limit": null,
+    "manifest_path": "/workspace/backend/tmp/granite_examples/manifest.csv",
+    "manifest_row": [],
+    "max_new_tokens_asr": 4096,
+    "max_new_tokens_saa": 4096,
+    "max_new_tokens_timestamps": 10000,
+    "mode": "rich",
+    "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+    "no_chunking": false,
+    "output_root": "/workspace/backend/tmp/granite_examples/runs",
+    "requirements_path": "/workspace/backend/scripts/dev/requirements-granite-speech.txt",
+    "sample_id": [],
+    "timestamp_chunk_seconds": null,
+    "venv_path": "/workspace/backend/.venvs/granite-speech-plus"
+  },
+  "duplicate_inputs": [
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0023__axRKCHtDGd67PB35Rm8k6R.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0024__jsYiaPoX8VQWuu7JsiXR4U.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0027__XW6VDqxsJWgU7RRfKH5Wcd.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0028__9JCXLukNsZQn7s3i7NDcou.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0039__SuH8aBSNvBfBcMoYSmNfUg.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0051__9vxLA6mhSnBDs7WfZ4F8sb.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    }
+  ],
+  "entries": [
+    {
+      "audio_filename": "sample_0023__axRKCHtDGd67PB35Rm8k6R.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0023__axRKCHtDGd67PB35Rm8k6R.wav",
+      "error_message": "",
+      "index": 1,
+      "manifest_conversation_id": "axRKCHtDGd67PB35Rm8k6R",
+      "manifest_row_number": 2,
+      "manifest_sample_id": "sample_0023",
+      "processing_time_seconds": 10.698,
+      "segments_count": 3,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0001_sample_0023__axRKCHtDGd67PB35Rm8k6R.json"
+    },
+    {
+      "audio_filename": "sample_0024__jsYiaPoX8VQWuu7JsiXR4U.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0024__jsYiaPoX8VQWuu7JsiXR4U.wav",
+      "error_message": "",
+      "index": 2,
+      "manifest_conversation_id": "jsYiaPoX8VQWuu7JsiXR4U",
+      "manifest_row_number": 3,
+      "manifest_sample_id": "sample_0024",
+      "processing_time_seconds": 76.633,
+      "segments_count": 15,
+      "source": "manifest",
+      "speakers_count": 3,
+      "status": "ok",
+      "transcript_json": "transcripts/0002_sample_0024__jsYiaPoX8VQWuu7JsiXR4U.json"
+    },
+    {
+      "audio_filename": "sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0025__hyaSaAZJoZTxUbJbegRdWg.wav",
+      "error_message": "",
+      "index": 3,
+      "manifest_conversation_id": "hyaSaAZJoZTxUbJbegRdWg",
+      "manifest_row_number": 4,
+      "manifest_sample_id": "sample_0025",
+      "processing_time_seconds": 12.564,
+      "segments_count": 3,
+      "source": "manifest",
+      "speakers_count": 3,
+      "status": "ok",
+      "transcript_json": "transcripts/0003_sample_0025__hyaSaAZJoZTxUbJbegRdWg.json"
+    },
+    {
+      "audio_filename": "sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0026__3njwgqaHnuWH2RUqD3diFQ.wav",
+      "error_message": "",
+      "index": 4,
+      "manifest_conversation_id": "3njwgqaHnuWH2RUqD3diFQ",
+      "manifest_row_number": 5,
+      "manifest_sample_id": "sample_0026",
+      "processing_time_seconds": 52.186,
+      "segments_count": 12,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0004_sample_0026__3njwgqaHnuWH2RUqD3diFQ.json"
+    },
+    {
+      "audio_filename": "sample_0027__XW6VDqxsJWgU7RRfKH5Wcd.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0027__XW6VDqxsJWgU7RRfKH5Wcd.wav",
+      "error_message": "",
+      "index": 5,
+      "manifest_conversation_id": "XW6VDqxsJWgU7RRfKH5Wcd",
+      "manifest_row_number": 6,
+      "manifest_sample_id": "sample_0027",
+      "processing_time_seconds": 129.859,
+      "segments_count": 30,
+      "source": "manifest",
+      "speakers_count": 3,
+      "status": "ok",
+      "transcript_json": "transcripts/0005_sample_0027__XW6VDqxsJWgU7RRfKH5Wcd.json"
+    },
+    {
+      "audio_filename": "sample_0028__9JCXLukNsZQn7s3i7NDcou.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0028__9JCXLukNsZQn7s3i7NDcou.wav",
+      "error_message": "",
+      "index": 6,
+      "manifest_conversation_id": "9JCXLukNsZQn7s3i7NDcou",
+      "manifest_row_number": 7,
+      "manifest_sample_id": "sample_0028",
+      "processing_time_seconds": 62.976,
+      "segments_count": 18,
+      "source": "manifest",
+      "speakers_count": 4,
+      "status": "ok",
+      "transcript_json": "transcripts/0006_sample_0028__9JCXLukNsZQn7s3i7NDcou.json"
+    },
+    {
+      "audio_filename": "sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+      "error_message": "",
+      "index": 7,
+      "manifest_conversation_id": "8NLMTLRVat2wQPisfAqowJ",
+      "manifest_row_number": 8,
+      "manifest_sample_id": "sample_0033",
+      "processing_time_seconds": 1.345,
+      "segments_count": 1,
+      "source": "manifest",
+      "speakers_count": 1,
+      "status": "ok",
+      "transcript_json": "transcripts/0007_sample_0033__8NLMTLRVat2wQPisfAqowJ.json"
+    },
+    {
+      "audio_filename": "sample_0039__SuH8aBSNvBfBcMoYSmNfUg.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0039__SuH8aBSNvBfBcMoYSmNfUg.wav",
+      "error_message": "",
+      "index": 8,
+      "manifest_conversation_id": "SuH8aBSNvBfBcMoYSmNfUg",
+      "manifest_row_number": 9,
+      "manifest_sample_id": "sample_0039",
+      "processing_time_seconds": 86.482,
+      "segments_count": 21,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0008_sample_0039__SuH8aBSNvBfBcMoYSmNfUg.json"
+    },
+    {
+      "audio_filename": "sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+      "error_message": "",
+      "index": 9,
+      "manifest_conversation_id": "Wxdx298DmHs6wXpc9Mxr2e",
+      "manifest_row_number": 10,
+      "manifest_sample_id": "sample_0044",
+      "processing_time_seconds": 17.417,
+      "segments_count": 5,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0009_sample_0044__Wxdx298DmHs6wXpc9Mxr2e.json"
+    },
+    {
+      "audio_filename": "sample_0051__9vxLA6mhSnBDs7WfZ4F8sb.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0051__9vxLA6mhSnBDs7WfZ4F8sb.wav",
+      "error_message": "",
+      "index": 10,
+      "manifest_conversation_id": "9vxLA6mhSnBDs7WfZ4F8sb",
+      "manifest_row_number": 11,
+      "manifest_sample_id": "sample_0051",
+      "processing_time_seconds": 39.454,
+      "segments_count": 8,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0010_sample_0051__9vxLA6mhSnBDs7WfZ4F8sb.json"
+    }
+  ],
+  "manifest_skipped": [],
+  "pre_warm": {
+    "device": "cuda",
+    "dtype": "float16",
+    "model_load_seconds": 34.508,
+    "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+    "pre_warm_elapsed_seconds": 44.885
+  },
+  "pre_warm_seconds": 44.885,
+  "run_directory": "/workspace/backend/tmp/granite_examples/runs/20260617T214458114463Z_granite-golden-bf16",
+  "run_finished_at": "2026-06-17T21:53:52.633014+00:00",
+  "run_started_at": "2026-06-17T21:44:58.116949+00:00",
+  "summary": {
+    "duplicates_skipped": 10,
+    "errors": 0,
+    "manifest_rows_skipped": 0,
+    "ok": 10,
+    "total_inputs_discovered": 20,
+    "total_unique_inputs": 10
+  }
+}

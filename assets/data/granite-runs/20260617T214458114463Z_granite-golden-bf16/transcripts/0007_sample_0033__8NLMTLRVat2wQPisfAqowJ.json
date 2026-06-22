@@ -1,0 +1,96 @@
+{
+  "elapsed_seconds": 1.345,
+  "input": {
+    "audio_filename": "sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+    "manifest_conversation_id": "8NLMTLRVat2wQPisfAqowJ",
+    "manifest_row_number": 8,
+    "manifest_sample_id": "sample_0033",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-17T21:51:27.929835+00:00",
+  "result": {
+    "full_text": "hello",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 100.04,
+          "end_seconds": 100.04,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Hello",
+            "timestamps": "_ [T:1] hello [T:33] _ [T:1]"
+          },
+          "speaker_turn_count": 1,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 0.438,
+            "timestamps_seconds": 0.849
+          },
+          "word_count": 1
+        }
+      ],
+      "device": "cuda",
+      "dtype": "float16",
+      "duration_seconds": 100.04,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "downmixed_to_mono": true,
+        "duration_seconds": 100.04,
+        "load_seconds": 0.049,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 1600640,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0033__8NLMTLRVat2wQPisfAqowJ.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 1.345,
+      "step_timings": {
+        "generation_seconds": 1.287,
+        "model_load_seconds": 34.508,
+        "preprocessing_seconds": 0.057,
+        "processing_time": 1.287
+      }
+    },
+    "segments": [
+      {
+        "end": 0.33,
+        "speaker": "SPEAKER_00",
+        "start": 0.01,
+        "text": "hello"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 0.32
+      }
+    ],
+    "timeline": [
+      {
+        "end": 0.33,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 0.01,
+        "text": "hello",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

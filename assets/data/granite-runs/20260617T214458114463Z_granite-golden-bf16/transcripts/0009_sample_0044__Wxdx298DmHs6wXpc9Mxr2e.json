@@ -1,0 +1,581 @@
+{
+  "elapsed_seconds": 17.417,
+  "input": {
+    "audio_filename": "sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+    "manifest_conversation_id": "Wxdx298DmHs6wXpc9Mxr2e",
+    "manifest_row_number": 10,
+    "manifest_sample_id": "sample_0044",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-17T21:52:55.759365+00:00",
+  "result": {
+    "full_text": "hi it's marin the ai assistant of lincoln park veterinary hospital on a recorded line can i help you schedule an appointment no all right is there something else i can help you with today no thank you for calling before you go how satisfied were you with this interaction on a scale of one to five stars",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 23.163,
+          "end_seconds": 23.163,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Hi, it's Marianne. The AI assistant of Lincoln Park Veterinary Hospital on a recorded line. Can I help you schedule an appointment? [Speaker 2]: No. [Speaker 1]: All right. Is there something else I can help you with today? [Speaker 2]: No. [Speaker 1]: Thank you for calling. Before you go, how satisfied were you with this interaction on a scale of one to five stars?",
+            "timestamps": "_ [T:119] hi [T:147] it's [T:166] marin [T:209] _ [T:212] the [T:224] ai [T:248] assistant [T:290] of [T:298] lincoln [T:324] park [T:351] veterinary [T:390] hospital [T:433] on [T:439] a [T:444] recorded [T:483] line [T:511] _ [T:526] can [T:540] i [T:549] help [T:574] you [T:581] schedule [T:619] an [T:626] appointment [T:670] _ [T:796] no [T:838] _ [T:33] all [T:45] right [T:65] _ [T:96] is [T:110] there [T:122] something [T:153] else [T:174] i [T:181] can [T:195] help [T:218] you [T:227] with [T:246] today [T:281] _ [T:386] no [T:424] _ [T:621] thank [T:650] you [T:658] for [T:671] calling [T:711] _ [T:740] before [T:772] you [T:784] go [T:821] _ [T:833] how [T:857] satisfied [T:920] were [T:932] you [T:954] with [T:968] this [T:986] interaction [T:49] on [T:64] a [T:69] scale [T:103] of [T:114] one [T:140] to [T:145] five [T:168] stars [T:219] _ [T:304]"
+          },
+          "speaker_turn_count": 5,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 3.314,
+            "timestamps_seconds": 14.089
+          },
+          "word_count": 58
+        }
+      ],
+      "device": "cuda",
+      "dtype": "float16",
+      "duration_seconds": 23.163,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "downmixed_to_mono": false,
+        "duration_seconds": 23.163,
+        "load_seconds": 0.013,
+        "original_channels": 1,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 370608,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0044__Wxdx298DmHs6wXpc9Mxr2e.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 17.417,
+      "step_timings": {
+        "generation_seconds": 17.403,
+        "model_load_seconds": 34.508,
+        "preprocessing_seconds": 0.013,
+        "processing_time": 17.403
+      }
+    },
+    "segments": [
+      {
+        "end": 6.7,
+        "speaker": "SPEAKER_00",
+        "start": 1.19,
+        "text": "hi it's marin the ai assistant of lincoln park veterinary hospital on a recorded line can i help you schedule an appointment"
+      },
+      {
+        "end": 8.38,
+        "speaker": "SPEAKER_01",
+        "start": 7.96,
+        "text": "no"
+      },
+      {
+        "end": 12.81,
+        "speaker": "SPEAKER_00",
+        "start": 10.33,
+        "text": "all right is there something else i can help you with today"
+      },
+      {
+        "end": 14.24,
+        "speaker": "SPEAKER_01",
+        "start": 13.86,
+        "text": "no"
+      },
+      {
+        "end": 22.19,
+        "speaker": "SPEAKER_00",
+        "start": 16.21,
+        "text": "thank you for calling before you go how satisfied were you with this interaction on a scale of one to five stars"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 3,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 13.97
+      },
+      {
+        "segment_count": 2,
+        "speaker": "SPEAKER_01",
+        "total_talk_time_seconds": 0.8
+      }
+    ],
+    "timeline": [
+      {
+        "end": 1.47,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 1.19,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 1.66,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 1.47,
+        "text": "it's",
+        "type": "word"
+      },
+      {
+        "end": 2.09,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 1.66,
+        "text": "marin",
+        "type": "word"
+      },
+      {
+        "end": 2.24,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 2.12,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 2.48,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 2.24,
+        "text": "ai",
+        "type": "word"
+      },
+      {
+        "end": 2.9,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 2.48,
+        "text": "assistant",
+        "type": "word"
+      },
+      {
+        "end": 2.98,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 2.9,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 3.24,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 2.98,
+        "text": "lincoln",
+        "type": "word"
+      },
+      {
+        "end": 3.51,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 3.24,
+        "text": "park",
+        "type": "word"
+      },
+      {
+        "end": 3.9,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 3.51,
+        "text": "veterinary",
+        "type": "word"
+      },
+      {
+        "end": 4.33,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 3.9,
+        "text": "hospital",
+        "type": "word"
+      },
+      {
+        "end": 4.39,
+        "index": 12,
+        "speaker": "SPEAKER_00",
+        "start": 4.33,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 4.44,
+        "index": 13,
+        "speaker": "SPEAKER_00",
+        "start": 4.39,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 4.83,
+        "index": 14,
+        "speaker": "SPEAKER_00",
+        "start": 4.44,
+        "text": "recorded",
+        "type": "word"
+      },
+      {
+        "end": 5.11,
+        "index": 15,
+        "speaker": "SPEAKER_00",
+        "start": 4.83,
+        "text": "line",
+        "type": "word"
+      },
+      {
+        "end": 5.4,
+        "index": 16,
+        "speaker": "SPEAKER_00",
+        "start": 5.26,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 5.49,
+        "index": 17,
+        "speaker": "SPEAKER_00",
+        "start": 5.4,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 5.74,
+        "index": 18,
+        "speaker": "SPEAKER_00",
+        "start": 5.49,
+        "text": "help",
+        "type": "word"
+      },
+      {
+        "end": 5.81,
+        "index": 19,
+        "speaker": "SPEAKER_00",
+        "start": 5.74,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 6.19,
+        "index": 20,
+        "speaker": "SPEAKER_00",
+        "start": 5.81,
+        "text": "schedule",
+        "type": "word"
+      },
+      {
+        "end": 6.26,
+        "index": 21,
+        "speaker": "SPEAKER_00",
+        "start": 6.19,
+        "text": "an",
+        "type": "word"
+      },
+      {
+        "end": 6.7,
+        "index": 22,
+        "speaker": "SPEAKER_00",
+        "start": 6.26,
+        "text": "appointment",
+        "type": "word"
+      },
+      {
+        "end": 8.38,
+        "index": 23,
+        "speaker": "SPEAKER_01",
+        "start": 7.96,
+        "text": "no",
+        "type": "word"
+      },
+      {
+        "end": 10.45,
+        "index": 24,
+        "speaker": "SPEAKER_00",
+        "start": 10.33,
+        "text": "all",
+        "type": "word"
+      },
+      {
+        "end": 10.65,
+        "index": 25,
+        "speaker": "SPEAKER_00",
+        "start": 10.45,
+        "text": "right",
+        "type": "word"
+      },
+      {
+        "end": 11.1,
+        "index": 26,
+        "speaker": "SPEAKER_00",
+        "start": 10.96,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 11.22,
+        "index": 27,
+        "speaker": "SPEAKER_00",
+        "start": 11.1,
+        "text": "there",
+        "type": "word"
+      },
+      {
+        "end": 11.53,
+        "index": 28,
+        "speaker": "SPEAKER_00",
+        "start": 11.22,
+        "text": "something",
+        "type": "word"
+      },
+      {
+        "end": 11.74,
+        "index": 29,
+        "speaker": "SPEAKER_00",
+        "start": 11.53,
+        "text": "else",
+        "type": "word"
+      },
+      {
+        "end": 11.81,
+        "index": 30,
+        "speaker": "SPEAKER_00",
+        "start": 11.74,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 11.95,
+        "index": 31,
+        "speaker": "SPEAKER_00",
+        "start": 11.81,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 12.18,
+        "index": 32,
+        "speaker": "SPEAKER_00",
+        "start": 11.95,
+        "text": "help",
+        "type": "word"
+      },
+      {
+        "end": 12.27,
+        "index": 33,
+        "speaker": "SPEAKER_00",
+        "start": 12.18,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 12.46,
+        "index": 34,
+        "speaker": "SPEAKER_00",
+        "start": 12.27,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 12.81,
+        "index": 35,
+        "speaker": "SPEAKER_00",
+        "start": 12.46,
+        "text": "today",
+        "type": "word"
+      },
+      {
+        "end": 14.24,
+        "index": 36,
+        "speaker": "SPEAKER_01",
+        "start": 13.86,
+        "text": "no",
+        "type": "word"
+      },
+      {
+        "end": 16.5,
+        "index": 37,
+        "speaker": "SPEAKER_00",
+        "start": 16.21,
+        "text": "thank",
+        "type": "word"
+      },
+      {
+        "end": 16.58,
+        "index": 38,
+        "speaker": "SPEAKER_00",
+        "start": 16.5,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 16.71,
+        "index": 39,
+        "speaker": "SPEAKER_00",
+        "start": 16.58,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 17.11,
+        "index": 40,
+        "speaker": "SPEAKER_00",
+        "start": 16.71,
+        "text": "calling",
+        "type": "word"
+      },
+      {
+        "end": 17.72,
+        "index": 41,
+        "speaker": "SPEAKER_00",
+        "start": 17.4,
+        "text": "before",
+        "type": "word"
+      },
+      {
+        "end": 17.84,
+        "index": 42,
+        "speaker": "SPEAKER_00",
+        "start": 17.72,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 18.21,
+        "index": 43,
+        "speaker": "SPEAKER_00",
+        "start": 17.84,
+        "text": "go",
+        "type": "word"
+      },
+      {
+        "end": 18.57,
+        "index": 44,
+        "speaker": "SPEAKER_00",
+        "start": 18.33,
+        "text": "how",
+        "type": "word"
+      },
+      {
+        "end": 19.2,
+        "index": 45,
+        "speaker": "SPEAKER_00",
+        "start": 18.57,
+        "text": "satisfied",
+        "type": "word"
+      },
+      {
+        "end": 19.32,
+        "index": 46,
+        "speaker": "SPEAKER_00",
+        "start": 19.2,
+        "text": "were",
+        "type": "word"
+      },
+      {
+        "end": 19.54,
+        "index": 47,
+        "speaker": "SPEAKER_00",
+        "start": 19.32,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 19.68,
+        "index": 48,
+        "speaker": "SPEAKER_00",
+        "start": 19.54,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 19.86,
+        "index": 49,
+        "speaker": "SPEAKER_00",
+        "start": 19.68,
+        "text": "this",
+        "type": "word"
+      },
+      {
+        "end": 20.49,
+        "index": 50,
+        "speaker": "SPEAKER_00",
+        "start": 19.86,
+        "text": "interaction",
+        "type": "word"
+      },
+      {
+        "end": 20.64,
+        "index": 51,
+        "speaker": "SPEAKER_00",
+        "start": 20.49,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 20.69,
+        "index": 52,
+        "speaker": "SPEAKER_00",
+        "start": 20.64,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 21.03,
+        "index": 53,
+        "speaker": "SPEAKER_00",
+        "start": 20.69,
+        "text": "scale",
+        "type": "word"
+      },
+      {
+        "end": 21.14,
+        "index": 54,
+        "speaker": "SPEAKER_00",
+        "start": 21.03,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 21.4,
+        "index": 55,
+        "speaker": "SPEAKER_00",
+        "start": 21.14,
+        "text": "one",
+        "type": "word"
+      },
+      {
+        "end": 21.45,
+        "index": 56,
+        "speaker": "SPEAKER_00",
+        "start": 21.4,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 21.68,
+        "index": 57,
+        "speaker": "SPEAKER_00",
+        "start": 21.45,
+        "text": "five",
+        "type": "word"
+      },
+      {
+        "end": 22.19,
+        "index": 58,
+        "speaker": "SPEAKER_00",
+        "start": 21.68,
+        "text": "stars",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}
