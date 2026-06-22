@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Post Title | GitHub Pages Template</title>
+    <meta
+      name="description"
+      content="Minimal static blog-post template with timestamped audio links."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="post-layout">
+      <article class="post" aria-label="Blog post template">
+        <header class="post-header">
+          <!-- TODO: Replace with your real post title -->
+          <h1>Blog Post Title Goes Here</h1>
+
+          <!-- TODO: Replace with subtitle, byline, and date -->
+          <p class="subtitle">A short subtitle or summary for this post.</p>
+          <p class="meta">
+            <span class="byline">By Your Name</span>
+            <span aria-hidden="true">•</span>
+            <time datetime="2026-06-22">June 22, 2026</time>
+          </p>
+        </header>
+
+        <section aria-labelledby="intro-heading" class="section">
+          <h2 id="intro-heading">Intro</h2>
+          <!-- TODO: Replace this intro text with your own content -->
+          <p>
+            This is a starter intro paragraph. Use it to explain what the post is about,
+            what listeners should focus on, or why the audio matters.
+          </p>
+        </section>
+
+        <section aria-labelledby="audio-heading" class="section">
+          <h2 id="audio-heading">Audio</h2>
+          <!-- TODO: Replace the src path with your local audio file -->
+          <audio id="post-audio" controls preload="metadata" src="assets/audio/your-audio-file.mp3">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p class="caption">
+            Jump to moments:
+            <!--
+              Edit `data-seek` values to the exact timestamps you want.
+              Supported formats in this template: ss, mm:ss, or hh:mm:ss
+            -->
+            <a href="#t=00:12" data-seek="00:12">00:12 Intro setup</a>,
+            <a href="#t=01:45" data-seek="01:45">01:45 Main point</a>,
+            <a href="#t=00:10:30" data-seek="00:10:30">00:10:30 Deep dive</a>
+          </p>
+        </section>
+
+        <section aria-labelledby="body-heading" class="section">
+          <h2 id="body-heading">Body</h2>
+          <!-- TODO: Replace these paragraphs with your article/transcript text -->
+          <p>
+            Add your body content here. You can link directly to key audio moments like
+            <a href="#t=02:30" data-seek="02:30">02:30</a> or
+            <a href="#t=00:14:05" data-seek="00:14:05">00:14:05</a>.
+          </p>
+          <p>
+            Keep writing as needed. This template stays intentionally simple so it works as a
+            static GitHub Pages page with no build step.
+          </p>
+        </section>
+
+        <section aria-labelledby="code-heading" class="section">
+          <h2 id="code-heading">Code Snippet</h2>
+          <pre><code class="language-python">def _generate_text(self, *, audio_waveform: Any, prompt: str, max_new_tokens: int) -> tuple[str, float]:
+      self._ensure_model_loaded()
+      assert self._torch is not None
+
+      prompt_chat = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": prompt},
+      ]
+      prompt_text = self._tokenizer.apply_chat_template(prompt_chat, tokenize=False, add_generation_prompt=True)
+
+      generation_started = time.time()
+      audio_input = audio_waveform.detach().to("cpu")
+
+      try:
+        model_inputs = self._processor(prompt_text, audio_input, device=self._device, return_tensors="pt")
+      except TypeError:
+        model_inputs = self._processor(
+          prompt_text,
+          audio_input,
+          sampling_rate=TARGET_SAMPLE_RATE,
+          return_tensors="pt",
+        )
+
+      if hasattr(model_inputs, "to"):
+        model_inputs = model_inputs.to(self._device)
+
+      with self._torch.inference_mode():
+        outputs = self._model.generate(
+          **model_inputs,
+          max_new_tokens=max_new_tokens,
+          do_sample=False,
+          num_beams=1,
+        )
+
+      input_token_count = int(model_inputs["input_ids"].shape[-1]) if "input_ids" in model_inputs else 0
+      new_tokens = outputs[0, input_token_count:]
+      output_text = self._tokenizer.decode(new_tokens, add_special_tokens=False, skip_special_tokens=True)
+</code></pre>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
