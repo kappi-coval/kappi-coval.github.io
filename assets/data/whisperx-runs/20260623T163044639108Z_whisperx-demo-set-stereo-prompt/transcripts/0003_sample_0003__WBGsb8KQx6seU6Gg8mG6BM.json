@@ -1,0 +1,5800 @@
+{
+  "elapsed_seconds": 16.708,
+  "input": {
+    "audio_filename": "sample_0003__WBGsb8KQx6seU6Gg8mG6BM.wav",
+    "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0003__WBGsb8KQx6seU6Gg8mG6BM.wav",
+    "manifest_conversation_id": "WBGsb8KQx6seU6Gg8mG6BM",
+    "manifest_row_number": 4,
+    "manifest_sample_id": "sample_0003",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:31:28.737788+00:00",
+  "result": {
+    "full_text": "Thanks for calling QIIME. One moment while we locate an account with your phone number. If you have an account with QIIME, press 1. If you are interested in joining QIIME or want more info on product and services, press 2. To report fraudulent or unauthorized account activity, press 3. To verify a QIIME account, please enter the phone number associated with your account, starting with the area code. To verify your identity, please enter the last four digits of your social security number. Thank you. you Now please enter the last four digits of your active card. Thank you. Press 7 at any time for your account balance. For the status of a direct deposit, press 1. To activate your card, press 2. To update your PIN, press 3. To request a new card or report your card lost or stolen, press 4. To file or receive the status of a dispute, press 5. For help updating your account information or logging in, press 6. To hear your account balance, press 7. you For assistance with a different Chime product or feature, press 8. To verbally describe your issue, press 9. To hear these options again, press star. For questions about your savings account or automatic savings feature, press 1. If you have a question about your checking account, press 2. If you need help with our Spot Me or Pay Anyone feature, press 3. To learn more about MyPay, press 4. For help with our rewards programs, including referrals and cash bonuses, press 5. you If you have questions about filing your taxes or your tax return, press 6. To hear these options again, press star. To go to the main menu, press 8. To learn about SpotMe and how to enroll, press 1. If SpotMe is enabled on your account and you're experiencing an issue, press 2. If you are calling about recent changes to your SpotMe feature, press 3. To learn about the benefits of Pay Anyone and how it works, press 4. you If you are trying to cancel a Pay Anyone transfer, press 5. If you are experiencing issues with Pay Anyone, press 6. To hear these options again, press star. To go to the main menu, press 8. Pay Anyone is the fastest way to send money to your coworkers, friends, and family. To use this free feature, open the Chime app and tap on the Pay Anyone tab. If you transfer money to a friend with a Chime account, the money will be available instantly. you If you transfer money to a friend who is not yet a Chime member, the recipient will receive an invitation to join Chime. Your friend will have 14 days to enroll and be approved for a CHIME checking account. If the recipient doesn't claim your transfer within 14 days, the funds will be sent back to your account automatically. Press star to repeat this message. Press 8 to go to the main menu. To end this call, please hang up. Press star to repeat this message. you Press 8 to go to the main menu. you. To end this call, please hang up. Goodbye. Hi. I have a question about pay anyone. What's the most money I can send to someone in a you day using pay anyone? I need to pay my landlord $800 for rent, and I want to make sure I can can do it all at once, can do it all at once, can do it all at once, can do it all at once, Thanks for watching!",
+    "metadata": {
+      "alignment_enabled": false,
+      "channel_num_speakers": 1,
+      "initial_prompt": "This is a conversation transcript between a user and an agent.",
+      "is_stereo": true,
+      "language": "en",
+      "num_channels": 2,
+      "num_speakers": 2,
+      "processing_time": 13.927,
+      "requested_num_speakers": 2,
+      "step_timings": {
+        "channel_0_processing_time": 10.231,
+        "channel_1_processing_time": 3.696
+      },
+      "stereo_channel_recombine_strategy": "chronological_by_timestamp",
+      "stereo_channel_split_enabled": true,
+      "stereo_channel_summaries": [
+        {
+          "channel_index": 0,
+          "channel_name": "left",
+          "error": null,
+          "language": "en",
+          "processing_time": 10.231,
+          "segments_count": 50,
+          "speaker": "SPEAKER_00",
+          "words_count": 521
+        },
+        {
+          "channel_index": 1,
+          "channel_name": "right",
+          "error": null,
+          "language": "en",
+          "processing_time": 3.696,
+          "segments_count": 11,
+          "speaker": "SPEAKER_01",
+          "words_count": 75
+        }
+      ],
+      "stereo_input": {
+        "duration_seconds": 240.52,
+        "frame_count": 3848322,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "source_num_channels": 2
+      },
+      "stereo_mode": "reconcile",
+      "stereo_mode_ignored": true,
+      "stereo_reconciliation": "split_channels_then_chronological_merge",
+      "vad_enabled": false
+    },
+    "segments": [
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.52,
+        "end": 1.52,
+        "speaker": "SPEAKER_00",
+        "start": 0.0,
+        "text": "Thanks for calling QIIME.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 0.56,
+            "mean_magnitude": 0.007928987964987755,
+            "probability": 0.86083984375,
+            "speaker": "SPEAKER_00",
+            "start": 0.0,
+            "word": "Thanks"
+          },
+          {
+            "end": 0.72,
+            "mean_magnitude": 0.012464809231460094,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 0.56,
+            "word": "for"
+          },
+          {
+            "end": 1.04,
+            "mean_magnitude": 0.030841713771224022,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 0.72,
+            "word": "calling"
+          },
+          {
+            "end": 1.52,
+            "mean_magnitude": 0.03210173547267914,
+            "probability": 0.7640380859375,
+            "speaker": "SPEAKER_00",
+            "start": 1.04,
+            "word": "QIIME."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.76,
+        "end": 5.02,
+        "speaker": "SPEAKER_00",
+        "start": 2.26,
+        "text": "One moment while we locate an account with your phone number.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 2.74,
+            "mean_magnitude": 0.009886725805699825,
+            "probability": 0.978515625,
+            "speaker": "SPEAKER_00",
+            "start": 2.26,
+            "word": "One"
+          },
+          {
+            "end": 3.04,
+            "mean_magnitude": 0.07102352380752563,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 2.74,
+            "word": "moment"
+          },
+          {
+            "end": 3.24,
+            "mean_magnitude": 0.0480920784175396,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 3.04,
+            "word": "while"
+          },
+          {
+            "end": 3.38,
+            "mean_magnitude": 0.05165053904056549,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 3.24,
+            "word": "we"
+          },
+          {
+            "end": 3.72,
+            "mean_magnitude": 0.04275934025645256,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 3.38,
+            "word": "locate"
+          },
+          {
+            "end": 3.94,
+            "mean_magnitude": 0.03411203622817993,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 3.72,
+            "word": "an"
+          },
+          {
+            "end": 4.14,
+            "mean_magnitude": 0.021858882158994675,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 3.94,
+            "word": "account"
+          },
+          {
+            "end": 4.38,
+            "mean_magnitude": 0.030584875494241714,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 4.14,
+            "word": "with"
+          },
+          {
+            "end": 4.54,
+            "mean_magnitude": 0.022597145289182663,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 4.38,
+            "word": "your"
+          },
+          {
+            "end": 4.74,
+            "mean_magnitude": 0.033652838319540024,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 4.54,
+            "word": "phone"
+          },
+          {
+            "end": 5.02,
+            "mean_magnitude": 0.06056525930762291,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 4.74,
+            "word": "number."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.1599999999999993,
+        "end": 8.1,
+        "speaker": "SPEAKER_00",
+        "start": 5.94,
+        "text": "If you have an account with QIIME, press 1.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 6.42,
+            "mean_magnitude": 0.0030264814849942923,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 5.94,
+            "word": "If"
+          },
+          {
+            "end": 6.54,
+            "mean_magnitude": 0.029176076874136925,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 6.42,
+            "word": "you"
+          },
+          {
+            "end": 6.7,
+            "mean_magnitude": 0.05307363346219063,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 6.54,
+            "word": "have"
+          },
+          {
+            "end": 6.82,
+            "mean_magnitude": 0.0513422004878521,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 6.7,
+            "word": "an"
+          },
+          {
+            "end": 7.0,
+            "mean_magnitude": 0.03202486038208008,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 6.82,
+            "word": "account"
+          },
+          {
+            "end": 7.24,
+            "mean_magnitude": 0.038988567888736725,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 7.0,
+            "word": "with"
+          },
+          {
+            "end": 7.62,
+            "mean_magnitude": 0.03982608765363693,
+            "probability": 0.9996337890625,
+            "speaker": "SPEAKER_00",
+            "start": 7.24,
+            "word": "QIIME,"
+          },
+          {
+            "end": 7.88,
+            "mean_magnitude": 0.010808811523020267,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 7.68,
+            "word": "press"
+          },
+          {
+            "end": 8.1,
+            "mean_magnitude": 0.027059398591518402,
+            "probability": 0.97119140625,
+            "speaker": "SPEAKER_00",
+            "start": 7.88,
+            "word": "1."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.76,
+        "end": 13.16,
+        "speaker": "SPEAKER_00",
+        "start": 8.4,
+        "text": "If you are interested in joining QIIME or want more info on product and services, press 2.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 8.88,
+            "mean_magnitude": 0.002147078514099121,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 8.4,
+            "word": "If"
+          },
+          {
+            "end": 9.02,
+            "mean_magnitude": 0.032582949846982956,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 8.88,
+            "word": "you"
+          },
+          {
+            "end": 9.14,
+            "mean_magnitude": 0.07995972782373428,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 9.02,
+            "word": "are"
+          },
+          {
+            "end": 9.5,
+            "mean_magnitude": 0.04293500632047653,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 9.14,
+            "word": "interested"
+          },
+          {
+            "end": 9.72,
+            "mean_magnitude": 0.025725824758410454,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 9.5,
+            "word": "in"
+          },
+          {
+            "end": 10.0,
+            "mean_magnitude": 0.053511325269937515,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 9.72,
+            "word": "joining"
+          },
+          {
+            "end": 10.46,
+            "mean_magnitude": 0.03584164381027222,
+            "probability": 0.9998779296875,
+            "speaker": "SPEAKER_00",
+            "start": 10.0,
+            "word": "QIIME"
+          },
+          {
+            "end": 10.58,
+            "mean_magnitude": 0.01261606253683567,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 10.46,
+            "word": "or"
+          },
+          {
+            "end": 10.8,
+            "mean_magnitude": 0.041505344212055206,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 10.58,
+            "word": "want"
+          },
+          {
+            "end": 10.98,
+            "mean_magnitude": 0.04211483895778656,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 10.8,
+            "word": "more"
+          },
+          {
+            "end": 11.3,
+            "mean_magnitude": 0.0419207401573658,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 10.98,
+            "word": "info"
+          },
+          {
+            "end": 11.54,
+            "mean_magnitude": 0.039907049387693405,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 11.3,
+            "word": "on"
+          },
+          {
+            "end": 11.86,
+            "mean_magnitude": 0.03633790463209152,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_00",
+            "start": 11.54,
+            "word": "product"
+          },
+          {
+            "end": 12.02,
+            "mean_magnitude": 0.02838146686553955,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 11.86,
+            "word": "and"
+          },
+          {
+            "end": 12.42,
+            "mean_magnitude": 0.033082202076911926,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 12.02,
+            "word": "services,"
+          },
+          {
+            "end": 12.92,
+            "mean_magnitude": 0.0025429651141166687,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 12.66,
+            "word": "press"
+          },
+          {
+            "end": 13.16,
+            "mean_magnitude": 0.022027302533388138,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 12.92,
+            "word": "2."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.8000000000000007,
+        "end": 17.3,
+        "speaker": "SPEAKER_00",
+        "start": 13.5,
+        "text": "To report fraudulent or unauthorized account activity, press 3.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 13.98,
+            "mean_magnitude": 0.00022765000176150352,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 13.5,
+            "word": "To"
+          },
+          {
+            "end": 14.26,
+            "mean_magnitude": 0.03252801299095154,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 13.98,
+            "word": "report"
+          },
+          {
+            "end": 14.86,
+            "mean_magnitude": 0.03889017179608345,
+            "probability": 0.999755859375,
+            "speaker": "SPEAKER_00",
+            "start": 14.26,
+            "word": "fraudulent"
+          },
+          {
+            "end": 15.08,
+            "mean_magnitude": 0.03294496610760689,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 14.86,
+            "word": "or"
+          },
+          {
+            "end": 15.76,
+            "mean_magnitude": 0.05518246814608574,
+            "probability": 0.9996744791666666,
+            "speaker": "SPEAKER_00",
+            "start": 15.08,
+            "word": "unauthorized"
+          },
+          {
+            "end": 16.04,
+            "mean_magnitude": 0.03210058808326721,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 15.76,
+            "word": "account"
+          },
+          {
+            "end": 16.5,
+            "mean_magnitude": 0.032605867832899094,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 16.04,
+            "word": "activity,"
+          },
+          {
+            "end": 17.02,
+            "mean_magnitude": 0.006464358884841204,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 16.74,
+            "word": "press"
+          },
+          {
+            "end": 17.3,
+            "mean_magnitude": 0.028813982382416725,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 17.02,
+            "word": "3."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 6.260000000000002,
+        "end": 23.92,
+        "speaker": "SPEAKER_00",
+        "start": 17.66,
+        "text": "To verify a QIIME account, please enter the phone number associated with your account, starting with the area code.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 18.14,
+            "mean_magnitude": 0.00017570654745213687,
+            "probability": 0.98291015625,
+            "speaker": "SPEAKER_00",
+            "start": 17.66,
+            "word": "To"
+          },
+          {
+            "end": 18.46,
+            "mean_magnitude": 0.06466998904943466,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 18.14,
+            "word": "verify"
+          },
+          {
+            "end": 18.74,
+            "mean_magnitude": 0.039519935846328735,
+            "probability": 0.9873046875,
+            "speaker": "SPEAKER_00",
+            "start": 18.46,
+            "word": "a"
+          },
+          {
+            "end": 19.06,
+            "mean_magnitude": 0.03644893318414688,
+            "probability": 0.9993896484375,
+            "speaker": "SPEAKER_00",
+            "start": 18.74,
+            "word": "QIIME"
+          },
+          {
+            "end": 19.1,
+            "mean_magnitude": 0.01064286194741726,
+            "probability": 0.7060546875,
+            "speaker": "SPEAKER_00",
+            "start": 19.06,
+            "word": "account,"
+          },
+          {
+            "end": 20.12,
+            "mean_magnitude": 0.0001733873359626159,
+            "probability": 0.951171875,
+            "speaker": "SPEAKER_00",
+            "start": 19.1,
+            "word": "please"
+          },
+          {
+            "end": 20.42,
+            "mean_magnitude": 0.03552664443850517,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 20.12,
+            "word": "enter"
+          },
+          {
+            "end": 20.68,
+            "mean_magnitude": 0.03130532056093216,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 20.42,
+            "word": "the"
+          },
+          {
+            "end": 20.88,
+            "mean_magnitude": 0.03190496563911438,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 20.68,
+            "word": "phone"
+          },
+          {
+            "end": 21.1,
+            "mean_magnitude": 0.05659196153283119,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 20.88,
+            "word": "number"
+          },
+          {
+            "end": 21.58,
+            "mean_magnitude": 0.029600907117128372,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 21.1,
+            "word": "associated"
+          },
+          {
+            "end": 21.92,
+            "mean_magnitude": 0.03550343960523605,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 21.58,
+            "word": "with"
+          },
+          {
+            "end": 22.08,
+            "mean_magnitude": 0.02402404509484768,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 21.92,
+            "word": "your"
+          },
+          {
+            "end": 22.44,
+            "mean_magnitude": 0.03725523501634598,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 22.08,
+            "word": "account,"
+          },
+          {
+            "end": 23.0,
+            "mean_magnitude": 0.018869580700993538,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 22.6,
+            "word": "starting"
+          },
+          {
+            "end": 23.24,
+            "mean_magnitude": 0.04475794732570648,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 23.0,
+            "word": "with"
+          },
+          {
+            "end": 23.38,
+            "mean_magnitude": 0.02613043040037155,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 23.24,
+            "word": "the"
+          },
+          {
+            "end": 23.6,
+            "mean_magnitude": 0.038781892508268356,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 23.38,
+            "word": "area"
+          },
+          {
+            "end": 23.92,
+            "mean_magnitude": 0.03353416174650192,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 23.6,
+            "word": "code."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 5.199999999999999,
+        "end": 29.8,
+        "speaker": "SPEAKER_00",
+        "start": 24.6,
+        "text": "To verify your identity, please enter the last four digits of your social security number.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 25.12,
+            "mean_magnitude": 0.0,
+            "probability": 0.64306640625,
+            "speaker": "SPEAKER_00",
+            "start": 24.6,
+            "word": "To"
+          },
+          {
+            "end": 25.58,
+            "mean_magnitude": 0.027725212275981903,
+            "probability": 0.9892578125,
+            "speaker": "SPEAKER_00",
+            "start": 25.12,
+            "word": "verify"
+          },
+          {
+            "end": 25.96,
+            "mean_magnitude": 0.03903793916106224,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 25.58,
+            "word": "your"
+          },
+          {
+            "end": 26.36,
+            "mean_magnitude": 0.04513609781861305,
+            "probability": 0.98291015625,
+            "speaker": "SPEAKER_00",
+            "start": 25.96,
+            "word": "identity,"
+          },
+          {
+            "end": 26.96,
+            "mean_magnitude": 0.013660761527717113,
+            "probability": 0.98828125,
+            "speaker": "SPEAKER_00",
+            "start": 26.62,
+            "word": "please"
+          },
+          {
+            "end": 27.22,
+            "mean_magnitude": 0.04493799805641174,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 26.96,
+            "word": "enter"
+          },
+          {
+            "end": 27.48,
+            "mean_magnitude": 0.030225995928049088,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 27.22,
+            "word": "the"
+          },
+          {
+            "end": 27.72,
+            "mean_magnitude": 0.04938970506191254,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 27.48,
+            "word": "last"
+          },
+          {
+            "end": 27.98,
+            "mean_magnitude": 0.01635940931737423,
+            "probability": 0.7998046875,
+            "speaker": "SPEAKER_00",
+            "start": 27.72,
+            "word": "four"
+          },
+          {
+            "end": 28.3,
+            "mean_magnitude": 0.04351665824651718,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 27.98,
+            "word": "digits"
+          },
+          {
+            "end": 28.52,
+            "mean_magnitude": 0.012660563923418522,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 28.3,
+            "word": "of"
+          },
+          {
+            "end": 28.68,
+            "mean_magnitude": 0.033630967140197754,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 28.52,
+            "word": "your"
+          },
+          {
+            "end": 28.96,
+            "mean_magnitude": 0.03278457745909691,
+            "probability": 0.537109375,
+            "speaker": "SPEAKER_00",
+            "start": 28.68,
+            "word": "social"
+          },
+          {
+            "end": 29.26,
+            "mean_magnitude": 0.022502943873405457,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 28.96,
+            "word": "security"
+          },
+          {
+            "end": 29.8,
+            "mean_magnitude": 0.03436782583594322,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 29.26,
+            "word": "number."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.3999999999999986,
+        "end": 29.48,
+        "speaker": "SPEAKER_01",
+        "start": 28.080000000000002,
+        "text": "Thank you.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 29.48,
+            "mean_magnitude": 0.0,
+            "probability": 0.189697265625,
+            "speaker": "SPEAKER_01",
+            "start": 28.080000000000002,
+            "word": "Thank"
+          },
+          {
+            "end": 29.48,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 29.48,
+            "word": "you."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.17999999999999972,
+        "end": 30.18,
+        "speaker": "SPEAKER_01",
+        "start": 30.0,
+        "text": "you",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 30.18,
+            "mean_magnitude": 0.0,
+            "probability": 0.343505859375,
+            "speaker": "SPEAKER_01",
+            "start": 30.0,
+            "word": "you"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.080000000000002,
+        "end": 33.74,
+        "speaker": "SPEAKER_00",
+        "start": 30.66,
+        "text": "Now please enter the last four digits of your active card.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 31.18,
+            "mean_magnitude": 0.006797973997890949,
+            "probability": 0.98291015625,
+            "speaker": "SPEAKER_00",
+            "start": 30.66,
+            "word": "Now"
+          },
+          {
+            "end": 31.36,
+            "mean_magnitude": 0.02598223090171814,
+            "probability": 0.79296875,
+            "speaker": "SPEAKER_00",
+            "start": 31.18,
+            "word": "please"
+          },
+          {
+            "end": 31.68,
+            "mean_magnitude": 0.041475336998701096,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 31.36,
+            "word": "enter"
+          },
+          {
+            "end": 31.9,
+            "mean_magnitude": 0.0297075267881155,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 31.68,
+            "word": "the"
+          },
+          {
+            "end": 32.14,
+            "mean_magnitude": 0.04939069598913193,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 31.9,
+            "word": "last"
+          },
+          {
+            "end": 32.4,
+            "mean_magnitude": 0.023083746433258057,
+            "probability": 0.9677734375,
+            "speaker": "SPEAKER_00",
+            "start": 32.14,
+            "word": "four"
+          },
+          {
+            "end": 32.72,
+            "mean_magnitude": 0.04032431170344353,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 32.4,
+            "word": "digits"
+          },
+          {
+            "end": 32.96,
+            "mean_magnitude": 0.024178266525268555,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 32.72,
+            "word": "of"
+          },
+          {
+            "end": 33.1,
+            "mean_magnitude": 0.0396357960999012,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 32.96,
+            "word": "your"
+          },
+          {
+            "end": 33.42,
+            "mean_magnitude": 0.03171093389391899,
+            "probability": 0.9638671875,
+            "speaker": "SPEAKER_00",
+            "start": 33.1,
+            "word": "active"
+          },
+          {
+            "end": 33.74,
+            "mean_magnitude": 0.028995085507631302,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 33.42,
+            "word": "card."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.7000000000000028,
+        "end": 35.36,
+        "speaker": "SPEAKER_00",
+        "start": 34.66,
+        "text": "Thank you.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 35.18,
+            "mean_magnitude": 0.013472069054841995,
+            "probability": 0.9755859375,
+            "speaker": "SPEAKER_00",
+            "start": 34.66,
+            "word": "Thank"
+          },
+          {
+            "end": 35.36,
+            "mean_magnitude": 0.01607345975935459,
+            "probability": 0.97509765625,
+            "speaker": "SPEAKER_00",
+            "start": 35.18,
+            "word": "you."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.700000000000003,
+        "end": 38.42,
+        "speaker": "SPEAKER_00",
+        "start": 35.72,
+        "text": "Press 7 at any time for your account balance.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 36.24,
+            "mean_magnitude": 0.006047322414815426,
+            "probability": 0.96142578125,
+            "speaker": "SPEAKER_00",
+            "start": 35.72,
+            "word": "Press"
+          },
+          {
+            "end": 36.54,
+            "mean_magnitude": 0.027068398892879486,
+            "probability": 0.8388671875,
+            "speaker": "SPEAKER_00",
+            "start": 36.24,
+            "word": "7"
+          },
+          {
+            "end": 36.96,
+            "mean_magnitude": 0.030213261023163795,
+            "probability": 0.9443359375,
+            "speaker": "SPEAKER_00",
+            "start": 36.54,
+            "word": "at"
+          },
+          {
+            "end": 37.22,
+            "mean_magnitude": 0.032779429107904434,
+            "probability": 0.9921875,
+            "speaker": "SPEAKER_00",
+            "start": 36.96,
+            "word": "any"
+          },
+          {
+            "end": 37.52,
+            "mean_magnitude": 0.04675387591123581,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 37.22,
+            "word": "time"
+          },
+          {
+            "end": 37.68,
+            "mean_magnitude": 0.04079444333910942,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 37.52,
+            "word": "for"
+          },
+          {
+            "end": 37.84,
+            "mean_magnitude": 0.03914067894220352,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 37.68,
+            "word": "your"
+          },
+          {
+            "end": 38.06,
+            "mean_magnitude": 0.035522669553756714,
+            "probability": 0.99267578125,
+            "speaker": "SPEAKER_00",
+            "start": 37.84,
+            "word": "account"
+          },
+          {
+            "end": 38.42,
+            "mean_magnitude": 0.04781157150864601,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 38.06,
+            "word": "balance."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.6399999999999935,
+        "end": 41.48,
+        "speaker": "SPEAKER_00",
+        "start": 38.84,
+        "text": "For the status of a direct deposit, press 1.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 39.36,
+            "mean_magnitude": 0.00025286307209171355,
+            "probability": 0.97412109375,
+            "speaker": "SPEAKER_00",
+            "start": 38.84,
+            "word": "For"
+          },
+          {
+            "end": 39.46,
+            "mean_magnitude": 0.039099596440792084,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 39.36,
+            "word": "the"
+          },
+          {
+            "end": 39.78,
+            "mean_magnitude": 0.03669910505414009,
+            "probability": 0.98828125,
+            "speaker": "SPEAKER_00",
+            "start": 39.46,
+            "word": "status"
+          },
+          {
+            "end": 40.0,
+            "mean_magnitude": 0.03241248428821564,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 39.78,
+            "word": "of"
+          },
+          {
+            "end": 40.1,
+            "mean_magnitude": 0.03275665268301964,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 40.0,
+            "word": "a"
+          },
+          {
+            "end": 40.34,
+            "mean_magnitude": 0.03260599076747894,
+            "probability": 0.9736328125,
+            "speaker": "SPEAKER_00",
+            "start": 40.1,
+            "word": "direct"
+          },
+          {
+            "end": 40.78,
+            "mean_magnitude": 0.028028929606080055,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 40.34,
+            "word": "deposit,"
+          },
+          {
+            "end": 41.22,
+            "mean_magnitude": 0.0030807654839009047,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 40.98,
+            "word": "press"
+          },
+          {
+            "end": 41.48,
+            "mean_magnitude": 0.03366023674607277,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 41.22,
+            "word": "1."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.020000000000003,
+        "end": 43.82,
+        "speaker": "SPEAKER_00",
+        "start": 41.8,
+        "text": "To activate your card, press 2.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 42.32,
+            "mean_magnitude": 0.00020813575247302651,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 41.8,
+            "word": "To"
+          },
+          {
+            "end": 42.68,
+            "mean_magnitude": 0.028865639120340347,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 42.32,
+            "word": "activate"
+          },
+          {
+            "end": 42.94,
+            "mean_magnitude": 0.03056422807276249,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 42.68,
+            "word": "your"
+          },
+          {
+            "end": 43.28,
+            "mean_magnitude": 0.0459415428340435,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 42.94,
+            "word": "card,"
+          },
+          {
+            "end": 43.6,
+            "mean_magnitude": 0.01078869216144085,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 43.38,
+            "word": "press"
+          },
+          {
+            "end": 43.82,
+            "mean_magnitude": 0.02052275836467743,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 43.6,
+            "word": "2."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.8800000000000026,
+        "end": 46.02,
+        "speaker": "SPEAKER_00",
+        "start": 44.14,
+        "text": "To update your PIN, press 3.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 44.66,
+            "mean_magnitude": 0.0003236660559196025,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 44.14,
+            "word": "To"
+          },
+          {
+            "end": 44.96,
+            "mean_magnitude": 0.038814570754766464,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 44.66,
+            "word": "update"
+          },
+          {
+            "end": 45.16,
+            "mean_magnitude": 0.04185981675982475,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 44.96,
+            "word": "your"
+          },
+          {
+            "end": 45.42,
+            "mean_magnitude": 0.04614230617880821,
+            "probability": 0.972412109375,
+            "speaker": "SPEAKER_00",
+            "start": 45.16,
+            "word": "PIN,"
+          },
+          {
+            "end": 45.8,
+            "mean_magnitude": 0.009794543497264385,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 45.54,
+            "word": "press"
+          },
+          {
+            "end": 46.02,
+            "mean_magnitude": 0.026575235649943352,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 45.8,
+            "word": "3."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.039999999999999,
+        "end": 50.38,
+        "speaker": "SPEAKER_00",
+        "start": 46.34,
+        "text": "To request a new card or report your card lost or stolen, press 4.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 46.86,
+            "mean_magnitude": 0.0002431392640573904,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 46.34,
+            "word": "To"
+          },
+          {
+            "end": 47.2,
+            "mean_magnitude": 0.03704828396439552,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 46.86,
+            "word": "request"
+          },
+          {
+            "end": 47.4,
+            "mean_magnitude": 0.029499350115656853,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 47.2,
+            "word": "a"
+          },
+          {
+            "end": 47.52,
+            "mean_magnitude": 0.07877780497074127,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 47.4,
+            "word": "new"
+          },
+          {
+            "end": 47.9,
+            "mean_magnitude": 0.04252784699201584,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 47.52,
+            "word": "card"
+          },
+          {
+            "end": 48.1,
+            "mean_magnitude": 0.032191239297389984,
+            "probability": 0.9912109375,
+            "speaker": "SPEAKER_00",
+            "start": 47.9,
+            "word": "or"
+          },
+          {
+            "end": 48.38,
+            "mean_magnitude": 0.045993056148290634,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 48.1,
+            "word": "report"
+          },
+          {
+            "end": 48.64,
+            "mean_magnitude": 0.0337313637137413,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 48.38,
+            "word": "your"
+          },
+          {
+            "end": 48.9,
+            "mean_magnitude": 0.0408959686756134,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 48.64,
+            "word": "card"
+          },
+          {
+            "end": 49.2,
+            "mean_magnitude": 0.04998195171356201,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 48.9,
+            "word": "lost"
+          },
+          {
+            "end": 49.42,
+            "mean_magnitude": 0.013683969154953957,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 49.2,
+            "word": "or"
+          },
+          {
+            "end": 49.76,
+            "mean_magnitude": 0.04108715057373047,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 49.42,
+            "word": "stolen,"
+          },
+          {
+            "end": 50.14,
+            "mean_magnitude": 0.010505303740501404,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 49.92,
+            "word": "press"
+          },
+          {
+            "end": 50.38,
+            "mean_magnitude": 0.01955598220229149,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 50.14,
+            "word": "4."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.6199999999999974,
+        "end": 54.0,
+        "speaker": "SPEAKER_00",
+        "start": 50.38,
+        "text": "To file or receive the status of a dispute, press 5.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 51.2,
+            "mean_magnitude": 0.013345134444534779,
+            "probability": 0.8203125,
+            "speaker": "SPEAKER_00",
+            "start": 50.38,
+            "word": "To"
+          },
+          {
+            "end": 51.54,
+            "mean_magnitude": 0.03199225664138794,
+            "probability": 0.97119140625,
+            "speaker": "SPEAKER_00",
+            "start": 51.2,
+            "word": "file"
+          },
+          {
+            "end": 51.9,
+            "mean_magnitude": 0.025218598544597626,
+            "probability": 0.92333984375,
+            "speaker": "SPEAKER_00",
+            "start": 51.54,
+            "word": "or"
+          },
+          {
+            "end": 52.18,
+            "mean_magnitude": 0.0440654493868351,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 51.9,
+            "word": "receive"
+          },
+          {
+            "end": 52.44,
+            "mean_magnitude": 0.020635142922401428,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 52.18,
+            "word": "the"
+          },
+          {
+            "end": 52.78,
+            "mean_magnitude": 0.03141702711582184,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_00",
+            "start": 52.44,
+            "word": "status"
+          },
+          {
+            "end": 52.96,
+            "mean_magnitude": 0.026865068823099136,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 52.78,
+            "word": "of"
+          },
+          {
+            "end": 53.06,
+            "mean_magnitude": 0.03426004573702812,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 52.96,
+            "word": "a"
+          },
+          {
+            "end": 53.34,
+            "mean_magnitude": 0.02114686369895935,
+            "probability": 0.9921875,
+            "speaker": "SPEAKER_00",
+            "start": 53.06,
+            "word": "dispute,"
+          },
+          {
+            "end": 53.74,
+            "mean_magnitude": 0.004486264195293188,
+            "probability": 0.98681640625,
+            "speaker": "SPEAKER_00",
+            "start": 53.56,
+            "word": "press"
+          },
+          {
+            "end": 54.0,
+            "mean_magnitude": 0.023572951555252075,
+            "probability": 0.92578125,
+            "speaker": "SPEAKER_00",
+            "start": 53.74,
+            "word": "5."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.5799999999999983,
+        "end": 57.96,
+        "speaker": "SPEAKER_00",
+        "start": 54.38,
+        "text": "For help updating your account information or logging in, press 6.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 54.96,
+            "mean_magnitude": 0.0003678617940749973,
+            "probability": 0.91748046875,
+            "speaker": "SPEAKER_00",
+            "start": 54.38,
+            "word": "For"
+          },
+          {
+            "end": 55.16,
+            "mean_magnitude": 0.055495910346508026,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 54.96,
+            "word": "help"
+          },
+          {
+            "end": 55.48,
+            "mean_magnitude": 0.02019571140408516,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 55.16,
+            "word": "updating"
+          },
+          {
+            "end": 55.74,
+            "mean_magnitude": 0.0676279291510582,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 55.48,
+            "word": "your"
+          },
+          {
+            "end": 55.98,
+            "mean_magnitude": 0.03673899173736572,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 55.74,
+            "word": "account"
+          },
+          {
+            "end": 56.3,
+            "mean_magnitude": 0.03129952400922775,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 55.98,
+            "word": "information"
+          },
+          {
+            "end": 56.82,
+            "mean_magnitude": 0.02962697111070156,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 56.3,
+            "word": "or"
+          },
+          {
+            "end": 57.16,
+            "mean_magnitude": 0.04615648090839386,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 56.82,
+            "word": "logging"
+          },
+          {
+            "end": 57.34,
+            "mean_magnitude": 0.048515308648347855,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 57.16,
+            "word": "in,"
+          },
+          {
+            "end": 57.74,
+            "mean_magnitude": 0.00512573542073369,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 57.48,
+            "word": "press"
+          },
+          {
+            "end": 57.96,
+            "mean_magnitude": 0.017303744331002235,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 57.74,
+            "word": "6."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.239999999999995,
+        "end": 60.62,
+        "speaker": "SPEAKER_00",
+        "start": 58.38,
+        "text": "To hear your account balance, press 7.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 58.94,
+            "mean_magnitude": 0.0001982348330784589,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 58.38,
+            "word": "To"
+          },
+          {
+            "end": 59.12,
+            "mean_magnitude": 0.02275625802576542,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 58.94,
+            "word": "hear"
+          },
+          {
+            "end": 59.26,
+            "mean_magnitude": 0.04644978418946266,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 59.12,
+            "word": "your"
+          },
+          {
+            "end": 59.5,
+            "mean_magnitude": 0.03938174247741699,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 59.26,
+            "word": "account"
+          },
+          {
+            "end": 59.84,
+            "mean_magnitude": 0.03906992822885513,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 59.5,
+            "word": "balance,"
+          },
+          {
+            "end": 60.38,
+            "mean_magnitude": 0.004767894744873047,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 60.1,
+            "word": "press"
+          },
+          {
+            "end": 60.62,
+            "mean_magnitude": 0.027841154485940933,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 60.38,
+            "word": "7."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.17999999999999972,
+        "end": 60.18,
+        "speaker": "SPEAKER_01",
+        "start": 60.0,
+        "text": "you",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 60.18,
+            "mean_magnitude": 0.0,
+            "probability": 0.343505859375,
+            "speaker": "SPEAKER_01",
+            "start": 60.0,
+            "word": "you"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.760000000000005,
+        "end": 64.68,
+        "speaker": "SPEAKER_00",
+        "start": 60.92,
+        "text": "For assistance with a different Chime product or feature, press 8.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 61.48,
+            "mean_magnitude": 0.0002633809926919639,
+            "probability": 0.9931640625,
+            "speaker": "SPEAKER_00",
+            "start": 60.92,
+            "word": "For"
+          },
+          {
+            "end": 61.78,
+            "mean_magnitude": 0.03258531540632248,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 61.48,
+            "word": "assistance"
+          },
+          {
+            "end": 62.24,
+            "mean_magnitude": 0.023608684539794922,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 61.78,
+            "word": "with"
+          },
+          {
+            "end": 62.36,
+            "mean_magnitude": 0.035534605383872986,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 62.24,
+            "word": "a"
+          },
+          {
+            "end": 62.64,
+            "mean_magnitude": 0.026235034689307213,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 62.36,
+            "word": "different"
+          },
+          {
+            "end": 62.96,
+            "mean_magnitude": 0.025494152680039406,
+            "probability": 0.814453125,
+            "speaker": "SPEAKER_00",
+            "start": 62.64,
+            "word": "Chime"
+          },
+          {
+            "end": 63.16,
+            "mean_magnitude": 0.022331438958644867,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 62.96,
+            "word": "product"
+          },
+          {
+            "end": 63.52,
+            "mean_magnitude": 0.027744261547923088,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 63.16,
+            "word": "or"
+          },
+          {
+            "end": 63.78,
+            "mean_magnitude": 0.02280927076935768,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 63.52,
+            "word": "feature,"
+          },
+          {
+            "end": 64.4,
+            "mean_magnitude": 0.004128585569560528,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 64.08,
+            "word": "press"
+          },
+          {
+            "end": 64.68,
+            "mean_magnitude": 0.023352833464741707,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 64.4,
+            "word": "8."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.5799999999999983,
+        "end": 67.5,
+        "speaker": "SPEAKER_00",
+        "start": 64.92,
+        "text": "To verbally describe your issue, press 9.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 65.46,
+            "mean_magnitude": 0.0015499963192269206,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 64.92,
+            "word": "To"
+          },
+          {
+            "end": 65.74,
+            "mean_magnitude": 0.044095490127801895,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 65.46,
+            "word": "verbally"
+          },
+          {
+            "end": 66.12,
+            "mean_magnitude": 0.026311006397008896,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 65.74,
+            "word": "describe"
+          },
+          {
+            "end": 66.44,
+            "mean_magnitude": 0.0403156504034996,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 66.12,
+            "word": "your"
+          },
+          {
+            "end": 66.74,
+            "mean_magnitude": 0.019023023545742035,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 66.44,
+            "word": "issue,"
+          },
+          {
+            "end": 67.24,
+            "mean_magnitude": 0.00331987370736897,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 66.94,
+            "word": "press"
+          },
+          {
+            "end": 67.5,
+            "mean_magnitude": 0.029578356072306633,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 67.24,
+            "word": "9."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.9399999999999977,
+        "end": 70.32,
+        "speaker": "SPEAKER_00",
+        "start": 68.38,
+        "text": "To hear these options again, press star.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 68.4,
+            "mean_magnitude": 0.00016450881958007812,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 68.10000000000001,
+            "word": "To"
+          },
+          {
+            "end": 68.58,
+            "mean_magnitude": 0.0317239984869957,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 68.4,
+            "word": "hear"
+          },
+          {
+            "end": 68.78,
+            "mean_magnitude": 0.04886616766452789,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 68.58,
+            "word": "these"
+          },
+          {
+            "end": 69.14,
+            "mean_magnitude": 0.0402088426053524,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 68.78,
+            "word": "options"
+          },
+          {
+            "end": 69.52,
+            "mean_magnitude": 0.03177943825721741,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 69.14,
+            "word": "again,"
+          },
+          {
+            "end": 70.02,
+            "mean_magnitude": 0.009674879722297192,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 69.72,
+            "word": "press"
+          },
+          {
+            "end": 70.32,
+            "mean_magnitude": 0.019436772912740707,
+            "probability": 0.73291015625,
+            "speaker": "SPEAKER_00",
+            "start": 70.02,
+            "word": "star."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.719999999999999,
+        "end": 77.1,
+        "speaker": "SPEAKER_00",
+        "start": 72.38,
+        "text": "For questions about your savings account or automatic savings feature, press 1.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 72.98,
+            "mean_magnitude": 2.3495356799685396e-05,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 72.38,
+            "word": "For"
+          },
+          {
+            "end": 73.38,
+            "mean_magnitude": 0.026859326288104057,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 72.98,
+            "word": "questions"
+          },
+          {
+            "end": 73.66,
+            "mean_magnitude": 0.03714993968605995,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 73.38,
+            "word": "about"
+          },
+          {
+            "end": 73.88,
+            "mean_magnitude": 0.05272689461708069,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 73.66,
+            "word": "your"
+          },
+          {
+            "end": 74.22,
+            "mean_magnitude": 0.047278258949518204,
+            "probability": 0.9638671875,
+            "speaker": "SPEAKER_00",
+            "start": 73.88,
+            "word": "savings"
+          },
+          {
+            "end": 74.52,
+            "mean_magnitude": 0.03762989863753319,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 74.22,
+            "word": "account"
+          },
+          {
+            "end": 75.02,
+            "mean_magnitude": 0.023280136287212372,
+            "probability": 0.9931640625,
+            "speaker": "SPEAKER_00",
+            "start": 74.52,
+            "word": "or"
+          },
+          {
+            "end": 75.38,
+            "mean_magnitude": 0.057022154331207275,
+            "probability": 0.970703125,
+            "speaker": "SPEAKER_00",
+            "start": 75.02,
+            "word": "automatic"
+          },
+          {
+            "end": 75.8,
+            "mean_magnitude": 0.03474275767803192,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 75.38,
+            "word": "savings"
+          },
+          {
+            "end": 76.3,
+            "mean_magnitude": 0.036929111927747726,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 75.8,
+            "word": "feature,"
+          },
+          {
+            "end": 76.86,
+            "mean_magnitude": 0.007627236656844616,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 76.54,
+            "word": "press"
+          },
+          {
+            "end": 77.1,
+            "mean_magnitude": 0.032966598868370056,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 76.86,
+            "word": "1."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.1200000000000045,
+        "end": 80.22,
+        "speaker": "SPEAKER_00",
+        "start": 77.1,
+        "text": "If you have a question about your checking account, press 2.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 77.6,
+            "mean_magnitude": 0.023172123357653618,
+            "probability": 0.56103515625,
+            "speaker": "SPEAKER_00",
+            "start": 77.1,
+            "word": "If"
+          },
+          {
+            "end": 78.02,
+            "mean_magnitude": 0.0024189630057662725,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 77.6,
+            "word": "you"
+          },
+          {
+            "end": 78.18,
+            "mean_magnitude": 0.04219565540552139,
+            "probability": 0.96484375,
+            "speaker": "SPEAKER_00",
+            "start": 78.02,
+            "word": "have"
+          },
+          {
+            "end": 78.28,
+            "mean_magnitude": 0.015840493142604828,
+            "probability": 0.91650390625,
+            "speaker": "SPEAKER_00",
+            "start": 78.18,
+            "word": "a"
+          },
+          {
+            "end": 78.58,
+            "mean_magnitude": 0.030326347798109055,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 78.28,
+            "word": "question"
+          },
+          {
+            "end": 78.84,
+            "mean_magnitude": 0.026548562571406364,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 78.58,
+            "word": "about"
+          },
+          {
+            "end": 79.02,
+            "mean_magnitude": 0.05636543780565262,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 78.84,
+            "word": "your"
+          },
+          {
+            "end": 79.26,
+            "mean_magnitude": 0.02793239802122116,
+            "probability": 0.99169921875,
+            "speaker": "SPEAKER_00",
+            "start": 79.02,
+            "word": "checking"
+          },
+          {
+            "end": 79.56,
+            "mean_magnitude": 0.02021002396941185,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 79.26,
+            "word": "account,"
+          },
+          {
+            "end": 79.98,
+            "mean_magnitude": 0.002969017019495368,
+            "probability": 0.98486328125,
+            "speaker": "SPEAKER_00",
+            "start": 79.78,
+            "word": "press"
+          },
+          {
+            "end": 80.22,
+            "mean_magnitude": 0.024210238829255104,
+            "probability": 0.92626953125,
+            "speaker": "SPEAKER_00",
+            "start": 79.98,
+            "word": "2."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.719999999999999,
+        "end": 84.26,
+        "speaker": "SPEAKER_00",
+        "start": 80.54,
+        "text": "If you need help with our Spot Me or Pay Anyone feature, press 3.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 81.06,
+            "mean_magnitude": 0.00585089810192585,
+            "probability": 0.98046875,
+            "speaker": "SPEAKER_00",
+            "start": 80.54,
+            "word": "If"
+          },
+          {
+            "end": 81.16,
+            "mean_magnitude": 0.021720409393310547,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 81.06,
+            "word": "you"
+          },
+          {
+            "end": 81.34,
+            "mean_magnitude": 0.10511929541826248,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 81.16,
+            "word": "need"
+          },
+          {
+            "end": 81.6,
+            "mean_magnitude": 0.056033406406641006,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 81.34,
+            "word": "help"
+          },
+          {
+            "end": 81.8,
+            "mean_magnitude": 0.03798181563615799,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 81.6,
+            "word": "with"
+          },
+          {
+            "end": 81.94,
+            "mean_magnitude": 0.03632893040776253,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 81.8,
+            "word": "our"
+          },
+          {
+            "end": 82.22,
+            "mean_magnitude": 0.028539350256323814,
+            "probability": 0.78662109375,
+            "speaker": "SPEAKER_00",
+            "start": 81.94,
+            "word": "Spot"
+          },
+          {
+            "end": 82.36,
+            "mean_magnitude": 0.028593989089131355,
+            "probability": 0.72119140625,
+            "speaker": "SPEAKER_00",
+            "start": 82.22,
+            "word": "Me"
+          },
+          {
+            "end": 82.58,
+            "mean_magnitude": 0.06104811653494835,
+            "probability": 0.99267578125,
+            "speaker": "SPEAKER_00",
+            "start": 82.36,
+            "word": "or"
+          },
+          {
+            "end": 82.78,
+            "mean_magnitude": 0.03538697212934494,
+            "probability": 0.98681640625,
+            "speaker": "SPEAKER_00",
+            "start": 82.58,
+            "word": "Pay"
+          },
+          {
+            "end": 83.1,
+            "mean_magnitude": 0.0664074569940567,
+            "probability": 0.99169921875,
+            "speaker": "SPEAKER_00",
+            "start": 82.78,
+            "word": "Anyone"
+          },
+          {
+            "end": 83.46,
+            "mean_magnitude": 0.05427650734782219,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 83.1,
+            "word": "feature,"
+          },
+          {
+            "end": 84.06,
+            "mean_magnitude": 0.008250020444393158,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 83.76,
+            "word": "press"
+          },
+          {
+            "end": 84.26,
+            "mean_magnitude": 0.038900841027498245,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 84.06,
+            "word": "3."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.3599999999999994,
+        "end": 86.94,
+        "speaker": "SPEAKER_00",
+        "start": 84.58,
+        "text": "To learn more about MyPay, press 4.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 85.1,
+            "mean_magnitude": 0.0003326746227685362,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 84.58,
+            "word": "To"
+          },
+          {
+            "end": 85.34,
+            "mean_magnitude": 0.0457625612616539,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 85.1,
+            "word": "learn"
+          },
+          {
+            "end": 85.54,
+            "mean_magnitude": 0.04944213852286339,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 85.34,
+            "word": "more"
+          },
+          {
+            "end": 85.78,
+            "mean_magnitude": 0.052117396146059036,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 85.54,
+            "word": "about"
+          },
+          {
+            "end": 86.32,
+            "mean_magnitude": 0.042315300554037094,
+            "probability": 0.7628580729166666,
+            "speaker": "SPEAKER_00",
+            "start": 85.78,
+            "word": "MyPay,"
+          },
+          {
+            "end": 86.72,
+            "mean_magnitude": 0.015058103948831558,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 86.42,
+            "word": "press"
+          },
+          {
+            "end": 86.94,
+            "mean_magnitude": 0.01465139351785183,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 86.72,
+            "word": "4."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.780000000000001,
+        "end": 92.1,
+        "speaker": "SPEAKER_00",
+        "start": 87.32,
+        "text": "For help with our rewards programs, including referrals and cash bonuses, press 5.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 87.84,
+            "mean_magnitude": 0.0032018881756812334,
+            "probability": 0.98046875,
+            "speaker": "SPEAKER_00",
+            "start": 87.32,
+            "word": "For"
+          },
+          {
+            "end": 88.04,
+            "mean_magnitude": 0.04881603270769119,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 87.84,
+            "word": "help"
+          },
+          {
+            "end": 88.24,
+            "mean_magnitude": 0.03916659206151962,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 88.04,
+            "word": "with"
+          },
+          {
+            "end": 88.38,
+            "mean_magnitude": 0.03834690526127815,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 88.24,
+            "word": "our"
+          },
+          {
+            "end": 88.74,
+            "mean_magnitude": 0.05572031810879707,
+            "probability": 0.94140625,
+            "speaker": "SPEAKER_00",
+            "start": 88.38,
+            "word": "rewards"
+          },
+          {
+            "end": 89.18,
+            "mean_magnitude": 0.041881121695041656,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 88.74,
+            "word": "programs,"
+          },
+          {
+            "end": 89.78,
+            "mean_magnitude": 0.01732327602803707,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 89.44,
+            "word": "including"
+          },
+          {
+            "end": 90.34,
+            "mean_magnitude": 0.06194891408085823,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 89.78,
+            "word": "referrals"
+          },
+          {
+            "end": 90.6,
+            "mean_magnitude": 0.05318908765912056,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 90.34,
+            "word": "and"
+          },
+          {
+            "end": 90.86,
+            "mean_magnitude": 0.03277335688471794,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 90.6,
+            "word": "cash"
+          },
+          {
+            "end": 91.26,
+            "mean_magnitude": 0.038130491971969604,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 90.86,
+            "word": "bonuses,"
+          },
+          {
+            "end": 91.88,
+            "mean_magnitude": 0.007011095527559519,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 91.58,
+            "word": "press"
+          },
+          {
+            "end": 92.1,
+            "mean_magnitude": 0.020943980664014816,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 91.88,
+            "word": "5."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.18000000000000682,
+        "end": 90.18,
+        "speaker": "SPEAKER_01",
+        "start": 90.0,
+        "text": "you",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 90.18,
+            "mean_magnitude": 0.0,
+            "probability": 0.343505859375,
+            "speaker": "SPEAKER_01",
+            "start": 90.0,
+            "word": "you"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.299999999999997,
+        "end": 96.82,
+        "speaker": "SPEAKER_00",
+        "start": 92.52,
+        "text": "If you have questions about filing your taxes or your tax return, press 6.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 93.04,
+            "mean_magnitude": 0.0054144528694450855,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 92.52,
+            "word": "If"
+          },
+          {
+            "end": 93.14,
+            "mean_magnitude": 0.01894908957183361,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 93.04,
+            "word": "you"
+          },
+          {
+            "end": 93.3,
+            "mean_magnitude": 0.04447066783905029,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 93.14,
+            "word": "have"
+          },
+          {
+            "end": 93.68,
+            "mean_magnitude": 0.023189224302768707,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 93.3,
+            "word": "questions"
+          },
+          {
+            "end": 94.02,
+            "mean_magnitude": 0.03398355469107628,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 93.68,
+            "word": "about"
+          },
+          {
+            "end": 94.34,
+            "mean_magnitude": 0.037371981889009476,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 94.02,
+            "word": "filing"
+          },
+          {
+            "end": 94.54,
+            "mean_magnitude": 0.0399908721446991,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 94.34,
+            "word": "your"
+          },
+          {
+            "end": 94.96,
+            "mean_magnitude": 0.021687021479010582,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 94.54,
+            "word": "taxes"
+          },
+          {
+            "end": 95.36,
+            "mean_magnitude": 0.007911138236522675,
+            "probability": 0.91064453125,
+            "speaker": "SPEAKER_00",
+            "start": 94.96,
+            "word": "or"
+          },
+          {
+            "end": 95.52,
+            "mean_magnitude": 0.04112904146313667,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 95.36,
+            "word": "your"
+          },
+          {
+            "end": 95.8,
+            "mean_magnitude": 0.03620997816324234,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 95.52,
+            "word": "tax"
+          },
+          {
+            "end": 96.06,
+            "mean_magnitude": 0.009863450191915035,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 95.8,
+            "word": "return,"
+          },
+          {
+            "end": 96.58,
+            "mean_magnitude": 0.009758450090885162,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 96.32,
+            "word": "press"
+          },
+          {
+            "end": 96.82,
+            "mean_magnitude": 0.014839760027825832,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 96.58,
+            "word": "6."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.4399999999999977,
+        "end": 99.66,
+        "speaker": "SPEAKER_00",
+        "start": 97.22,
+        "text": "To hear these options again, press star.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 97.74,
+            "mean_magnitude": 0.00023250213416758925,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 97.22,
+            "word": "To"
+          },
+          {
+            "end": 97.92,
+            "mean_magnitude": 0.03603561222553253,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 97.74,
+            "word": "hear"
+          },
+          {
+            "end": 98.1,
+            "mean_magnitude": 0.04669658839702606,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 97.92,
+            "word": "these"
+          },
+          {
+            "end": 98.46,
+            "mean_magnitude": 0.04167361930012703,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 98.1,
+            "word": "options"
+          },
+          {
+            "end": 98.84,
+            "mean_magnitude": 0.031176045536994934,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 98.46,
+            "word": "again,"
+          },
+          {
+            "end": 99.36,
+            "mean_magnitude": 0.011843694373965263,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 99.06,
+            "word": "press"
+          },
+          {
+            "end": 99.66,
+            "mean_magnitude": 0.019380830228328705,
+            "probability": 0.548828125,
+            "speaker": "SPEAKER_00",
+            "start": 99.36,
+            "word": "star."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.260000000000005,
+        "end": 102.28,
+        "speaker": "SPEAKER_00",
+        "start": 100.02,
+        "text": "To go to the main menu, press 8.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 100.54,
+            "mean_magnitude": 0.00023597570543643087,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 100.02,
+            "word": "To"
+          },
+          {
+            "end": 100.66,
+            "mean_magnitude": 0.024704551324248314,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 100.54,
+            "word": "go"
+          },
+          {
+            "end": 100.78,
+            "mean_magnitude": 0.0802559033036232,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 100.66,
+            "word": "to"
+          },
+          {
+            "end": 100.94,
+            "mean_magnitude": 0.016247903928160667,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 100.78,
+            "word": "the"
+          },
+          {
+            "end": 101.14,
+            "mean_magnitude": 0.07722839713096619,
+            "probability": 0.9765625,
+            "speaker": "SPEAKER_00",
+            "start": 100.94,
+            "word": "main"
+          },
+          {
+            "end": 101.46,
+            "mean_magnitude": 0.05968962237238884,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 101.14,
+            "word": "menu,"
+          },
+          {
+            "end": 101.98,
+            "mean_magnitude": 0.002752888249233365,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 101.66,
+            "word": "press"
+          },
+          {
+            "end": 102.28,
+            "mean_magnitude": 0.040207430720329285,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 101.98,
+            "word": "8."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.0999999999999943,
+        "end": 108.1,
+        "speaker": "SPEAKER_00",
+        "start": 105.0,
+        "text": "To learn about SpotMe and how to enroll, press 1.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 105.52,
+            "mean_magnitude": 8.39233416627394e-06,
+            "probability": 0.67333984375,
+            "speaker": "SPEAKER_00",
+            "start": 105.0,
+            "word": "To"
+          },
+          {
+            "end": 105.76,
+            "mean_magnitude": 0.03409457951784134,
+            "probability": 0.9697265625,
+            "speaker": "SPEAKER_00",
+            "start": 105.52,
+            "word": "learn"
+          },
+          {
+            "end": 106.0,
+            "mean_magnitude": 0.046500157564878464,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 105.76,
+            "word": "about"
+          },
+          {
+            "end": 106.54,
+            "mean_magnitude": 0.03378351405262947,
+            "probability": 0.818359375,
+            "speaker": "SPEAKER_00",
+            "start": 106.0,
+            "word": "SpotMe"
+          },
+          {
+            "end": 106.74,
+            "mean_magnitude": 0.03734953701496124,
+            "probability": 0.98681640625,
+            "speaker": "SPEAKER_00",
+            "start": 106.54,
+            "word": "and"
+          },
+          {
+            "end": 106.92,
+            "mean_magnitude": 0.041880153119564056,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 106.74,
+            "word": "how"
+          },
+          {
+            "end": 107.12,
+            "mean_magnitude": 0.03744088113307953,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 106.92,
+            "word": "to"
+          },
+          {
+            "end": 107.4,
+            "mean_magnitude": 0.05501867085695267,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 107.12,
+            "word": "enroll,"
+          },
+          {
+            "end": 107.88,
+            "mean_magnitude": 0.007599946577101946,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_00",
+            "start": 107.6,
+            "word": "press"
+          },
+          {
+            "end": 108.1,
+            "mean_magnitude": 0.01958685740828514,
+            "probability": 0.9384765625,
+            "speaker": "SPEAKER_00",
+            "start": 107.88,
+            "word": "1."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.3799999999999955,
+        "end": 112.8,
+        "speaker": "SPEAKER_00",
+        "start": 108.42,
+        "text": "If SpotMe is enabled on your account and you're experiencing an issue, press 2.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 108.94,
+            "mean_magnitude": 0.0034844581969082355,
+            "probability": 0.9794921875,
+            "speaker": "SPEAKER_00",
+            "start": 108.42,
+            "word": "If"
+          },
+          {
+            "end": 109.4,
+            "mean_magnitude": 0.03417623043060303,
+            "probability": 0.994873046875,
+            "speaker": "SPEAKER_00",
+            "start": 108.94,
+            "word": "SpotMe"
+          },
+          {
+            "end": 109.58,
+            "mean_magnitude": 0.07535050809383392,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 109.4,
+            "word": "is"
+          },
+          {
+            "end": 109.92,
+            "mean_magnitude": 0.05986994132399559,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 109.58,
+            "word": "enabled"
+          },
+          {
+            "end": 110.18,
+            "mean_magnitude": 0.05490488559007645,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 109.92,
+            "word": "on"
+          },
+          {
+            "end": 110.32,
+            "mean_magnitude": 0.06903532892465591,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 110.18,
+            "word": "your"
+          },
+          {
+            "end": 110.62,
+            "mean_magnitude": 0.03729817643761635,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 110.32,
+            "word": "account"
+          },
+          {
+            "end": 110.82,
+            "mean_magnitude": 0.04088706895709038,
+            "probability": 0.99169921875,
+            "speaker": "SPEAKER_00",
+            "start": 110.62,
+            "word": "and"
+          },
+          {
+            "end": 111.0,
+            "mean_magnitude": 0.08185489475727081,
+            "probability": 0.984375,
+            "speaker": "SPEAKER_00",
+            "start": 110.82,
+            "word": "you're"
+          },
+          {
+            "end": 111.48,
+            "mean_magnitude": 0.04436095803976059,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 111.0,
+            "word": "experiencing"
+          },
+          {
+            "end": 111.8,
+            "mean_magnitude": 0.05839414522051811,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 111.48,
+            "word": "an"
+          },
+          {
+            "end": 112.12,
+            "mean_magnitude": 0.04079089313745499,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 111.8,
+            "word": "issue,"
+          },
+          {
+            "end": 112.6,
+            "mean_magnitude": 0.009199216961860657,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 112.32,
+            "word": "press"
+          },
+          {
+            "end": 112.8,
+            "mean_magnitude": 0.024309959262609482,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 112.6,
+            "word": "2."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.8599999999999994,
+        "end": 116.98,
+        "speaker": "SPEAKER_00",
+        "start": 113.12,
+        "text": "If you are calling about recent changes to your SpotMe feature, press 3.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 113.64,
+            "mean_magnitude": 0.0005800173967145383,
+            "probability": 0.99365234375,
+            "speaker": "SPEAKER_00",
+            "start": 113.12,
+            "word": "If"
+          },
+          {
+            "end": 113.76,
+            "mean_magnitude": 0.02390422858297825,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 113.64,
+            "word": "you"
+          },
+          {
+            "end": 113.86,
+            "mean_magnitude": 0.07684503495693207,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 113.76,
+            "word": "are"
+          },
+          {
+            "end": 114.14,
+            "mean_magnitude": 0.050651926547288895,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 113.86,
+            "word": "calling"
+          },
+          {
+            "end": 114.4,
+            "mean_magnitude": 0.04646967351436615,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 114.14,
+            "word": "about"
+          },
+          {
+            "end": 114.78,
+            "mean_magnitude": 0.041499704122543335,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 114.4,
+            "word": "recent"
+          },
+          {
+            "end": 115.2,
+            "mean_magnitude": 0.030268605798482895,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 114.78,
+            "word": "changes"
+          },
+          {
+            "end": 115.4,
+            "mean_magnitude": 0.018420372158288956,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 115.2,
+            "word": "to"
+          },
+          {
+            "end": 115.56,
+            "mean_magnitude": 0.02367178164422512,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 115.4,
+            "word": "your"
+          },
+          {
+            "end": 115.92,
+            "mean_magnitude": 0.027752770110964775,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 115.56,
+            "word": "SpotMe"
+          },
+          {
+            "end": 116.22,
+            "mean_magnitude": 0.018208801746368408,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 115.92,
+            "word": "feature,"
+          },
+          {
+            "end": 116.74,
+            "mean_magnitude": 0.003696870757266879,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 116.46,
+            "word": "press"
+          },
+          {
+            "end": 116.98,
+            "mean_magnitude": 0.028847115114331245,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 116.74,
+            "word": "3."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.739999999999995,
+        "end": 121.08,
+        "speaker": "SPEAKER_00",
+        "start": 117.34,
+        "text": "To learn about the benefits of Pay Anyone and how it works, press 4.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 117.86,
+            "mean_magnitude": 0.001405752613209188,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 117.34,
+            "word": "To"
+          },
+          {
+            "end": 118.06,
+            "mean_magnitude": 0.07902591675519943,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 117.86,
+            "word": "learn"
+          },
+          {
+            "end": 118.34,
+            "mean_magnitude": 0.05389505252242088,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 118.06,
+            "word": "about"
+          },
+          {
+            "end": 118.54,
+            "mean_magnitude": 0.04463285580277443,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 118.34,
+            "word": "the"
+          },
+          {
+            "end": 118.84,
+            "mean_magnitude": 0.04185491427779198,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 118.54,
+            "word": "benefits"
+          },
+          {
+            "end": 119.14,
+            "mean_magnitude": 0.03685248643159866,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 118.84,
+            "word": "of"
+          },
+          {
+            "end": 119.28,
+            "mean_magnitude": 0.006416470743715763,
+            "probability": 0.86767578125,
+            "speaker": "SPEAKER_00",
+            "start": 119.14,
+            "word": "Pay"
+          },
+          {
+            "end": 119.58,
+            "mean_magnitude": 0.050236668437719345,
+            "probability": 0.77880859375,
+            "speaker": "SPEAKER_00",
+            "start": 119.28,
+            "word": "Anyone"
+          },
+          {
+            "end": 119.88,
+            "mean_magnitude": 0.05282192304730415,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 119.58,
+            "word": "and"
+          },
+          {
+            "end": 120.02,
+            "mean_magnitude": 0.05493040010333061,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 119.88,
+            "word": "how"
+          },
+          {
+            "end": 120.16,
+            "mean_magnitude": 0.059885475784540176,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 120.02,
+            "word": "it"
+          },
+          {
+            "end": 120.54,
+            "mean_magnitude": 0.026218965649604797,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 120.16,
+            "word": "works,"
+          },
+          {
+            "end": 120.86,
+            "mean_magnitude": 0.009436841122806072,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 120.64,
+            "word": "press"
+          },
+          {
+            "end": 121.08,
+            "mean_magnitude": 0.015927869826555252,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 120.86,
+            "word": "4."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.18000000000000682,
+        "end": 120.18,
+        "speaker": "SPEAKER_01",
+        "start": 120.0,
+        "text": "you",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 120.18,
+            "mean_magnitude": 0.0,
+            "probability": 0.343505859375,
+            "speaker": "SPEAKER_01",
+            "start": 120.0,
+            "word": "you"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.3599999999999994,
+        "end": 124.78,
+        "speaker": "SPEAKER_00",
+        "start": 121.42,
+        "text": "If you are trying to cancel a Pay Anyone transfer, press 5.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 121.94,
+            "mean_magnitude": 0.00483202189207077,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 121.42,
+            "word": "If"
+          },
+          {
+            "end": 122.04,
+            "mean_magnitude": 0.016173552721738815,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 121.94,
+            "word": "you"
+          },
+          {
+            "end": 122.16,
+            "mean_magnitude": 0.07166662067174911,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 122.04,
+            "word": "are"
+          },
+          {
+            "end": 122.4,
+            "mean_magnitude": 0.03355591371655464,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 122.16,
+            "word": "trying"
+          },
+          {
+            "end": 122.62,
+            "mean_magnitude": 0.03616616502404213,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 122.4,
+            "word": "to"
+          },
+          {
+            "end": 122.94,
+            "mean_magnitude": 0.028326237574219704,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 122.62,
+            "word": "cancel"
+          },
+          {
+            "end": 123.14,
+            "mean_magnitude": 0.04550880566239357,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 122.94,
+            "word": "a"
+          },
+          {
+            "end": 123.3,
+            "mean_magnitude": 0.025645483285188675,
+            "probability": 0.98779296875,
+            "speaker": "SPEAKER_00",
+            "start": 123.14,
+            "word": "Pay"
+          },
+          {
+            "end": 123.56,
+            "mean_magnitude": 0.03841104358434677,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 123.3,
+            "word": "Anyone"
+          },
+          {
+            "end": 123.88,
+            "mean_magnitude": 0.03166456148028374,
+            "probability": 0.9150390625,
+            "speaker": "SPEAKER_00",
+            "start": 123.56,
+            "word": "transfer,"
+          },
+          {
+            "end": 124.56,
+            "mean_magnitude": 0.008652993477880955,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 124.28,
+            "word": "press"
+          },
+          {
+            "end": 124.78,
+            "mean_magnitude": 0.02357906848192215,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 124.56,
+            "word": "5."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.160000000000011,
+        "end": 128.36,
+        "speaker": "SPEAKER_00",
+        "start": 125.2,
+        "text": "If you are experiencing issues with Pay Anyone, press 6.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 125.72,
+            "mean_magnitude": 0.004460954573005438,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 125.2,
+            "word": "If"
+          },
+          {
+            "end": 125.84,
+            "mean_magnitude": 0.02045218087732792,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 125.72,
+            "word": "you"
+          },
+          {
+            "end": 125.98,
+            "mean_magnitude": 0.09843619167804718,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 125.84,
+            "word": "are"
+          },
+          {
+            "end": 126.36,
+            "mean_magnitude": 0.02986966259777546,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 125.98,
+            "word": "experiencing"
+          },
+          {
+            "end": 126.86,
+            "mean_magnitude": 0.03207053244113922,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 126.36,
+            "word": "issues"
+          },
+          {
+            "end": 127.2,
+            "mean_magnitude": 0.030994752421975136,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 126.86,
+            "word": "with"
+          },
+          {
+            "end": 127.36,
+            "mean_magnitude": 0.008559977635741234,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 127.2,
+            "word": "Pay"
+          },
+          {
+            "end": 127.64,
+            "mean_magnitude": 0.03996824473142624,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 127.36,
+            "word": "Anyone,"
+          },
+          {
+            "end": 128.12,
+            "mean_magnitude": 0.0073348707519471645,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 127.86,
+            "word": "press"
+          },
+          {
+            "end": 128.36,
+            "mean_magnitude": 0.018220480531454086,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 128.12,
+            "word": "6."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.3999999999999773,
+        "end": 131.2,
+        "speaker": "SPEAKER_00",
+        "start": 128.8,
+        "text": "To hear these options again, press star.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 129.32,
+            "mean_magnitude": 0.0002633901603985578,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 128.8,
+            "word": "To"
+          },
+          {
+            "end": 129.48,
+            "mean_magnitude": 0.03540010377764702,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 129.32,
+            "word": "hear"
+          },
+          {
+            "end": 129.68,
+            "mean_magnitude": 0.04884352162480354,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 129.48,
+            "word": "these"
+          },
+          {
+            "end": 130.02,
+            "mean_magnitude": 0.042399678379297256,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 129.68,
+            "word": "options"
+          },
+          {
+            "end": 130.4,
+            "mean_magnitude": 0.03103088028728962,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 130.02,
+            "word": "again,"
+          },
+          {
+            "end": 130.9,
+            "mean_magnitude": 0.00967638660222292,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 130.6,
+            "word": "press"
+          },
+          {
+            "end": 131.2,
+            "mean_magnitude": 0.019432157278060913,
+            "probability": 0.73779296875,
+            "speaker": "SPEAKER_00",
+            "start": 130.9,
+            "word": "star."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.660000000000025,
+        "end": 133.86,
+        "speaker": "SPEAKER_00",
+        "start": 131.2,
+        "text": "To go to the main menu, press 8.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 131.94,
+            "mean_magnitude": 0.022795256227254868,
+            "probability": 0.89892578125,
+            "speaker": "SPEAKER_00",
+            "start": 131.2,
+            "word": "To"
+          },
+          {
+            "end": 132.2,
+            "mean_magnitude": 0.008707604371011257,
+            "probability": 0.9833984375,
+            "speaker": "SPEAKER_00",
+            "start": 131.94,
+            "word": "go"
+          },
+          {
+            "end": 132.34,
+            "mean_magnitude": 0.0747344121336937,
+            "probability": 0.9921875,
+            "speaker": "SPEAKER_00",
+            "start": 132.2,
+            "word": "to"
+          },
+          {
+            "end": 132.46,
+            "mean_magnitude": 0.015828244388103485,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 132.34,
+            "word": "the"
+          },
+          {
+            "end": 132.7,
+            "mean_magnitude": 0.06885581463575363,
+            "probability": 0.892578125,
+            "speaker": "SPEAKER_00",
+            "start": 132.46,
+            "word": "main"
+          },
+          {
+            "end": 132.98,
+            "mean_magnitude": 0.0625227838754654,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 132.7,
+            "word": "menu,"
+          },
+          {
+            "end": 133.56,
+            "mean_magnitude": 0.007718462031334639,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_00",
+            "start": 133.22,
+            "word": "press"
+          },
+          {
+            "end": 133.86,
+            "mean_magnitude": 0.039374496787786484,
+            "probability": 0.87939453125,
+            "speaker": "SPEAKER_00",
+            "start": 133.56,
+            "word": "8."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 5.240000000000009,
+        "end": 141.38,
+        "speaker": "SPEAKER_00",
+        "start": 136.14,
+        "text": "Pay Anyone is the fastest way to send money to your coworkers, friends, and family.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 136.62,
+            "mean_magnitude": 0.0011872053146362305,
+            "probability": 0.94384765625,
+            "speaker": "SPEAKER_00",
+            "start": 136.14,
+            "word": "Pay"
+          },
+          {
+            "end": 136.96,
+            "mean_magnitude": 0.056432854384183884,
+            "probability": 0.6875,
+            "speaker": "SPEAKER_00",
+            "start": 136.62,
+            "word": "Anyone"
+          },
+          {
+            "end": 137.28,
+            "mean_magnitude": 0.05560988932847977,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_00",
+            "start": 136.96,
+            "word": "is"
+          },
+          {
+            "end": 137.42,
+            "mean_magnitude": 0.04164375737309456,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 137.28,
+            "word": "the"
+          },
+          {
+            "end": 137.82,
+            "mean_magnitude": 0.04197835549712181,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 137.42,
+            "word": "fastest"
+          },
+          {
+            "end": 138.16,
+            "mean_magnitude": 0.023334773257374763,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 137.82,
+            "word": "way"
+          },
+          {
+            "end": 138.36,
+            "mean_magnitude": 0.03969575837254524,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 138.16,
+            "word": "to"
+          },
+          {
+            "end": 138.58,
+            "mean_magnitude": 0.026362957432866096,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 138.36,
+            "word": "send"
+          },
+          {
+            "end": 138.82,
+            "mean_magnitude": 0.08382025361061096,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 138.58,
+            "word": "money"
+          },
+          {
+            "end": 139.04,
+            "mean_magnitude": 0.047068431973457336,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 138.82,
+            "word": "to"
+          },
+          {
+            "end": 139.2,
+            "mean_magnitude": 0.04987609386444092,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 139.04,
+            "word": "your"
+          },
+          {
+            "end": 139.54,
+            "mean_magnitude": 0.035520561039447784,
+            "probability": 0.67724609375,
+            "speaker": "SPEAKER_00",
+            "start": 139.2,
+            "word": "coworkers,"
+          },
+          {
+            "end": 140.52,
+            "mean_magnitude": 0.02741590328514576,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 140.0,
+            "word": "friends,"
+          },
+          {
+            "end": 140.96,
+            "mean_magnitude": 0.004420137498527765,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 140.72,
+            "word": "and"
+          },
+          {
+            "end": 141.38,
+            "mean_magnitude": 0.05143033713102341,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 140.96,
+            "word": "family."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.319999999999993,
+        "end": 145.94,
+        "speaker": "SPEAKER_00",
+        "start": 141.62,
+        "text": "To use this free feature, open the Chime app and tap on the Pay Anyone tab.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 142.1,
+            "mean_magnitude": 0.00025380851002410054,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 141.62,
+            "word": "To"
+          },
+          {
+            "end": 142.32,
+            "mean_magnitude": 0.051209378987550735,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 142.1,
+            "word": "use"
+          },
+          {
+            "end": 142.48,
+            "mean_magnitude": 0.023745298385620117,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 142.32,
+            "word": "this"
+          },
+          {
+            "end": 142.7,
+            "mean_magnitude": 0.007734957616776228,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 142.48,
+            "word": "free"
+          },
+          {
+            "end": 143.12,
+            "mean_magnitude": 0.022736504673957825,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 142.7,
+            "word": "feature,"
+          },
+          {
+            "end": 143.62,
+            "mean_magnitude": 0.02300996147096157,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 143.32,
+            "word": "open"
+          },
+          {
+            "end": 143.82,
+            "mean_magnitude": 0.02973075956106186,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 143.62,
+            "word": "the"
+          },
+          {
+            "end": 144.08,
+            "mean_magnitude": 0.027058638632297516,
+            "probability": 0.859130859375,
+            "speaker": "SPEAKER_00",
+            "start": 143.82,
+            "word": "Chime"
+          },
+          {
+            "end": 144.28,
+            "mean_magnitude": 0.034902315586805344,
+            "probability": 0.984375,
+            "speaker": "SPEAKER_00",
+            "start": 144.08,
+            "word": "app"
+          },
+          {
+            "end": 144.5,
+            "mean_magnitude": 0.02873876690864563,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 144.28,
+            "word": "and"
+          },
+          {
+            "end": 144.72,
+            "mean_magnitude": 0.02510620467364788,
+            "probability": 0.98193359375,
+            "speaker": "SPEAKER_00",
+            "start": 144.5,
+            "word": "tap"
+          },
+          {
+            "end": 144.96,
+            "mean_magnitude": 0.029807360842823982,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 144.72,
+            "word": "on"
+          },
+          {
+            "end": 145.04,
+            "mean_magnitude": 0.03931577131152153,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 144.96,
+            "word": "the"
+          },
+          {
+            "end": 145.26,
+            "mean_magnitude": 0.021761920303106308,
+            "probability": 0.9833984375,
+            "speaker": "SPEAKER_00",
+            "start": 145.04,
+            "word": "Pay"
+          },
+          {
+            "end": 145.54,
+            "mean_magnitude": 0.0478886254131794,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 145.26,
+            "word": "Anyone"
+          },
+          {
+            "end": 145.94,
+            "mean_magnitude": 0.03089221939444542,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 145.54,
+            "word": "tab."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.439999999999998,
+        "end": 150.78,
+        "speaker": "SPEAKER_00",
+        "start": 146.34,
+        "text": "If you transfer money to a friend with a Chime account, the money will be available instantly.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 146.82,
+            "mean_magnitude": 0.003635581349954009,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 146.34,
+            "word": "If"
+          },
+          {
+            "end": 146.92,
+            "mean_magnitude": 0.015483264811336994,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 146.82,
+            "word": "you"
+          },
+          {
+            "end": 147.26,
+            "mean_magnitude": 0.037741128355264664,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 146.92,
+            "word": "transfer"
+          },
+          {
+            "end": 147.56,
+            "mean_magnitude": 0.036736443638801575,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 147.26,
+            "word": "money"
+          },
+          {
+            "end": 147.8,
+            "mean_magnitude": 0.050082508474588394,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 147.56,
+            "word": "to"
+          },
+          {
+            "end": 147.92,
+            "mean_magnitude": 0.052632711827754974,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 147.8,
+            "word": "a"
+          },
+          {
+            "end": 148.18,
+            "mean_magnitude": 0.03772842884063721,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 147.92,
+            "word": "friend"
+          },
+          {
+            "end": 148.36,
+            "mean_magnitude": 0.06481412053108215,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 148.18,
+            "word": "with"
+          },
+          {
+            "end": 148.44,
+            "mean_magnitude": 0.012349200434982777,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 148.36,
+            "word": "a"
+          },
+          {
+            "end": 148.7,
+            "mean_magnitude": 0.03017062321305275,
+            "probability": 0.999267578125,
+            "speaker": "SPEAKER_00",
+            "start": 148.44,
+            "word": "Chime"
+          },
+          {
+            "end": 148.92,
+            "mean_magnitude": 0.034260448068380356,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 148.7,
+            "word": "account,"
+          },
+          {
+            "end": 149.38,
+            "mean_magnitude": 0.0013512850273400545,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 149.22,
+            "word": "the"
+          },
+          {
+            "end": 149.62,
+            "mean_magnitude": 0.0674891471862793,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 149.38,
+            "word": "money"
+          },
+          {
+            "end": 149.8,
+            "mean_magnitude": 0.050969112664461136,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 149.62,
+            "word": "will"
+          },
+          {
+            "end": 149.9,
+            "mean_magnitude": 0.059709493070840836,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 149.8,
+            "word": "be"
+          },
+          {
+            "end": 150.22,
+            "mean_magnitude": 0.06602252274751663,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 149.9,
+            "word": "available"
+          },
+          {
+            "end": 150.78,
+            "mean_magnitude": 0.03802322968840599,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 150.22,
+            "word": "instantly."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.18000000000000682,
+        "end": 150.18,
+        "speaker": "SPEAKER_01",
+        "start": 150.0,
+        "text": "you",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 150.18,
+            "mean_magnitude": 0.0,
+            "probability": 0.343505859375,
+            "speaker": "SPEAKER_01",
+            "start": 150.0,
+            "word": "you"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 6.300000000000011,
+        "end": 157.5,
+        "speaker": "SPEAKER_00",
+        "start": 151.2,
+        "text": "If you transfer money to a friend who is not yet a Chime member, the recipient will receive an invitation to join Chime.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 151.68,
+            "mean_magnitude": 0.002489932347089052,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 151.2,
+            "word": "If"
+          },
+          {
+            "end": 151.8,
+            "mean_magnitude": 0.022319110110402107,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 151.68,
+            "word": "you"
+          },
+          {
+            "end": 152.12,
+            "mean_magnitude": 0.04506049305200577,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 151.8,
+            "word": "transfer"
+          },
+          {
+            "end": 152.46,
+            "mean_magnitude": 0.028637858107686043,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 152.12,
+            "word": "money"
+          },
+          {
+            "end": 152.74,
+            "mean_magnitude": 0.041859954595565796,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 152.46,
+            "word": "to"
+          },
+          {
+            "end": 152.84,
+            "mean_magnitude": 0.04066843166947365,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 152.74,
+            "word": "a"
+          },
+          {
+            "end": 153.12,
+            "mean_magnitude": 0.037736039608716965,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 152.84,
+            "word": "friend"
+          },
+          {
+            "end": 153.26,
+            "mean_magnitude": 0.02874591015279293,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 153.12,
+            "word": "who"
+          },
+          {
+            "end": 153.38,
+            "mean_magnitude": 0.05879955366253853,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 153.26,
+            "word": "is"
+          },
+          {
+            "end": 153.56,
+            "mean_magnitude": 0.040764372795820236,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 153.38,
+            "word": "not"
+          },
+          {
+            "end": 153.76,
+            "mean_magnitude": 0.03897431492805481,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 153.56,
+            "word": "yet"
+          },
+          {
+            "end": 153.9,
+            "mean_magnitude": 0.06479998677968979,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 153.76,
+            "word": "a"
+          },
+          {
+            "end": 154.14,
+            "mean_magnitude": 0.02761627919971943,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 153.9,
+            "word": "Chime"
+          },
+          {
+            "end": 154.4,
+            "mean_magnitude": 0.0491361990571022,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 154.14,
+            "word": "member,"
+          },
+          {
+            "end": 154.78,
+            "mean_magnitude": 0.0029946116264909506,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 154.6,
+            "word": "the"
+          },
+          {
+            "end": 155.14,
+            "mean_magnitude": 0.03502371162176132,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 154.78,
+            "word": "recipient"
+          },
+          {
+            "end": 155.54,
+            "mean_magnitude": 0.026667632162570953,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 155.14,
+            "word": "will"
+          },
+          {
+            "end": 155.8,
+            "mean_magnitude": 0.03038514219224453,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 155.54,
+            "word": "receive"
+          },
+          {
+            "end": 156.02,
+            "mean_magnitude": 0.03377983719110489,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 155.8,
+            "word": "an"
+          },
+          {
+            "end": 156.4,
+            "mean_magnitude": 0.03350725769996643,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 156.02,
+            "word": "invitation"
+          },
+          {
+            "end": 156.84,
+            "mean_magnitude": 0.032061100006103516,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 156.4,
+            "word": "to"
+          },
+          {
+            "end": 157.1,
+            "mean_magnitude": 0.030572444200515747,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 156.84,
+            "word": "join"
+          },
+          {
+            "end": 157.5,
+            "mean_magnitude": 0.036291442811489105,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 157.1,
+            "word": "Chime."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.639999999999986,
+        "end": 162.14,
+        "speaker": "SPEAKER_00",
+        "start": 157.5,
+        "text": "Your friend will have 14 days to enroll and be approved for a CHIME checking account.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 158.18,
+            "mean_magnitude": 0.0067378380335867405,
+            "probability": 0.80712890625,
+            "speaker": "SPEAKER_00",
+            "start": 157.5,
+            "word": "Your"
+          },
+          {
+            "end": 158.52,
+            "mean_magnitude": 0.042085178196430206,
+            "probability": 0.98779296875,
+            "speaker": "SPEAKER_00",
+            "start": 158.18,
+            "word": "friend"
+          },
+          {
+            "end": 158.7,
+            "mean_magnitude": 0.03984059393405914,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 158.52,
+            "word": "will"
+          },
+          {
+            "end": 158.9,
+            "mean_magnitude": 0.05323028564453125,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 158.7,
+            "word": "have"
+          },
+          {
+            "end": 159.26,
+            "mean_magnitude": 0.0448308140039444,
+            "probability": 0.97802734375,
+            "speaker": "SPEAKER_00",
+            "start": 158.9,
+            "word": "14"
+          },
+          {
+            "end": 159.62,
+            "mean_magnitude": 0.03489796444773674,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 159.26,
+            "word": "days"
+          },
+          {
+            "end": 159.86,
+            "mean_magnitude": 0.02730724774301052,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 159.62,
+            "word": "to"
+          },
+          {
+            "end": 160.16,
+            "mean_magnitude": 0.04338395595550537,
+            "probability": 0.978515625,
+            "speaker": "SPEAKER_00",
+            "start": 159.86,
+            "word": "enroll"
+          },
+          {
+            "end": 160.46,
+            "mean_magnitude": 0.0619426965713501,
+            "probability": 0.97021484375,
+            "speaker": "SPEAKER_00",
+            "start": 160.16,
+            "word": "and"
+          },
+          {
+            "end": 160.58,
+            "mean_magnitude": 0.05419100075960159,
+            "probability": 0.9892578125,
+            "speaker": "SPEAKER_00",
+            "start": 160.46,
+            "word": "be"
+          },
+          {
+            "end": 160.9,
+            "mean_magnitude": 0.030947696417570114,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 160.58,
+            "word": "approved"
+          },
+          {
+            "end": 161.16,
+            "mean_magnitude": 0.0345899872481823,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 160.9,
+            "word": "for"
+          },
+          {
+            "end": 161.3,
+            "mean_magnitude": 0.05658373236656189,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 161.16,
+            "word": "a"
+          },
+          {
+            "end": 161.58,
+            "mean_magnitude": 0.02979077585041523,
+            "probability": 0.7470703125,
+            "speaker": "SPEAKER_00",
+            "start": 161.3,
+            "word": "CHIME"
+          },
+          {
+            "end": 161.8,
+            "mean_magnitude": 0.0325159952044487,
+            "probability": 0.88720703125,
+            "speaker": "SPEAKER_00",
+            "start": 161.58,
+            "word": "checking"
+          },
+          {
+            "end": 162.14,
+            "mean_magnitude": 0.025204792618751526,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 161.8,
+            "word": "account."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.4799999999999898,
+        "end": 165.92,
+        "speaker": "SPEAKER_00",
+        "start": 162.44,
+        "text": "If the recipient doesn't claim your transfer within 14 days,",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 162.98,
+            "mean_magnitude": 0.0023452688474208117,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_00",
+            "start": 162.44,
+            "word": "If"
+          },
+          {
+            "end": 163.14,
+            "mean_magnitude": 0.03307492658495903,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 162.98,
+            "word": "the"
+          },
+          {
+            "end": 163.5,
+            "mean_magnitude": 0.057575028389692307,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 163.14,
+            "word": "recipient"
+          },
+          {
+            "end": 164.04,
+            "mean_magnitude": 0.04025685042142868,
+            "probability": 0.99169921875,
+            "speaker": "SPEAKER_00",
+            "start": 163.5,
+            "word": "doesn't"
+          },
+          {
+            "end": 164.26,
+            "mean_magnitude": 0.02221188135445118,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 164.04,
+            "word": "claim"
+          },
+          {
+            "end": 164.42,
+            "mean_magnitude": 0.051165174692869186,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 164.26,
+            "word": "your"
+          },
+          {
+            "end": 164.8,
+            "mean_magnitude": 0.04103231802582741,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 164.42,
+            "word": "transfer"
+          },
+          {
+            "end": 165.14,
+            "mean_magnitude": 0.03015560284256935,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 164.8,
+            "word": "within"
+          },
+          {
+            "end": 165.46,
+            "mean_magnitude": 0.04800872877240181,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 165.14,
+            "word": "14"
+          },
+          {
+            "end": 165.92,
+            "mean_magnitude": 0.04157373681664467,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 165.46,
+            "word": "days,"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.319999999999993,
+        "end": 168.54,
+        "speaker": "SPEAKER_00",
+        "start": 166.22,
+        "text": "the funds will be sent back to your account automatically.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 166.42,
+            "mean_magnitude": 0.0010948848212137818,
+            "probability": 0.99072265625,
+            "speaker": "SPEAKER_00",
+            "start": 166.22,
+            "word": "the"
+          },
+          {
+            "end": 166.74,
+            "mean_magnitude": 0.04770659655332565,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 166.42,
+            "word": "funds"
+          },
+          {
+            "end": 166.86,
+            "mean_magnitude": 0.0338410846889019,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 166.74,
+            "word": "will"
+          },
+          {
+            "end": 167.0,
+            "mean_magnitude": 0.03932176157832146,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 166.86,
+            "word": "be"
+          },
+          {
+            "end": 167.2,
+            "mean_magnitude": 0.039914894849061966,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 167.0,
+            "word": "sent"
+          },
+          {
+            "end": 167.48,
+            "mean_magnitude": 0.047767844051122665,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 167.2,
+            "word": "back"
+          },
+          {
+            "end": 167.64,
+            "mean_magnitude": 0.024724340066313744,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 167.48,
+            "word": "to"
+          },
+          {
+            "end": 167.78,
+            "mean_magnitude": 0.05401422083377838,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 167.64,
+            "word": "your"
+          },
+          {
+            "end": 168.02,
+            "mean_magnitude": 0.04198251664638519,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 167.78,
+            "word": "account"
+          },
+          {
+            "end": 168.54,
+            "mean_magnitude": 0.0600372776389122,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 168.02,
+            "word": "automatically."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.0200000000000102,
+        "end": 171.06,
+        "speaker": "SPEAKER_00",
+        "start": 169.04,
+        "text": "Press star to repeat this message.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 169.6,
+            "mean_magnitude": 0.003446088405326009,
+            "probability": 0.970703125,
+            "speaker": "SPEAKER_00",
+            "start": 169.04,
+            "word": "Press"
+          },
+          {
+            "end": 169.86,
+            "mean_magnitude": 0.02067210152745247,
+            "probability": 0.361328125,
+            "speaker": "SPEAKER_00",
+            "start": 169.6,
+            "word": "star"
+          },
+          {
+            "end": 170.1,
+            "mean_magnitude": 0.05633581429719925,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 169.86,
+            "word": "to"
+          },
+          {
+            "end": 170.36,
+            "mean_magnitude": 0.020322345197200775,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 170.1,
+            "word": "repeat"
+          },
+          {
+            "end": 170.66,
+            "mean_magnitude": 0.020977046340703964,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 170.36,
+            "word": "this"
+          },
+          {
+            "end": 171.06,
+            "mean_magnitude": 0.019714318215847015,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 170.66,
+            "word": "message."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.9799999999999898,
+        "end": 173.38,
+        "speaker": "SPEAKER_00",
+        "start": 171.4,
+        "text": "Press 8 to go to the main menu.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 171.96,
+            "mean_magnitude": 0.002841237699612975,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 171.4,
+            "word": "Press"
+          },
+          {
+            "end": 172.2,
+            "mean_magnitude": 0.02578938752412796,
+            "probability": 0.73828125,
+            "speaker": "SPEAKER_00",
+            "start": 171.96,
+            "word": "8"
+          },
+          {
+            "end": 172.44,
+            "mean_magnitude": 0.0212126262485981,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 172.2,
+            "word": "to"
+          },
+          {
+            "end": 172.6,
+            "mean_magnitude": 0.023907577618956566,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 172.44,
+            "word": "go"
+          },
+          {
+            "end": 172.72,
+            "mean_magnitude": 0.05776926502585411,
+            "probability": 0.99169921875,
+            "speaker": "SPEAKER_00",
+            "start": 172.6,
+            "word": "to"
+          },
+          {
+            "end": 172.86,
+            "mean_magnitude": 0.020446941256523132,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 172.72,
+            "word": "the"
+          },
+          {
+            "end": 173.08,
+            "mean_magnitude": 0.0627981498837471,
+            "probability": 0.90625,
+            "speaker": "SPEAKER_00",
+            "start": 172.86,
+            "word": "main"
+          },
+          {
+            "end": 173.38,
+            "mean_magnitude": 0.05687495693564415,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 173.08,
+            "word": "menu."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.280000000000001,
+        "end": 175.92,
+        "speaker": "SPEAKER_00",
+        "start": 173.64,
+        "text": "To end this call, please hang up.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 174.2,
+            "mean_magnitude": 0.0010604653507471085,
+            "probability": 0.9833984375,
+            "speaker": "SPEAKER_00",
+            "start": 173.64,
+            "word": "To"
+          },
+          {
+            "end": 174.42,
+            "mean_magnitude": 0.02381104603409767,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 174.2,
+            "word": "end"
+          },
+          {
+            "end": 174.62,
+            "mean_magnitude": 0.04363419488072395,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 174.42,
+            "word": "this"
+          },
+          {
+            "end": 174.92,
+            "mean_magnitude": 0.026104971766471863,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 174.62,
+            "word": "call,"
+          },
+          {
+            "end": 175.4,
+            "mean_magnitude": 0.008565818890929222,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 175.06,
+            "word": "please"
+          },
+          {
+            "end": 175.62,
+            "mean_magnitude": 0.046750258654356,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 175.4,
+            "word": "hang"
+          },
+          {
+            "end": 175.92,
+            "mean_magnitude": 0.057935092598199844,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 175.62,
+            "word": "up."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.039999999999992,
+        "end": 181.16,
+        "speaker": "SPEAKER_00",
+        "start": 179.12,
+        "text": "Press star to repeat this message.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 179.68,
+            "mean_magnitude": 0.00033093520323745906,
+            "probability": 0.98583984375,
+            "speaker": "SPEAKER_00",
+            "start": 179.12,
+            "word": "Press"
+          },
+          {
+            "end": 179.98,
+            "mean_magnitude": 0.023579813539981842,
+            "probability": 0.982421875,
+            "speaker": "SPEAKER_00",
+            "start": 179.68,
+            "word": "star"
+          },
+          {
+            "end": 180.26,
+            "mean_magnitude": 0.048616450279951096,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 179.98,
+            "word": "to"
+          },
+          {
+            "end": 180.5,
+            "mean_magnitude": 0.021886007860302925,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 180.26,
+            "word": "repeat"
+          },
+          {
+            "end": 180.8,
+            "mean_magnitude": 0.023140907287597656,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 180.5,
+            "word": "this"
+          },
+          {
+            "end": 181.16,
+            "mean_magnitude": 0.017931021749973297,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 180.8,
+            "word": "message."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.18000000000000682,
+        "end": 180.18,
+        "speaker": "SPEAKER_01",
+        "start": 180.0,
+        "text": "you",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 180.18,
+            "mean_magnitude": 0.0,
+            "probability": 0.343505859375,
+            "speaker": "SPEAKER_01",
+            "start": 180.0,
+            "word": "you"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.0,
+        "end": 183.5,
+        "speaker": "SPEAKER_00",
+        "start": 181.5,
+        "text": "Press 8 to go to the main menu.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 182.06,
+            "mean_magnitude": 0.0005152429803274572,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 181.5,
+            "word": "Press"
+          },
+          {
+            "end": 182.34,
+            "mean_magnitude": 0.027066359296441078,
+            "probability": 0.9912109375,
+            "speaker": "SPEAKER_00",
+            "start": 182.06,
+            "word": "8"
+          },
+          {
+            "end": 182.58,
+            "mean_magnitude": 0.021097548305988312,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 182.34,
+            "word": "to"
+          },
+          {
+            "end": 182.72,
+            "mean_magnitude": 0.025802025571465492,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 182.58,
+            "word": "go"
+          },
+          {
+            "end": 182.84,
+            "mean_magnitude": 0.05911501124501228,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 182.72,
+            "word": "to"
+          },
+          {
+            "end": 182.96,
+            "mean_magnitude": 0.02062424086034298,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 182.84,
+            "word": "the"
+          },
+          {
+            "end": 183.2,
+            "mean_magnitude": 0.05879531055688858,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 182.96,
+            "word": "main"
+          },
+          {
+            "end": 183.5,
+            "mean_magnitude": 0.05669872462749481,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 183.2,
+            "word": "menu."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 5.8799999999999955,
+        "end": 189.38,
+        "speaker": "SPEAKER_00",
+        "start": 183.5,
+        "text": "you. To end this call, please hang up. Goodbye.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 183.62,
+            "mean_magnitude": 0.04528230056166649,
+            "probability": 0.2469482421875,
+            "speaker": "SPEAKER_00",
+            "start": 183.5,
+            "word": "you."
+          },
+          {
+            "end": 184.32,
+            "mean_magnitude": 0.00023829020210541785,
+            "probability": 0.9658203125,
+            "speaker": "SPEAKER_00",
+            "start": 183.8,
+            "word": "To"
+          },
+          {
+            "end": 184.58,
+            "mean_magnitude": 0.02868756465613842,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 184.32,
+            "word": "end"
+          },
+          {
+            "end": 184.74,
+            "mean_magnitude": 0.0396852120757103,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 184.58,
+            "word": "this"
+          },
+          {
+            "end": 185.04,
+            "mean_magnitude": 0.026241512969136238,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 184.74,
+            "word": "call,"
+          },
+          {
+            "end": 185.54,
+            "mean_magnitude": 0.01267183106392622,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 185.18,
+            "word": "please"
+          },
+          {
+            "end": 185.76,
+            "mean_magnitude": 0.04282334819436073,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 185.54,
+            "word": "hang"
+          },
+          {
+            "end": 186.02,
+            "mean_magnitude": 0.05846498906612396,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 185.76,
+            "word": "up."
+          },
+          {
+            "end": 189.38,
+            "mean_magnitude": 0.014206666499376297,
+            "probability": 0.89111328125,
+            "speaker": "SPEAKER_00",
+            "start": 188.86,
+            "word": "Goodbye."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 15.859999999999985,
+        "end": 227.46,
+        "speaker": "SPEAKER_01",
+        "start": 211.60000000000002,
+        "text": "Hi. I have a question about pay anyone. What's the most money I can send to someone in a",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 212.24,
+            "mean_magnitude": 0.003021335694938898,
+            "probability": 0.712890625,
+            "speaker": "SPEAKER_01",
+            "start": 211.60000000000002,
+            "word": "Hi."
+          },
+          {
+            "end": 212.86,
+            "mean_magnitude": 0.00803407933562994,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_01",
+            "start": 212.44,
+            "word": "I"
+          },
+          {
+            "end": 213.04,
+            "mean_magnitude": 0.07206854224205017,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 212.86,
+            "word": "have"
+          },
+          {
+            "end": 213.14,
+            "mean_magnitude": 0.0709722489118576,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 213.04,
+            "word": "a"
+          },
+          {
+            "end": 213.38,
+            "mean_magnitude": 0.056866392493247986,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 213.14,
+            "word": "question"
+          },
+          {
+            "end": 213.74,
+            "mean_magnitude": 0.052687227725982666,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 213.38,
+            "word": "about"
+          },
+          {
+            "end": 214.64,
+            "mean_magnitude": 0.01853279024362564,
+            "probability": 0.333251953125,
+            "speaker": "SPEAKER_01",
+            "start": 213.74,
+            "word": "pay"
+          },
+          {
+            "end": 214.96,
+            "mean_magnitude": 0.07243277132511139,
+            "probability": 0.9140625,
+            "speaker": "SPEAKER_01",
+            "start": 214.64,
+            "word": "anyone."
+          },
+          {
+            "end": 215.92,
+            "mean_magnitude": 0.02034820429980755,
+            "probability": 0.953369140625,
+            "speaker": "SPEAKER_01",
+            "start": 215.3,
+            "word": "What's"
+          },
+          {
+            "end": 216.02,
+            "mean_magnitude": 0.008576984517276287,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 215.92,
+            "word": "the"
+          },
+          {
+            "end": 216.32,
+            "mean_magnitude": 0.0908457338809967,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_01",
+            "start": 216.02,
+            "word": "most"
+          },
+          {
+            "end": 216.54,
+            "mean_magnitude": 0.032026492059230804,
+            "probability": 0.26416015625,
+            "speaker": "SPEAKER_01",
+            "start": 216.32,
+            "word": "money"
+          },
+          {
+            "end": 216.76,
+            "mean_magnitude": 0.0,
+            "probability": 0.406005859375,
+            "speaker": "SPEAKER_01",
+            "start": 216.54,
+            "word": "I"
+          },
+          {
+            "end": 223.84,
+            "mean_magnitude": 0.01143758837133646,
+            "probability": 0.97998046875,
+            "speaker": "SPEAKER_01",
+            "start": 216.76,
+            "word": "can"
+          },
+          {
+            "end": 226.18,
+            "mean_magnitude": 0.0508926659822464,
+            "probability": 0.82275390625,
+            "speaker": "SPEAKER_01",
+            "start": 223.84,
+            "word": "send"
+          },
+          {
+            "end": 226.58,
+            "mean_magnitude": 0.07407910376787186,
+            "probability": 0.80859375,
+            "speaker": "SPEAKER_01",
+            "start": 226.18,
+            "word": "to"
+          },
+          {
+            "end": 226.96,
+            "mean_magnitude": 0.02745147980749607,
+            "probability": 0.927734375,
+            "speaker": "SPEAKER_01",
+            "start": 226.58,
+            "word": "someone"
+          },
+          {
+            "end": 227.28,
+            "mean_magnitude": 0.06574811041355133,
+            "probability": 0.9306640625,
+            "speaker": "SPEAKER_01",
+            "start": 226.96,
+            "word": "in"
+          },
+          {
+            "end": 227.46,
+            "mean_magnitude": 0.03798713535070419,
+            "probability": 0.990234375,
+            "speaker": "SPEAKER_01",
+            "start": 227.28,
+            "word": "a"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.12000000000000455,
+        "end": 213.62,
+        "speaker": "SPEAKER_00",
+        "start": 213.5,
+        "text": "you",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 213.62,
+            "mean_magnitude": 0.0,
+            "probability": 0.315673828125,
+            "speaker": "SPEAKER_00",
+            "start": 213.5,
+            "word": "you"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 8.379999999999995,
+        "end": 235.84,
+        "speaker": "SPEAKER_01",
+        "start": 227.46,
+        "text": "day using pay anyone? I need to pay my landlord $800 for rent, and I want to make sure I can",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 227.78,
+            "mean_magnitude": 0.0471963994204998,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 227.46,
+            "word": "day"
+          },
+          {
+            "end": 228.14,
+            "mean_magnitude": 0.05983222275972366,
+            "probability": 0.90234375,
+            "speaker": "SPEAKER_01",
+            "start": 227.78,
+            "word": "using"
+          },
+          {
+            "end": 228.68,
+            "mean_magnitude": 0.055847764015197754,
+            "probability": 0.90185546875,
+            "speaker": "SPEAKER_01",
+            "start": 228.14,
+            "word": "pay"
+          },
+          {
+            "end": 229.16,
+            "mean_magnitude": 0.07104350626468658,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_01",
+            "start": 228.68,
+            "word": "anyone?"
+          },
+          {
+            "end": 229.92,
+            "mean_magnitude": 0.010322310961782932,
+            "probability": 0.91748046875,
+            "speaker": "SPEAKER_01",
+            "start": 229.48,
+            "word": "I"
+          },
+          {
+            "end": 230.24,
+            "mean_magnitude": 0.08906356990337372,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_01",
+            "start": 229.92,
+            "word": "need"
+          },
+          {
+            "end": 230.48,
+            "mean_magnitude": 0.08197326213121414,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 230.24,
+            "word": "to"
+          },
+          {
+            "end": 230.66,
+            "mean_magnitude": 0.032564226537942886,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 230.48,
+            "word": "pay"
+          },
+          {
+            "end": 230.88,
+            "mean_magnitude": 0.10278848558664322,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 230.66,
+            "word": "my"
+          },
+          {
+            "end": 231.36,
+            "mean_magnitude": 0.061955325305461884,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 230.88,
+            "word": "landlord"
+          },
+          {
+            "end": 232.1,
+            "mean_magnitude": 0.05136481672525406,
+            "probability": 0.96435546875,
+            "speaker": "SPEAKER_01",
+            "start": 231.36,
+            "word": "$800"
+          },
+          {
+            "end": 233.08,
+            "mean_magnitude": 0.061147965490818024,
+            "probability": 0.982421875,
+            "speaker": "SPEAKER_01",
+            "start": 232.1,
+            "word": "for"
+          },
+          {
+            "end": 233.46,
+            "mean_magnitude": 0.053017713129520416,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 233.08,
+            "word": "rent,"
+          },
+          {
+            "end": 234.2,
+            "mean_magnitude": 0.022773876786231995,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 233.66,
+            "word": "and"
+          },
+          {
+            "end": 234.62,
+            "mean_magnitude": 0.08062709867954254,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 234.2,
+            "word": "I"
+          },
+          {
+            "end": 234.96,
+            "mean_magnitude": 0.08052995055913925,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 234.62,
+            "word": "want"
+          },
+          {
+            "end": 235.14,
+            "mean_magnitude": 0.06346826255321503,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 234.96,
+            "word": "to"
+          },
+          {
+            "end": 235.28,
+            "mean_magnitude": 0.11987265199422836,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 235.14,
+            "word": "make"
+          },
+          {
+            "end": 235.5,
+            "mean_magnitude": 0.03260589763522148,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 235.28,
+            "word": "sure"
+          },
+          {
+            "end": 235.7,
+            "mean_magnitude": 0.090430848300457,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 235.5,
+            "word": "I"
+          },
+          {
+            "end": 235.84,
+            "mean_magnitude": 0.028520938009023666,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 235.7,
+            "word": "can"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.7199999999999989,
+        "end": 237.56,
+        "speaker": "SPEAKER_01",
+        "start": 235.84,
+        "text": "can do it all at once, can do it all at once, can do it all at once, can do it all at once,",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 235.84,
+            "probability": 0.25439453125,
+            "speaker": "SPEAKER_01",
+            "start": 235.84,
+            "word": "can"
+          },
+          {
+            "end": 236.02,
+            "mean_magnitude": 0.06780839711427689,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_01",
+            "start": 235.84,
+            "word": "do"
+          },
+          {
+            "end": 236.18,
+            "mean_magnitude": 0.11273978650569916,
+            "probability": 0.98388671875,
+            "speaker": "SPEAKER_01",
+            "start": 236.02,
+            "word": "it"
+          },
+          {
+            "end": 236.5,
+            "mean_magnitude": 0.03696497157216072,
+            "probability": 0.984375,
+            "speaker": "SPEAKER_01",
+            "start": 236.18,
+            "word": "all"
+          },
+          {
+            "end": 236.78,
+            "mean_magnitude": 0.08567772805690765,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_01",
+            "start": 236.5,
+            "word": "at"
+          },
+          {
+            "end": 237.08,
+            "mean_magnitude": 0.04214834049344063,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 236.78,
+            "word": "once,"
+          },
+          {
+            "end": 237.38,
+            "mean_magnitude": 0.005203838460147381,
+            "probability": 0.75830078125,
+            "speaker": "SPEAKER_01",
+            "start": 237.28,
+            "word": "can"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "do"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.9921875,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "it"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.94873046875,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "all"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.99267578125,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "at"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "once,"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.85888671875,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "can"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.99169921875,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "do"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.99169921875,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "it"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.923828125,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "all"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.99072265625,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "at"
+          },
+          {
+            "end": 237.38,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "once,"
+          },
+          {
+            "end": 237.56,
+            "mean_magnitude": 0.007222737185657024,
+            "probability": 0.79931640625,
+            "speaker": "SPEAKER_01",
+            "start": 237.38,
+            "word": "can"
+          },
+          {
+            "end": 237.56,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_01",
+            "start": 237.56,
+            "word": "do"
+          },
+          {
+            "end": 237.56,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_01",
+            "start": 237.56,
+            "word": "it"
+          },
+          {
+            "end": 237.56,
+            "probability": 0.958984375,
+            "speaker": "SPEAKER_01",
+            "start": 237.56,
+            "word": "all"
+          },
+          {
+            "end": 237.56,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_01",
+            "start": 237.56,
+            "word": "at"
+          },
+          {
+            "end": 237.56,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_01",
+            "start": 237.56,
+            "word": "once,"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.0800000000000125,
+        "end": 240.46,
+        "speaker": "SPEAKER_01",
+        "start": 240.38,
+        "text": "Thanks for watching!",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 240.42,
+            "mean_magnitude": 0.0,
+            "probability": 0.0306854248046875,
+            "speaker": "SPEAKER_01",
+            "start": 240.38,
+            "word": "Thanks"
+          },
+          {
+            "end": 240.44,
+            "mean_magnitude": 0.0,
+            "probability": 0.93798828125,
+            "speaker": "SPEAKER_01",
+            "start": 240.42,
+            "word": "for"
+          },
+          {
+            "end": 240.46,
+            "mean_magnitude": 0.0,
+            "probability": 0.95068359375,
+            "speaker": "SPEAKER_01",
+            "start": 240.44,
+            "word": "watching!"
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      "SPEAKER_00",
+      "SPEAKER_01"
+    ],
+    "timeline": [
+      [
+        0.0,
+        1.52
+      ],
+      [
+        2.26,
+        5.02
+      ],
+      [
+        5.94,
+        8.1
+      ],
+      [
+        8.4,
+        13.16
+      ],
+      [
+        13.5,
+        17.3
+      ],
+      [
+        17.66,
+        23.92
+      ],
+      [
+        24.6,
+        29.8
+      ],
+      [
+        28.080000000000002,
+        29.48
+      ],
+      [
+        30.0,
+        30.18
+      ],
+      [
+        30.66,
+        33.74
+      ],
+      [
+        34.66,
+        35.36
+      ],
+      [
+        35.72,
+        38.42
+      ],
+      [
+        38.84,
+        41.48
+      ],
+      [
+        41.8,
+        43.82
+      ],
+      [
+        44.14,
+        46.02
+      ],
+      [
+        46.34,
+        50.38
+      ],
+      [
+        50.38,
+        54.0
+      ],
+      [
+        54.38,
+        57.96
+      ],
+      [
+        58.38,
+        60.62
+      ],
+      [
+        60.0,
+        60.18
+      ],
+      [
+        60.92,
+        64.68
+      ],
+      [
+        64.92,
+        67.5
+      ],
+      [
+        68.38,
+        70.32
+      ],
+      [
+        72.38,
+        77.1
+      ],
+      [
+        77.1,
+        80.22
+      ],
+      [
+        80.54,
+        84.26
+      ],
+      [
+        84.58,
+        86.94
+      ],
+      [
+        87.32,
+        92.1
+      ],
+      [
+        90.0,
+        90.18
+      ],
+      [
+        92.52,
+        96.82
+      ],
+      [
+        97.22,
+        99.66
+      ],
+      [
+        100.02,
+        102.28
+      ],
+      [
+        105.0,
+        108.1
+      ],
+      [
+        108.42,
+        112.8
+      ],
+      [
+        113.12,
+        116.98
+      ],
+      [
+        117.34,
+        121.08
+      ],
+      [
+        120.0,
+        120.18
+      ],
+      [
+        121.42,
+        124.78
+      ],
+      [
+        125.2,
+        128.36
+      ],
+      [
+        128.8,
+        131.2
+      ],
+      [
+        131.2,
+        133.86
+      ],
+      [
+        136.14,
+        141.38
+      ],
+      [
+        141.62,
+        145.94
+      ],
+      [
+        146.34,
+        150.78
+      ],
+      [
+        150.0,
+        150.18
+      ],
+      [
+        151.2,
+        157.5
+      ],
+      [
+        157.5,
+        162.14
+      ],
+      [
+        162.44,
+        165.92
+      ],
+      [
+        166.22,
+        168.54
+      ],
+      [
+        169.04,
+        171.06
+      ],
+      [
+        171.4,
+        173.38
+      ],
+      [
+        173.64,
+        175.92
+      ],
+      [
+        179.12,
+        181.16
+      ],
+      [
+        180.0,
+        180.18
+      ],
+      [
+        181.5,
+        183.5
+      ],
+      [
+        183.5,
+        189.38
+      ],
+      [
+        211.60000000000002,
+        227.46
+      ],
+      [
+        213.5,
+        213.62
+      ],
+      [
+        227.46,
+        235.84
+      ],
+      [
+        235.84,
+        237.56
+      ],
+      [
+        240.38,
+        240.46
+      ]
+    ]
+  },
+  "status": "ok"
+}

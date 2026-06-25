@@ -1,0 +1,178 @@
+{
+  "elapsed_seconds": 3.868,
+  "input": {
+    "audio_filename": "sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+    "manifest_conversation_id": "WFYDioQcFJpdjF7e9QRkjC",
+    "manifest_row_number": 11,
+    "manifest_sample_id": "sample_0010",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:09:56.848356+00:00",
+  "result": {
+    "full_text": "hi i don't need anything i just wanted to say hello",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 47.611,
+          "end_seconds": 47.611,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Hi, I don't need anything. I just wanted to say hello.",
+            "timestamps": "_ [T:100] hi [T:128] _ [T:184] i [T:196] don't [T:228] need [T:247] anything [T:288] _ [T:321] i [T:332] just [T:361] wanted [T:387] to [T:397] say [T:416] hello [T:450] _ [T:668]"
+          },
+          "speaker_turn_count": 1,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 0.764,
+            "timestamps_seconds": 3.081
+          },
+          "word_count": 11
+        }
+      ],
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "duration_seconds": 47.611,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "channel_selection_applied": false,
+        "downmixed_to_mono": true,
+        "duration_seconds": 47.611,
+        "load_seconds": 0.018,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 761778,
+        "selected_channel_index": null,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 3.868,
+      "step_timings": {
+        "generation_seconds": 3.845,
+        "model_load_seconds": 33.87,
+        "preprocessing_seconds": 0.022,
+        "processing_time": 3.845
+      }
+    },
+    "segments": [
+      {
+        "end": 4.5,
+        "speaker": "SPEAKER_00",
+        "start": 1.0,
+        "text": "hi i don't need anything i just wanted to say hello"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 3.5
+      }
+    ],
+    "timeline": [
+      {
+        "end": 1.28,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 1.0,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 1.96,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 1.84,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 2.28,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 1.96,
+        "text": "don't",
+        "type": "word"
+      },
+      {
+        "end": 2.47,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 2.28,
+        "text": "need",
+        "type": "word"
+      },
+      {
+        "end": 2.88,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 2.47,
+        "text": "anything",
+        "type": "word"
+      },
+      {
+        "end": 3.32,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 3.21,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 3.61,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 3.32,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 3.87,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 3.61,
+        "text": "wanted",
+        "type": "word"
+      },
+      {
+        "end": 3.97,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 3.87,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 4.16,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 3.97,
+        "text": "say",
+        "type": "word"
+      },
+      {
+        "end": 4.5,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 4.16,
+        "text": "hello",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

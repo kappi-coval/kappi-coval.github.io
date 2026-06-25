@@ -1,0 +1,533 @@
+{
+  "elapsed_seconds": 15.878,
+  "input": {
+    "audio_filename": "sample_0006__Zd43Gvp6GvsQjSA7UMuGHw.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0006__Zd43Gvp6GvsQjSA7UMuGHw.wav",
+    "manifest_conversation_id": "Zd43Gvp6GvsQjSA7UMuGHw",
+    "manifest_row_number": 7,
+    "manifest_sample_id": "sample_0006",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:08:53.349766+00:00",
+  "result": {
+    "full_text": "hi you're speaking with our customer support agent we can help you understand the policy for damaged phones try the scenarios listed below how may i assist you hi yeah thanks for taking my call uh i've a phone that's damaged and i'm just trying to figure out what i need to do next",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 67.12,
+          "end_seconds": 67.12,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Hi, you're speaking with our customer support agent. We can help you understand the policy for damaged phones. Try the scenarios listed below. How may I assist you? [Speaker 2]: Hi, yeah, thanks for taking my call. I have a phone that's damaged and I'm just trying to figure out what I need to do next. [Speaker 3]: Uh-huh.",
+            "timestamps": "_ [T:273] hi [T:326] _ [T:358] you're [T:372] speaking [T:408] with [T:422] our [T:433] customer [T:479] support [T:521] agent [T:565] _ [T:588] we [T:598] can [T:612] help [T:637] you [T:650] understand [T:709] the [T:716] policy [T:767] for [T:783] damaged [T:825] phones [T:877] _ [T:912] try [T:936] the [T:948] scenarios [T:20] listed [T:55] below [T:103] _ [T:130] how [T:152] may [T:172] i [T:190] assist [T:230] you [T:253] _ [T:495] hi [T:542] _ [T:568] yeah [T:604] _ [T:623] thanks [T:651] for [T:661] taking [T:696] my [T:711] call [T:764] _ [T:822] uh [T:846] i've [T:866] a [T:870] phone [T:913] that's [T:933] damaged [T:992] _ [T:31] and [T:60] i'm [T:72] just [T:92] trying [T:114] to [T:121] figure [T:155] out [T:175] what [T:189] i [T:199] need [T:222] to [T:231] do [T:245] next [T:298] _ [T:655]"
+          },
+          "speaker_turn_count": 3,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 2.983,
+            "timestamps_seconds": 12.866
+          },
+          "word_count": 54
+        }
+      ],
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "duration_seconds": 67.12,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "channel_selection_applied": false,
+        "downmixed_to_mono": true,
+        "duration_seconds": 67.12,
+        "load_seconds": 0.023,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 1073920,
+        "selected_channel_index": null,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0006__Zd43Gvp6GvsQjSA7UMuGHw.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 15.878,
+      "step_timings": {
+        "generation_seconds": 15.849,
+        "model_load_seconds": 33.87,
+        "preprocessing_seconds": 0.028,
+        "processing_time": 15.849
+      }
+    },
+    "segments": [
+      {
+        "end": 12.53,
+        "speaker": "SPEAKER_00",
+        "start": 2.73,
+        "text": "hi you're speaking with our customer support agent we can help you understand the policy for damaged phones try the scenarios listed below how may i assist you"
+      },
+      {
+        "end": 22.98,
+        "speaker": "SPEAKER_01",
+        "start": 14.95,
+        "text": "hi yeah thanks for taking my call uh i've a phone that's damaged and i'm just trying to figure out what i need to do next"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 9.8
+      },
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_01",
+        "total_talk_time_seconds": 8.03
+      }
+    ],
+    "timeline": [
+      {
+        "end": 3.26,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 2.73,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 3.72,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 3.58,
+        "text": "you're",
+        "type": "word"
+      },
+      {
+        "end": 4.08,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 3.72,
+        "text": "speaking",
+        "type": "word"
+      },
+      {
+        "end": 4.22,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 4.08,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 4.33,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 4.22,
+        "text": "our",
+        "type": "word"
+      },
+      {
+        "end": 4.79,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 4.33,
+        "text": "customer",
+        "type": "word"
+      },
+      {
+        "end": 5.21,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 4.79,
+        "text": "support",
+        "type": "word"
+      },
+      {
+        "end": 5.65,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 5.21,
+        "text": "agent",
+        "type": "word"
+      },
+      {
+        "end": 5.98,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 5.88,
+        "text": "we",
+        "type": "word"
+      },
+      {
+        "end": 6.12,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 5.98,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 6.37,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 6.12,
+        "text": "help",
+        "type": "word"
+      },
+      {
+        "end": 6.5,
+        "index": 12,
+        "speaker": "SPEAKER_00",
+        "start": 6.37,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 7.09,
+        "index": 13,
+        "speaker": "SPEAKER_00",
+        "start": 6.5,
+        "text": "understand",
+        "type": "word"
+      },
+      {
+        "end": 7.16,
+        "index": 14,
+        "speaker": "SPEAKER_00",
+        "start": 7.09,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 7.67,
+        "index": 15,
+        "speaker": "SPEAKER_00",
+        "start": 7.16,
+        "text": "policy",
+        "type": "word"
+      },
+      {
+        "end": 7.83,
+        "index": 16,
+        "speaker": "SPEAKER_00",
+        "start": 7.67,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 8.25,
+        "index": 17,
+        "speaker": "SPEAKER_00",
+        "start": 7.83,
+        "text": "damaged",
+        "type": "word"
+      },
+      {
+        "end": 8.77,
+        "index": 18,
+        "speaker": "SPEAKER_00",
+        "start": 8.25,
+        "text": "phones",
+        "type": "word"
+      },
+      {
+        "end": 9.36,
+        "index": 19,
+        "speaker": "SPEAKER_00",
+        "start": 9.12,
+        "text": "try",
+        "type": "word"
+      },
+      {
+        "end": 9.48,
+        "index": 20,
+        "speaker": "SPEAKER_00",
+        "start": 9.36,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 10.2,
+        "index": 21,
+        "speaker": "SPEAKER_00",
+        "start": 9.48,
+        "text": "scenarios",
+        "type": "word"
+      },
+      {
+        "end": 10.55,
+        "index": 22,
+        "speaker": "SPEAKER_00",
+        "start": 10.2,
+        "text": "listed",
+        "type": "word"
+      },
+      {
+        "end": 11.03,
+        "index": 23,
+        "speaker": "SPEAKER_00",
+        "start": 10.55,
+        "text": "below",
+        "type": "word"
+      },
+      {
+        "end": 11.52,
+        "index": 24,
+        "speaker": "SPEAKER_00",
+        "start": 11.3,
+        "text": "how",
+        "type": "word"
+      },
+      {
+        "end": 11.72,
+        "index": 25,
+        "speaker": "SPEAKER_00",
+        "start": 11.52,
+        "text": "may",
+        "type": "word"
+      },
+      {
+        "end": 11.9,
+        "index": 26,
+        "speaker": "SPEAKER_00",
+        "start": 11.72,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 12.3,
+        "index": 27,
+        "speaker": "SPEAKER_00",
+        "start": 11.9,
+        "text": "assist",
+        "type": "word"
+      },
+      {
+        "end": 12.53,
+        "index": 28,
+        "speaker": "SPEAKER_00",
+        "start": 12.3,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 15.42,
+        "index": 29,
+        "speaker": "SPEAKER_01",
+        "start": 14.95,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 16.04,
+        "index": 30,
+        "speaker": "SPEAKER_01",
+        "start": 15.68,
+        "text": "yeah",
+        "type": "word"
+      },
+      {
+        "end": 16.51,
+        "index": 31,
+        "speaker": "SPEAKER_01",
+        "start": 16.23,
+        "text": "thanks",
+        "type": "word"
+      },
+      {
+        "end": 16.61,
+        "index": 32,
+        "speaker": "SPEAKER_01",
+        "start": 16.51,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 16.96,
+        "index": 33,
+        "speaker": "SPEAKER_01",
+        "start": 16.61,
+        "text": "taking",
+        "type": "word"
+      },
+      {
+        "end": 17.11,
+        "index": 34,
+        "speaker": "SPEAKER_01",
+        "start": 16.96,
+        "text": "my",
+        "type": "word"
+      },
+      {
+        "end": 17.64,
+        "index": 35,
+        "speaker": "SPEAKER_01",
+        "start": 17.11,
+        "text": "call",
+        "type": "word"
+      },
+      {
+        "end": 18.46,
+        "index": 36,
+        "speaker": "SPEAKER_01",
+        "start": 18.22,
+        "text": "uh",
+        "type": "word"
+      },
+      {
+        "end": 18.66,
+        "index": 37,
+        "speaker": "SPEAKER_01",
+        "start": 18.46,
+        "text": "i've",
+        "type": "word"
+      },
+      {
+        "end": 18.7,
+        "index": 38,
+        "speaker": "SPEAKER_01",
+        "start": 18.66,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 19.13,
+        "index": 39,
+        "speaker": "SPEAKER_01",
+        "start": 18.7,
+        "text": "phone",
+        "type": "word"
+      },
+      {
+        "end": 19.33,
+        "index": 40,
+        "speaker": "SPEAKER_01",
+        "start": 19.13,
+        "text": "that's",
+        "type": "word"
+      },
+      {
+        "end": 19.92,
+        "index": 41,
+        "speaker": "SPEAKER_01",
+        "start": 19.33,
+        "text": "damaged",
+        "type": "word"
+      },
+      {
+        "end": 20.6,
+        "index": 42,
+        "speaker": "SPEAKER_01",
+        "start": 20.31,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 20.72,
+        "index": 43,
+        "speaker": "SPEAKER_01",
+        "start": 20.6,
+        "text": "i'm",
+        "type": "word"
+      },
+      {
+        "end": 20.92,
+        "index": 44,
+        "speaker": "SPEAKER_01",
+        "start": 20.72,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 21.14,
+        "index": 45,
+        "speaker": "SPEAKER_01",
+        "start": 20.92,
+        "text": "trying",
+        "type": "word"
+      },
+      {
+        "end": 21.21,
+        "index": 46,
+        "speaker": "SPEAKER_01",
+        "start": 21.14,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 21.55,
+        "index": 47,
+        "speaker": "SPEAKER_01",
+        "start": 21.21,
+        "text": "figure",
+        "type": "word"
+      },
+      {
+        "end": 21.75,
+        "index": 48,
+        "speaker": "SPEAKER_01",
+        "start": 21.55,
+        "text": "out",
+        "type": "word"
+      },
+      {
+        "end": 21.89,
+        "index": 49,
+        "speaker": "SPEAKER_01",
+        "start": 21.75,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 21.99,
+        "index": 50,
+        "speaker": "SPEAKER_01",
+        "start": 21.89,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 22.22,
+        "index": 51,
+        "speaker": "SPEAKER_01",
+        "start": 21.99,
+        "text": "need",
+        "type": "word"
+      },
+      {
+        "end": 22.31,
+        "index": 52,
+        "speaker": "SPEAKER_01",
+        "start": 22.22,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 22.45,
+        "index": 53,
+        "speaker": "SPEAKER_01",
+        "start": 22.31,
+        "text": "do",
+        "type": "word"
+      },
+      {
+        "end": 22.98,
+        "index": 54,
+        "speaker": "SPEAKER_01",
+        "start": 22.45,
+        "text": "next",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

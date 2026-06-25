@@ -1,0 +1,707 @@
+{
+  "elapsed_seconds": 22.538,
+  "input": {
+    "audio_filename": "sample_0001__E8N9WqLpXkgygp3ayGZzjb.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0001__E8N9WqLpXkgygp3ayGZzjb.wav",
+    "manifest_conversation_id": "E8N9WqLpXkgygp3ayGZzjb",
+    "manifest_row_number": 2,
+    "manifest_sample_id": "sample_0001",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:00:56.154823+00:00",
+  "result": {
+    "full_text": "welcome to the twilio prototype please press a number or speak your request hi there i'm just exploring what this assistant can help with can you tell me what kinds of things you can do especially around voice features you said hi there i'm just exploring what this assistant can help with can you tell me what kinds of things you can do as passionately around voice features thank you for using our prototype goodbye",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 35.536,
+          "end_seconds": 35.536,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Welcome to the Twilio prototype. Please press a number or speak your request. [Speaker 2]: Hi there. I'm just exploring what this assistant can help with. Can you tell me what kinds of things you can do, especially around voice features? You said, Hi there. I'm just exploring what this assistant can help with. Can you tell me what kinds of things you can do as partially around voice features? Thank you for using our prototype. Goodbye.",
+            "timestamps": "_ [T:37] welcome [T:77] _ [T:80] to [T:87] the [T:102] twilio [T:151] prototype [T:220] _ [T:265] please [T:299] press [T:329] a [T:334] number [T:366] or [T:385] speak [T:417] your [T:433] request [T:503] _ [T:841] hi [T:858] there [T:890] _ [T:950] i'm [T:966] just [T:991] exploring [T:40] what [T:57] this [T:75] assistant [T:125] can [T:139] help [T:163] with [T:180] _ [T:239] can [T:253] you [T:264] tell [T:282] me [T:294] what [T:313] kinds [T:340] of [T:348] things [T:372] you [T:382] can [T:401] do [T:430] _ [T:456] especially [T:513] around [T:546] voice [T:576] features [T:626] _ [T:1] you [T:14] said [T:42] _ [T:54] hi [T:81] there [T:115] _ [T:130] i'm [T:150] just [T:176] exploring [T:238] what [T:252] this [T:270] assistant [T:323] can [T:340] help [T:371] with [T:392] _ [T:462] can [T:486] you [T:500] tell [T:520] me [T:535] what [T:558] kinds [T:590] of [T:602] things [T:640] you [T:652] can [T:669] do [T:689] as [T:705] passionately [T:757] around [T:796] voice [T:835] _ [T:838] features [T:886] _ [T:911] thank [T:938] you [T:950] for [T:963] using [T:2] our [T:27] prototype [T:105] _ [T:163] goodbye [T:234] _ [T:265]"
+          },
+          "speaker_turn_count": 2,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 3.304,
+            "timestamps_seconds": 19.156
+          },
+          "word_count": 75
+        }
+      ],
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "duration_seconds": 35.536,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "channel_selection_applied": false,
+        "downmixed_to_mono": true,
+        "duration_seconds": 35.536,
+        "load_seconds": 0.049,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 568574,
+        "selected_channel_index": null,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0001__E8N9WqLpXkgygp3ayGZzjb.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 22.538,
+      "step_timings": {
+        "generation_seconds": 22.46,
+        "model_load_seconds": 33.87,
+        "preprocessing_seconds": 0.056,
+        "processing_time": 22.46
+      }
+    },
+    "segments": [
+      {
+        "end": 5.03,
+        "speaker": "SPEAKER_00",
+        "start": 0.37,
+        "text": "welcome to the twilio prototype please press a number or speak your request"
+      },
+      {
+        "end": 16.26,
+        "speaker": "SPEAKER_01",
+        "start": 8.41,
+        "text": "hi there i'm just exploring what this assistant can help with can you tell me what kinds of things you can do especially around voice features"
+      },
+      {
+        "end": 32.34,
+        "speaker": "SPEAKER_01",
+        "start": 20.01,
+        "text": "you said hi there i'm just exploring what this assistant can help with can you tell me what kinds of things you can do as passionately around voice features thank you for using our prototype goodbye"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 4.66
+      },
+      {
+        "segment_count": 2,
+        "speaker": "SPEAKER_01",
+        "total_talk_time_seconds": 20.18
+      }
+    ],
+    "timeline": [
+      {
+        "end": 0.77,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 0.37,
+        "text": "welcome",
+        "type": "word"
+      },
+      {
+        "end": 0.87,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 0.8,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 1.02,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 0.87,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 1.51,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 1.02,
+        "text": "twilio",
+        "type": "word"
+      },
+      {
+        "end": 2.2,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 1.51,
+        "text": "prototype",
+        "type": "word"
+      },
+      {
+        "end": 2.99,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 2.65,
+        "text": "please",
+        "type": "word"
+      },
+      {
+        "end": 3.29,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 2.99,
+        "text": "press",
+        "type": "word"
+      },
+      {
+        "end": 3.34,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 3.29,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 3.66,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 3.34,
+        "text": "number",
+        "type": "word"
+      },
+      {
+        "end": 3.85,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 3.66,
+        "text": "or",
+        "type": "word"
+      },
+      {
+        "end": 4.17,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 3.85,
+        "text": "speak",
+        "type": "word"
+      },
+      {
+        "end": 4.33,
+        "index": 12,
+        "speaker": "SPEAKER_00",
+        "start": 4.17,
+        "text": "your",
+        "type": "word"
+      },
+      {
+        "end": 5.03,
+        "index": 13,
+        "speaker": "SPEAKER_00",
+        "start": 4.33,
+        "text": "request",
+        "type": "word"
+      },
+      {
+        "end": 8.58,
+        "index": 14,
+        "speaker": "SPEAKER_01",
+        "start": 8.41,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 8.9,
+        "index": 15,
+        "speaker": "SPEAKER_01",
+        "start": 8.58,
+        "text": "there",
+        "type": "word"
+      },
+      {
+        "end": 9.66,
+        "index": 16,
+        "speaker": "SPEAKER_01",
+        "start": 9.5,
+        "text": "i'm",
+        "type": "word"
+      },
+      {
+        "end": 9.91,
+        "index": 17,
+        "speaker": "SPEAKER_01",
+        "start": 9.66,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 10.4,
+        "index": 18,
+        "speaker": "SPEAKER_01",
+        "start": 9.91,
+        "text": "exploring",
+        "type": "word"
+      },
+      {
+        "end": 10.57,
+        "index": 19,
+        "speaker": "SPEAKER_01",
+        "start": 10.4,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 10.75,
+        "index": 20,
+        "speaker": "SPEAKER_01",
+        "start": 10.57,
+        "text": "this",
+        "type": "word"
+      },
+      {
+        "end": 11.25,
+        "index": 21,
+        "speaker": "SPEAKER_01",
+        "start": 10.75,
+        "text": "assistant",
+        "type": "word"
+      },
+      {
+        "end": 11.39,
+        "index": 22,
+        "speaker": "SPEAKER_01",
+        "start": 11.25,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 11.63,
+        "index": 23,
+        "speaker": "SPEAKER_01",
+        "start": 11.39,
+        "text": "help",
+        "type": "word"
+      },
+      {
+        "end": 11.8,
+        "index": 24,
+        "speaker": "SPEAKER_01",
+        "start": 11.63,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 12.53,
+        "index": 25,
+        "speaker": "SPEAKER_01",
+        "start": 12.39,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 12.64,
+        "index": 26,
+        "speaker": "SPEAKER_01",
+        "start": 12.53,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 12.82,
+        "index": 27,
+        "speaker": "SPEAKER_01",
+        "start": 12.64,
+        "text": "tell",
+        "type": "word"
+      },
+      {
+        "end": 12.94,
+        "index": 28,
+        "speaker": "SPEAKER_01",
+        "start": 12.82,
+        "text": "me",
+        "type": "word"
+      },
+      {
+        "end": 13.13,
+        "index": 29,
+        "speaker": "SPEAKER_01",
+        "start": 12.94,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 13.4,
+        "index": 30,
+        "speaker": "SPEAKER_01",
+        "start": 13.13,
+        "text": "kinds",
+        "type": "word"
+      },
+      {
+        "end": 13.48,
+        "index": 31,
+        "speaker": "SPEAKER_01",
+        "start": 13.4,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 13.72,
+        "index": 32,
+        "speaker": "SPEAKER_01",
+        "start": 13.48,
+        "text": "things",
+        "type": "word"
+      },
+      {
+        "end": 13.82,
+        "index": 33,
+        "speaker": "SPEAKER_01",
+        "start": 13.72,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 14.01,
+        "index": 34,
+        "speaker": "SPEAKER_01",
+        "start": 13.82,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 14.3,
+        "index": 35,
+        "speaker": "SPEAKER_01",
+        "start": 14.01,
+        "text": "do",
+        "type": "word"
+      },
+      {
+        "end": 15.13,
+        "index": 36,
+        "speaker": "SPEAKER_01",
+        "start": 14.56,
+        "text": "especially",
+        "type": "word"
+      },
+      {
+        "end": 15.46,
+        "index": 37,
+        "speaker": "SPEAKER_01",
+        "start": 15.13,
+        "text": "around",
+        "type": "word"
+      },
+      {
+        "end": 15.76,
+        "index": 38,
+        "speaker": "SPEAKER_01",
+        "start": 15.46,
+        "text": "voice",
+        "type": "word"
+      },
+      {
+        "end": 16.26,
+        "index": 39,
+        "speaker": "SPEAKER_01",
+        "start": 15.76,
+        "text": "features",
+        "type": "word"
+      },
+      {
+        "end": 20.14,
+        "index": 40,
+        "speaker": "SPEAKER_01",
+        "start": 20.01,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 20.42,
+        "index": 41,
+        "speaker": "SPEAKER_01",
+        "start": 20.14,
+        "text": "said",
+        "type": "word"
+      },
+      {
+        "end": 20.81,
+        "index": 42,
+        "speaker": "SPEAKER_01",
+        "start": 20.54,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 21.15,
+        "index": 43,
+        "speaker": "SPEAKER_01",
+        "start": 20.81,
+        "text": "there",
+        "type": "word"
+      },
+      {
+        "end": 21.5,
+        "index": 44,
+        "speaker": "SPEAKER_01",
+        "start": 21.3,
+        "text": "i'm",
+        "type": "word"
+      },
+      {
+        "end": 21.76,
+        "index": 45,
+        "speaker": "SPEAKER_01",
+        "start": 21.5,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 22.38,
+        "index": 46,
+        "speaker": "SPEAKER_01",
+        "start": 21.76,
+        "text": "exploring",
+        "type": "word"
+      },
+      {
+        "end": 22.52,
+        "index": 47,
+        "speaker": "SPEAKER_01",
+        "start": 22.38,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 22.7,
+        "index": 48,
+        "speaker": "SPEAKER_01",
+        "start": 22.52,
+        "text": "this",
+        "type": "word"
+      },
+      {
+        "end": 23.23,
+        "index": 49,
+        "speaker": "SPEAKER_01",
+        "start": 22.7,
+        "text": "assistant",
+        "type": "word"
+      },
+      {
+        "end": 23.4,
+        "index": 50,
+        "speaker": "SPEAKER_01",
+        "start": 23.23,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 23.71,
+        "index": 51,
+        "speaker": "SPEAKER_01",
+        "start": 23.4,
+        "text": "help",
+        "type": "word"
+      },
+      {
+        "end": 23.92,
+        "index": 52,
+        "speaker": "SPEAKER_01",
+        "start": 23.71,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 24.86,
+        "index": 53,
+        "speaker": "SPEAKER_01",
+        "start": 24.62,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 25.0,
+        "index": 54,
+        "speaker": "SPEAKER_01",
+        "start": 24.86,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 25.2,
+        "index": 55,
+        "speaker": "SPEAKER_01",
+        "start": 25.0,
+        "text": "tell",
+        "type": "word"
+      },
+      {
+        "end": 25.35,
+        "index": 56,
+        "speaker": "SPEAKER_01",
+        "start": 25.2,
+        "text": "me",
+        "type": "word"
+      },
+      {
+        "end": 25.58,
+        "index": 57,
+        "speaker": "SPEAKER_01",
+        "start": 25.35,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 25.9,
+        "index": 58,
+        "speaker": "SPEAKER_01",
+        "start": 25.58,
+        "text": "kinds",
+        "type": "word"
+      },
+      {
+        "end": 26.02,
+        "index": 59,
+        "speaker": "SPEAKER_01",
+        "start": 25.9,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 26.4,
+        "index": 60,
+        "speaker": "SPEAKER_01",
+        "start": 26.02,
+        "text": "things",
+        "type": "word"
+      },
+      {
+        "end": 26.52,
+        "index": 61,
+        "speaker": "SPEAKER_01",
+        "start": 26.4,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 26.69,
+        "index": 62,
+        "speaker": "SPEAKER_01",
+        "start": 26.52,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 26.89,
+        "index": 63,
+        "speaker": "SPEAKER_01",
+        "start": 26.69,
+        "text": "do",
+        "type": "word"
+      },
+      {
+        "end": 27.05,
+        "index": 64,
+        "speaker": "SPEAKER_01",
+        "start": 26.89,
+        "text": "as",
+        "type": "word"
+      },
+      {
+        "end": 27.57,
+        "index": 65,
+        "speaker": "SPEAKER_01",
+        "start": 27.05,
+        "text": "passionately",
+        "type": "word"
+      },
+      {
+        "end": 27.96,
+        "index": 66,
+        "speaker": "SPEAKER_01",
+        "start": 27.57,
+        "text": "around",
+        "type": "word"
+      },
+      {
+        "end": 28.35,
+        "index": 67,
+        "speaker": "SPEAKER_01",
+        "start": 27.96,
+        "text": "voice",
+        "type": "word"
+      },
+      {
+        "end": 28.86,
+        "index": 68,
+        "speaker": "SPEAKER_01",
+        "start": 28.38,
+        "text": "features",
+        "type": "word"
+      },
+      {
+        "end": 29.38,
+        "index": 69,
+        "speaker": "SPEAKER_01",
+        "start": 29.11,
+        "text": "thank",
+        "type": "word"
+      },
+      {
+        "end": 29.5,
+        "index": 70,
+        "speaker": "SPEAKER_01",
+        "start": 29.38,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 29.63,
+        "index": 71,
+        "speaker": "SPEAKER_01",
+        "start": 29.5,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 30.02,
+        "index": 72,
+        "speaker": "SPEAKER_01",
+        "start": 29.63,
+        "text": "using",
+        "type": "word"
+      },
+      {
+        "end": 30.27,
+        "index": 73,
+        "speaker": "SPEAKER_01",
+        "start": 30.02,
+        "text": "our",
+        "type": "word"
+      },
+      {
+        "end": 31.05,
+        "index": 74,
+        "speaker": "SPEAKER_01",
+        "start": 30.27,
+        "text": "prototype",
+        "type": "word"
+      },
+      {
+        "end": 32.34,
+        "index": 75,
+        "speaker": "SPEAKER_01",
+        "start": 31.63,
+        "text": "goodbye",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

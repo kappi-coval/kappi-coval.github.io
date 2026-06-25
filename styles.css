@@ -113,6 +113,40 @@ audio {
   background: var(--surface);
 }
 
+.sample-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0.6rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.sample-summary::-webkit-details-marker {
+  display: none;
+}
+
+.sample-summary::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 6px solid var(--muted);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: transform 0.15s ease;
+}
+
+.sample-section[open] > .sample-summary::before {
+  transform: rotate(90deg);
+}
+
+.sample-summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .sample-title {
   margin: 0;
   font-size: 1rem;
@@ -120,14 +154,14 @@ audio {
 }
 
 .sample-filename {
-  margin: 0.25rem 0 0.2rem;
+  margin: 0;
   color: var(--muted);
   font-size: 0.8rem;
   overflow-wrap: anywhere;
 }
 
 .sample-player {
-  margin-top: 0.35rem;
+  margin-top: 0.65rem;
 }
 
 .transcript-compare-grid {
@@ -182,6 +216,7 @@ audio {
 }
 
 .transcript-word {
+  position: relative;
   text-decoration: none;
   border-bottom: 1px dotted var(--accent);
 }
@@ -189,6 +224,31 @@ audio {
 .transcript-word:hover,
 .transcript-word:focus-visible {
   border-bottom-style: solid;
+}
+
+.transcript-word[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #1f2933;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.transcript-word[data-tooltip]:hover::after,
+.transcript-word[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .transcript-word--fallback {

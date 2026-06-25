@@ -46,7 +46,7 @@ function formatTimestampForSeek(value) {
   return value.toFixed(2).replace(/\.0+$/, "").replace(/(\.\d*[1-9])0+$/, "$1");
 }
 
-function seekAudio(player, timestamp) {
+function seekAudio(player, timestamp, { autoplay = false } = {}) {
   if (!(player instanceof HTMLAudioElement)) {
     return;
   }
@@ -59,10 +59,16 @@ function seekAudio(player, timestamp) {
   const setTime = () => {
     if (Number.isFinite(player.duration) && player.duration > 0) {
       player.currentTime = Math.min(targetSeconds, player.duration);
-      return;
+    } else {
+      player.currentTime = targetSeconds;
     }
 
-    player.currentTime = targetSeconds;
+    if (autoplay && player.paused) {
+      const playResult = player.play();
+      if (playResult && typeof playResult.catch === "function") {
+        playResult.catch(() => {});
+      }
+    }
   };
 
   if (player.readyState >= 1) {
@@ -84,6 +90,25 @@ function getAudioPlayerById(id) {
 function getDefaultAudioPlayer() {
   const element = document.querySelector("audio");
   return element instanceof HTMLAudioElement ? element : null;
+}
+
+function pauseOtherPlayers(activePlayer) {
+  document.querySelectorAll("audio").forEach((element) => {
+    if (element !== activePlayer && !element.paused) {
+      element.pause();
+    }
+  });
+}
+
+function expandSectionForPlayer(player) {
+  if (!(player instanceof Element)) {
+    return;
+  }
+
+  const section = player.closest("details.sample-section");
+  if (section && !section.open) {
+    section.open = true;
+  }
 }
 
 function resolvePlayerForSeekLink(link) {
@@ -110,6 +135,7 @@ function createWordLink({ text, startSeconds, playerId, fallback = false }) {
   link.href = `#t=${encodeURIComponent(seekValue)}&p=${encodeURIComponent(playerId)}`;
   link.setAttribute("data-seek", seekValue);
   link.setAttribute("data-player", playerId);
+  link.setAttribute("data-tooltip", `Start: ${seekValue}s`);
   link.textContent = text;
   return link;
 }
@@ -486,7 +512,7 @@ function compareSampleGroups(a, b) {
 }
 
 function buildAudioPath(audioFilename) {
-  return `assets/audio/granite-golden-set/${audioFilename}`;
+  return `assets/audio/demo-set/${audioFilename}`;
 }
 
 async function fetchJson(path) {
@@ -587,21 +613,26 @@ function createSampleSection({ group, graniteState, whisperxState }) {
   const domIdSuffix = toDomIdFragment(sampleId);
   const playerId = `player-${domIdSuffix}`;
 
-  const article = document.createElement("article");
+  const article = document.createElement("details");
   article.className = "sample-section";
   article.id = `sample-section-${domIdSuffix}`;
+
+  const summary = document.createElement("summary");
+  summary.className = "sample-summary";
 
   const heading = document.createElement("h3");
   heading.className = "sample-title";
   heading.textContent = sampleId;
-  article.appendChild(heading);
+  summary.appendChild(heading);
 
   if (audioFilename) {
-    const filename = document.createElement("p");
+    const filename = document.createElement("span");
     filename.className = "sample-filename";
     filename.textContent = audioFilename;
-    article.appendChild(filename);
+    summary.appendChild(filename);
   }
+
+  article.appendChild(summary);
 
   const playerWrap = document.createElement("div");
   playerWrap.className = "sample-player";
@@ -794,6 +825,7 @@ function handleInitialHashSeek() {
     return;
   }
 
+  expandSectionForPlayer(player);
   seekAudio(player, timestamp);
 }
 
@@ -824,7 +856,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    seekAudio(player, timestamp);
+    pauseOtherPlayers(player);
+    seekAudio(player, timestamp, { autoplay: true });
 
     const targetPlayerId = link.getAttribute("data-player");
     const hash = targetPlayerId

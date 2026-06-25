@@ -1,0 +1,281 @@
+{
+  "elapsed_seconds": 3.279,
+  "input": {
+    "audio_filename": "sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+    "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+    "manifest_conversation_id": "WFYDioQcFJpdjF7e9QRkjC",
+    "manifest_row_number": 11,
+    "manifest_sample_id": "sample_0010",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:32:37.697204+00:00",
+  "result": {
+    "full_text": "Thank you. Hi, I don't need anything. I just wanted to say hello. Thank you. wonderful",
+    "metadata": {
+      "alignment_enabled": false,
+      "channel_num_speakers": 1,
+      "initial_prompt": "This is a conversation transcript between a user and an agent.",
+      "is_stereo": true,
+      "language": "en",
+      "num_channels": 2,
+      "num_speakers": 2,
+      "processing_time": 2.197,
+      "requested_num_speakers": 2,
+      "step_timings": {
+        "channel_0_processing_time": 1.052,
+        "channel_1_processing_time": 1.145
+      },
+      "stereo_channel_recombine_strategy": "chronological_by_timestamp",
+      "stereo_channel_split_enabled": true,
+      "stereo_channel_summaries": [
+        {
+          "channel_index": 0,
+          "channel_name": "left",
+          "error": null,
+          "language": "en",
+          "processing_time": 1.052,
+          "segments_count": 2,
+          "speaker": "SPEAKER_00",
+          "words_count": 4
+        },
+        {
+          "channel_index": 1,
+          "channel_name": "right",
+          "error": null,
+          "language": "en",
+          "processing_time": 1.145,
+          "segments_count": 3,
+          "speaker": "SPEAKER_01",
+          "words_count": 12
+        }
+      ],
+      "stereo_input": {
+        "duration_seconds": 47.611,
+        "frame_count": 761778,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "source_num_channels": 2
+      },
+      "stereo_mode": "reconcile",
+      "stereo_mode_ignored": true,
+      "stereo_reconciliation": "split_channels_then_chronological_merge",
+      "vad_enabled": false
+    },
+    "segments": [
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.2,
+        "end": 1.2,
+        "speaker": "SPEAKER_00",
+        "start": 0.0,
+        "text": "Thank you.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 1.2,
+            "mean_magnitude": 0.0,
+            "probability": 0.175048828125,
+            "speaker": "SPEAKER_00",
+            "start": 0.0,
+            "word": "Thank"
+          },
+          {
+            "end": 1.2,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 1.2,
+            "word": "you."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.7800000000000011,
+        "end": 27.76,
+        "speaker": "SPEAKER_01",
+        "start": 25.98,
+        "text": "Hi, I don't need anything.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 26.5,
+            "mean_magnitude": 0.04556911811232567,
+            "probability": 0.8115234375,
+            "speaker": "SPEAKER_01",
+            "start": 25.98,
+            "word": "Hi,"
+          },
+          {
+            "end": 27.02,
+            "mean_magnitude": 0.002908798400312662,
+            "probability": 0.9921875,
+            "speaker": "SPEAKER_01",
+            "start": 26.5,
+            "word": "I"
+          },
+          {
+            "end": 27.36,
+            "mean_magnitude": 0.06346864998340607,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 27.02,
+            "word": "don't"
+          },
+          {
+            "end": 27.54,
+            "mean_magnitude": 0.09549880772829056,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 27.36,
+            "word": "need"
+          },
+          {
+            "end": 27.76,
+            "mean_magnitude": 0.09785279631614685,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 27.54,
+            "word": "anything."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.5799999999999983,
+        "end": 29.52,
+        "speaker": "SPEAKER_01",
+        "start": 27.94,
+        "text": "I just wanted to say hello.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 28.42,
+            "mean_magnitude": 0.006017438601702452,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 27.94,
+            "word": "I"
+          },
+          {
+            "end": 28.66,
+            "mean_magnitude": 0.031792204827070236,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 28.42,
+            "word": "just"
+          },
+          {
+            "end": 28.94,
+            "mean_magnitude": 0.0748952105641365,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_01",
+            "start": 28.66,
+            "word": "wanted"
+          },
+          {
+            "end": 29.08,
+            "mean_magnitude": 0.04904128611087799,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 28.94,
+            "word": "to"
+          },
+          {
+            "end": 29.24,
+            "mean_magnitude": 0.00956026278436184,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 29.08,
+            "word": "say"
+          },
+          {
+            "end": 29.52,
+            "mean_magnitude": 0.057895123958587646,
+            "probability": 0.97021484375,
+            "speaker": "SPEAKER_01",
+            "start": 29.24,
+            "word": "hello."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.4799999999999969,
+        "end": 47.58,
+        "speaker": "SPEAKER_00",
+        "start": 46.1,
+        "text": "Thank you.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 47.5,
+            "mean_magnitude": 0.0,
+            "probability": 0.1756591796875,
+            "speaker": "SPEAKER_00",
+            "start": 46.1,
+            "word": "Thank"
+          },
+          {
+            "end": 47.58,
+            "mean_magnitude": 0.0,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 47.5,
+            "word": "you."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.3999999999999986,
+        "end": 47.58,
+        "speaker": "SPEAKER_01",
+        "start": 46.18,
+        "text": "wonderful",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 47.58,
+            "mean_magnitude": 0.0022270733024924994,
+            "probability": 0.1541748046875,
+            "speaker": "SPEAKER_01",
+            "start": 46.18,
+            "word": "wonderful"
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      "SPEAKER_00",
+      "SPEAKER_01"
+    ],
+    "timeline": [
+      [
+        0.0,
+        1.2
+      ],
+      [
+        25.98,
+        27.76
+      ],
+      [
+        27.94,
+        29.52
+      ],
+      [
+        46.1,
+        47.58
+      ],
+      [
+        46.18,
+        47.58
+      ]
+    ]
+  },
+  "status": "ok"
+}

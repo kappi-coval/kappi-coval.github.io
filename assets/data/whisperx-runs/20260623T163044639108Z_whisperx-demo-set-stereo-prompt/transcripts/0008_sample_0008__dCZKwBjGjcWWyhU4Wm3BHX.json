@@ -1,0 +1,949 @@
+{
+  "elapsed_seconds": 7.847,
+  "input": {
+    "audio_filename": "sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.wav",
+    "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.wav",
+    "manifest_conversation_id": "dCZKwBjGjcWWyhU4Wm3BHX",
+    "manifest_row_number": 9,
+    "manifest_sample_id": "sample_0008",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:32:27.426420+00:00",
+  "result": {
+    "full_text": "Hello, it is me the robot, what do you need? Hi. I don't need anything. I just wanted to say hello. Oh no problem, if that's all then I will say goodbye. Okay, sounds good. Goodbye. Do you want to pull records, uh-huh? Do you want to pull records, uh-huh? Bye. Do you want to pull records, uh-huh? Do you want to pull records, uh-huh? Bye. Uh-huh. Bye. Bye. Bye. Do you want to pull records, uh-huh?",
+    "metadata": {
+      "alignment_enabled": false,
+      "channel_num_speakers": 1,
+      "initial_prompt": "This is a conversation transcript between a user and an agent.",
+      "is_stereo": true,
+      "language": "en",
+      "num_channels": 2,
+      "num_speakers": 2,
+      "processing_time": 6.883,
+      "requested_num_speakers": 2,
+      "step_timings": {
+        "channel_0_processing_time": 2.663,
+        "channel_1_processing_time": 4.221
+      },
+      "stereo_channel_recombine_strategy": "chronological_by_timestamp",
+      "stereo_channel_split_enabled": true,
+      "stereo_channel_summaries": [
+        {
+          "channel_index": 0,
+          "channel_name": "left",
+          "error": null,
+          "language": "en",
+          "processing_time": 2.663,
+          "segments_count": 7,
+          "speaker": "SPEAKER_00",
+          "words_count": 26
+        },
+        {
+          "channel_index": 1,
+          "channel_name": "right",
+          "error": null,
+          "language": "en",
+          "processing_time": 4.221,
+          "segments_count": 8,
+          "speaker": "SPEAKER_01",
+          "words_count": 57
+        }
+      ],
+      "stereo_input": {
+        "duration_seconds": 32.657,
+        "frame_count": 522504,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "source_num_channels": 2
+      },
+      "stereo_mode": "reconcile",
+      "stereo_mode_ignored": true,
+      "stereo_reconciliation": "split_channels_then_chronological_merge",
+      "vad_enabled": false
+    },
+    "segments": [
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.260000000000002,
+        "end": 6.6,
+        "speaker": "SPEAKER_00",
+        "start": 3.3399999999999976,
+        "text": "Hello, it is me the robot, what do you need?",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 3.86,
+            "mean_magnitude": 0.010717593133449554,
+            "probability": 0.5751953125,
+            "speaker": "SPEAKER_00",
+            "start": 3.3399999999999976,
+            "word": "Hello,"
+          },
+          {
+            "end": 4.48,
+            "mean_magnitude": 0.008165379986166954,
+            "probability": 0.8388671875,
+            "speaker": "SPEAKER_00",
+            "start": 4.2,
+            "word": "it"
+          },
+          {
+            "end": 4.62,
+            "mean_magnitude": 0.04082734137773514,
+            "probability": 0.95458984375,
+            "speaker": "SPEAKER_00",
+            "start": 4.48,
+            "word": "is"
+          },
+          {
+            "end": 4.82,
+            "mean_magnitude": 0.052524615079164505,
+            "probability": 0.96533203125,
+            "speaker": "SPEAKER_00",
+            "start": 4.62,
+            "word": "me"
+          },
+          {
+            "end": 5.04,
+            "mean_magnitude": 0.07484917342662811,
+            "probability": 0.7412109375,
+            "speaker": "SPEAKER_00",
+            "start": 4.82,
+            "word": "the"
+          },
+          {
+            "end": 5.36,
+            "mean_magnitude": 0.08062531054019928,
+            "probability": 0.8515625,
+            "speaker": "SPEAKER_00",
+            "start": 5.04,
+            "word": "robot,"
+          },
+          {
+            "end": 5.86,
+            "mean_magnitude": 0.008973460644483566,
+            "probability": 0.95849609375,
+            "speaker": "SPEAKER_00",
+            "start": 5.68,
+            "word": "what"
+          },
+          {
+            "end": 6.06,
+            "mean_magnitude": 0.037412576377391815,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 5.86,
+            "word": "do"
+          },
+          {
+            "end": 6.26,
+            "mean_magnitude": 0.06624623388051987,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 6.06,
+            "word": "you"
+          },
+          {
+            "end": 6.6,
+            "mean_magnitude": 0.11083237081766129,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 6.26,
+            "word": "need?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 3.759999999999991,
+        "end": 14.56,
+        "speaker": "SPEAKER_01",
+        "start": 10.80000000000001,
+        "text": "Hi. I don't need anything. I just wanted to say hello.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 11.360000000000005,
+            "mean_magnitude": 0.025237802416086197,
+            "probability": 0.787109375,
+            "speaker": "SPEAKER_01",
+            "start": 10.80000000000001,
+            "word": "Hi."
+          },
+          {
+            "end": 11.92,
+            "mean_magnitude": 0.002081479411572218,
+            "probability": 0.99072265625,
+            "speaker": "SPEAKER_01",
+            "start": 11.360000000000005,
+            "word": "I"
+          },
+          {
+            "end": 12.24,
+            "mean_magnitude": 0.06714793294668198,
+            "probability": 0.996337890625,
+            "speaker": "SPEAKER_01",
+            "start": 11.92,
+            "word": "don't"
+          },
+          {
+            "end": 12.38,
+            "mean_magnitude": 0.0750817134976387,
+            "probability": 0.990234375,
+            "speaker": "SPEAKER_01",
+            "start": 12.24,
+            "word": "need"
+          },
+          {
+            "end": 12.74,
+            "mean_magnitude": 0.09578998386859894,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 12.38,
+            "word": "anything."
+          },
+          {
+            "end": 13.44,
+            "mean_magnitude": 0.0035274901892989874,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_01",
+            "start": 12.96,
+            "word": "I"
+          },
+          {
+            "end": 13.66,
+            "mean_magnitude": 0.04081220552325249,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 13.44,
+            "word": "just"
+          },
+          {
+            "end": 13.96,
+            "mean_magnitude": 0.04945536330342293,
+            "probability": 0.9892578125,
+            "speaker": "SPEAKER_01",
+            "start": 13.66,
+            "word": "wanted"
+          },
+          {
+            "end": 14.1,
+            "mean_magnitude": 0.05334097892045975,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 13.96,
+            "word": "to"
+          },
+          {
+            "end": 14.28,
+            "mean_magnitude": 0.01267251931130886,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 14.1,
+            "word": "say"
+          },
+          {
+            "end": 14.56,
+            "mean_magnitude": 0.05448053404688835,
+            "probability": 0.939453125,
+            "speaker": "SPEAKER_01",
+            "start": 14.28,
+            "word": "hello."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.4400000000000013,
+        "end": 20.42,
+        "speaker": "SPEAKER_00",
+        "start": 16.98,
+        "text": "Oh no problem, if that's all then I will say goodbye.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 17.5,
+            "mean_magnitude": 0.0006248914287425578,
+            "probability": 0.71484375,
+            "speaker": "SPEAKER_00",
+            "start": 16.98,
+            "word": "Oh"
+          },
+          {
+            "end": 17.78,
+            "mean_magnitude": 0.026221642270684242,
+            "probability": 0.237060546875,
+            "speaker": "SPEAKER_00",
+            "start": 17.5,
+            "word": "no"
+          },
+          {
+            "end": 18.14,
+            "mean_magnitude": 0.06236961856484413,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_00",
+            "start": 17.78,
+            "word": "problem,"
+          },
+          {
+            "end": 18.56,
+            "mean_magnitude": 0.022688420489430428,
+            "probability": 0.94091796875,
+            "speaker": "SPEAKER_00",
+            "start": 18.38,
+            "word": "if"
+          },
+          {
+            "end": 18.98,
+            "mean_magnitude": 0.03424812853336334,
+            "probability": 0.9482421875,
+            "speaker": "SPEAKER_00",
+            "start": 18.56,
+            "word": "that's"
+          },
+          {
+            "end": 19.18,
+            "mean_magnitude": 0.014136876910924911,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 18.98,
+            "word": "all"
+          },
+          {
+            "end": 19.42,
+            "mean_magnitude": 0.0490536205470562,
+            "probability": 0.818359375,
+            "speaker": "SPEAKER_00",
+            "start": 19.18,
+            "word": "then"
+          },
+          {
+            "end": 19.66,
+            "mean_magnitude": 0.08417215198278427,
+            "probability": 0.91796875,
+            "speaker": "SPEAKER_00",
+            "start": 19.42,
+            "word": "I"
+          },
+          {
+            "end": 19.86,
+            "mean_magnitude": 0.08060348778963089,
+            "probability": 0.95166015625,
+            "speaker": "SPEAKER_00",
+            "start": 19.66,
+            "word": "will"
+          },
+          {
+            "end": 20.04,
+            "mean_magnitude": 0.047825030982494354,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 19.86,
+            "word": "say"
+          },
+          {
+            "end": 20.42,
+            "mean_magnitude": 0.08114994317293167,
+            "probability": 0.7353515625,
+            "speaker": "SPEAKER_00",
+            "start": 20.04,
+            "word": "goodbye."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.8399999999999928,
+        "end": 25.9,
+        "speaker": "SPEAKER_01",
+        "start": 24.060000000000006,
+        "text": "Okay, sounds good. Goodbye.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 24.62,
+            "mean_magnitude": 0.01575845666229725,
+            "probability": 0.70556640625,
+            "speaker": "SPEAKER_01",
+            "start": 24.060000000000006,
+            "word": "Okay,"
+          },
+          {
+            "end": 24.96,
+            "mean_magnitude": 0.06042033061385155,
+            "probability": 0.9853515625,
+            "speaker": "SPEAKER_01",
+            "start": 24.72,
+            "word": "sounds"
+          },
+          {
+            "end": 25.24,
+            "mean_magnitude": 0.08244995027780533,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 24.96,
+            "word": "good."
+          },
+          {
+            "end": 25.9,
+            "mean_magnitude": 0.02139022760093212,
+            "probability": 0.94970703125,
+            "speaker": "SPEAKER_01",
+            "start": 25.34,
+            "word": "Goodbye."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.5799999999999983,
+        "end": 30.58,
+        "speaker": "SPEAKER_01",
+        "start": 30.0,
+        "text": "Do you want to pull records, uh-huh?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 30.14,
+            "mean_magnitude": 0.0031956671737134457,
+            "probability": 0.1651611328125,
+            "speaker": "SPEAKER_01",
+            "start": 30.0,
+            "word": "Do"
+          },
+          {
+            "end": 30.24,
+            "mean_magnitude": 0.004589557647705078,
+            "probability": 0.98779296875,
+            "speaker": "SPEAKER_01",
+            "start": 30.14,
+            "word": "you"
+          },
+          {
+            "end": 30.36,
+            "mean_magnitude": 0.008135827258229256,
+            "probability": 0.775390625,
+            "speaker": "SPEAKER_01",
+            "start": 30.24,
+            "word": "want"
+          },
+          {
+            "end": 30.44,
+            "mean_magnitude": 0.00808575190603733,
+            "probability": 0.982421875,
+            "speaker": "SPEAKER_01",
+            "start": 30.36,
+            "word": "to"
+          },
+          {
+            "end": 30.58,
+            "mean_magnitude": 0.0033975602127611637,
+            "probability": 0.65625,
+            "speaker": "SPEAKER_01",
+            "start": 30.44,
+            "word": "pull"
+          },
+          {
+            "end": 30.58,
+            "probability": 0.82080078125,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "records,"
+          },
+          {
+            "end": 30.58,
+            "probability": 0.56298828125,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "uh"
+          },
+          {
+            "end": 30.58,
+            "probability": 0.9150390625,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "-huh?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.9000000000000021,
+        "end": 31.48,
+        "speaker": "SPEAKER_01",
+        "start": 30.58,
+        "text": "Do you want to pull records, uh-huh?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 30.58,
+            "probability": 0.69970703125,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "Do"
+          },
+          {
+            "end": 30.58,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "you"
+          },
+          {
+            "end": 30.58,
+            "probability": 0.93994140625,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "want"
+          },
+          {
+            "end": 30.58,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "to"
+          },
+          {
+            "end": 30.58,
+            "probability": 0.9775390625,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "pull"
+          },
+          {
+            "end": 30.9,
+            "mean_magnitude": 0.008525455370545387,
+            "probability": 0.9306640625,
+            "speaker": "SPEAKER_01",
+            "start": 30.58,
+            "word": "records,"
+          },
+          {
+            "end": 31.3,
+            "mean_magnitude": 0.002516121370717883,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_01",
+            "start": 31.12,
+            "word": "uh"
+          },
+          {
+            "end": 31.48,
+            "mean_magnitude": 0.004023753106594086,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 31.3,
+            "word": "-huh?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.379999999999999,
+        "end": 31.84,
+        "speaker": "SPEAKER_00",
+        "start": 31.46,
+        "text": "Bye.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 31.84,
+            "mean_magnitude": 0.0021791306789964437,
+            "probability": 0.6904296875,
+            "speaker": "SPEAKER_00",
+            "start": 31.46,
+            "word": "Bye."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.10000000000000142,
+        "end": 31.68,
+        "speaker": "SPEAKER_01",
+        "start": 31.58,
+        "text": "Do you want to pull records, uh-huh?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 31.68,
+            "mean_magnitude": 0.0020766640082001686,
+            "probability": 0.76806640625,
+            "speaker": "SPEAKER_01",
+            "start": 31.58,
+            "word": "Do"
+          },
+          {
+            "end": 31.68,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 31.68,
+            "word": "you"
+          },
+          {
+            "end": 31.68,
+            "probability": 0.990234375,
+            "speaker": "SPEAKER_01",
+            "start": 31.68,
+            "word": "want"
+          },
+          {
+            "end": 31.68,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 31.68,
+            "word": "to"
+          },
+          {
+            "end": 31.68,
+            "probability": 0.9931640625,
+            "speaker": "SPEAKER_01",
+            "start": 31.68,
+            "word": "pull"
+          },
+          {
+            "end": 31.68,
+            "probability": 0.9765625,
+            "speaker": "SPEAKER_01",
+            "start": 31.68,
+            "word": "records,"
+          },
+          {
+            "end": 31.68,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 31.68,
+            "word": "uh"
+          },
+          {
+            "end": 31.68,
+            "probability": 0.999267578125,
+            "speaker": "SPEAKER_01",
+            "start": 31.68,
+            "word": "-huh?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.019999999999999574,
+        "end": 31.7,
+        "speaker": "SPEAKER_01",
+        "start": 31.68,
+        "text": "Do you want to pull records, uh-huh?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 31.7,
+            "mean_magnitude": 0.0023136138916015625,
+            "probability": 0.75634765625,
+            "speaker": "SPEAKER_01",
+            "start": 31.68,
+            "word": "Do"
+          },
+          {
+            "end": 31.7,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 31.7,
+            "word": "you"
+          },
+          {
+            "end": 31.7,
+            "probability": 0.9931640625,
+            "speaker": "SPEAKER_01",
+            "start": 31.7,
+            "word": "want"
+          },
+          {
+            "end": 31.7,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 31.7,
+            "word": "to"
+          },
+          {
+            "end": 31.7,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_01",
+            "start": 31.7,
+            "word": "pull"
+          },
+          {
+            "end": 31.7,
+            "probability": 0.9814453125,
+            "speaker": "SPEAKER_01",
+            "start": 31.7,
+            "word": "records,"
+          },
+          {
+            "end": 31.7,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 31.7,
+            "word": "uh"
+          },
+          {
+            "end": 31.7,
+            "probability": 0.999267578125,
+            "speaker": "SPEAKER_01",
+            "start": 31.7,
+            "word": "-huh?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.05999999999999872,
+        "end": 32.04,
+        "speaker": "SPEAKER_00",
+        "start": 31.98,
+        "text": "Bye.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 32.04,
+            "mean_magnitude": 0.08158324658870697,
+            "probability": 0.88916015625,
+            "speaker": "SPEAKER_00",
+            "start": 31.98,
+            "word": "Bye."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.5400000000000027,
+        "end": 32.52,
+        "speaker": "SPEAKER_01",
+        "start": 31.98,
+        "text": "Uh-huh.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 32.26,
+            "mean_magnitude": 0.0024940217845141888,
+            "probability": 0.1456298828125,
+            "speaker": "SPEAKER_01",
+            "start": 31.98,
+            "word": "Uh"
+          },
+          {
+            "end": 32.52,
+            "mean_magnitude": 0.0030898277182132006,
+            "probability": 0.9541015625,
+            "speaker": "SPEAKER_01",
+            "start": 32.26,
+            "word": "-huh."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.060000000000002274,
+        "end": 32.1,
+        "speaker": "SPEAKER_00",
+        "start": 32.04,
+        "text": "Bye.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 32.1,
+            "mean_magnitude": 0.07052993774414062,
+            "probability": 0.88818359375,
+            "speaker": "SPEAKER_00",
+            "start": 32.04,
+            "word": "Bye."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.240000000000002,
+        "end": 32.34,
+        "speaker": "SPEAKER_00",
+        "start": 32.1,
+        "text": "Bye.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 32.34,
+            "mean_magnitude": 0.021390946581959724,
+            "probability": 0.90576171875,
+            "speaker": "SPEAKER_00",
+            "start": 32.1,
+            "word": "Bye."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.27999999999999403,
+        "end": 32.62,
+        "speaker": "SPEAKER_00",
+        "start": 32.34,
+        "text": "Bye.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 32.62,
+            "mean_magnitude": 5.511556446435861e-05,
+            "probability": 0.96044921875,
+            "speaker": "SPEAKER_00",
+            "start": 32.34,
+            "word": "Bye."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.09999999999999432,
+        "end": 32.62,
+        "speaker": "SPEAKER_01",
+        "start": 32.52,
+        "text": "Do you want to pull records, uh-huh?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 32.62,
+            "mean_magnitude": 0.0014072227058932185,
+            "probability": 0.5029296875,
+            "speaker": "SPEAKER_01",
+            "start": 32.52,
+            "word": "Do"
+          },
+          {
+            "end": 32.62,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 32.62,
+            "word": "you"
+          },
+          {
+            "end": 32.62,
+            "probability": 0.98583984375,
+            "speaker": "SPEAKER_01",
+            "start": 32.62,
+            "word": "want"
+          },
+          {
+            "end": 32.62,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 32.62,
+            "word": "to"
+          },
+          {
+            "end": 32.62,
+            "probability": 0.99267578125,
+            "speaker": "SPEAKER_01",
+            "start": 32.62,
+            "word": "pull"
+          },
+          {
+            "end": 32.62,
+            "probability": 0.97705078125,
+            "speaker": "SPEAKER_01",
+            "start": 32.62,
+            "word": "records,"
+          },
+          {
+            "end": 32.62,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_01",
+            "start": 32.62,
+            "word": "uh"
+          },
+          {
+            "end": 32.62,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 32.62,
+            "word": "-huh?"
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      "SPEAKER_00",
+      "SPEAKER_01"
+    ],
+    "timeline": [
+      [
+        3.3399999999999976,
+        6.6
+      ],
+      [
+        10.80000000000001,
+        14.56
+      ],
+      [
+        16.98,
+        20.42
+      ],
+      [
+        24.060000000000006,
+        25.9
+      ],
+      [
+        30.0,
+        30.58
+      ],
+      [
+        30.58,
+        31.48
+      ],
+      [
+        31.46,
+        31.84
+      ],
+      [
+        31.58,
+        31.68
+      ],
+      [
+        31.68,
+        31.7
+      ],
+      [
+        31.98,
+        32.04
+      ],
+      [
+        31.98,
+        32.52
+      ],
+      [
+        32.04,
+        32.1
+      ],
+      [
+        32.1,
+        32.34
+      ],
+      [
+        32.34,
+        32.62
+      ],
+      [
+        32.52,
+        32.62
+      ]
+    ]
+  },
+  "status": "ok"
+}

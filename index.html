@@ -25,22 +25,22 @@
           <h1>Does Granite Speech T&D Work IRL?</h1>
 
           <!-- TODO: Replace with subtitle, byline, and date -->
-          <p class="subtitle">A 100% human-written appeal for discussion on real-world use of the Granite Speech 4.1 2b Plus Model.</p>
+          <p class="subtitle">An appeal for discussion on real-world use of the Granite Speech 4.1 2b Plus Model.</p>
           <p class="meta">
-            <span class="byline">By <a href="https://www.thinkkappi.com/" target="_blank">Kappi</a> in my role part time for <a href="https://www.coval.ai/" target="_blank">Coval</a></span>
+            <span class="byline">By <a href="https://www.thinkkappi.com/" target="_blank" rel="noopener noreferrer">Kappi</a> in my role part time for <a href="https://www.coval.ai/" target="_blank" rel="noopener noreferrer">Coval</a></span>
             <span aria-hidden="true">•</span>
             <time datetime="2026-06-22">June 22, 2026</time>
           </p>
         </header>
 
         <section aria-labelledby="intro-heading" class="section">
-          <h2 id="intro-heading">Intro</h2>
+          <h2 id="intro-heading">100% Human-Written Report</h2>
           <p>
             I was excited to see IBM’s Granite Speech 4.1 2b on the
-            <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">Huggingface Open ASR Leaderboard</a>
+            <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard" target="_blank" rel="noopener noreferrer">Huggingface Open ASR Leaderboard</a>
             — the
-            <a href="https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus">Plus variant</a>
-            in particular offers an appealing alternative to the industry-standard WhisperX pipelines used for audio Transcription and Diarization (T&amp;D). Appealing because it’s <em>not</em> a pipeline; in comparison to WhisperX, which wraps Faster Whisper in Voice Activity Detection (VAD), phoneme alignment and pyannote.audio diarization to produce accurate word-level timestamps and speaker attribution, Granite Speech Plus promises all of that natively. No need to wrap anything in anything, or wonder what obscure param in your pipeline is causing poor performance; ostensibly you should be able to put multi-speaker audio in and get timestamped, speaker attributed transcriptions out. Enticing stuff.
+            <a href="https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus" target="_blank" rel="noopener noreferrer">Plus variant</a>
+            in particular offers an appealing alternative to the industry-standard <a href="https://github.com/m-bain/whisperx" target="_blank" rel="noopener noreferrer">WhisperX</a> pipelines used for audio Transcription and Diarization (T&amp;D). Appealing because it’s <em>not</em> a pipeline; in comparison to WhisperX, which wraps Faster Whisper in Voice Activity Detection (VAD), phoneme alignment and pyannote.audio diarization to produce accurate word-level timestamps and speaker attribution, Granite Speech Plus promises all of that natively. No need to wrap anything in anything, or wonder what obscure param in your pipeline is causing poor performance; ostensibly you should be able to put multi-speaker audio in and get timestamped, speaker attributed transcriptions out. Enticing stuff.
           </p>
 
           <p>
@@ -49,29 +49,54 @@
 
           <p>
             The cynical explanation of this is that it is now so easy to produce editorial-seeming content that it encourages reviews which haven’t actually tested out the things they are recommending, and my poor results are an accurate reflection of the current model’s real world performance. I hope that isn’t the case, as I remain excited by the premise of this model, so I’m publishing my results here in the hope that they produce that magical phenomenon of instantly summoning a person to correct someone being Wrong On The Internet. If you have had good results with this model, please let me know how; I will be indebted to you for the help. And if you have struggled with it like me, then I hope you feel
-            <a href="https://xkcd.com/979/">less alone</a>
+            <a href="https://xkcd.com/979/" target="_blank" rel="noopener noreferrer">less alone</a>
             seeing this.
           </p>
 
         </section>
 
         <section aria-labelledby="audio-heading" class="section">
-          <h2 id="audio-heading">Test Set</h2>
+          <h2 id="audio-heading">Test Set Configuration</h2>
           <p>
-            10 conversations from the WhisperX golden set (16kHz mono), presented as sample-by-sample audio and transcript comparisons.
+            I used 10 conversations generated via Coval, simulating phone calls between users and agents. The examples are a mixture of stereo and mono, all at 16KHz. The task was to produce word-level timestamps and word-level speaker attributions. I wasn't worried about nice segmentation, or about punctuation (which the Granite Plus variant doesn't provide). For both models I kept them pretty deterministic, with 0 temperature for WhisperX and argmax token probability selection for Granite.
           </p>
+          <h4>Operating Environment</h4>
+          <p>
+            The tests were run on a g5.xlarge AWS machine, with these NVIDIA specs:
+<pre><code class="language-bash">
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.133.20             Driver Version: 570.133.20     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A10G                    On  |   00000000:00:1E.0 Off |                    0 |
+|  0%   24C    P8              9W /  300W |       0MiB /  23028MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+</code></pre>
+          </p>
+          <small><em>Details and code snippets of both implementations are below the results.</em></small>
+          <h4>WhisperX Baseline</h4>
+          <p>I ran a basic WhisperX pipeline, without VAD or alignment enabled, but with an initial prompt. Across the examples this gave the best baseline results without doing much tuning. For the stereo examples I ran two separate passes, one for each channel, and the merged them chronologically via their word-level timestamps. This allowed me to cheat on diarazation, as each speaker has its own channel. For mono examples I used the pyanote diarazation with WhisperX. I kept the native segmentation output by the model, which is arbitrary and needs post-processing to be useful.</p>
+          <h4>Granite Test</h4>
+          <p>For streo examples I combined them into mono before giving them to the model. I ran two passes, one for speaker attribution and one for timestamps, and then parsed the resultant strings to get the final output.</p>
         </section>
 
         <section aria-labelledby="body-heading" class="section">
-          <h2 id="body-heading">Body</h2>
+          <h2 id="body-heading">Results</h2>
           <p>
-            Each sample includes its audio player, followed by Granite and WhisperX transcript outputs. Click any word to seek that sample’s audio.
+            Each sample shows Granite and WhisperX transcript outputs. Click any word to seek to the timestamp for the word given by the model (and hover over the word to see the timestamp).
+          </p>
+          <p>
+            Some observations: Granite is a lot slower than WhisperX, even with VAD and alignment turned on.
           </p>
           <div
             id="sample-comparisons"
             class="sample-comparisons"
-            data-granite-run-index="assets/data/granite-runs/20260617T214458114463Z_granite-golden-bf16/run_index.json"
-            data-whisperx-run-index="assets/data/whisperx-runs/20260619T151236611722Z_whisperx-stereo-split-prompt-probs/run_index.json"
+            data-granite-run-index="assets/data/granite-runs/20260623T160009475458Z_granite-demo-set-bf16/run_index.json"
+            data-whisperx-run-index="assets/data/whisperx-runs/20260623T163044639108Z_whisperx-demo-set-stereo-prompt/run_index.json"
           >
             <p class="caption">Loading sample comparisons…</p>
           </div>

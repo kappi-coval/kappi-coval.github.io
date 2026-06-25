@@ -1,0 +1,3401 @@
+{
+  "elapsed_seconds": 12.289,
+  "input": {
+    "audio_filename": "sample_0002__ELmy7PJp6wUrWqSYHPSCTX.wav",
+    "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0002__ELmy7PJp6wUrWqSYHPSCTX.wav",
+    "manifest_conversation_id": "ELmy7PJp6wUrWqSYHPSCTX",
+    "manifest_row_number": 3,
+    "manifest_sample_id": "sample_0002",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:31:16.444167+00:00",
+  "result": {
+    "full_text": "Thank you for calling the non-emergency line. This is AI Assistant Athena, how can I help you? Hi there. I'm hoping to speak with Officer Martinez. His badge number is 4521, about a traffic stop from last week. I have some questions about the citation he gave me and would really like to discuss it with him directly, if possible. What address was the incident report created for? Oh sure, I can give you that. The traffic stop happened near the intersection of Westbury Street and Hemphill Street in Fort Worth. Do you need the exact address or is that intersection enough? that intersection works so the incident location is Westbury Street and Hem Hill Hill Street in Fort Worth. Can you please verify your phone number? My phone number is 817-555-1234. Would you like me to confirm any other details? Got it, that's 817-555-1234. three four what is your first name and can you please spell it out for me Yes, of course. My first name is Jessica. J-E-S-S-I-C-A Jessica got it and what is your last name please spell it out for me as well Sure. My last name is Ramirez, R-A-M-I-R-E-Z. Do you have or know your report or incident number? I don't have the report number with me right now, unfortunately. Unfortunately, is there another way you can look it up, maybe with my name or the date of the stop? No problem. Can we go ahead and summarize what I have? The incident address is the intersection of West Berry Street and Hemphill Street in Fort Worth. Your phone number is 817-555-1234. Your name is Jessica Ramirez, and you don't have a report or incident number available at this time. Is that all correct? Yes, that's all correct. Thank you for confirming everything. I am transferring you to an agent. Please stay on the line. The transfer is now complete. Stay on the line for the next available call taker.",
+    "metadata": {
+      "alignment_enabled": false,
+      "channel_num_speakers": 1,
+      "initial_prompt": "This is a conversation transcript between a user and an agent.",
+      "is_stereo": true,
+      "language": "en",
+      "num_channels": 2,
+      "num_speakers": 2,
+      "processing_time": 9.909,
+      "requested_num_speakers": 2,
+      "step_timings": {
+        "channel_0_processing_time": 5.317,
+        "channel_1_processing_time": 4.593
+      },
+      "stereo_channel_recombine_strategy": "chronological_by_timestamp",
+      "stereo_channel_split_enabled": true,
+      "stereo_channel_summaries": [
+        {
+          "channel_index": 0,
+          "channel_name": "left",
+          "error": null,
+          "language": "en",
+          "processing_time": 5.317,
+          "segments_count": 19,
+          "speaker": "SPEAKER_00",
+          "words_count": 183
+        },
+        {
+          "channel_index": 1,
+          "channel_name": "right",
+          "error": null,
+          "language": "en",
+          "processing_time": 4.593,
+          "segments_count": 17,
+          "speaker": "SPEAKER_01",
+          "words_count": 161
+        }
+      ],
+      "stereo_input": {
+        "duration_seconds": 194.997,
+        "frame_count": 3119946,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "source_num_channels": 2
+      },
+      "stereo_mode": "reconcile",
+      "stereo_mode_ignored": true,
+      "stereo_reconciliation": "split_channels_then_chronological_merge",
+      "vad_enabled": false
+    },
+    "segments": [
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.82,
+        "end": 1.82,
+        "speaker": "SPEAKER_00",
+        "start": 0.0,
+        "text": "Thank you for calling the non-emergency line.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 0.1,
+            "mean_magnitude": 0.06340684741735458,
+            "probability": 0.939453125,
+            "speaker": "SPEAKER_00",
+            "start": 0.0,
+            "word": "Thank"
+          },
+          {
+            "end": 0.22,
+            "mean_magnitude": 0.05064760893583298,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 0.1,
+            "word": "you"
+          },
+          {
+            "end": 0.32,
+            "mean_magnitude": 0.060448285192251205,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 0.22,
+            "word": "for"
+          },
+          {
+            "end": 0.6,
+            "mean_magnitude": 0.06822818517684937,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 0.32,
+            "word": "calling"
+          },
+          {
+            "end": 0.8,
+            "mean_magnitude": 0.06657252460718155,
+            "probability": 0.98486328125,
+            "speaker": "SPEAKER_00",
+            "start": 0.6,
+            "word": "the"
+          },
+          {
+            "end": 1.0,
+            "mean_magnitude": 0.05439122021198273,
+            "probability": 0.92041015625,
+            "speaker": "SPEAKER_00",
+            "start": 0.8,
+            "word": "non"
+          },
+          {
+            "end": 1.46,
+            "mean_magnitude": 0.040462154895067215,
+            "probability": 0.962890625,
+            "speaker": "SPEAKER_00",
+            "start": 1.0,
+            "word": "-emergency"
+          },
+          {
+            "end": 1.82,
+            "mean_magnitude": 0.021961970254778862,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 1.46,
+            "word": "line."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.5999999999999996,
+        "end": 4.76,
+        "speaker": "SPEAKER_00",
+        "start": 2.16,
+        "text": "This is AI Assistant Athena, how can I help you?",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 2.56,
+            "mean_magnitude": 0.006456742063164711,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 2.16,
+            "word": "This"
+          },
+          {
+            "end": 2.72,
+            "mean_magnitude": 0.02708522044122219,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 2.56,
+            "word": "is"
+          },
+          {
+            "end": 2.92,
+            "mean_magnitude": 0.05386972427368164,
+            "probability": 0.97900390625,
+            "speaker": "SPEAKER_00",
+            "start": 2.72,
+            "word": "AI"
+          },
+          {
+            "end": 3.38,
+            "mean_magnitude": 0.04615597054362297,
+            "probability": 0.53076171875,
+            "speaker": "SPEAKER_00",
+            "start": 2.92,
+            "word": "Assistant"
+          },
+          {
+            "end": 3.72,
+            "mean_magnitude": 0.01389330718666315,
+            "probability": 0.2445068359375,
+            "speaker": "SPEAKER_00",
+            "start": 3.38,
+            "word": "Athena,"
+          },
+          {
+            "end": 4.16,
+            "mean_magnitude": 0.011432802304625511,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_00",
+            "start": 4.0,
+            "word": "how"
+          },
+          {
+            "end": 4.32,
+            "mean_magnitude": 0.02805643156170845,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 4.16,
+            "word": "can"
+          },
+          {
+            "end": 4.42,
+            "mean_magnitude": 0.029490984976291656,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 4.32,
+            "word": "I"
+          },
+          {
+            "end": 4.6,
+            "mean_magnitude": 0.03484666720032692,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 4.42,
+            "word": "help"
+          },
+          {
+            "end": 4.76,
+            "mean_magnitude": 0.014709388837218285,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 4.6,
+            "word": "you?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 8.48,
+        "end": 15.6,
+        "speaker": "SPEAKER_01",
+        "start": 7.119999999999998,
+        "text": "Hi there. I'm hoping to speak with Officer Martinez. His badge number is 4521, about a traffic stop from last week.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 7.72,
+            "mean_magnitude": 0.00018049267237074673,
+            "probability": 0.78955078125,
+            "speaker": "SPEAKER_01",
+            "start": 7.119999999999998,
+            "word": "Hi"
+          },
+          {
+            "end": 7.98,
+            "mean_magnitude": 0.08919195085763931,
+            "probability": 0.90869140625,
+            "speaker": "SPEAKER_01",
+            "start": 7.72,
+            "word": "there."
+          },
+          {
+            "end": 8.42,
+            "mean_magnitude": 0.03659770265221596,
+            "probability": 0.978515625,
+            "speaker": "SPEAKER_01",
+            "start": 8.12,
+            "word": "I'm"
+          },
+          {
+            "end": 8.62,
+            "mean_magnitude": 0.10558465868234634,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 8.42,
+            "word": "hoping"
+          },
+          {
+            "end": 8.86,
+            "mean_magnitude": 0.10037348419427872,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 8.62,
+            "word": "to"
+          },
+          {
+            "end": 9.08,
+            "mean_magnitude": 0.029454221948981285,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 8.86,
+            "word": "speak"
+          },
+          {
+            "end": 9.32,
+            "mean_magnitude": 0.04656870290637016,
+            "probability": 0.98779296875,
+            "speaker": "SPEAKER_01",
+            "start": 9.08,
+            "word": "with"
+          },
+          {
+            "end": 9.64,
+            "mean_magnitude": 0.04306439310312271,
+            "probability": 0.89404296875,
+            "speaker": "SPEAKER_01",
+            "start": 9.32,
+            "word": "Officer"
+          },
+          {
+            "end": 10.06,
+            "mean_magnitude": 0.02530463971197605,
+            "probability": 0.98828125,
+            "speaker": "SPEAKER_01",
+            "start": 9.64,
+            "word": "Martinez."
+          },
+          {
+            "end": 11.0,
+            "mean_magnitude": 0.007293716073036194,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_01",
+            "start": 10.48,
+            "word": "His"
+          },
+          {
+            "end": 11.34,
+            "mean_magnitude": 0.08592384308576584,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_01",
+            "start": 11.0,
+            "word": "badge"
+          },
+          {
+            "end": 11.58,
+            "mean_magnitude": 0.07257609814405441,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 11.34,
+            "word": "number"
+          },
+          {
+            "end": 11.92,
+            "mean_magnitude": 0.046112556010484695,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_01",
+            "start": 11.58,
+            "word": "is"
+          },
+          {
+            "end": 13.12,
+            "mean_magnitude": 0.04075281322002411,
+            "probability": 0.93701171875,
+            "speaker": "SPEAKER_01",
+            "start": 11.92,
+            "word": "4521,"
+          },
+          {
+            "end": 13.98,
+            "mean_magnitude": 0.04156940057873726,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_01",
+            "start": 13.52,
+            "word": "about"
+          },
+          {
+            "end": 14.14,
+            "mean_magnitude": 0.11839155852794647,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 13.98,
+            "word": "a"
+          },
+          {
+            "end": 14.46,
+            "mean_magnitude": 0.0451178178191185,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 14.14,
+            "word": "traffic"
+          },
+          {
+            "end": 14.74,
+            "mean_magnitude": 0.026886463165283203,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 14.46,
+            "word": "stop"
+          },
+          {
+            "end": 15.02,
+            "mean_magnitude": 0.034362465143203735,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 14.74,
+            "word": "from"
+          },
+          {
+            "end": 15.22,
+            "mean_magnitude": 0.05954800546169281,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 15.02,
+            "word": "last"
+          },
+          {
+            "end": 15.6,
+            "mean_magnitude": 0.03883514553308487,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 15.22,
+            "word": "week."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 7.259999999999998,
+        "end": 23.08,
+        "speaker": "SPEAKER_01",
+        "start": 15.82,
+        "text": "I have some questions about the citation he gave me and would really like to discuss it with him directly, if possible.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 16.18,
+            "mean_magnitude": 0.008104314096271992,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 15.82,
+            "word": "I"
+          },
+          {
+            "end": 16.42,
+            "mean_magnitude": 0.058325059711933136,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 16.18,
+            "word": "have"
+          },
+          {
+            "end": 16.64,
+            "mean_magnitude": 0.05146251991391182,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 16.42,
+            "word": "some"
+          },
+          {
+            "end": 17.08,
+            "mean_magnitude": 0.0829172134399414,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 16.64,
+            "word": "questions"
+          },
+          {
+            "end": 17.56,
+            "mean_magnitude": 0.02512640878558159,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 17.08,
+            "word": "about"
+          },
+          {
+            "end": 17.72,
+            "mean_magnitude": 0.05634608119726181,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_01",
+            "start": 17.56,
+            "word": "the"
+          },
+          {
+            "end": 18.12,
+            "mean_magnitude": 0.022397423163056374,
+            "probability": 0.99365234375,
+            "speaker": "SPEAKER_01",
+            "start": 17.72,
+            "word": "citation"
+          },
+          {
+            "end": 18.6,
+            "mean_magnitude": 0.037470340728759766,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_01",
+            "start": 18.12,
+            "word": "he"
+          },
+          {
+            "end": 18.86,
+            "mean_magnitude": 0.03922092914581299,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 18.6,
+            "word": "gave"
+          },
+          {
+            "end": 19.14,
+            "mean_magnitude": 0.03375154733657837,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 18.86,
+            "word": "me"
+          },
+          {
+            "end": 19.58,
+            "mean_magnitude": 0.015441998839378357,
+            "probability": 0.57080078125,
+            "speaker": "SPEAKER_01",
+            "start": 19.14,
+            "word": "and"
+          },
+          {
+            "end": 19.78,
+            "mean_magnitude": 0.10407599806785583,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_01",
+            "start": 19.58,
+            "word": "would"
+          },
+          {
+            "end": 20.04,
+            "mean_magnitude": 0.07102607190608978,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_01",
+            "start": 19.78,
+            "word": "really"
+          },
+          {
+            "end": 20.36,
+            "mean_magnitude": 0.10836584866046906,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 20.04,
+            "word": "like"
+          },
+          {
+            "end": 20.52,
+            "mean_magnitude": 0.024965321645140648,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 20.36,
+            "word": "to"
+          },
+          {
+            "end": 20.86,
+            "mean_magnitude": 0.022380396723747253,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 20.52,
+            "word": "discuss"
+          },
+          {
+            "end": 21.08,
+            "mean_magnitude": 0.03777341917157173,
+            "probability": 0.99267578125,
+            "speaker": "SPEAKER_01",
+            "start": 20.86,
+            "word": "it"
+          },
+          {
+            "end": 21.22,
+            "mean_magnitude": 0.0419372133910656,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_01",
+            "start": 21.08,
+            "word": "with"
+          },
+          {
+            "end": 21.46,
+            "mean_magnitude": 0.02927473373711109,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 21.22,
+            "word": "him"
+          },
+          {
+            "end": 21.88,
+            "mean_magnitude": 0.048679981380701065,
+            "probability": 0.9482421875,
+            "speaker": "SPEAKER_01",
+            "start": 21.46,
+            "word": "directly,"
+          },
+          {
+            "end": 22.66,
+            "mean_magnitude": 0.01754707098007202,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 22.18,
+            "word": "if"
+          },
+          {
+            "end": 23.08,
+            "mean_magnitude": 0.030255699530243874,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 22.66,
+            "word": "possible."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.4599999999999937,
+        "end": 35.54,
+        "speaker": "SPEAKER_00",
+        "start": 32.080000000000005,
+        "text": "What address was the incident report created for?",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 32.88,
+            "mean_magnitude": 0.0006034636753611267,
+            "probability": 0.486083984375,
+            "speaker": "SPEAKER_00",
+            "start": 32.080000000000005,
+            "word": "What"
+          },
+          {
+            "end": 33.34,
+            "mean_magnitude": 0.07144534587860107,
+            "probability": 0.9931640625,
+            "speaker": "SPEAKER_00",
+            "start": 32.88,
+            "word": "address"
+          },
+          {
+            "end": 33.72,
+            "mean_magnitude": 0.029453126713633537,
+            "probability": 0.99267578125,
+            "speaker": "SPEAKER_00",
+            "start": 33.34,
+            "word": "was"
+          },
+          {
+            "end": 33.9,
+            "mean_magnitude": 0.026906203478574753,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 33.72,
+            "word": "the"
+          },
+          {
+            "end": 34.3,
+            "mean_magnitude": 0.020304016768932343,
+            "probability": 0.96923828125,
+            "speaker": "SPEAKER_00",
+            "start": 33.9,
+            "word": "incident"
+          },
+          {
+            "end": 34.58,
+            "mean_magnitude": 0.02336881496012211,
+            "probability": 0.990234375,
+            "speaker": "SPEAKER_00",
+            "start": 34.3,
+            "word": "report"
+          },
+          {
+            "end": 35.16,
+            "mean_magnitude": 0.023302435874938965,
+            "probability": 0.98486328125,
+            "speaker": "SPEAKER_00",
+            "start": 34.58,
+            "word": "created"
+          },
+          {
+            "end": 35.54,
+            "mean_magnitude": 0.02090795338153839,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 35.16,
+            "word": "for?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 2.0600000000000023,
+        "end": 40.18,
+        "speaker": "SPEAKER_01",
+        "start": 38.12,
+        "text": "Oh sure, I can give you that.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 38.8,
+            "mean_magnitude": 0.0,
+            "probability": 0.826171875,
+            "speaker": "SPEAKER_01",
+            "start": 38.12,
+            "word": "Oh"
+          },
+          {
+            "end": 39.14,
+            "mean_magnitude": 0.03097471408545971,
+            "probability": 0.63232421875,
+            "speaker": "SPEAKER_01",
+            "start": 38.8,
+            "word": "sure,"
+          },
+          {
+            "end": 39.58,
+            "mean_magnitude": 0.00991396140307188,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_01",
+            "start": 39.34,
+            "word": "I"
+          },
+          {
+            "end": 39.7,
+            "mean_magnitude": 0.04443405568599701,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 39.58,
+            "word": "can"
+          },
+          {
+            "end": 39.88,
+            "mean_magnitude": 0.06153339892625809,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 39.7,
+            "word": "give"
+          },
+          {
+            "end": 40.02,
+            "mean_magnitude": 0.061105333268642426,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 39.88,
+            "word": "you"
+          },
+          {
+            "end": 40.18,
+            "mean_magnitude": 0.08278234302997589,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 40.02,
+            "word": "that."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 6.240000000000002,
+        "end": 46.64,
+        "speaker": "SPEAKER_01",
+        "start": 40.4,
+        "text": "The traffic stop happened near the intersection of Westbury Street and Hemphill Street in",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 41.02,
+            "mean_magnitude": 0.009238882921636105,
+            "probability": 0.9853515625,
+            "speaker": "SPEAKER_01",
+            "start": 40.4,
+            "word": "The"
+          },
+          {
+            "end": 41.4,
+            "mean_magnitude": 0.050089217722415924,
+            "probability": 0.9873046875,
+            "speaker": "SPEAKER_01",
+            "start": 41.02,
+            "word": "traffic"
+          },
+          {
+            "end": 41.64,
+            "mean_magnitude": 0.018931269645690918,
+            "probability": 0.99365234375,
+            "speaker": "SPEAKER_01",
+            "start": 41.4,
+            "word": "stop"
+          },
+          {
+            "end": 42.22,
+            "mean_magnitude": 0.05584872141480446,
+            "probability": 0.99072265625,
+            "speaker": "SPEAKER_01",
+            "start": 41.64,
+            "word": "happened"
+          },
+          {
+            "end": 42.58,
+            "mean_magnitude": 0.08289129287004471,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_01",
+            "start": 42.22,
+            "word": "near"
+          },
+          {
+            "end": 42.72,
+            "mean_magnitude": 0.07345184683799744,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 42.58,
+            "word": "the"
+          },
+          {
+            "end": 43.26,
+            "mean_magnitude": 0.03770468384027481,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 42.72,
+            "word": "intersection"
+          },
+          {
+            "end": 43.76,
+            "mean_magnitude": 0.03564732149243355,
+            "probability": 0.99072265625,
+            "speaker": "SPEAKER_01",
+            "start": 43.26,
+            "word": "of"
+          },
+          {
+            "end": 44.3,
+            "mean_magnitude": 0.04091683030128479,
+            "probability": 0.756103515625,
+            "speaker": "SPEAKER_01",
+            "start": 43.76,
+            "word": "Westbury"
+          },
+          {
+            "end": 44.62,
+            "mean_magnitude": 0.03583257272839546,
+            "probability": 0.908203125,
+            "speaker": "SPEAKER_01",
+            "start": 44.3,
+            "word": "Street"
+          },
+          {
+            "end": 45.16,
+            "mean_magnitude": 0.02550956979393959,
+            "probability": 0.98486328125,
+            "speaker": "SPEAKER_01",
+            "start": 44.62,
+            "word": "and"
+          },
+          {
+            "end": 45.68,
+            "mean_magnitude": 0.05841683968901634,
+            "probability": 0.9679361979166666,
+            "speaker": "SPEAKER_01",
+            "start": 45.16,
+            "word": "Hemphill"
+          },
+          {
+            "end": 46.02,
+            "mean_magnitude": 0.06432168930768967,
+            "probability": 0.97802734375,
+            "speaker": "SPEAKER_01",
+            "start": 45.68,
+            "word": "Street"
+          },
+          {
+            "end": 46.64,
+            "mean_magnitude": 0.02665143460035324,
+            "probability": 0.97021484375,
+            "speaker": "SPEAKER_01",
+            "start": 46.02,
+            "word": "in"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.5,
+        "end": 47.14,
+        "speaker": "SPEAKER_01",
+        "start": 46.64,
+        "text": "Fort Worth.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 46.9,
+            "mean_magnitude": 0.046708494424819946,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_01",
+            "start": 46.64,
+            "word": "Fort"
+          },
+          {
+            "end": 47.14,
+            "mean_magnitude": 0.03613244742155075,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 46.9,
+            "word": "Worth."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 4.18,
+        "end": 51.56,
+        "speaker": "SPEAKER_01",
+        "start": 47.38,
+        "text": "Do you need the exact address or is that intersection enough?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 47.72,
+            "mean_magnitude": 0.00500541552901268,
+            "probability": 0.98828125,
+            "speaker": "SPEAKER_01",
+            "start": 47.38,
+            "word": "Do"
+          },
+          {
+            "end": 47.84,
+            "mean_magnitude": 0.05928783491253853,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 47.72,
+            "word": "you"
+          },
+          {
+            "end": 48.08,
+            "mean_magnitude": 0.20110292732715607,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 47.84,
+            "word": "need"
+          },
+          {
+            "end": 48.22,
+            "mean_magnitude": 0.09872298687696457,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 48.08,
+            "word": "the"
+          },
+          {
+            "end": 48.54,
+            "mean_magnitude": 0.05783870071172714,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 48.22,
+            "word": "exact"
+          },
+          {
+            "end": 49.18,
+            "mean_magnitude": 0.038915105164051056,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 48.54,
+            "word": "address"
+          },
+          {
+            "end": 49.86,
+            "mean_magnitude": 0.022493446245789528,
+            "probability": 0.426513671875,
+            "speaker": "SPEAKER_01",
+            "start": 49.18,
+            "word": "or"
+          },
+          {
+            "end": 50.38,
+            "mean_magnitude": 0.07504597306251526,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_01",
+            "start": 49.86,
+            "word": "is"
+          },
+          {
+            "end": 50.64,
+            "mean_magnitude": 0.051117192953825,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_01",
+            "start": 50.38,
+            "word": "that"
+          },
+          {
+            "end": 51.14,
+            "mean_magnitude": 0.046802956610918045,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 50.64,
+            "word": "intersection"
+          },
+          {
+            "end": 51.56,
+            "mean_magnitude": 0.04700887203216553,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 51.14,
+            "word": "enough?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 6.140000000000008,
+        "end": 62.04,
+        "speaker": "SPEAKER_00",
+        "start": 55.89999999999999,
+        "text": "that intersection works so the incident location is Westbury Street and Hem Hill",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 56.66,
+            "mean_magnitude": 0.000805846240837127,
+            "probability": 0.0750732421875,
+            "speaker": "SPEAKER_00",
+            "start": 55.89999999999999,
+            "word": "that"
+          },
+          {
+            "end": 57.42,
+            "mean_magnitude": 0.0346076600253582,
+            "probability": 0.916015625,
+            "speaker": "SPEAKER_00",
+            "start": 56.66,
+            "word": "intersection"
+          },
+          {
+            "end": 57.9,
+            "mean_magnitude": 0.025048915296792984,
+            "probability": 0.93896484375,
+            "speaker": "SPEAKER_00",
+            "start": 57.42,
+            "word": "works"
+          },
+          {
+            "end": 58.66,
+            "mean_magnitude": 0.0030276901088654995,
+            "probability": 0.8173828125,
+            "speaker": "SPEAKER_00",
+            "start": 57.9,
+            "word": "so"
+          },
+          {
+            "end": 58.8,
+            "mean_magnitude": 0.12470487505197525,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 58.66,
+            "word": "the"
+          },
+          {
+            "end": 59.1,
+            "mean_magnitude": 0.04303785413503647,
+            "probability": 0.9375,
+            "speaker": "SPEAKER_00",
+            "start": 58.8,
+            "word": "incident"
+          },
+          {
+            "end": 59.44,
+            "mean_magnitude": 0.06393541395664215,
+            "probability": 0.98828125,
+            "speaker": "SPEAKER_00",
+            "start": 59.1,
+            "word": "location"
+          },
+          {
+            "end": 60.14,
+            "mean_magnitude": 0.029157619923353195,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 59.44,
+            "word": "is"
+          },
+          {
+            "end": 60.88,
+            "mean_magnitude": 0.0311677698045969,
+            "probability": 0.475341796875,
+            "speaker": "SPEAKER_00",
+            "start": 60.14,
+            "word": "Westbury"
+          },
+          {
+            "end": 61.26,
+            "mean_magnitude": 0.030431892722845078,
+            "probability": 0.87548828125,
+            "speaker": "SPEAKER_00",
+            "start": 60.88,
+            "word": "Street"
+          },
+          {
+            "end": 61.64,
+            "mean_magnitude": 0.028724942356348038,
+            "probability": 0.90966796875,
+            "speaker": "SPEAKER_00",
+            "start": 61.26,
+            "word": "and"
+          },
+          {
+            "end": 61.92,
+            "mean_magnitude": 0.025374609977006912,
+            "probability": 0.8896484375,
+            "speaker": "SPEAKER_00",
+            "start": 61.64,
+            "word": "Hem"
+          },
+          {
+            "end": 62.04,
+            "mean_magnitude": 0.02831689454615116,
+            "probability": 0.80810546875,
+            "speaker": "SPEAKER_00",
+            "start": 61.92,
+            "word": "Hill"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.6000000000000014,
+        "end": 65.64,
+        "speaker": "SPEAKER_00",
+        "start": 62.04,
+        "text": "Hill Street in Fort Worth. Can you please verify your phone number?",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 62.14,
+            "mean_magnitude": 0.03865320235490799,
+            "probability": 0.70458984375,
+            "speaker": "SPEAKER_00",
+            "start": 62.04,
+            "word": "Hill"
+          },
+          {
+            "end": 62.42,
+            "mean_magnitude": 0.01794307492673397,
+            "probability": 0.845703125,
+            "speaker": "SPEAKER_00",
+            "start": 62.14,
+            "word": "Street"
+          },
+          {
+            "end": 62.78,
+            "mean_magnitude": 0.026464620605111122,
+            "probability": 0.96484375,
+            "speaker": "SPEAKER_00",
+            "start": 62.42,
+            "word": "in"
+          },
+          {
+            "end": 63.14,
+            "mean_magnitude": 0.02159707248210907,
+            "probability": 0.9912109375,
+            "speaker": "SPEAKER_00",
+            "start": 62.78,
+            "word": "Fort"
+          },
+          {
+            "end": 63.44,
+            "mean_magnitude": 0.029247315600514412,
+            "probability": 0.9814453125,
+            "speaker": "SPEAKER_00",
+            "start": 63.14,
+            "word": "Worth."
+          },
+          {
+            "end": 64.16,
+            "mean_magnitude": 0.0008072116179391742,
+            "probability": 0.97705078125,
+            "speaker": "SPEAKER_00",
+            "start": 63.72,
+            "word": "Can"
+          },
+          {
+            "end": 64.3,
+            "mean_magnitude": 0.06208810955286026,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 64.16,
+            "word": "you"
+          },
+          {
+            "end": 64.5,
+            "mean_magnitude": 0.033005617558956146,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 64.3,
+            "word": "please"
+          },
+          {
+            "end": 64.84,
+            "mean_magnitude": 0.050729651004076004,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 64.5,
+            "word": "verify"
+          },
+          {
+            "end": 65.16,
+            "mean_magnitude": 0.04524353891611099,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 64.84,
+            "word": "your"
+          },
+          {
+            "end": 65.34,
+            "mean_magnitude": 0.015339395962655544,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 65.16,
+            "word": "phone"
+          },
+          {
+            "end": 65.64,
+            "mean_magnitude": 0.03250209242105484,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 65.34,
+            "word": "number?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 12.780000000000001,
+        "end": 80.94,
+        "speaker": "SPEAKER_01",
+        "start": 68.16,
+        "text": "My phone number is 817-555-1234.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 69.56,
+            "mean_magnitude": 0.021004822105169296,
+            "probability": 0.0122222900390625,
+            "speaker": "SPEAKER_01",
+            "start": 68.16,
+            "word": "My"
+          },
+          {
+            "end": 70.1,
+            "mean_magnitude": 0.04189004376530647,
+            "probability": 0.91064453125,
+            "speaker": "SPEAKER_01",
+            "start": 69.56,
+            "word": "phone"
+          },
+          {
+            "end": 70.4,
+            "mean_magnitude": 0.08172325044870377,
+            "probability": 0.98486328125,
+            "speaker": "SPEAKER_01",
+            "start": 70.1,
+            "word": "number"
+          },
+          {
+            "end": 70.72,
+            "mean_magnitude": 0.05343569070100784,
+            "probability": 0.97509765625,
+            "speaker": "SPEAKER_01",
+            "start": 70.4,
+            "word": "is"
+          },
+          {
+            "end": 72.9,
+            "mean_magnitude": 0.026626383885741234,
+            "probability": 0.6539306640625,
+            "speaker": "SPEAKER_01",
+            "start": 70.72,
+            "word": "817"
+          },
+          {
+            "end": 77.06,
+            "mean_magnitude": 0.03192776441574097,
+            "probability": 0.7389322916666666,
+            "speaker": "SPEAKER_01",
+            "start": 72.9,
+            "word": "-555"
+          },
+          {
+            "end": 80.94,
+            "mean_magnitude": 0.03189682587981224,
+            "probability": 0.9700520833333334,
+            "speaker": "SPEAKER_01",
+            "start": 77.06,
+            "word": "-1234."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 2.319999999999993,
+        "end": 83.88,
+        "speaker": "SPEAKER_01",
+        "start": 81.56,
+        "text": "Would you like me to confirm any other details?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 81.92,
+            "mean_magnitude": 0.002188899787142873,
+            "probability": 0.935546875,
+            "speaker": "SPEAKER_01",
+            "start": 81.56,
+            "word": "Would"
+          },
+          {
+            "end": 82.06,
+            "mean_magnitude": 0.09324771165847778,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 81.92,
+            "word": "you"
+          },
+          {
+            "end": 82.28,
+            "mean_magnitude": 0.10345467925071716,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 82.06,
+            "word": "like"
+          },
+          {
+            "end": 82.4,
+            "mean_magnitude": 0.03185863420367241,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_01",
+            "start": 82.28,
+            "word": "me"
+          },
+          {
+            "end": 82.54,
+            "mean_magnitude": 0.06701262295246124,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 82.4,
+            "word": "to"
+          },
+          {
+            "end": 82.84,
+            "mean_magnitude": 0.021694215014576912,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 82.54,
+            "word": "confirm"
+          },
+          {
+            "end": 83.24,
+            "mean_magnitude": 0.04704393446445465,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_01",
+            "start": 82.84,
+            "word": "any"
+          },
+          {
+            "end": 83.5,
+            "mean_magnitude": 0.06934130936861038,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 83.24,
+            "word": "other"
+          },
+          {
+            "end": 83.88,
+            "mean_magnitude": 0.03535965830087662,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 83.5,
+            "word": "details?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.659999999999997,
+        "end": 95.62,
+        "speaker": "SPEAKER_00",
+        "start": 90.96000000000001,
+        "text": "Got it, that's 817-555-1234.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 91.76,
+            "mean_magnitude": 6.551742444571573e-06,
+            "probability": 0.82275390625,
+            "speaker": "SPEAKER_00",
+            "start": 90.96000000000001,
+            "word": "Got"
+          },
+          {
+            "end": 92.04,
+            "mean_magnitude": 0.08967242389917374,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 91.76,
+            "word": "it,"
+          },
+          {
+            "end": 92.38,
+            "mean_magnitude": 0.04596944525837898,
+            "probability": 0.983642578125,
+            "speaker": "SPEAKER_00",
+            "start": 92.06,
+            "word": "that's"
+          },
+          {
+            "end": 92.78,
+            "mean_magnitude": 0.032229095697402954,
+            "probability": 0.882568359375,
+            "speaker": "SPEAKER_00",
+            "start": 92.38,
+            "word": "817"
+          },
+          {
+            "end": 94.36,
+            "mean_magnitude": 0.03640562668442726,
+            "probability": 0.9490559895833334,
+            "speaker": "SPEAKER_00",
+            "start": 92.78,
+            "word": "-555"
+          },
+          {
+            "end": 95.62,
+            "mean_magnitude": 0.0271301232278347,
+            "probability": 0.7314860026041666,
+            "speaker": "SPEAKER_00",
+            "start": 94.36,
+            "word": "-1234."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.6799999999999926,
+        "end": 99.32,
+        "speaker": "SPEAKER_00",
+        "start": 95.64,
+        "text": "three four what is your first name and can you please spell it out for me",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 95.64,
+            "probability": 0.0888671875,
+            "speaker": "SPEAKER_00",
+            "start": 95.64,
+            "word": "three"
+          },
+          {
+            "end": 95.92,
+            "mean_magnitude": 0.017519433051347733,
+            "probability": 0.7275390625,
+            "speaker": "SPEAKER_00",
+            "start": 95.64,
+            "word": "four"
+          },
+          {
+            "end": 96.72,
+            "mean_magnitude": 0.00914545077830553,
+            "probability": 0.60400390625,
+            "speaker": "SPEAKER_00",
+            "start": 95.92,
+            "word": "what"
+          },
+          {
+            "end": 96.86,
+            "mean_magnitude": 0.07674296200275421,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 96.72,
+            "word": "is"
+          },
+          {
+            "end": 97.0,
+            "mean_magnitude": 0.05048130452632904,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 96.86,
+            "word": "your"
+          },
+          {
+            "end": 97.22,
+            "mean_magnitude": 0.052330076694488525,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_00",
+            "start": 97.0,
+            "word": "first"
+          },
+          {
+            "end": 97.52,
+            "mean_magnitude": 0.03070695325732231,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 97.22,
+            "word": "name"
+          },
+          {
+            "end": 97.88,
+            "mean_magnitude": 0.047438204288482666,
+            "probability": 0.978515625,
+            "speaker": "SPEAKER_00",
+            "start": 97.52,
+            "word": "and"
+          },
+          {
+            "end": 98.04,
+            "mean_magnitude": 0.030842209234833717,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 97.88,
+            "word": "can"
+          },
+          {
+            "end": 98.24,
+            "mean_magnitude": 0.030577821657061577,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 98.04,
+            "word": "you"
+          },
+          {
+            "end": 98.36,
+            "mean_magnitude": 0.005644544027745724,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 98.24,
+            "word": "please"
+          },
+          {
+            "end": 98.68,
+            "mean_magnitude": 0.013564104214310646,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 98.36,
+            "word": "spell"
+          },
+          {
+            "end": 98.84,
+            "mean_magnitude": 0.08908369392156601,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 98.68,
+            "word": "it"
+          },
+          {
+            "end": 98.98,
+            "mean_magnitude": 0.07750266045331955,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 98.84,
+            "word": "out"
+          },
+          {
+            "end": 99.14,
+            "mean_magnitude": 0.025210047140717506,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 98.98,
+            "word": "for"
+          },
+          {
+            "end": 99.32,
+            "mean_magnitude": 0.040617264807224274,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 99.14,
+            "word": "me"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.519999999999996,
+        "end": 103.1,
+        "speaker": "SPEAKER_01",
+        "start": 101.58,
+        "text": "Yes, of course.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 102.16,
+            "mean_magnitude": 0.010013051331043243,
+            "probability": 0.947265625,
+            "speaker": "SPEAKER_01",
+            "start": 101.58,
+            "word": "Yes,"
+          },
+          {
+            "end": 102.8,
+            "mean_magnitude": 0.021182669326663017,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 102.22,
+            "word": "of"
+          },
+          {
+            "end": 103.1,
+            "mean_magnitude": 0.03798588365316391,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 102.8,
+            "word": "course."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.6400000000000006,
+        "end": 105.12,
+        "speaker": "SPEAKER_01",
+        "start": 103.48,
+        "text": "My first name is Jessica.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 104.06,
+            "mean_magnitude": 0.009439734742045403,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_01",
+            "start": 103.48,
+            "word": "My"
+          },
+          {
+            "end": 104.32,
+            "mean_magnitude": 0.07138730585575104,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_01",
+            "start": 104.06,
+            "word": "first"
+          },
+          {
+            "end": 104.54,
+            "mean_magnitude": 0.0690612643957138,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 104.32,
+            "word": "name"
+          },
+          {
+            "end": 104.76,
+            "mean_magnitude": 0.06117567420005798,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 104.54,
+            "word": "is"
+          },
+          {
+            "end": 105.12,
+            "mean_magnitude": 0.03925231844186783,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_01",
+            "start": 104.76,
+            "word": "Jessica."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 3.4599999999999937,
+        "end": 108.74,
+        "speaker": "SPEAKER_01",
+        "start": 105.28,
+        "text": "J-E-S-S-I-C-A",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 105.78,
+            "mean_magnitude": 0.012433703988790512,
+            "probability": 0.9833984375,
+            "speaker": "SPEAKER_01",
+            "start": 105.28,
+            "word": "J"
+          },
+          {
+            "end": 107.4,
+            "mean_magnitude": 0.03849964216351509,
+            "probability": 0.908447265625,
+            "speaker": "SPEAKER_01",
+            "start": 105.78,
+            "word": "-E"
+          },
+          {
+            "end": 107.8,
+            "mean_magnitude": 0.052796103060245514,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 107.4,
+            "word": "-S"
+          },
+          {
+            "end": 108.04,
+            "mean_magnitude": 0.06594448536634445,
+            "probability": 0.999755859375,
+            "speaker": "SPEAKER_01",
+            "start": 107.8,
+            "word": "-S"
+          },
+          {
+            "end": 108.32,
+            "mean_magnitude": 0.01785898208618164,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 108.04,
+            "word": "-I"
+          },
+          {
+            "end": 108.66,
+            "mean_magnitude": 0.07452499866485596,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 108.32,
+            "word": "-C"
+          },
+          {
+            "end": 108.74,
+            "mean_magnitude": 0.09381334483623505,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 108.66,
+            "word": "-A"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.3999999999999915,
+        "end": 118.74,
+        "speaker": "SPEAKER_00",
+        "start": 114.34,
+        "text": "Jessica got it and what is your last name please spell it out for me as well",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 114.72,
+            "mean_magnitude": 0.01832292415201664,
+            "probability": 0.52490234375,
+            "speaker": "SPEAKER_00",
+            "start": 114.34,
+            "word": "Jessica"
+          },
+          {
+            "end": 115.1,
+            "mean_magnitude": 0.036359455436468124,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_00",
+            "start": 114.72,
+            "word": "got"
+          },
+          {
+            "end": 115.32,
+            "mean_magnitude": 0.0885910913348198,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 115.1,
+            "word": "it"
+          },
+          {
+            "end": 116.04,
+            "mean_magnitude": 0.01569276861846447,
+            "probability": 0.9892578125,
+            "speaker": "SPEAKER_00",
+            "start": 115.32,
+            "word": "and"
+          },
+          {
+            "end": 116.2,
+            "mean_magnitude": 0.06631670892238617,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 116.04,
+            "word": "what"
+          },
+          {
+            "end": 116.32,
+            "mean_magnitude": 0.09853281825780869,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 116.2,
+            "word": "is"
+          },
+          {
+            "end": 116.42,
+            "mean_magnitude": 0.03260379657149315,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 116.32,
+            "word": "your"
+          },
+          {
+            "end": 116.64,
+            "mean_magnitude": 0.0724414810538292,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 116.42,
+            "word": "last"
+          },
+          {
+            "end": 116.94,
+            "mean_magnitude": 0.031162172555923462,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 116.64,
+            "word": "name"
+          },
+          {
+            "end": 117.56,
+            "mean_magnitude": 0.009333936497569084,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 116.94,
+            "word": "please"
+          },
+          {
+            "end": 117.8,
+            "mean_magnitude": 0.027767721563577652,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 117.56,
+            "word": "spell"
+          },
+          {
+            "end": 117.98,
+            "mean_magnitude": 0.09528157860040665,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 117.8,
+            "word": "it"
+          },
+          {
+            "end": 118.12,
+            "mean_magnitude": 0.07591221481561661,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 117.98,
+            "word": "out"
+          },
+          {
+            "end": 118.26,
+            "mean_magnitude": 0.02872186340391636,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 118.12,
+            "word": "for"
+          },
+          {
+            "end": 118.36,
+            "mean_magnitude": 0.022926654666662216,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 118.26,
+            "word": "me"
+          },
+          {
+            "end": 118.52,
+            "mean_magnitude": 0.028019320219755173,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 118.36,
+            "word": "as"
+          },
+          {
+            "end": 118.74,
+            "mean_magnitude": 0.030125072225928307,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 118.52,
+            "word": "well"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 0.6400000000000006,
+        "end": 121.42,
+        "speaker": "SPEAKER_01",
+        "start": 120.78,
+        "text": "Sure.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 121.42,
+            "mean_magnitude": 0.0010047436226159334,
+            "probability": 0.73193359375,
+            "speaker": "SPEAKER_01",
+            "start": 120.78,
+            "word": "Sure."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 4.659999999999997,
+        "end": 126.46,
+        "speaker": "SPEAKER_01",
+        "start": 121.8,
+        "text": "My last name is Ramirez, R-A-M-I-R-E-Z.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 122.44,
+            "mean_magnitude": 0.014205798506736755,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_01",
+            "start": 121.8,
+            "word": "My"
+          },
+          {
+            "end": 122.66,
+            "mean_magnitude": 0.13710789382457733,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_01",
+            "start": 122.44,
+            "word": "last"
+          },
+          {
+            "end": 122.94,
+            "mean_magnitude": 0.04514487832784653,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 122.66,
+            "word": "name"
+          },
+          {
+            "end": 123.28,
+            "mean_magnitude": 0.04968227446079254,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 122.94,
+            "word": "is"
+          },
+          {
+            "end": 123.86,
+            "mean_magnitude": 0.07092377543449402,
+            "probability": 0.97265625,
+            "speaker": "SPEAKER_01",
+            "start": 123.28,
+            "word": "Ramirez,"
+          },
+          {
+            "end": 124.54,
+            "mean_magnitude": 0.046861857175827026,
+            "probability": 0.9267578125,
+            "speaker": "SPEAKER_01",
+            "start": 124.04,
+            "word": "R"
+          },
+          {
+            "end": 124.8,
+            "mean_magnitude": 0.06528563052415848,
+            "probability": 0.904541015625,
+            "speaker": "SPEAKER_01",
+            "start": 124.54,
+            "word": "-A"
+          },
+          {
+            "end": 125.06,
+            "mean_magnitude": 0.039116714149713516,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 124.8,
+            "word": "-M"
+          },
+          {
+            "end": 125.5,
+            "mean_magnitude": 0.02858135476708412,
+            "probability": 0.990234375,
+            "speaker": "SPEAKER_01",
+            "start": 125.06,
+            "word": "-I"
+          },
+          {
+            "end": 125.98,
+            "mean_magnitude": 0.05507035180926323,
+            "probability": 0.999755859375,
+            "speaker": "SPEAKER_01",
+            "start": 125.5,
+            "word": "-R"
+          },
+          {
+            "end": 126.26,
+            "mean_magnitude": 0.056914445012807846,
+            "probability": 0.987060546875,
+            "speaker": "SPEAKER_01",
+            "start": 125.98,
+            "word": "-E"
+          },
+          {
+            "end": 126.46,
+            "mean_magnitude": 0.031160889193415642,
+            "probability": 0.983154296875,
+            "speaker": "SPEAKER_01",
+            "start": 126.26,
+            "word": "-Z."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.0400000000000205,
+        "end": 133.82,
+        "speaker": "SPEAKER_00",
+        "start": 130.77999999999997,
+        "text": "Do you have or know your report or incident number?",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 131.42,
+            "mean_magnitude": 0.0001554784394102171,
+            "probability": 0.5849609375,
+            "speaker": "SPEAKER_00",
+            "start": 130.77999999999997,
+            "word": "Do"
+          },
+          {
+            "end": 131.58,
+            "mean_magnitude": 0.03288489580154419,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 131.42,
+            "word": "you"
+          },
+          {
+            "end": 131.84,
+            "mean_magnitude": 0.056144360452890396,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 131.58,
+            "word": "have"
+          },
+          {
+            "end": 132.06,
+            "mean_magnitude": 0.07927151769399643,
+            "probability": 0.951171875,
+            "speaker": "SPEAKER_00",
+            "start": 131.84,
+            "word": "or"
+          },
+          {
+            "end": 132.22,
+            "mean_magnitude": 0.05980642884969711,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 132.06,
+            "word": "know"
+          },
+          {
+            "end": 132.4,
+            "mean_magnitude": 0.048589207231998444,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 132.22,
+            "word": "your"
+          },
+          {
+            "end": 132.72,
+            "mean_magnitude": 0.024916838854551315,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_00",
+            "start": 132.4,
+            "word": "report"
+          },
+          {
+            "end": 133.04,
+            "mean_magnitude": 0.039782654494047165,
+            "probability": 0.9755859375,
+            "speaker": "SPEAKER_00",
+            "start": 132.72,
+            "word": "or"
+          },
+          {
+            "end": 133.42,
+            "mean_magnitude": 0.03229082003235817,
+            "probability": 0.95068359375,
+            "speaker": "SPEAKER_00",
+            "start": 133.04,
+            "word": "incident"
+          },
+          {
+            "end": 133.82,
+            "mean_magnitude": 0.016917629167437553,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 133.42,
+            "word": "number?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 3.3400000000000034,
+        "end": 140.4,
+        "speaker": "SPEAKER_01",
+        "start": 137.06,
+        "text": "I don't have the report number with me right now, unfortunately.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 137.08,
+            "mean_magnitude": 0.0030610740650445223,
+            "probability": 0.95703125,
+            "speaker": "SPEAKER_01",
+            "start": 136.76000000000002,
+            "word": "I"
+          },
+          {
+            "end": 137.54,
+            "mean_magnitude": 0.09086933732032776,
+            "probability": 0.99658203125,
+            "speaker": "SPEAKER_01",
+            "start": 137.08,
+            "word": "don't"
+          },
+          {
+            "end": 137.84,
+            "mean_magnitude": 0.036162834614515305,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 137.54,
+            "word": "have"
+          },
+          {
+            "end": 138.16,
+            "mean_magnitude": 0.05140925571322441,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_01",
+            "start": 137.84,
+            "word": "the"
+          },
+          {
+            "end": 138.42,
+            "mean_magnitude": 0.058904360979795456,
+            "probability": 0.986328125,
+            "speaker": "SPEAKER_01",
+            "start": 138.16,
+            "word": "report"
+          },
+          {
+            "end": 138.76,
+            "mean_magnitude": 0.04334369674324989,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 138.42,
+            "word": "number"
+          },
+          {
+            "end": 139.06,
+            "mean_magnitude": 0.067060686647892,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_01",
+            "start": 138.76,
+            "word": "with"
+          },
+          {
+            "end": 139.22,
+            "mean_magnitude": 0.019340265542268753,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 139.06,
+            "word": "me"
+          },
+          {
+            "end": 139.5,
+            "mean_magnitude": 0.06874662637710571,
+            "probability": 0.99072265625,
+            "speaker": "SPEAKER_01",
+            "start": 139.22,
+            "word": "right"
+          },
+          {
+            "end": 139.82,
+            "mean_magnitude": 0.040317319333553314,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 139.5,
+            "word": "now,"
+          },
+          {
+            "end": 140.4,
+            "mean_magnitude": 0.038610462099313736,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_01",
+            "start": 139.92,
+            "word": "unfortunately."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 5.699999999999989,
+        "end": 146.1,
+        "speaker": "SPEAKER_01",
+        "start": 140.4,
+        "text": "Unfortunately, is there another way you can look it up, maybe with my name or the date of the stop?",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 140.66,
+            "mean_magnitude": 0.0372282899916172,
+            "probability": 0.66162109375,
+            "speaker": "SPEAKER_01",
+            "start": 140.4,
+            "word": "Unfortunately,"
+          },
+          {
+            "end": 141.24,
+            "mean_magnitude": 0.03974027559161186,
+            "probability": 0.98681640625,
+            "speaker": "SPEAKER_01",
+            "start": 140.66,
+            "word": "is"
+          },
+          {
+            "end": 141.38,
+            "mean_magnitude": 0.014813396148383617,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 141.24,
+            "word": "there"
+          },
+          {
+            "end": 141.56,
+            "mean_magnitude": 0.11503148823976517,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 141.38,
+            "word": "another"
+          },
+          {
+            "end": 141.8,
+            "mean_magnitude": 0.08716120570898056,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 141.56,
+            "word": "way"
+          },
+          {
+            "end": 141.94,
+            "mean_magnitude": 0.11224475502967834,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_01",
+            "start": 141.8,
+            "word": "you"
+          },
+          {
+            "end": 142.06,
+            "mean_magnitude": 0.03290313109755516,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 141.94,
+            "word": "can"
+          },
+          {
+            "end": 142.32,
+            "mean_magnitude": 0.07778912782669067,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 142.06,
+            "word": "look"
+          },
+          {
+            "end": 142.4,
+            "mean_magnitude": 0.02212359942495823,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 142.32,
+            "word": "it"
+          },
+          {
+            "end": 142.66,
+            "mean_magnitude": 0.06056738644838333,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 142.4,
+            "word": "up,"
+          },
+          {
+            "end": 143.42,
+            "mean_magnitude": 0.01483883336186409,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 142.74,
+            "word": "maybe"
+          },
+          {
+            "end": 143.64,
+            "mean_magnitude": 0.08929155766963959,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 143.42,
+            "word": "with"
+          },
+          {
+            "end": 143.82,
+            "mean_magnitude": 0.032324112951755524,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 143.64,
+            "word": "my"
+          },
+          {
+            "end": 144.34,
+            "mean_magnitude": 0.06134118512272835,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 143.82,
+            "word": "name"
+          },
+          {
+            "end": 144.78,
+            "mean_magnitude": 0.049974605441093445,
+            "probability": 0.90185546875,
+            "speaker": "SPEAKER_01",
+            "start": 144.34,
+            "word": "or"
+          },
+          {
+            "end": 145.26,
+            "mean_magnitude": 0.02442968636751175,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 144.78,
+            "word": "the"
+          },
+          {
+            "end": 145.5,
+            "mean_magnitude": 0.052074551582336426,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 145.26,
+            "word": "date"
+          },
+          {
+            "end": 145.64,
+            "mean_magnitude": 0.046801745891571045,
+            "probability": 1.0,
+            "speaker": "SPEAKER_01",
+            "start": 145.5,
+            "word": "of"
+          },
+          {
+            "end": 145.72,
+            "mean_magnitude": 0.009778952226042747,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_01",
+            "start": 145.64,
+            "word": "the"
+          },
+          {
+            "end": 146.1,
+            "mean_magnitude": 0.018369819968938828,
+            "probability": 0.96142578125,
+            "speaker": "SPEAKER_01",
+            "start": 145.72,
+            "word": "stop?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 1.0800000000000125,
+        "end": 150.96,
+        "speaker": "SPEAKER_00",
+        "start": 149.88,
+        "text": "No problem.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 150.52,
+            "mean_magnitude": 0.0022261380217969418,
+            "probability": 0.95556640625,
+            "speaker": "SPEAKER_00",
+            "start": 149.88,
+            "word": "No"
+          },
+          {
+            "end": 150.96,
+            "mean_magnitude": 0.04882415011525154,
+            "probability": 0.98486328125,
+            "speaker": "SPEAKER_00",
+            "start": 150.52,
+            "word": "problem."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 2.2399999999999807,
+        "end": 153.2,
+        "speaker": "SPEAKER_00",
+        "start": 150.96,
+        "text": "Can we go ahead and summarize what I have?",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 151.82,
+            "mean_magnitude": 0.01004520058631897,
+            "probability": 0.197265625,
+            "speaker": "SPEAKER_00",
+            "start": 150.96,
+            "word": "Can"
+          },
+          {
+            "end": 151.92,
+            "mean_magnitude": 0.005720825400203466,
+            "probability": 0.98779296875,
+            "speaker": "SPEAKER_00",
+            "start": 151.82,
+            "word": "we"
+          },
+          {
+            "end": 152.1,
+            "mean_magnitude": 0.025067415088415146,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 151.92,
+            "word": "go"
+          },
+          {
+            "end": 152.24,
+            "mean_magnitude": 0.032825224101543427,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 152.1,
+            "word": "ahead"
+          },
+          {
+            "end": 152.34,
+            "mean_magnitude": 0.03634733334183693,
+            "probability": 0.9921875,
+            "speaker": "SPEAKER_00",
+            "start": 152.24,
+            "word": "and"
+          },
+          {
+            "end": 152.66,
+            "mean_magnitude": 0.02509872242808342,
+            "probability": 0.958984375,
+            "speaker": "SPEAKER_00",
+            "start": 152.34,
+            "word": "summarize"
+          },
+          {
+            "end": 152.9,
+            "mean_magnitude": 0.0183061845600605,
+            "probability": 0.96923828125,
+            "speaker": "SPEAKER_00",
+            "start": 152.66,
+            "word": "what"
+          },
+          {
+            "end": 153.0,
+            "mean_magnitude": 0.026573333889245987,
+            "probability": 0.98974609375,
+            "speaker": "SPEAKER_00",
+            "start": 152.9,
+            "word": "I"
+          },
+          {
+            "end": 153.2,
+            "mean_magnitude": 0.01437391247600317,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 153.0,
+            "word": "have?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 5.079999999999984,
+        "end": 158.54,
+        "speaker": "SPEAKER_00",
+        "start": 153.46,
+        "text": "The incident address is the intersection of West Berry Street and Hemphill Street in Fort",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 153.88,
+            "mean_magnitude": 0.0006329037132672966,
+            "probability": 0.89892578125,
+            "speaker": "SPEAKER_00",
+            "start": 153.46,
+            "word": "The"
+          },
+          {
+            "end": 154.2,
+            "mean_magnitude": 0.04546831175684929,
+            "probability": 0.9853515625,
+            "speaker": "SPEAKER_00",
+            "start": 153.88,
+            "word": "incident"
+          },
+          {
+            "end": 154.54,
+            "mean_magnitude": 0.055741213262081146,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 154.2,
+            "word": "address"
+          },
+          {
+            "end": 154.92,
+            "mean_magnitude": 0.03476506099104881,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 154.54,
+            "word": "is"
+          },
+          {
+            "end": 155.06,
+            "mean_magnitude": 0.02255980670452118,
+            "probability": 0.98828125,
+            "speaker": "SPEAKER_00",
+            "start": 154.92,
+            "word": "the"
+          },
+          {
+            "end": 155.46,
+            "mean_magnitude": 0.022526778280735016,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 155.06,
+            "word": "intersection"
+          },
+          {
+            "end": 155.96,
+            "mean_magnitude": 0.029091602191329002,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 155.46,
+            "word": "of"
+          },
+          {
+            "end": 156.36,
+            "mean_magnitude": 0.042103592306375504,
+            "probability": 0.97216796875,
+            "speaker": "SPEAKER_00",
+            "start": 155.96,
+            "word": "West"
+          },
+          {
+            "end": 156.66,
+            "mean_magnitude": 0.025524387136101723,
+            "probability": 0.337646484375,
+            "speaker": "SPEAKER_00",
+            "start": 156.36,
+            "word": "Berry"
+          },
+          {
+            "end": 156.96,
+            "mean_magnitude": 0.03402147814631462,
+            "probability": 0.92626953125,
+            "speaker": "SPEAKER_00",
+            "start": 156.66,
+            "word": "Street"
+          },
+          {
+            "end": 157.36,
+            "mean_magnitude": 0.02501547895371914,
+            "probability": 0.98876953125,
+            "speaker": "SPEAKER_00",
+            "start": 156.96,
+            "word": "and"
+          },
+          {
+            "end": 157.74,
+            "mean_magnitude": 0.018183613196015358,
+            "probability": 0.9777018229166666,
+            "speaker": "SPEAKER_00",
+            "start": 157.36,
+            "word": "Hemphill"
+          },
+          {
+            "end": 157.96,
+            "mean_magnitude": 0.028500374406576157,
+            "probability": 0.95166015625,
+            "speaker": "SPEAKER_00",
+            "start": 157.74,
+            "word": "Street"
+          },
+          {
+            "end": 158.32,
+            "mean_magnitude": 0.020790444687008858,
+            "probability": 0.9912109375,
+            "speaker": "SPEAKER_00",
+            "start": 157.96,
+            "word": "in"
+          },
+          {
+            "end": 158.54,
+            "mean_magnitude": 0.02280551753938198,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 158.32,
+            "word": "Fort"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.2400000000000091,
+        "end": 158.78,
+        "speaker": "SPEAKER_00",
+        "start": 158.54,
+        "text": "Worth.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 158.78,
+            "mean_magnitude": 0.03865731507539749,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_00",
+            "start": 158.54,
+            "word": "Worth."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.9399999999999977,
+        "end": 162.96,
+        "speaker": "SPEAKER_00",
+        "start": 159.02,
+        "text": "Your phone number is 817-555-1234.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 159.54,
+            "mean_magnitude": 0.00118415174074471,
+            "probability": 0.9921875,
+            "speaker": "SPEAKER_00",
+            "start": 159.02,
+            "word": "Your"
+          },
+          {
+            "end": 159.72,
+            "mean_magnitude": 0.030714459717273712,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 159.54,
+            "word": "phone"
+          },
+          {
+            "end": 159.94,
+            "mean_magnitude": 0.0540112666785717,
+            "probability": 0.9912109375,
+            "speaker": "SPEAKER_00",
+            "start": 159.72,
+            "word": "number"
+          },
+          {
+            "end": 160.12,
+            "mean_magnitude": 0.04101564735174179,
+            "probability": 0.99072265625,
+            "speaker": "SPEAKER_00",
+            "start": 159.94,
+            "word": "is"
+          },
+          {
+            "end": 160.42,
+            "mean_magnitude": 0.030302371829748154,
+            "probability": 0.93701171875,
+            "speaker": "SPEAKER_00",
+            "start": 160.12,
+            "word": "817"
+          },
+          {
+            "end": 161.56,
+            "mean_magnitude": 0.03299728035926819,
+            "probability": 0.9484049479166666,
+            "speaker": "SPEAKER_00",
+            "start": 160.42,
+            "word": "-555"
+          },
+          {
+            "end": 162.96,
+            "mean_magnitude": 0.029433567076921463,
+            "probability": 0.9939778645833334,
+            "speaker": "SPEAKER_00",
+            "start": 161.56,
+            "word": "-1234."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 4.719999999999999,
+        "end": 168.06,
+        "speaker": "SPEAKER_00",
+        "start": 163.34,
+        "text": "Your name is Jessica Ramirez, and you don't have a report or incident number available",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 163.9,
+            "mean_magnitude": 0.00313368858769536,
+            "probability": 0.9931640625,
+            "speaker": "SPEAKER_00",
+            "start": 163.34,
+            "word": "Your"
+          },
+          {
+            "end": 164.1,
+            "mean_magnitude": 0.0951143279671669,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 163.9,
+            "word": "name"
+          },
+          {
+            "end": 164.26,
+            "mean_magnitude": 0.09041184186935425,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 164.1,
+            "word": "is"
+          },
+          {
+            "end": 164.66,
+            "mean_magnitude": 0.035408273339271545,
+            "probability": 0.99267578125,
+            "speaker": "SPEAKER_00",
+            "start": 164.26,
+            "word": "Jessica"
+          },
+          {
+            "end": 165.22,
+            "mean_magnitude": 0.04604141041636467,
+            "probability": 0.992919921875,
+            "speaker": "SPEAKER_00",
+            "start": 164.66,
+            "word": "Ramirez,"
+          },
+          {
+            "end": 165.58,
+            "mean_magnitude": 0.025782788172364235,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 165.28,
+            "word": "and"
+          },
+          {
+            "end": 165.72,
+            "mean_magnitude": 0.029898207634687424,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 165.58,
+            "word": "you"
+          },
+          {
+            "end": 165.98,
+            "mean_magnitude": 0.041678283363580704,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 165.72,
+            "word": "don't"
+          },
+          {
+            "end": 166.1,
+            "mean_magnitude": 0.01140712108463049,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 165.98,
+            "word": "have"
+          },
+          {
+            "end": 166.24,
+            "mean_magnitude": 0.04510722681879997,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 166.1,
+            "word": "a"
+          },
+          {
+            "end": 166.54,
+            "mean_magnitude": 0.020683715119957924,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 166.24,
+            "word": "report"
+          },
+          {
+            "end": 166.84,
+            "mean_magnitude": 0.04311506822705269,
+            "probability": 0.9951171875,
+            "speaker": "SPEAKER_00",
+            "start": 166.54,
+            "word": "or"
+          },
+          {
+            "end": 167.2,
+            "mean_magnitude": 0.022377151995897293,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_00",
+            "start": 166.84,
+            "word": "incident"
+          },
+          {
+            "end": 167.54,
+            "mean_magnitude": 0.019598091021180153,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 167.2,
+            "word": "number"
+          },
+          {
+            "end": 168.06,
+            "mean_magnitude": 0.03677228465676308,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 167.54,
+            "word": "available"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.8799999999999955,
+        "end": 168.94,
+        "speaker": "SPEAKER_00",
+        "start": 168.06,
+        "text": "at this time.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 168.42,
+            "mean_magnitude": 0.033434633165597916,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 168.06,
+            "word": "at"
+          },
+          {
+            "end": 168.58,
+            "mean_magnitude": 0.010699426755309105,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 168.42,
+            "word": "this"
+          },
+          {
+            "end": 168.94,
+            "mean_magnitude": 0.010830804705619812,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 168.58,
+            "word": "time."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 0.9000000000000057,
+        "end": 170.08,
+        "speaker": "SPEAKER_00",
+        "start": 169.18,
+        "text": "Is that all correct?",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 169.62,
+            "mean_magnitude": 2.613934611872537e-06,
+            "probability": 0.96142578125,
+            "speaker": "SPEAKER_00",
+            "start": 169.18,
+            "word": "Is"
+          },
+          {
+            "end": 169.72,
+            "mean_magnitude": 0.036799028515815735,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 169.62,
+            "word": "that"
+          },
+          {
+            "end": 169.82,
+            "mean_magnitude": 0.1605827361345291,
+            "probability": 0.974609375,
+            "speaker": "SPEAKER_00",
+            "start": 169.72,
+            "word": "all"
+          },
+          {
+            "end": 170.08,
+            "mean_magnitude": 0.07106934487819672,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 169.82,
+            "word": "correct?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.6399999999999864,
+        "end": 177.04,
+        "speaker": "SPEAKER_01",
+        "start": 175.4,
+        "text": "Yes, that's all correct.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 176.12,
+            "mean_magnitude": 0.011109958402812481,
+            "probability": 0.84814453125,
+            "speaker": "SPEAKER_01",
+            "start": 175.4,
+            "word": "Yes,"
+          },
+          {
+            "end": 176.64,
+            "mean_magnitude": 0.01750241592526436,
+            "probability": 0.9873046875,
+            "speaker": "SPEAKER_01",
+            "start": 176.2,
+            "word": "that's"
+          },
+          {
+            "end": 176.78,
+            "mean_magnitude": 0.05338773876428604,
+            "probability": 0.99462890625,
+            "speaker": "SPEAKER_01",
+            "start": 176.64,
+            "word": "all"
+          },
+          {
+            "end": 177.04,
+            "mean_magnitude": 0.04442581161856651,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_01",
+            "start": 176.78,
+            "word": "correct."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "channel_name": "right",
+        "duration": 1.420000000000016,
+        "end": 179.52,
+        "speaker": "SPEAKER_01",
+        "start": 178.1,
+        "text": "Thank you for confirming everything.",
+        "track": "SPEAKER_01",
+        "words": [
+          {
+            "end": 178.22,
+            "mean_magnitude": 0.04153129458427429,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_01",
+            "start": 177.85999999999999,
+            "word": "Thank"
+          },
+          {
+            "end": 178.4,
+            "mean_magnitude": 0.11269254982471466,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 178.22,
+            "word": "you"
+          },
+          {
+            "end": 178.6,
+            "mean_magnitude": 0.08226940780878067,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 178.4,
+            "word": "for"
+          },
+          {
+            "end": 179.0,
+            "mean_magnitude": 0.0790458470582962,
+            "probability": 0.99560546875,
+            "speaker": "SPEAKER_01",
+            "start": 178.6,
+            "word": "confirming"
+          },
+          {
+            "end": 179.52,
+            "mean_magnitude": 0.06836443394422531,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_01",
+            "start": 179.0,
+            "word": "everything."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 3.599999999999966,
+        "end": 187.76,
+        "speaker": "SPEAKER_00",
+        "start": 184.16000000000003,
+        "text": "I am transferring you to an agent. Please stay on the line.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 184.64000000000001,
+            "mean_magnitude": 0.0007486401591449976,
+            "probability": 0.90771484375,
+            "speaker": "SPEAKER_00",
+            "start": 184.16000000000003,
+            "word": "I"
+          },
+          {
+            "end": 185.12,
+            "mean_magnitude": 0.018827207386493683,
+            "probability": 0.94482421875,
+            "speaker": "SPEAKER_00",
+            "start": 184.64000000000001,
+            "word": "am"
+          },
+          {
+            "end": 185.52,
+            "mean_magnitude": 0.05631481483578682,
+            "probability": 0.98828125,
+            "speaker": "SPEAKER_00",
+            "start": 185.12,
+            "word": "transferring"
+          },
+          {
+            "end": 185.76,
+            "mean_magnitude": 0.055624041706323624,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 185.52,
+            "word": "you"
+          },
+          {
+            "end": 185.9,
+            "mean_magnitude": 0.04860764741897583,
+            "probability": 0.99755859375,
+            "speaker": "SPEAKER_00",
+            "start": 185.76,
+            "word": "to"
+          },
+          {
+            "end": 186.04,
+            "mean_magnitude": 0.040218573063611984,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 185.9,
+            "word": "an"
+          },
+          {
+            "end": 186.3,
+            "mean_magnitude": 0.03806246817111969,
+            "probability": 0.96337890625,
+            "speaker": "SPEAKER_00",
+            "start": 186.04,
+            "word": "agent."
+          },
+          {
+            "end": 187.08,
+            "mean_magnitude": 0.00121496117208153,
+            "probability": 0.99609375,
+            "speaker": "SPEAKER_00",
+            "start": 186.6,
+            "word": "Please"
+          },
+          {
+            "end": 187.3,
+            "mean_magnitude": 0.043240513652563095,
+            "probability": 0.984375,
+            "speaker": "SPEAKER_00",
+            "start": 187.08,
+            "word": "stay"
+          },
+          {
+            "end": 187.46,
+            "mean_magnitude": 0.09469020366668701,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 187.3,
+            "word": "on"
+          },
+          {
+            "end": 187.52,
+            "mean_magnitude": 0.04769248887896538,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 187.46,
+            "word": "the"
+          },
+          {
+            "end": 187.76,
+            "mean_magnitude": 0.054338447749614716,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 187.52,
+            "word": "line."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "channel_name": "left",
+        "duration": 5.02000000000001,
+        "end": 193.74,
+        "speaker": "SPEAKER_00",
+        "start": 188.72,
+        "text": "The transfer is now complete. Stay on the line for the next available call taker.",
+        "track": "SPEAKER_00",
+        "words": [
+          {
+            "end": 189.2,
+            "mean_magnitude": 0.0,
+            "probability": 0.966796875,
+            "speaker": "SPEAKER_00",
+            "start": 188.72,
+            "word": "The"
+          },
+          {
+            "end": 189.66,
+            "mean_magnitude": 0.04760957136750221,
+            "probability": 0.9970703125,
+            "speaker": "SPEAKER_00",
+            "start": 189.2,
+            "word": "transfer"
+          },
+          {
+            "end": 189.94,
+            "mean_magnitude": 0.0449049212038517,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 189.66,
+            "word": "is"
+          },
+          {
+            "end": 190.14,
+            "mean_magnitude": 0.05897707864642143,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 189.94,
+            "word": "now"
+          },
+          {
+            "end": 190.56,
+            "mean_magnitude": 0.045761629939079285,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 190.14,
+            "word": "complete."
+          },
+          {
+            "end": 191.24,
+            "mean_magnitude": 0.0031628687866032124,
+            "probability": 0.998046875,
+            "speaker": "SPEAKER_00",
+            "start": 190.76,
+            "word": "Stay"
+          },
+          {
+            "end": 191.5,
+            "mean_magnitude": 0.04871328920125961,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 191.24,
+            "word": "on"
+          },
+          {
+            "end": 191.64,
+            "mean_magnitude": 0.07470481097698212,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 191.5,
+            "word": "the"
+          },
+          {
+            "end": 191.88,
+            "mean_magnitude": 0.0665983110666275,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 191.64,
+            "word": "line"
+          },
+          {
+            "end": 192.1,
+            "mean_magnitude": 0.04873211681842804,
+            "probability": 0.99853515625,
+            "speaker": "SPEAKER_00",
+            "start": 191.88,
+            "word": "for"
+          },
+          {
+            "end": 192.22,
+            "mean_magnitude": 0.0372624397277832,
+            "probability": 0.9990234375,
+            "speaker": "SPEAKER_00",
+            "start": 192.1,
+            "word": "the"
+          },
+          {
+            "end": 192.46,
+            "mean_magnitude": 0.06906764954328537,
+            "probability": 1.0,
+            "speaker": "SPEAKER_00",
+            "start": 192.22,
+            "word": "next"
+          },
+          {
+            "end": 192.86,
+            "mean_magnitude": 0.03402881696820259,
+            "probability": 0.99951171875,
+            "speaker": "SPEAKER_00",
+            "start": 192.46,
+            "word": "available"
+          },
+          {
+            "end": 193.32,
+            "mean_magnitude": 0.04324489086866379,
+            "probability": 0.994140625,
+            "speaker": "SPEAKER_00",
+            "start": 192.86,
+            "word": "call"
+          },
+          {
+            "end": 193.74,
+            "mean_magnitude": 0.039217423647642136,
+            "probability": 0.961181640625,
+            "speaker": "SPEAKER_00",
+            "start": 193.32,
+            "word": "taker."
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      "SPEAKER_00",
+      "SPEAKER_01"
+    ],
+    "timeline": [
+      [
+        0.0,
+        1.82
+      ],
+      [
+        2.16,
+        4.76
+      ],
+      [
+        7.119999999999998,
+        15.6
+      ],
+      [
+        15.82,
+        23.08
+      ],
+      [
+        32.080000000000005,
+        35.54
+      ],
+      [
+        38.12,
+        40.18
+      ],
+      [
+        40.4,
+        46.64
+      ],
+      [
+        46.64,
+        47.14
+      ],
+      [
+        47.38,
+        51.56
+      ],
+      [
+        55.89999999999999,
+        62.04
+      ],
+      [
+        62.04,
+        65.64
+      ],
+      [
+        68.16,
+        80.94
+      ],
+      [
+        81.56,
+        83.88
+      ],
+      [
+        90.96000000000001,
+        95.62
+      ],
+      [
+        95.64,
+        99.32
+      ],
+      [
+        101.58,
+        103.1
+      ],
+      [
+        103.48,
+        105.12
+      ],
+      [
+        105.28,
+        108.74
+      ],
+      [
+        114.34,
+        118.74
+      ],
+      [
+        120.78,
+        121.42
+      ],
+      [
+        121.8,
+        126.46
+      ],
+      [
+        130.77999999999997,
+        133.82
+      ],
+      [
+        137.06,
+        140.4
+      ],
+      [
+        140.4,
+        146.1
+      ],
+      [
+        149.88,
+        150.96
+      ],
+      [
+        150.96,
+        153.2
+      ],
+      [
+        153.46,
+        158.54
+      ],
+      [
+        158.54,
+        158.78
+      ],
+      [
+        159.02,
+        162.96
+      ],
+      [
+        163.34,
+        168.06
+      ],
+      [
+        168.06,
+        168.94
+      ],
+      [
+        169.18,
+        170.08
+      ],
+      [
+        175.4,
+        177.04
+      ],
+      [
+        178.1,
+        179.52
+      ],
+      [
+        184.16000000000003,
+        187.76
+      ],
+      [
+        188.72,
+        193.74
+      ]
+    ]
+  },
+  "status": "ok"
+}

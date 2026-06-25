@@ -1,0 +1,421 @@
+{
+  "elapsed_seconds": 12.28,
+  "input": {
+    "audio_filename": "sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.wav",
+    "manifest_conversation_id": "dCZKwBjGjcWWyhU4Wm3BHX",
+    "manifest_row_number": 9,
+    "manifest_sample_id": "sample_0008",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:09:43.824021+00:00",
+  "result": {
+    "full_text": "hello it is me the robot what do you need hi i don't need anything i just wanted to say hello so no problem if that's all then i will say goodbye okay sounds good goodbye bye",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 32.657,
+          "end_seconds": 32.657,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Hello, it is me, the robot. What do you need? [Speaker 2]: Hi, I don't need anything. I just wanted to say hello. [Speaker 1]: No problem. If that's all, then I will say goodbye. [Speaker 2]: Okay, sounds good. Goodbye. Bye.",
+            "timestamps": "_ [T:142] hello [T:195] _ [T:209] it [T:226] is [T:240] me [T:266] the [T:280] robot [T:337] _ [T:348] what [T:370] do [T:382] you [T:401] need [T:446] _ [T:744] hi [T:775] _ [T:833] i [T:847] don't [T:877] need [T:896] anything [T:943] _ [T:984] i [T:994] just [T:22] wanted [T:50] to [T:59] say [T:80] hello [T:118] _ [T:345] so [T:368] _ [T:375] no [T:394] problem [T:443] _ [T:450] if [T:473] that's [T:516] all [T:536] then [T:561] i [T:575] will [T:595] say [T:620] goodbye [T:687] _ [T:930] okay [T:963] sounds [T:992] good [T:14] _ [T:51] goodbye [T:95] _ [T:386] bye [T:426] _ [T:468]"
+          },
+          "speaker_turn_count": 4,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 2.417,
+            "timestamps_seconds": 9.844
+          },
+          "word_count": 37
+        }
+      ],
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "duration_seconds": 32.657,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "channel_selection_applied": false,
+        "downmixed_to_mono": true,
+        "duration_seconds": 32.657,
+        "load_seconds": 0.015,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 522504,
+        "selected_channel_index": null,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 12.28,
+      "step_timings": {
+        "generation_seconds": 12.261,
+        "model_load_seconds": 33.87,
+        "preprocessing_seconds": 0.018,
+        "processing_time": 12.261
+      }
+    },
+    "segments": [
+      {
+        "end": 4.46,
+        "speaker": "SPEAKER_00",
+        "start": 1.42,
+        "text": "hello it is me the robot what do you need"
+      },
+      {
+        "end": 11.18,
+        "speaker": "SPEAKER_01",
+        "start": 7.44,
+        "text": "hi i don't need anything i just wanted to say hello"
+      },
+      {
+        "end": 13.68,
+        "speaker": "SPEAKER_01",
+        "start": 13.45,
+        "text": "so"
+      },
+      {
+        "end": 16.87,
+        "speaker": "SPEAKER_00",
+        "start": 13.75,
+        "text": "no problem if that's all then i will say goodbye"
+      },
+      {
+        "end": 20.95,
+        "speaker": "SPEAKER_01",
+        "start": 19.3,
+        "text": "okay sounds good goodbye"
+      },
+      {
+        "end": 24.26,
+        "speaker": "SPEAKER_01",
+        "start": 23.86,
+        "text": "bye"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 2,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 6.16
+      },
+      {
+        "segment_count": 4,
+        "speaker": "SPEAKER_01",
+        "total_talk_time_seconds": 6.02
+      }
+    ],
+    "timeline": [
+      {
+        "end": 1.95,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 1.42,
+        "text": "hello",
+        "type": "word"
+      },
+      {
+        "end": 2.26,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 2.09,
+        "text": "it",
+        "type": "word"
+      },
+      {
+        "end": 2.4,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 2.26,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 2.66,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 2.4,
+        "text": "me",
+        "type": "word"
+      },
+      {
+        "end": 2.8,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 2.66,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 3.37,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 2.8,
+        "text": "robot",
+        "type": "word"
+      },
+      {
+        "end": 3.7,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 3.48,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 3.82,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 3.7,
+        "text": "do",
+        "type": "word"
+      },
+      {
+        "end": 4.01,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 3.82,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 4.46,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 4.01,
+        "text": "need",
+        "type": "word"
+      },
+      {
+        "end": 7.75,
+        "index": 11,
+        "speaker": "SPEAKER_01",
+        "start": 7.44,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 8.47,
+        "index": 12,
+        "speaker": "SPEAKER_01",
+        "start": 8.33,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 8.77,
+        "index": 13,
+        "speaker": "SPEAKER_01",
+        "start": 8.47,
+        "text": "don't",
+        "type": "word"
+      },
+      {
+        "end": 8.96,
+        "index": 14,
+        "speaker": "SPEAKER_01",
+        "start": 8.77,
+        "text": "need",
+        "type": "word"
+      },
+      {
+        "end": 9.43,
+        "index": 15,
+        "speaker": "SPEAKER_01",
+        "start": 8.96,
+        "text": "anything",
+        "type": "word"
+      },
+      {
+        "end": 9.94,
+        "index": 16,
+        "speaker": "SPEAKER_01",
+        "start": 9.84,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 10.22,
+        "index": 17,
+        "speaker": "SPEAKER_01",
+        "start": 9.94,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 10.5,
+        "index": 18,
+        "speaker": "SPEAKER_01",
+        "start": 10.22,
+        "text": "wanted",
+        "type": "word"
+      },
+      {
+        "end": 10.59,
+        "index": 19,
+        "speaker": "SPEAKER_01",
+        "start": 10.5,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 10.8,
+        "index": 20,
+        "speaker": "SPEAKER_01",
+        "start": 10.59,
+        "text": "say",
+        "type": "word"
+      },
+      {
+        "end": 11.18,
+        "index": 21,
+        "speaker": "SPEAKER_01",
+        "start": 10.8,
+        "text": "hello",
+        "type": "word"
+      },
+      {
+        "end": 13.68,
+        "index": 22,
+        "speaker": "SPEAKER_01",
+        "start": 13.45,
+        "text": "so",
+        "type": "word"
+      },
+      {
+        "end": 13.94,
+        "index": 23,
+        "speaker": "SPEAKER_00",
+        "start": 13.75,
+        "text": "no",
+        "type": "word"
+      },
+      {
+        "end": 14.43,
+        "index": 24,
+        "speaker": "SPEAKER_00",
+        "start": 13.94,
+        "text": "problem",
+        "type": "word"
+      },
+      {
+        "end": 14.73,
+        "index": 25,
+        "speaker": "SPEAKER_00",
+        "start": 14.5,
+        "text": "if",
+        "type": "word"
+      },
+      {
+        "end": 15.16,
+        "index": 26,
+        "speaker": "SPEAKER_00",
+        "start": 14.73,
+        "text": "that's",
+        "type": "word"
+      },
+      {
+        "end": 15.36,
+        "index": 27,
+        "speaker": "SPEAKER_00",
+        "start": 15.16,
+        "text": "all",
+        "type": "word"
+      },
+      {
+        "end": 15.61,
+        "index": 28,
+        "speaker": "SPEAKER_00",
+        "start": 15.36,
+        "text": "then",
+        "type": "word"
+      },
+      {
+        "end": 15.75,
+        "index": 29,
+        "speaker": "SPEAKER_00",
+        "start": 15.61,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 15.95,
+        "index": 30,
+        "speaker": "SPEAKER_00",
+        "start": 15.75,
+        "text": "will",
+        "type": "word"
+      },
+      {
+        "end": 16.2,
+        "index": 31,
+        "speaker": "SPEAKER_00",
+        "start": 15.95,
+        "text": "say",
+        "type": "word"
+      },
+      {
+        "end": 16.87,
+        "index": 32,
+        "speaker": "SPEAKER_00",
+        "start": 16.2,
+        "text": "goodbye",
+        "type": "word"
+      },
+      {
+        "end": 19.63,
+        "index": 33,
+        "speaker": "SPEAKER_01",
+        "start": 19.3,
+        "text": "okay",
+        "type": "word"
+      },
+      {
+        "end": 19.92,
+        "index": 34,
+        "speaker": "SPEAKER_01",
+        "start": 19.63,
+        "text": "sounds",
+        "type": "word"
+      },
+      {
+        "end": 20.14,
+        "index": 35,
+        "speaker": "SPEAKER_01",
+        "start": 19.92,
+        "text": "good",
+        "type": "word"
+      },
+      {
+        "end": 20.95,
+        "index": 36,
+        "speaker": "SPEAKER_01",
+        "start": 20.51,
+        "text": "goodbye",
+        "type": "word"
+      },
+      {
+        "end": 24.26,
+        "index": 37,
+        "speaker": "SPEAKER_01",
+        "start": 23.86,
+        "text": "bye",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

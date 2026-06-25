@@ -1,0 +1,1069 @@
+{
+  "elapsed_seconds": 32.405,
+  "input": {
+    "audio_filename": "sample_0004__YbeXcMsQYiz7VuCZYxPyaj.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0004__YbeXcMsQYiz7VuCZYxPyaj.wav",
+    "manifest_conversation_id": "YbeXcMsQYiz7VuCZYxPyaj",
+    "manifest_row_number": 5,
+    "manifest_sample_id": "sample_0004",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:05:45.365832+00:00",
+  "result": {
+    "full_text": "thank you for calling the non emergency line this is ai assistant athena how can i help you hi yes i have someone at my door right now claiming to be from the utility company he's asking for personal information and payment and i'm just really suspicious that this might be a scam can you help me figure out what to do it sounds like you may be dealing with a potential scam is the person still at your door right now yes he's still here he hasn't left yet i am transferring you to emergency line please stay on the line the transfer is now complete i'll stay on the line for the next available call taker",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 49.285,
+          "end_seconds": 49.285,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Thank you for calling the non-emergency line. This is AI Assistant Athena. How can I help you? [Speaker 2]: Hi, yes, I have someone at my door right now claiming to be from the utility company. He's asking for personal information and payment, and I'm just really suspicious that this might be a scam. Can you help me figure out what to do? [Speaker 1]: It sounds like you may be dealing with a potential scam. Is the person still at your door right now? [Speaker 2]: Yes, he's still here. He hasn't left yet. [Speaker 1]: I am transferring you to emergency line. Please stay on the line. [Speaker 2]: The transfer is now complete. I'll stay on the line for the next available call taker.",
+            "timestamps": "_ [T:4] thank [T:24] you [T:30] for [T:40] calling [T:68] the [T:74] non [T:97] emergency [T:142] line [T:172] _ [T:230] this [T:247] is [T:258] ai [T:284] assistant [T:333] athena [T:368] how [T:384] can [T:399] i [T:406] help [T:429] you [T:444] _ [T:630] hi [T:658] yes [T:700] i [T:714] have [T:738] someone [T:774] at [T:783] my [T:800] door [T:830] right [T:848] now [T:873] claiming [T:917] to [T:925] be [T:942] from [T:969] the [T:976] utility [T:34] company [T:91] _ [T:144] he's [T:166] asking [T:215] for [T:229] personal [T:278] information [T:335] and [T:349] payment [T:404] _ [T:407] and [T:423] i'm [T:439] just [T:464] really [T:506] suspicious [T:574] _ [T:577] that [T:592] this [T:610] might [T:628] be [T:640] a [T:646] scam [T:710] _ [T:769] can [T:785] you [T:798] help [T:819] me [T:832] figure [T:864] out [T:877] what [T:895] to [T:907] do [T:939] _ [T:338] it [T:348] sounds [T:373] like [T:389] you [T:396] may [T:412] be [T:427] dealing [T:462] with [T:474] a [T:477] potential [T:518] scam [T:562] _ [T:620] is [T:633] the [T:640] person [T:674] still [T:700] at [T:707] your [T:720] door [T:743] right [T:760] now [T:784] _ [T:924] yes [T:965] _ [T:968] he's [T:987] still [T:14] here [T:68] _ [T:148] he [T:170] hasn't [T:205] left [T:242] yet [T:282] _ [T:6] i [T:20] am [T:32] transferring [T:95] you [T:112] _ [T:119] to [T:133] emergency [T:189] line [T:224] _ [T:271] please [T:288] stay [T:306] on [T:315] the [T:321] line [T:355] _ [T:485] the [T:493] transfer [T:553] is [T:568] now [T:590] complete [T:652] _ [T:655] i'll [T:668] stay [T:695] on [T:711] the [T:720] line [T:753] for [T:765] the [T:775] next [T:813] available [T:870] call [T:893] taker [T:937] _ [T:995]"
+          },
+          "speaker_turn_count": 6,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 5.75,
+            "timestamps_seconds": 26.628
+          },
+          "word_count": 118
+        }
+      ],
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "duration_seconds": 49.285,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "channel_selection_applied": false,
+        "downmixed_to_mono": true,
+        "duration_seconds": 49.285,
+        "load_seconds": 0.019,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 788552,
+        "selected_channel_index": null,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0004__YbeXcMsQYiz7VuCZYxPyaj.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 32.405,
+      "step_timings": {
+        "generation_seconds": 32.378,
+        "model_load_seconds": 33.87,
+        "preprocessing_seconds": 0.025,
+        "processing_time": 32.378
+      }
+    },
+    "segments": [
+      {
+        "end": 4.44,
+        "speaker": "SPEAKER_00",
+        "start": 0.04,
+        "text": "thank you for calling the non emergency line this is ai assistant athena how can i help you"
+      },
+      {
+        "end": 19.39,
+        "speaker": "SPEAKER_01",
+        "start": 6.3,
+        "text": "hi yes i have someone at my door right now claiming to be from the utility company he's asking for personal information and payment and i'm just really suspicious that this might be a scam can you help me figure out what to do"
+      },
+      {
+        "end": 27.84,
+        "speaker": "SPEAKER_00",
+        "start": 23.38,
+        "text": "it sounds like you may be dealing with a potential scam is the person still at your door right now"
+      },
+      {
+        "end": 32.82,
+        "speaker": "SPEAKER_01",
+        "start": 29.24,
+        "text": "yes he's still here he hasn't left yet"
+      },
+      {
+        "end": 43.55,
+        "speaker": "SPEAKER_00",
+        "start": 40.06,
+        "text": "i am transferring you to emergency line please stay on the line"
+      },
+      {
+        "end": 49.37,
+        "speaker": "SPEAKER_01",
+        "start": 44.85,
+        "text": "the transfer is now complete i'll stay on the line for the next available call taker"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 3,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 12.35
+      },
+      {
+        "segment_count": 3,
+        "speaker": "SPEAKER_01",
+        "total_talk_time_seconds": 21.19
+      }
+    ],
+    "timeline": [
+      {
+        "end": 0.24,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 0.04,
+        "text": "thank",
+        "type": "word"
+      },
+      {
+        "end": 0.3,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 0.24,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 0.4,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 0.3,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 0.68,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 0.4,
+        "text": "calling",
+        "type": "word"
+      },
+      {
+        "end": 0.74,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 0.68,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 0.97,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 0.74,
+        "text": "non",
+        "type": "word"
+      },
+      {
+        "end": 1.42,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 0.97,
+        "text": "emergency",
+        "type": "word"
+      },
+      {
+        "end": 1.72,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 1.42,
+        "text": "line",
+        "type": "word"
+      },
+      {
+        "end": 2.47,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 2.3,
+        "text": "this",
+        "type": "word"
+      },
+      {
+        "end": 2.58,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 2.47,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 2.84,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 2.58,
+        "text": "ai",
+        "type": "word"
+      },
+      {
+        "end": 3.33,
+        "index": 12,
+        "speaker": "SPEAKER_00",
+        "start": 2.84,
+        "text": "assistant",
+        "type": "word"
+      },
+      {
+        "end": 3.68,
+        "index": 13,
+        "speaker": "SPEAKER_00",
+        "start": 3.33,
+        "text": "athena",
+        "type": "word"
+      },
+      {
+        "end": 3.84,
+        "index": 14,
+        "speaker": "SPEAKER_00",
+        "start": 3.68,
+        "text": "how",
+        "type": "word"
+      },
+      {
+        "end": 3.99,
+        "index": 15,
+        "speaker": "SPEAKER_00",
+        "start": 3.84,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 4.06,
+        "index": 16,
+        "speaker": "SPEAKER_00",
+        "start": 3.99,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 4.29,
+        "index": 17,
+        "speaker": "SPEAKER_00",
+        "start": 4.06,
+        "text": "help",
+        "type": "word"
+      },
+      {
+        "end": 4.44,
+        "index": 18,
+        "speaker": "SPEAKER_00",
+        "start": 4.29,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 6.58,
+        "index": 19,
+        "speaker": "SPEAKER_01",
+        "start": 6.3,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 7.0,
+        "index": 20,
+        "speaker": "SPEAKER_01",
+        "start": 6.58,
+        "text": "yes",
+        "type": "word"
+      },
+      {
+        "end": 7.14,
+        "index": 21,
+        "speaker": "SPEAKER_01",
+        "start": 7.0,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 7.38,
+        "index": 22,
+        "speaker": "SPEAKER_01",
+        "start": 7.14,
+        "text": "have",
+        "type": "word"
+      },
+      {
+        "end": 7.74,
+        "index": 23,
+        "speaker": "SPEAKER_01",
+        "start": 7.38,
+        "text": "someone",
+        "type": "word"
+      },
+      {
+        "end": 7.83,
+        "index": 24,
+        "speaker": "SPEAKER_01",
+        "start": 7.74,
+        "text": "at",
+        "type": "word"
+      },
+      {
+        "end": 8.0,
+        "index": 25,
+        "speaker": "SPEAKER_01",
+        "start": 7.83,
+        "text": "my",
+        "type": "word"
+      },
+      {
+        "end": 8.3,
+        "index": 26,
+        "speaker": "SPEAKER_01",
+        "start": 8.0,
+        "text": "door",
+        "type": "word"
+      },
+      {
+        "end": 8.48,
+        "index": 27,
+        "speaker": "SPEAKER_01",
+        "start": 8.3,
+        "text": "right",
+        "type": "word"
+      },
+      {
+        "end": 8.73,
+        "index": 28,
+        "speaker": "SPEAKER_01",
+        "start": 8.48,
+        "text": "now",
+        "type": "word"
+      },
+      {
+        "end": 9.17,
+        "index": 29,
+        "speaker": "SPEAKER_01",
+        "start": 8.73,
+        "text": "claiming",
+        "type": "word"
+      },
+      {
+        "end": 9.25,
+        "index": 30,
+        "speaker": "SPEAKER_01",
+        "start": 9.17,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 9.42,
+        "index": 31,
+        "speaker": "SPEAKER_01",
+        "start": 9.25,
+        "text": "be",
+        "type": "word"
+      },
+      {
+        "end": 9.69,
+        "index": 32,
+        "speaker": "SPEAKER_01",
+        "start": 9.42,
+        "text": "from",
+        "type": "word"
+      },
+      {
+        "end": 9.76,
+        "index": 33,
+        "speaker": "SPEAKER_01",
+        "start": 9.69,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 10.34,
+        "index": 34,
+        "speaker": "SPEAKER_01",
+        "start": 9.76,
+        "text": "utility",
+        "type": "word"
+      },
+      {
+        "end": 10.91,
+        "index": 35,
+        "speaker": "SPEAKER_01",
+        "start": 10.34,
+        "text": "company",
+        "type": "word"
+      },
+      {
+        "end": 11.66,
+        "index": 36,
+        "speaker": "SPEAKER_01",
+        "start": 11.44,
+        "text": "he's",
+        "type": "word"
+      },
+      {
+        "end": 12.15,
+        "index": 37,
+        "speaker": "SPEAKER_01",
+        "start": 11.66,
+        "text": "asking",
+        "type": "word"
+      },
+      {
+        "end": 12.29,
+        "index": 38,
+        "speaker": "SPEAKER_01",
+        "start": 12.15,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 12.78,
+        "index": 39,
+        "speaker": "SPEAKER_01",
+        "start": 12.29,
+        "text": "personal",
+        "type": "word"
+      },
+      {
+        "end": 13.35,
+        "index": 40,
+        "speaker": "SPEAKER_01",
+        "start": 12.78,
+        "text": "information",
+        "type": "word"
+      },
+      {
+        "end": 13.49,
+        "index": 41,
+        "speaker": "SPEAKER_01",
+        "start": 13.35,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 14.04,
+        "index": 42,
+        "speaker": "SPEAKER_01",
+        "start": 13.49,
+        "text": "payment",
+        "type": "word"
+      },
+      {
+        "end": 14.23,
+        "index": 43,
+        "speaker": "SPEAKER_01",
+        "start": 14.07,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 14.39,
+        "index": 44,
+        "speaker": "SPEAKER_01",
+        "start": 14.23,
+        "text": "i'm",
+        "type": "word"
+      },
+      {
+        "end": 14.64,
+        "index": 45,
+        "speaker": "SPEAKER_01",
+        "start": 14.39,
+        "text": "just",
+        "type": "word"
+      },
+      {
+        "end": 15.06,
+        "index": 46,
+        "speaker": "SPEAKER_01",
+        "start": 14.64,
+        "text": "really",
+        "type": "word"
+      },
+      {
+        "end": 15.74,
+        "index": 47,
+        "speaker": "SPEAKER_01",
+        "start": 15.06,
+        "text": "suspicious",
+        "type": "word"
+      },
+      {
+        "end": 15.92,
+        "index": 48,
+        "speaker": "SPEAKER_01",
+        "start": 15.77,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 16.1,
+        "index": 49,
+        "speaker": "SPEAKER_01",
+        "start": 15.92,
+        "text": "this",
+        "type": "word"
+      },
+      {
+        "end": 16.28,
+        "index": 50,
+        "speaker": "SPEAKER_01",
+        "start": 16.1,
+        "text": "might",
+        "type": "word"
+      },
+      {
+        "end": 16.4,
+        "index": 51,
+        "speaker": "SPEAKER_01",
+        "start": 16.28,
+        "text": "be",
+        "type": "word"
+      },
+      {
+        "end": 16.46,
+        "index": 52,
+        "speaker": "SPEAKER_01",
+        "start": 16.4,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 17.1,
+        "index": 53,
+        "speaker": "SPEAKER_01",
+        "start": 16.46,
+        "text": "scam",
+        "type": "word"
+      },
+      {
+        "end": 17.85,
+        "index": 54,
+        "speaker": "SPEAKER_01",
+        "start": 17.69,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 17.98,
+        "index": 55,
+        "speaker": "SPEAKER_01",
+        "start": 17.85,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 18.19,
+        "index": 56,
+        "speaker": "SPEAKER_01",
+        "start": 17.98,
+        "text": "help",
+        "type": "word"
+      },
+      {
+        "end": 18.32,
+        "index": 57,
+        "speaker": "SPEAKER_01",
+        "start": 18.19,
+        "text": "me",
+        "type": "word"
+      },
+      {
+        "end": 18.64,
+        "index": 58,
+        "speaker": "SPEAKER_01",
+        "start": 18.32,
+        "text": "figure",
+        "type": "word"
+      },
+      {
+        "end": 18.77,
+        "index": 59,
+        "speaker": "SPEAKER_01",
+        "start": 18.64,
+        "text": "out",
+        "type": "word"
+      },
+      {
+        "end": 18.95,
+        "index": 60,
+        "speaker": "SPEAKER_01",
+        "start": 18.77,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 19.07,
+        "index": 61,
+        "speaker": "SPEAKER_01",
+        "start": 18.95,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 19.39,
+        "index": 62,
+        "speaker": "SPEAKER_01",
+        "start": 19.07,
+        "text": "do",
+        "type": "word"
+      },
+      {
+        "end": 23.48,
+        "index": 63,
+        "speaker": "SPEAKER_00",
+        "start": 23.38,
+        "text": "it",
+        "type": "word"
+      },
+      {
+        "end": 23.73,
+        "index": 64,
+        "speaker": "SPEAKER_00",
+        "start": 23.48,
+        "text": "sounds",
+        "type": "word"
+      },
+      {
+        "end": 23.89,
+        "index": 65,
+        "speaker": "SPEAKER_00",
+        "start": 23.73,
+        "text": "like",
+        "type": "word"
+      },
+      {
+        "end": 23.96,
+        "index": 66,
+        "speaker": "SPEAKER_00",
+        "start": 23.89,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 24.12,
+        "index": 67,
+        "speaker": "SPEAKER_00",
+        "start": 23.96,
+        "text": "may",
+        "type": "word"
+      },
+      {
+        "end": 24.27,
+        "index": 68,
+        "speaker": "SPEAKER_00",
+        "start": 24.12,
+        "text": "be",
+        "type": "word"
+      },
+      {
+        "end": 24.62,
+        "index": 69,
+        "speaker": "SPEAKER_00",
+        "start": 24.27,
+        "text": "dealing",
+        "type": "word"
+      },
+      {
+        "end": 24.74,
+        "index": 70,
+        "speaker": "SPEAKER_00",
+        "start": 24.62,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 24.77,
+        "index": 71,
+        "speaker": "SPEAKER_00",
+        "start": 24.74,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 25.18,
+        "index": 72,
+        "speaker": "SPEAKER_00",
+        "start": 24.77,
+        "text": "potential",
+        "type": "word"
+      },
+      {
+        "end": 25.62,
+        "index": 73,
+        "speaker": "SPEAKER_00",
+        "start": 25.18,
+        "text": "scam",
+        "type": "word"
+      },
+      {
+        "end": 26.33,
+        "index": 74,
+        "speaker": "SPEAKER_00",
+        "start": 26.2,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 26.4,
+        "index": 75,
+        "speaker": "SPEAKER_00",
+        "start": 26.33,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 26.74,
+        "index": 76,
+        "speaker": "SPEAKER_00",
+        "start": 26.4,
+        "text": "person",
+        "type": "word"
+      },
+      {
+        "end": 27.0,
+        "index": 77,
+        "speaker": "SPEAKER_00",
+        "start": 26.74,
+        "text": "still",
+        "type": "word"
+      },
+      {
+        "end": 27.07,
+        "index": 78,
+        "speaker": "SPEAKER_00",
+        "start": 27.0,
+        "text": "at",
+        "type": "word"
+      },
+      {
+        "end": 27.2,
+        "index": 79,
+        "speaker": "SPEAKER_00",
+        "start": 27.07,
+        "text": "your",
+        "type": "word"
+      },
+      {
+        "end": 27.43,
+        "index": 80,
+        "speaker": "SPEAKER_00",
+        "start": 27.2,
+        "text": "door",
+        "type": "word"
+      },
+      {
+        "end": 27.6,
+        "index": 81,
+        "speaker": "SPEAKER_00",
+        "start": 27.43,
+        "text": "right",
+        "type": "word"
+      },
+      {
+        "end": 27.84,
+        "index": 82,
+        "speaker": "SPEAKER_00",
+        "start": 27.6,
+        "text": "now",
+        "type": "word"
+      },
+      {
+        "end": 29.65,
+        "index": 83,
+        "speaker": "SPEAKER_01",
+        "start": 29.24,
+        "text": "yes",
+        "type": "word"
+      },
+      {
+        "end": 29.87,
+        "index": 84,
+        "speaker": "SPEAKER_01",
+        "start": 29.68,
+        "text": "he's",
+        "type": "word"
+      },
+      {
+        "end": 30.14,
+        "index": 85,
+        "speaker": "SPEAKER_01",
+        "start": 29.87,
+        "text": "still",
+        "type": "word"
+      },
+      {
+        "end": 30.68,
+        "index": 86,
+        "speaker": "SPEAKER_01",
+        "start": 30.14,
+        "text": "here",
+        "type": "word"
+      },
+      {
+        "end": 31.7,
+        "index": 87,
+        "speaker": "SPEAKER_01",
+        "start": 31.48,
+        "text": "he",
+        "type": "word"
+      },
+      {
+        "end": 32.05,
+        "index": 88,
+        "speaker": "SPEAKER_01",
+        "start": 31.7,
+        "text": "hasn't",
+        "type": "word"
+      },
+      {
+        "end": 32.42,
+        "index": 89,
+        "speaker": "SPEAKER_01",
+        "start": 32.05,
+        "text": "left",
+        "type": "word"
+      },
+      {
+        "end": 32.82,
+        "index": 90,
+        "speaker": "SPEAKER_01",
+        "start": 32.42,
+        "text": "yet",
+        "type": "word"
+      },
+      {
+        "end": 40.2,
+        "index": 91,
+        "speaker": "SPEAKER_00",
+        "start": 40.06,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 40.32,
+        "index": 92,
+        "speaker": "SPEAKER_00",
+        "start": 40.2,
+        "text": "am",
+        "type": "word"
+      },
+      {
+        "end": 40.95,
+        "index": 93,
+        "speaker": "SPEAKER_00",
+        "start": 40.32,
+        "text": "transferring",
+        "type": "word"
+      },
+      {
+        "end": 41.12,
+        "index": 94,
+        "speaker": "SPEAKER_00",
+        "start": 40.95,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 41.33,
+        "index": 95,
+        "speaker": "SPEAKER_00",
+        "start": 41.19,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 41.89,
+        "index": 96,
+        "speaker": "SPEAKER_00",
+        "start": 41.33,
+        "text": "emergency",
+        "type": "word"
+      },
+      {
+        "end": 42.24,
+        "index": 97,
+        "speaker": "SPEAKER_00",
+        "start": 41.89,
+        "text": "line",
+        "type": "word"
+      },
+      {
+        "end": 42.88,
+        "index": 98,
+        "speaker": "SPEAKER_00",
+        "start": 42.71,
+        "text": "please",
+        "type": "word"
+      },
+      {
+        "end": 43.06,
+        "index": 99,
+        "speaker": "SPEAKER_00",
+        "start": 42.88,
+        "text": "stay",
+        "type": "word"
+      },
+      {
+        "end": 43.15,
+        "index": 100,
+        "speaker": "SPEAKER_00",
+        "start": 43.06,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 43.21,
+        "index": 101,
+        "speaker": "SPEAKER_00",
+        "start": 43.15,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 43.55,
+        "index": 102,
+        "speaker": "SPEAKER_00",
+        "start": 43.21,
+        "text": "line",
+        "type": "word"
+      },
+      {
+        "end": 44.93,
+        "index": 103,
+        "speaker": "SPEAKER_01",
+        "start": 44.85,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 45.53,
+        "index": 104,
+        "speaker": "SPEAKER_01",
+        "start": 44.93,
+        "text": "transfer",
+        "type": "word"
+      },
+      {
+        "end": 45.68,
+        "index": 105,
+        "speaker": "SPEAKER_01",
+        "start": 45.53,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 45.9,
+        "index": 106,
+        "speaker": "SPEAKER_01",
+        "start": 45.68,
+        "text": "now",
+        "type": "word"
+      },
+      {
+        "end": 46.52,
+        "index": 107,
+        "speaker": "SPEAKER_01",
+        "start": 45.9,
+        "text": "complete",
+        "type": "word"
+      },
+      {
+        "end": 46.68,
+        "index": 108,
+        "speaker": "SPEAKER_01",
+        "start": 46.55,
+        "text": "i'll",
+        "type": "word"
+      },
+      {
+        "end": 46.95,
+        "index": 109,
+        "speaker": "SPEAKER_01",
+        "start": 46.68,
+        "text": "stay",
+        "type": "word"
+      },
+      {
+        "end": 47.11,
+        "index": 110,
+        "speaker": "SPEAKER_01",
+        "start": 46.95,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 47.2,
+        "index": 111,
+        "speaker": "SPEAKER_01",
+        "start": 47.11,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 47.53,
+        "index": 112,
+        "speaker": "SPEAKER_01",
+        "start": 47.2,
+        "text": "line",
+        "type": "word"
+      },
+      {
+        "end": 47.65,
+        "index": 113,
+        "speaker": "SPEAKER_01",
+        "start": 47.53,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 47.75,
+        "index": 114,
+        "speaker": "SPEAKER_01",
+        "start": 47.65,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 48.13,
+        "index": 115,
+        "speaker": "SPEAKER_01",
+        "start": 47.75,
+        "text": "next",
+        "type": "word"
+      },
+      {
+        "end": 48.7,
+        "index": 116,
+        "speaker": "SPEAKER_01",
+        "start": 48.13,
+        "text": "available",
+        "type": "word"
+      },
+      {
+        "end": 48.93,
+        "index": 117,
+        "speaker": "SPEAKER_01",
+        "start": 48.7,
+        "text": "call",
+        "type": "word"
+      },
+      {
+        "end": 49.37,
+        "index": 118,
+        "speaker": "SPEAKER_01",
+        "start": 48.93,
+        "text": "taker",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

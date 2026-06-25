@@ -1,0 +1,237 @@
+{
+  "arguments": {
+    "audio_filename": [],
+    "enable_alignment": false,
+    "enable_vad": false,
+    "glob": "**/*.wav",
+    "initial_prompt": "This is a conversation transcript between a user and an agent.",
+    "input_dir": "/workspace/backend/tmp/whisperx_examples/input",
+    "label": "whisperx-demo-set-stereo-prompt",
+    "limit": null,
+    "manifest_path": "/workspace/backend/tmp/whisperx_examples/manifest.csv",
+    "manifest_row": [],
+    "num_speakers": 2,
+    "output_root": "/workspace/backend/tmp/whisperx_examples/runs",
+    "sample_id": [],
+    "split_stereo_channels": true,
+    "stereo_mode": "reconcile",
+    "stereo_mode_ignored": true
+  },
+  "duplicate_inputs": [
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0001__E8N9WqLpXkgygp3ayGZzjb.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0002__ELmy7PJp6wUrWqSYHPSCTX.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0003__WBGsb8KQx6seU6Gg8mG6BM.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0004__YbeXcMsQYiz7VuCZYxPyaj.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0005__UwErj97teV4vPbkuLueCR2.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0006__Zd43Gvp6GvsQjSA7UMuGHw.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0007__6whgDCCG862UST7tRqc3B5.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0009__2DeDT9GVY2dph8GdRHGgnR.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    },
+    {
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+      "manifest_row_number": null,
+      "source": "input_dir"
+    }
+  ],
+  "entries": [
+    {
+      "audio_filename": "sample_0001__E8N9WqLpXkgygp3ayGZzjb.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0001__E8N9WqLpXkgygp3ayGZzjb.wav",
+      "error_message": "",
+      "index": 1,
+      "manifest_conversation_id": "E8N9WqLpXkgygp3ayGZzjb",
+      "manifest_row_number": 2,
+      "manifest_sample_id": "sample_0001",
+      "processing_time_seconds": 2.821,
+      "segments_count": 6,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0001_sample_0001__E8N9WqLpXkgygp3ayGZzjb.json"
+    },
+    {
+      "audio_filename": "sample_0002__ELmy7PJp6wUrWqSYHPSCTX.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0002__ELmy7PJp6wUrWqSYHPSCTX.wav",
+      "error_message": "",
+      "index": 2,
+      "manifest_conversation_id": "ELmy7PJp6wUrWqSYHPSCTX",
+      "manifest_row_number": 3,
+      "manifest_sample_id": "sample_0002",
+      "processing_time_seconds": 9.909,
+      "segments_count": 36,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0002_sample_0002__ELmy7PJp6wUrWqSYHPSCTX.json"
+    },
+    {
+      "audio_filename": "sample_0003__WBGsb8KQx6seU6Gg8mG6BM.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0003__WBGsb8KQx6seU6Gg8mG6BM.wav",
+      "error_message": "",
+      "index": 3,
+      "manifest_conversation_id": "WBGsb8KQx6seU6Gg8mG6BM",
+      "manifest_row_number": 4,
+      "manifest_sample_id": "sample_0003",
+      "processing_time_seconds": 13.927,
+      "segments_count": 61,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0003_sample_0003__WBGsb8KQx6seU6Gg8mG6BM.json"
+    },
+    {
+      "audio_filename": "sample_0004__YbeXcMsQYiz7VuCZYxPyaj.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0004__YbeXcMsQYiz7VuCZYxPyaj.wav",
+      "error_message": "",
+      "index": 4,
+      "manifest_conversation_id": "YbeXcMsQYiz7VuCZYxPyaj",
+      "manifest_row_number": 5,
+      "manifest_sample_id": "sample_0004",
+      "processing_time_seconds": 9.925,
+      "segments_count": 18,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0004_sample_0004__YbeXcMsQYiz7VuCZYxPyaj.json"
+    },
+    {
+      "audio_filename": "sample_0005__UwErj97teV4vPbkuLueCR2.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0005__UwErj97teV4vPbkuLueCR2.wav",
+      "error_message": "",
+      "index": 5,
+      "manifest_conversation_id": "UwErj97teV4vPbkuLueCR2",
+      "manifest_row_number": 6,
+      "manifest_sample_id": "sample_0005",
+      "processing_time_seconds": 13.325,
+      "segments_count": 52,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0005_sample_0005__UwErj97teV4vPbkuLueCR2.json"
+    },
+    {
+      "audio_filename": "sample_0006__Zd43Gvp6GvsQjSA7UMuGHw.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0006__Zd43Gvp6GvsQjSA7UMuGHw.wav",
+      "error_message": "",
+      "index": 6,
+      "manifest_conversation_id": "Zd43Gvp6GvsQjSA7UMuGHw",
+      "manifest_row_number": 7,
+      "manifest_sample_id": "sample_0006",
+      "processing_time_seconds": 7.381,
+      "segments_count": 11,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0006_sample_0006__Zd43Gvp6GvsQjSA7UMuGHw.json"
+    },
+    {
+      "audio_filename": "sample_0007__6whgDCCG862UST7tRqc3B5.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0007__6whgDCCG862UST7tRqc3B5.wav",
+      "error_message": "",
+      "index": 7,
+      "manifest_conversation_id": "6whgDCCG862UST7tRqc3B5",
+      "manifest_row_number": 8,
+      "manifest_sample_id": "sample_0007",
+      "processing_time_seconds": 5.015,
+      "segments_count": 20,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0007_sample_0007__6whgDCCG862UST7tRqc3B5.json"
+    },
+    {
+      "audio_filename": "sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.wav",
+      "error_message": "",
+      "index": 8,
+      "manifest_conversation_id": "dCZKwBjGjcWWyhU4Wm3BHX",
+      "manifest_row_number": 9,
+      "manifest_sample_id": "sample_0008",
+      "processing_time_seconds": 6.883,
+      "segments_count": 15,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0008_sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.json"
+    },
+    {
+      "audio_filename": "sample_0009__2DeDT9GVY2dph8GdRHGgnR.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0009__2DeDT9GVY2dph8GdRHGgnR.wav",
+      "error_message": "",
+      "index": 9,
+      "manifest_conversation_id": "2DeDT9GVY2dph8GdRHGgnR",
+      "manifest_row_number": 10,
+      "manifest_sample_id": "sample_0009",
+      "processing_time_seconds": 1.748,
+      "segments_count": 2,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0009_sample_0009__2DeDT9GVY2dph8GdRHGgnR.json"
+    },
+    {
+      "audio_filename": "sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+      "audio_path": "/workspace/backend/tmp/whisperx_examples/input/sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+      "error_message": "",
+      "index": 10,
+      "manifest_conversation_id": "WFYDioQcFJpdjF7e9QRkjC",
+      "manifest_row_number": 11,
+      "manifest_sample_id": "sample_0010",
+      "processing_time_seconds": 2.197,
+      "segments_count": 5,
+      "source": "manifest",
+      "speakers_count": 2,
+      "status": "ok",
+      "transcript_json": "transcripts/0010_sample_0010__WFYDioQcFJpdjF7e9QRkjC.json"
+    }
+  ],
+  "manifest_skipped": [],
+  "pre_warm_seconds": 28.002,
+  "run_directory": "/workspace/backend/tmp/whisperx_examples/runs/20260623T163044639108Z_whisperx-demo-set-stereo-prompt",
+  "run_finished_at": "2026-06-23T16:32:40.977107+00:00",
+  "run_started_at": "2026-06-23T16:30:44.641765+00:00",
+  "summary": {
+    "duplicates_skipped": 10,
+    "errors": 0,
+    "manifest_rows_skipped": 0,
+    "ok": 10,
+    "total_inputs_discovered": 20,
+    "total_unique_inputs": 10
+  }
+}

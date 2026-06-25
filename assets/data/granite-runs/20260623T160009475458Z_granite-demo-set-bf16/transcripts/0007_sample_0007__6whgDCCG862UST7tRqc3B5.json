@@ -1,0 +1,1084 @@
+{
+  "elapsed_seconds": 34.594,
+  "input": {
+    "audio_filename": "sample_0007__6whgDCCG862UST7tRqc3B5.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0007__6whgDCCG862UST7tRqc3B5.wav",
+    "manifest_conversation_id": "6whgDCCG862UST7tRqc3B5",
+    "manifest_row_number": 8,
+    "manifest_sample_id": "sample_0007",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-23T16:09:09.228586+00:00",
+  "result": {
+    "full_text": "hi welcome to pop eyes what can i get started for you today i'd like to order a twelve piece tender family meal but can i get the blackened tenders with that absolutely blackened works i'll take fried i said coleslaw for the sides please great what dipping sauces i'll go with ranch and barbecue for the sauces want to add two more sauces sure i'll take two more ranch please perfect one and thirty drinks thanks that's all is your order at the bottom of the screen that looks correct to me thank you for coming to pop eyes pull forward to the window i'll pull forward now have a great day thank you have a great day",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 61.74,
+          "end_seconds": 61.74,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Hi, welcome to Pop Eys. What can I get started for you today? I'd like to order a 12-piece tender family meal. But can I get the blackened tenders with that? Absolutely, blackened works. I'll take fried and coleslaw for the sides, please. Great. What dipping sauces? I'll go with ranch and barbecue for the sauces. [Speaker 2]: Want to add two more sauces? Sure. I'll take two more ranch, please. Perfect. One and 30 drinks. Thanks. That's all. [Speaker 1]: Is your order at the bottom of the screen? That looks correct to me. Thank you for coming to Pop Eys. Pull forward to the window. I'll pull forward now. Have a great day. [Speaker 2]: Thank you. Have a great day.",
+            "timestamps": "_ [T:79] hi [T:109] welcome [T:137] to [T:144] pop [T:170] eyes [T:200] what [T:218] can [T:230] i [T:238] get [T:252] started [T:286] for [T:296] you [T:309] today [T:350] _ [T:365] i'd [T:382] like [T:400] to [T:410] order [T:436] a [T:443] twelve [T:490] piece [T:534] tender [T:583] family [T:630] meal [T:667] _ [T:732] but [T:746] can [T:760] i [T:767] get [T:783] the [T:791] blackened [T:841] tenders [T:886] with [T:899] that [T:925] _ [T:248] absolutely [T:310] blackened [T:349] works [T:390] _ [T:393] i'll [T:407] take [T:428] fried [T:465] _ [T:468] i [T:477] said [T:500] coleslaw [T:565] for [T:585] the [T:594] sides [T:642] please [T:699] _ [T:836] great [T:877] _ [T:882] what [T:898] dipping [T:925] sauces [T:972] i'll [T:984] go [T:0] with [T:19] ranch [T:77] _ [T:95] and [T:130] _ [T:139] barbecue [T:206] for [T:224] the [T:233] sauces [T:301] _ [T:726] want [T:744] to [T:750] add [T:774] two [T:790] more [T:807] sauces [T:844] sure [T:886] _ [T:920] i'll [T:932] take [T:956] _ [T:961] two [T:982] more [T:7] ranch [T:47] please [T:101] _ [T:280] perfect [T:335] _ [T:366] one [T:384] and [T:395] thirty [T:422] drinks [T:468] _ [T:495] thanks [T:543] _ [T:575] that's [T:600] all [T:640] _ [T:1] is [T:17] your [T:32] order [T:57] at [T:68] the [T:75] bottom [T:106] of [T:114] the [T:122] screen [T:162] that [T:173] looks [T:198] correct [T:260] to [T:273] me [T:304] _ [T:565] thank [T:586] you [T:594] for [T:606] coming [T:633] to [T:641] pop [T:665] eyes [T:700] _ [T:725] pull [T:746] forward [T:789] to [T:795] the [T:803] window [T:850] _ [T:853] i'll [T:870] pull [T:892] forward [T:932] now [T:968] _ [T:984] have [T:5] a [T:11] great [T:48] day [T:95] _ [T:436] thank [T:462] you [T:488] _ [T:528] have [T:543] a [T:549] great [T:573] day [T:606] _ [T:623]"
+          },
+          "speaker_turn_count": 4,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 6.048,
+            "timestamps_seconds": 28.518
+          },
+          "word_count": 119
+        }
+      ],
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "duration_seconds": 61.74,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "channel_selection_applied": false,
+        "downmixed_to_mono": true,
+        "duration_seconds": 61.74,
+        "load_seconds": 0.021,
+        "original_channels": 2,
+        "original_sample_rate": 16000,
+        "resample_seconds": 0.0,
+        "resampled_to_target_rate": false,
+        "sample_count": 987833,
+        "selected_channel_index": null,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0007__6whgDCCG862UST7tRqc3B5.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 34.594,
+      "step_timings": {
+        "generation_seconds": 34.566,
+        "model_load_seconds": 33.87,
+        "preprocessing_seconds": 0.026,
+        "processing_time": 34.566
+      }
+    },
+    "segments": [
+      {
+        "end": 9.25,
+        "speaker": "SPEAKER_00",
+        "start": 0.79,
+        "text": "hi welcome to pop eyes what can i get started for you today i'd like to order a twelve piece tender family meal but can i get the blackened tenders with that"
+      },
+      {
+        "end": 16.99,
+        "speaker": "SPEAKER_00",
+        "start": 12.48,
+        "text": "absolutely blackened works i'll take fried i said coleslaw for the sides please"
+      },
+      {
+        "end": 23.01,
+        "speaker": "SPEAKER_00",
+        "start": 18.36,
+        "text": "great what dipping sauces i'll go with ranch and barbecue for the sauces"
+      },
+      {
+        "end": 31.01,
+        "speaker": "SPEAKER_00",
+        "start": 27.26,
+        "text": "want to add two more sauces sure i'll take two more ranch please"
+      },
+      {
+        "end": 36.4,
+        "speaker": "SPEAKER_00",
+        "start": 32.8,
+        "text": "perfect one and thirty drinks thanks that's all"
+      },
+      {
+        "end": 43.04,
+        "speaker": "SPEAKER_00",
+        "start": 40.01,
+        "text": "is your order at the bottom of the screen that looks correct to me"
+      },
+      {
+        "end": 50.95,
+        "speaker": "SPEAKER_00",
+        "start": 45.65,
+        "text": "thank you for coming to pop eyes pull forward to the window i'll pull forward now have a great day"
+      },
+      {
+        "end": 56.06,
+        "speaker": "SPEAKER_00",
+        "start": 54.36,
+        "text": "thank you have a great day"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 8,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 35.0
+      }
+    ],
+    "timeline": [
+      {
+        "end": 1.09,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 0.79,
+        "text": "hi",
+        "type": "word"
+      },
+      {
+        "end": 1.37,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 1.09,
+        "text": "welcome",
+        "type": "word"
+      },
+      {
+        "end": 1.44,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 1.37,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 1.7,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 1.44,
+        "text": "pop",
+        "type": "word"
+      },
+      {
+        "end": 2.0,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 1.7,
+        "text": "eyes",
+        "type": "word"
+      },
+      {
+        "end": 2.18,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 2.0,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 2.3,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 2.18,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 2.38,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 2.3,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 2.52,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 2.38,
+        "text": "get",
+        "type": "word"
+      },
+      {
+        "end": 2.86,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 2.52,
+        "text": "started",
+        "type": "word"
+      },
+      {
+        "end": 2.96,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 2.86,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 3.09,
+        "index": 12,
+        "speaker": "SPEAKER_00",
+        "start": 2.96,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 3.5,
+        "index": 13,
+        "speaker": "SPEAKER_00",
+        "start": 3.09,
+        "text": "today",
+        "type": "word"
+      },
+      {
+        "end": 3.82,
+        "index": 14,
+        "speaker": "SPEAKER_00",
+        "start": 3.65,
+        "text": "i'd",
+        "type": "word"
+      },
+      {
+        "end": 4.0,
+        "index": 15,
+        "speaker": "SPEAKER_00",
+        "start": 3.82,
+        "text": "like",
+        "type": "word"
+      },
+      {
+        "end": 4.1,
+        "index": 16,
+        "speaker": "SPEAKER_00",
+        "start": 4.0,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 4.36,
+        "index": 17,
+        "speaker": "SPEAKER_00",
+        "start": 4.1,
+        "text": "order",
+        "type": "word"
+      },
+      {
+        "end": 4.43,
+        "index": 18,
+        "speaker": "SPEAKER_00",
+        "start": 4.36,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 4.9,
+        "index": 19,
+        "speaker": "SPEAKER_00",
+        "start": 4.43,
+        "text": "twelve",
+        "type": "word"
+      },
+      {
+        "end": 5.34,
+        "index": 20,
+        "speaker": "SPEAKER_00",
+        "start": 4.9,
+        "text": "piece",
+        "type": "word"
+      },
+      {
+        "end": 5.83,
+        "index": 21,
+        "speaker": "SPEAKER_00",
+        "start": 5.34,
+        "text": "tender",
+        "type": "word"
+      },
+      {
+        "end": 6.3,
+        "index": 22,
+        "speaker": "SPEAKER_00",
+        "start": 5.83,
+        "text": "family",
+        "type": "word"
+      },
+      {
+        "end": 6.67,
+        "index": 23,
+        "speaker": "SPEAKER_00",
+        "start": 6.3,
+        "text": "meal",
+        "type": "word"
+      },
+      {
+        "end": 7.46,
+        "index": 24,
+        "speaker": "SPEAKER_00",
+        "start": 7.32,
+        "text": "but",
+        "type": "word"
+      },
+      {
+        "end": 7.6,
+        "index": 25,
+        "speaker": "SPEAKER_00",
+        "start": 7.46,
+        "text": "can",
+        "type": "word"
+      },
+      {
+        "end": 7.67,
+        "index": 26,
+        "speaker": "SPEAKER_00",
+        "start": 7.6,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 7.83,
+        "index": 27,
+        "speaker": "SPEAKER_00",
+        "start": 7.67,
+        "text": "get",
+        "type": "word"
+      },
+      {
+        "end": 7.91,
+        "index": 28,
+        "speaker": "SPEAKER_00",
+        "start": 7.83,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 8.41,
+        "index": 29,
+        "speaker": "SPEAKER_00",
+        "start": 7.91,
+        "text": "blackened",
+        "type": "word"
+      },
+      {
+        "end": 8.86,
+        "index": 30,
+        "speaker": "SPEAKER_00",
+        "start": 8.41,
+        "text": "tenders",
+        "type": "word"
+      },
+      {
+        "end": 8.99,
+        "index": 31,
+        "speaker": "SPEAKER_00",
+        "start": 8.86,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 9.25,
+        "index": 32,
+        "speaker": "SPEAKER_00",
+        "start": 8.99,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 13.1,
+        "index": 33,
+        "speaker": "SPEAKER_00",
+        "start": 12.48,
+        "text": "absolutely",
+        "type": "word"
+      },
+      {
+        "end": 13.49,
+        "index": 34,
+        "speaker": "SPEAKER_00",
+        "start": 13.1,
+        "text": "blackened",
+        "type": "word"
+      },
+      {
+        "end": 13.9,
+        "index": 35,
+        "speaker": "SPEAKER_00",
+        "start": 13.49,
+        "text": "works",
+        "type": "word"
+      },
+      {
+        "end": 14.07,
+        "index": 36,
+        "speaker": "SPEAKER_00",
+        "start": 13.93,
+        "text": "i'll",
+        "type": "word"
+      },
+      {
+        "end": 14.28,
+        "index": 37,
+        "speaker": "SPEAKER_00",
+        "start": 14.07,
+        "text": "take",
+        "type": "word"
+      },
+      {
+        "end": 14.65,
+        "index": 38,
+        "speaker": "SPEAKER_00",
+        "start": 14.28,
+        "text": "fried",
+        "type": "word"
+      },
+      {
+        "end": 14.77,
+        "index": 39,
+        "speaker": "SPEAKER_00",
+        "start": 14.68,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 15.0,
+        "index": 40,
+        "speaker": "SPEAKER_00",
+        "start": 14.77,
+        "text": "said",
+        "type": "word"
+      },
+      {
+        "end": 15.65,
+        "index": 41,
+        "speaker": "SPEAKER_00",
+        "start": 15.0,
+        "text": "coleslaw",
+        "type": "word"
+      },
+      {
+        "end": 15.85,
+        "index": 42,
+        "speaker": "SPEAKER_00",
+        "start": 15.65,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 15.94,
+        "index": 43,
+        "speaker": "SPEAKER_00",
+        "start": 15.85,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 16.42,
+        "index": 44,
+        "speaker": "SPEAKER_00",
+        "start": 15.94,
+        "text": "sides",
+        "type": "word"
+      },
+      {
+        "end": 16.99,
+        "index": 45,
+        "speaker": "SPEAKER_00",
+        "start": 16.42,
+        "text": "please",
+        "type": "word"
+      },
+      {
+        "end": 18.77,
+        "index": 46,
+        "speaker": "SPEAKER_00",
+        "start": 18.36,
+        "text": "great",
+        "type": "word"
+      },
+      {
+        "end": 18.98,
+        "index": 47,
+        "speaker": "SPEAKER_00",
+        "start": 18.82,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 19.25,
+        "index": 48,
+        "speaker": "SPEAKER_00",
+        "start": 18.98,
+        "text": "dipping",
+        "type": "word"
+      },
+      {
+        "end": 19.72,
+        "index": 49,
+        "speaker": "SPEAKER_00",
+        "start": 19.25,
+        "text": "sauces",
+        "type": "word"
+      },
+      {
+        "end": 19.84,
+        "index": 50,
+        "speaker": "SPEAKER_00",
+        "start": 19.72,
+        "text": "i'll",
+        "type": "word"
+      },
+      {
+        "end": 20.0,
+        "index": 51,
+        "speaker": "SPEAKER_00",
+        "start": 19.84,
+        "text": "go",
+        "type": "word"
+      },
+      {
+        "end": 20.19,
+        "index": 52,
+        "speaker": "SPEAKER_00",
+        "start": 20.0,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 20.77,
+        "index": 53,
+        "speaker": "SPEAKER_00",
+        "start": 20.19,
+        "text": "ranch",
+        "type": "word"
+      },
+      {
+        "end": 21.3,
+        "index": 54,
+        "speaker": "SPEAKER_00",
+        "start": 20.95,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 22.06,
+        "index": 55,
+        "speaker": "SPEAKER_00",
+        "start": 21.39,
+        "text": "barbecue",
+        "type": "word"
+      },
+      {
+        "end": 22.24,
+        "index": 56,
+        "speaker": "SPEAKER_00",
+        "start": 22.06,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 22.33,
+        "index": 57,
+        "speaker": "SPEAKER_00",
+        "start": 22.24,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 23.01,
+        "index": 58,
+        "speaker": "SPEAKER_00",
+        "start": 22.33,
+        "text": "sauces",
+        "type": "word"
+      },
+      {
+        "end": 27.44,
+        "index": 59,
+        "speaker": "SPEAKER_00",
+        "start": 27.26,
+        "text": "want",
+        "type": "word"
+      },
+      {
+        "end": 27.5,
+        "index": 60,
+        "speaker": "SPEAKER_00",
+        "start": 27.44,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 27.74,
+        "index": 61,
+        "speaker": "SPEAKER_00",
+        "start": 27.5,
+        "text": "add",
+        "type": "word"
+      },
+      {
+        "end": 27.9,
+        "index": 62,
+        "speaker": "SPEAKER_00",
+        "start": 27.74,
+        "text": "two",
+        "type": "word"
+      },
+      {
+        "end": 28.07,
+        "index": 63,
+        "speaker": "SPEAKER_00",
+        "start": 27.9,
+        "text": "more",
+        "type": "word"
+      },
+      {
+        "end": 28.44,
+        "index": 64,
+        "speaker": "SPEAKER_00",
+        "start": 28.07,
+        "text": "sauces",
+        "type": "word"
+      },
+      {
+        "end": 28.86,
+        "index": 65,
+        "speaker": "SPEAKER_00",
+        "start": 28.44,
+        "text": "sure",
+        "type": "word"
+      },
+      {
+        "end": 29.32,
+        "index": 66,
+        "speaker": "SPEAKER_00",
+        "start": 29.2,
+        "text": "i'll",
+        "type": "word"
+      },
+      {
+        "end": 29.56,
+        "index": 67,
+        "speaker": "SPEAKER_00",
+        "start": 29.32,
+        "text": "take",
+        "type": "word"
+      },
+      {
+        "end": 29.82,
+        "index": 68,
+        "speaker": "SPEAKER_00",
+        "start": 29.61,
+        "text": "two",
+        "type": "word"
+      },
+      {
+        "end": 30.07,
+        "index": 69,
+        "speaker": "SPEAKER_00",
+        "start": 29.82,
+        "text": "more",
+        "type": "word"
+      },
+      {
+        "end": 30.47,
+        "index": 70,
+        "speaker": "SPEAKER_00",
+        "start": 30.07,
+        "text": "ranch",
+        "type": "word"
+      },
+      {
+        "end": 31.01,
+        "index": 71,
+        "speaker": "SPEAKER_00",
+        "start": 30.47,
+        "text": "please",
+        "type": "word"
+      },
+      {
+        "end": 33.35,
+        "index": 72,
+        "speaker": "SPEAKER_00",
+        "start": 32.8,
+        "text": "perfect",
+        "type": "word"
+      },
+      {
+        "end": 33.84,
+        "index": 73,
+        "speaker": "SPEAKER_00",
+        "start": 33.66,
+        "text": "one",
+        "type": "word"
+      },
+      {
+        "end": 33.95,
+        "index": 74,
+        "speaker": "SPEAKER_00",
+        "start": 33.84,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 34.22,
+        "index": 75,
+        "speaker": "SPEAKER_00",
+        "start": 33.95,
+        "text": "thirty",
+        "type": "word"
+      },
+      {
+        "end": 34.68,
+        "index": 76,
+        "speaker": "SPEAKER_00",
+        "start": 34.22,
+        "text": "drinks",
+        "type": "word"
+      },
+      {
+        "end": 35.43,
+        "index": 77,
+        "speaker": "SPEAKER_00",
+        "start": 34.95,
+        "text": "thanks",
+        "type": "word"
+      },
+      {
+        "end": 36.0,
+        "index": 78,
+        "speaker": "SPEAKER_00",
+        "start": 35.75,
+        "text": "that's",
+        "type": "word"
+      },
+      {
+        "end": 36.4,
+        "index": 79,
+        "speaker": "SPEAKER_00",
+        "start": 36.0,
+        "text": "all",
+        "type": "word"
+      },
+      {
+        "end": 40.17,
+        "index": 80,
+        "speaker": "SPEAKER_00",
+        "start": 40.01,
+        "text": "is",
+        "type": "word"
+      },
+      {
+        "end": 40.32,
+        "index": 81,
+        "speaker": "SPEAKER_00",
+        "start": 40.17,
+        "text": "your",
+        "type": "word"
+      },
+      {
+        "end": 40.57,
+        "index": 82,
+        "speaker": "SPEAKER_00",
+        "start": 40.32,
+        "text": "order",
+        "type": "word"
+      },
+      {
+        "end": 40.68,
+        "index": 83,
+        "speaker": "SPEAKER_00",
+        "start": 40.57,
+        "text": "at",
+        "type": "word"
+      },
+      {
+        "end": 40.75,
+        "index": 84,
+        "speaker": "SPEAKER_00",
+        "start": 40.68,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 41.06,
+        "index": 85,
+        "speaker": "SPEAKER_00",
+        "start": 40.75,
+        "text": "bottom",
+        "type": "word"
+      },
+      {
+        "end": 41.14,
+        "index": 86,
+        "speaker": "SPEAKER_00",
+        "start": 41.06,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 41.22,
+        "index": 87,
+        "speaker": "SPEAKER_00",
+        "start": 41.14,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 41.62,
+        "index": 88,
+        "speaker": "SPEAKER_00",
+        "start": 41.22,
+        "text": "screen",
+        "type": "word"
+      },
+      {
+        "end": 41.73,
+        "index": 89,
+        "speaker": "SPEAKER_00",
+        "start": 41.62,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 41.98,
+        "index": 90,
+        "speaker": "SPEAKER_00",
+        "start": 41.73,
+        "text": "looks",
+        "type": "word"
+      },
+      {
+        "end": 42.6,
+        "index": 91,
+        "speaker": "SPEAKER_00",
+        "start": 41.98,
+        "text": "correct",
+        "type": "word"
+      },
+      {
+        "end": 42.73,
+        "index": 92,
+        "speaker": "SPEAKER_00",
+        "start": 42.6,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 43.04,
+        "index": 93,
+        "speaker": "SPEAKER_00",
+        "start": 42.73,
+        "text": "me",
+        "type": "word"
+      },
+      {
+        "end": 45.86,
+        "index": 94,
+        "speaker": "SPEAKER_00",
+        "start": 45.65,
+        "text": "thank",
+        "type": "word"
+      },
+      {
+        "end": 45.94,
+        "index": 95,
+        "speaker": "SPEAKER_00",
+        "start": 45.86,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 46.06,
+        "index": 96,
+        "speaker": "SPEAKER_00",
+        "start": 45.94,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 46.33,
+        "index": 97,
+        "speaker": "SPEAKER_00",
+        "start": 46.06,
+        "text": "coming",
+        "type": "word"
+      },
+      {
+        "end": 46.41,
+        "index": 98,
+        "speaker": "SPEAKER_00",
+        "start": 46.33,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 46.65,
+        "index": 99,
+        "speaker": "SPEAKER_00",
+        "start": 46.41,
+        "text": "pop",
+        "type": "word"
+      },
+      {
+        "end": 47.0,
+        "index": 100,
+        "speaker": "SPEAKER_00",
+        "start": 46.65,
+        "text": "eyes",
+        "type": "word"
+      },
+      {
+        "end": 47.46,
+        "index": 101,
+        "speaker": "SPEAKER_00",
+        "start": 47.25,
+        "text": "pull",
+        "type": "word"
+      },
+      {
+        "end": 47.89,
+        "index": 102,
+        "speaker": "SPEAKER_00",
+        "start": 47.46,
+        "text": "forward",
+        "type": "word"
+      },
+      {
+        "end": 47.95,
+        "index": 103,
+        "speaker": "SPEAKER_00",
+        "start": 47.89,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 48.03,
+        "index": 104,
+        "speaker": "SPEAKER_00",
+        "start": 47.95,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 48.5,
+        "index": 105,
+        "speaker": "SPEAKER_00",
+        "start": 48.03,
+        "text": "window",
+        "type": "word"
+      },
+      {
+        "end": 48.7,
+        "index": 106,
+        "speaker": "SPEAKER_00",
+        "start": 48.53,
+        "text": "i'll",
+        "type": "word"
+      },
+      {
+        "end": 48.92,
+        "index": 107,
+        "speaker": "SPEAKER_00",
+        "start": 48.7,
+        "text": "pull",
+        "type": "word"
+      },
+      {
+        "end": 49.32,
+        "index": 108,
+        "speaker": "SPEAKER_00",
+        "start": 48.92,
+        "text": "forward",
+        "type": "word"
+      },
+      {
+        "end": 49.68,
+        "index": 109,
+        "speaker": "SPEAKER_00",
+        "start": 49.32,
+        "text": "now",
+        "type": "word"
+      },
+      {
+        "end": 50.05,
+        "index": 110,
+        "speaker": "SPEAKER_00",
+        "start": 49.84,
+        "text": "have",
+        "type": "word"
+      },
+      {
+        "end": 50.11,
+        "index": 111,
+        "speaker": "SPEAKER_00",
+        "start": 50.05,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 50.48,
+        "index": 112,
+        "speaker": "SPEAKER_00",
+        "start": 50.11,
+        "text": "great",
+        "type": "word"
+      },
+      {
+        "end": 50.95,
+        "index": 113,
+        "speaker": "SPEAKER_00",
+        "start": 50.48,
+        "text": "day",
+        "type": "word"
+      },
+      {
+        "end": 54.62,
+        "index": 114,
+        "speaker": "SPEAKER_00",
+        "start": 54.36,
+        "text": "thank",
+        "type": "word"
+      },
+      {
+        "end": 54.88,
+        "index": 115,
+        "speaker": "SPEAKER_00",
+        "start": 54.62,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 55.43,
+        "index": 116,
+        "speaker": "SPEAKER_00",
+        "start": 55.28,
+        "text": "have",
+        "type": "word"
+      },
+      {
+        "end": 55.49,
+        "index": 117,
+        "speaker": "SPEAKER_00",
+        "start": 55.43,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 55.73,
+        "index": 118,
+        "speaker": "SPEAKER_00",
+        "start": 55.49,
+        "text": "great",
+        "type": "word"
+      },
+      {
+        "end": 56.06,
+        "index": 119,
+        "speaker": "SPEAKER_00",
+        "start": 55.73,
+        "text": "day",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}
