@@ -459,6 +459,19 @@ function normalizeJoinValue(value) {
   return typeof value === "string" ? value.trim().toLowerCase() : "";
 }
 
+const SAMPLE_0009_ID = "sample_0009";
+const SAMPLE_0009_REAL_AUDIO_FILENAME = "sample_0009__real_recording.wav";
+
+function isSample0009(sampleId) {
+  return normalizeJoinValue(sampleId) === SAMPLE_0009_ID;
+}
+
+function applyGroupOverrides(group) {
+  if (isSample0009(group?.sampleId)) {
+    group.audioFilename = SAMPLE_0009_REAL_AUDIO_FILENAME;
+  }
+}
+
 function deriveJoinKeys(entry) {
   const keys = [];
 
@@ -569,7 +582,9 @@ function createTranscriptCard({ title, variant, transcriptState, playerId }) {
   const content = document.createElement("div");
   content.className = "transcript-content";
 
-  if (transcriptState.status === "ok") {
+  if (transcriptState.status === "blank") {
+    // Intentionally empty transcript card content.
+  } else if (transcriptState.status === "ok") {
     const { lines, usedSegmentFallback } = buildTranscriptLines(transcriptState.result, playerId);
     if (lines.length === 0) {
       const empty = document.createElement("p");
@@ -709,6 +724,8 @@ function attachEntryToGroups(groupsByKey, groups, entry, side) {
     group.audioFilename = deriveAudioFilename(entry);
   }
 
+  applyGroupOverrides(group);
+
   const entryIndex = Number.isFinite(entry?.index) ? entry.index : Number.POSITIVE_INFINITY;
   group.sortIndex = Math.min(group.sortIndex, entryIndex);
 
@@ -792,10 +809,13 @@ async function renderSampleComparisons() {
   const whisperxRunBasePath = dirname(whisperxRunIndexPath);
 
   for (const group of groups) {
-    const [graniteState, whisperxState] = await Promise.all([
-      loadTranscriptForEntry(graniteRunBasePath, group.graniteEntry),
-      loadTranscriptForEntry(whisperxRunBasePath, group.whisperxEntry),
-    ]);
+    const isBlankSample = isSample0009(group.sampleId);
+    const [graniteState, whisperxState] = isBlankSample
+      ? [{ status: "blank" }, { status: "blank" }]
+      : await Promise.all([
+          loadTranscriptForEntry(graniteRunBasePath, group.graniteEntry),
+          loadTranscriptForEntry(whisperxRunBasePath, group.whisperxEntry),
+        ]);
 
     const sampleSection = createSampleSection({
       group,
