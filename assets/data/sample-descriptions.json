@@ -1,13 +1,13 @@
 {
   "sample_0001": "Granite timestamps are ok until the third segment, where they pick up a ~3s offset after a ~7s silence. Speaker attribution identifies two speakers when there are three (two share a channel, but that isn't how Granite assigns them).",
-  "sample_0002": "Granite timestamps lag from the third segment, with the lag increasing until it repeats a phrase around ~116s, and by doing so, strangely corrects its timing, then starts lagging again. Speaker assignment is inconsistent.",
+  "sample_0002": "Granite timestamps lag from the third segment, with the lag increasing until it repeats a phrase around ~116s (the only time I've noticed it hallucinate), and by doing so, strangely corrects its timing, then starts lagging again. Speaker assignment is inconsistent.",
   "sample_0003": "Granite doesn't hallucinate at the end like WhisperX does, and its timestamps are actually good right up until the last segment after a long silence, but it misses a full repeated phrase at ~179s.",
   "sample_0004": "Here Granite's timestamps actually lead instead of lag after second segment. It also misses an interrupting speaker at ~44s, but as WhisperX gets split stereo channels, it isn't a fair comparison. ",
-  "sample_0005": "",
-  "sample_0006": "",
-  "sample_0007": "",
-  "sample_0008": "",
-  "sample_0009": "",
-  "sample_0010": "",
-  "sample_0011": ""
+  "sample_0005": "Neither model handle the interruptions in this example around 30s. Timestamps are ok for a full ~200s, but then they start to lag pretty badly.",
+  "sample_0006": "Here's a nice example of WhipserX panicking during long silences and hallucinating in multiple languages. Granite handles the silence much better, transcripting accurately, but the timestamps are completely off.",
+  "sample_0007": "Interrupting speakers get attributed to the same single-speaker segment by Granite, and the timestamps lag after the third segment.",
+  "sample_0008": "WhisperX hallucinates all over the show, Granite does much better on transcribing but the timestamps lag badly.",
+  "sample_0009": "An example that has a whole lot of silence. Interestingly WhisperX doesn't go to pieces as much on this one, but Granite doesn't hallucinate at all. Unfortunately it puts both speakers into a single segment and its timestamps are off.",
+  "sample_0010": "In this real recording, Granite lags a little but not by as much as the synthetic examples. It merges speakers into the same single-speaker segment. In this example WhisperX also does a better job on word accuracy.",
+  "sample_0011": "I added this example because I suspected that a long single-speaker example without silences might resolve Granite's timestamp issues. It does seem to, and here the transcript is pretty much identically good to WhisperX (it even transcribed my double-take on a misread word), it's just a pity you don't get punctuation or capitalization. I do wonder if both models were happy to be given such a canonical text to transcribe?"
 }
