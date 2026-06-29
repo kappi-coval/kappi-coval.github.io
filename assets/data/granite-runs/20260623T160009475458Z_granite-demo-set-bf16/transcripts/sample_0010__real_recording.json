@@ -1,0 +1,657 @@
+{
+  "elapsed_seconds": 21.567,
+  "input": {
+    "audio_filename": "sample_0010__real_recording.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0010__real_recording.wav",
+    "manifest_conversation_id": null,
+    "manifest_row_number": null,
+    "manifest_sample_id": null,
+    "source": "input_dir"
+  },
+  "processed_at": "2026-06-29T13:37:53.876948+00:00",
+  "result": {
+    "full_text": "hello thank you for calling our lovely shop how may i help you today hello how are you um fine don't you agree uh-huh how are you i'm good thank you i would like to change my ticket please that's quite all right i'll get right on that thank you you haven't even asked where i'd like to go oh um sorry we're busy bye",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 24.084,
+          "end_seconds": 24.084,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Hello, thank you for calling our lovely shop. How may I help you today? [Speaker 2]: Hello, how are you? [Speaker 1]: I'm fine. [Speaker 2]: Don't you agree? [Speaker 1]: How are you? [Speaker 2]: I'm good, thank you. I would like to change my ticket, please. [Speaker 1]: That's quite all right. I'll get right on that, thank you. [Speaker 2]: You haven't even asked where I'd like to go. [Speaker 1]: Sorry, we're busy by.",
+            "timestamps": "_ [T:131] hello [T:175] thank [T:200] you [T:210] for [T:222] calling [T:263] our [T:277] lovely [T:310] shop [T:343] how [T:358] may [T:370] i [T:377] help [T:398] you [T:407] today [T:446] _ [T:565] hello [T:626] _ [T:639] how [T:656] are [T:661] you [T:687] _ [T:828] um [T:858] fine [T:899] _ [T:968] don't [T:984] you [T:994] agree [T:35] _ [T:77] uh-huh [T:110] _ [T:123] how [T:140] are [T:145] you [T:180] _ [T:270] i'm [T:288] good [T:310] thank [T:335] you [T:358] _ [T:400] i [T:410] would [T:430] like [T:446] to [T:453] change [T:484] my [T:495] ticket [T:527] please [T:562] _ [T:627] that's [T:645] quite [T:673] all [T:683] right [T:714] _ [T:719] i'll [T:732] get [T:750] right [T:768] on [T:784] that [T:803] thank [T:828] you [T:864] _ [T:915] you [T:925] haven't [T:944] even [T:962] asked [T:990] where [T:0] i'd [T:14] like [T:30] to [T:37] go [T:64] _ [T:68] oh [T:100] _ [T:131] um [T:172] _ [T:196] sorry [T:222] we're [T:234] busy [T:265] bye [T:316] _ [T:360]"
+          },
+          "speaker_turn_count": 9,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 4.464,
+            "timestamps_seconds": 17.045
+          },
+          "word_count": 65
+        }
+      ],
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "duration_seconds": 24.084,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "channel_selection_applied": false,
+        "downmixed_to_mono": false,
+        "duration_seconds": 24.084,
+        "load_seconds": 0.018,
+        "original_channels": 1,
+        "original_sample_rate": 48000,
+        "resample_seconds": 0.017,
+        "resampled_to_target_rate": true,
+        "sample_count": 385344,
+        "selected_channel_index": null,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0010__real_recording.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 21.567,
+      "step_timings": {
+        "generation_seconds": 21.509,
+        "model_load_seconds": 33.412,
+        "preprocessing_seconds": 0.036,
+        "processing_time": 21.509
+      }
+    },
+    "segments": [
+      {
+        "end": 4.46,
+        "speaker": "SPEAKER_00",
+        "start": 1.31,
+        "text": "hello thank you for calling our lovely shop how may i help you today"
+      },
+      {
+        "end": 6.87,
+        "speaker": "SPEAKER_01",
+        "start": 5.65,
+        "text": "hello how are you"
+      },
+      {
+        "end": 11.8,
+        "speaker": "SPEAKER_01",
+        "start": 8.28,
+        "text": "um fine don't you agree uh-huh how are you"
+      },
+      {
+        "end": 13.35,
+        "speaker": "SPEAKER_00",
+        "start": 12.7,
+        "text": "i'm good thank"
+      },
+      {
+        "end": 18.28,
+        "speaker": "SPEAKER_01",
+        "start": 13.35,
+        "text": "you i would like to change my ticket please that's quite all right i'll get right on that thank"
+      },
+      {
+        "end": 18.64,
+        "speaker": "SPEAKER_00",
+        "start": 18.28,
+        "text": "you"
+      },
+      {
+        "end": 21.72,
+        "speaker": "SPEAKER_01",
+        "start": 19.15,
+        "text": "you haven't even asked where i'd like to go oh um"
+      },
+      {
+        "end": 23.16,
+        "speaker": "SPEAKER_00",
+        "start": 21.96,
+        "text": "sorry we're busy bye"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 4,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 5.36
+      },
+      {
+        "segment_count": 4,
+        "speaker": "SPEAKER_01",
+        "total_talk_time_seconds": 12.24
+      }
+    ],
+    "timeline": [
+      {
+        "end": 1.75,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 1.31,
+        "text": "hello",
+        "type": "word"
+      },
+      {
+        "end": 2.0,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 1.75,
+        "text": "thank",
+        "type": "word"
+      },
+      {
+        "end": 2.1,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 2.0,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 2.22,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 2.1,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 2.63,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 2.22,
+        "text": "calling",
+        "type": "word"
+      },
+      {
+        "end": 2.77,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 2.63,
+        "text": "our",
+        "type": "word"
+      },
+      {
+        "end": 3.1,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 2.77,
+        "text": "lovely",
+        "type": "word"
+      },
+      {
+        "end": 3.43,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 3.1,
+        "text": "shop",
+        "type": "word"
+      },
+      {
+        "end": 3.58,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 3.43,
+        "text": "how",
+        "type": "word"
+      },
+      {
+        "end": 3.7,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 3.58,
+        "text": "may",
+        "type": "word"
+      },
+      {
+        "end": 3.77,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 3.7,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 3.98,
+        "index": 12,
+        "speaker": "SPEAKER_00",
+        "start": 3.77,
+        "text": "help",
+        "type": "word"
+      },
+      {
+        "end": 4.07,
+        "index": 13,
+        "speaker": "SPEAKER_00",
+        "start": 3.98,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 4.46,
+        "index": 14,
+        "speaker": "SPEAKER_00",
+        "start": 4.07,
+        "text": "today",
+        "type": "word"
+      },
+      {
+        "end": 6.26,
+        "index": 15,
+        "speaker": "SPEAKER_01",
+        "start": 5.65,
+        "text": "hello",
+        "type": "word"
+      },
+      {
+        "end": 6.56,
+        "index": 16,
+        "speaker": "SPEAKER_01",
+        "start": 6.39,
+        "text": "how",
+        "type": "word"
+      },
+      {
+        "end": 6.61,
+        "index": 17,
+        "speaker": "SPEAKER_01",
+        "start": 6.56,
+        "text": "are",
+        "type": "word"
+      },
+      {
+        "end": 6.87,
+        "index": 18,
+        "speaker": "SPEAKER_01",
+        "start": 6.61,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 8.58,
+        "index": 19,
+        "speaker": "SPEAKER_01",
+        "start": 8.28,
+        "text": "um",
+        "type": "word"
+      },
+      {
+        "end": 8.99,
+        "index": 20,
+        "speaker": "SPEAKER_01",
+        "start": 8.58,
+        "text": "fine",
+        "type": "word"
+      },
+      {
+        "end": 9.84,
+        "index": 21,
+        "speaker": "SPEAKER_01",
+        "start": 9.68,
+        "text": "don't",
+        "type": "word"
+      },
+      {
+        "end": 9.94,
+        "index": 22,
+        "speaker": "SPEAKER_01",
+        "start": 9.84,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 10.35,
+        "index": 23,
+        "speaker": "SPEAKER_01",
+        "start": 9.94,
+        "text": "agree",
+        "type": "word"
+      },
+      {
+        "end": 11.1,
+        "index": 24,
+        "speaker": "SPEAKER_01",
+        "start": 10.77,
+        "text": "uh-huh",
+        "type": "word"
+      },
+      {
+        "end": 11.4,
+        "index": 25,
+        "speaker": "SPEAKER_01",
+        "start": 11.23,
+        "text": "how",
+        "type": "word"
+      },
+      {
+        "end": 11.45,
+        "index": 26,
+        "speaker": "SPEAKER_01",
+        "start": 11.4,
+        "text": "are",
+        "type": "word"
+      },
+      {
+        "end": 11.8,
+        "index": 27,
+        "speaker": "SPEAKER_01",
+        "start": 11.45,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 12.88,
+        "index": 28,
+        "speaker": "SPEAKER_00",
+        "start": 12.7,
+        "text": "i'm",
+        "type": "word"
+      },
+      {
+        "end": 13.1,
+        "index": 29,
+        "speaker": "SPEAKER_00",
+        "start": 12.88,
+        "text": "good",
+        "type": "word"
+      },
+      {
+        "end": 13.35,
+        "index": 30,
+        "speaker": "SPEAKER_00",
+        "start": 13.1,
+        "text": "thank",
+        "type": "word"
+      },
+      {
+        "end": 13.58,
+        "index": 31,
+        "speaker": "SPEAKER_01",
+        "start": 13.35,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 14.1,
+        "index": 32,
+        "speaker": "SPEAKER_01",
+        "start": 14.0,
+        "text": "i",
+        "type": "word"
+      },
+      {
+        "end": 14.3,
+        "index": 33,
+        "speaker": "SPEAKER_01",
+        "start": 14.1,
+        "text": "would",
+        "type": "word"
+      },
+      {
+        "end": 14.46,
+        "index": 34,
+        "speaker": "SPEAKER_01",
+        "start": 14.3,
+        "text": "like",
+        "type": "word"
+      },
+      {
+        "end": 14.53,
+        "index": 35,
+        "speaker": "SPEAKER_01",
+        "start": 14.46,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 14.84,
+        "index": 36,
+        "speaker": "SPEAKER_01",
+        "start": 14.53,
+        "text": "change",
+        "type": "word"
+      },
+      {
+        "end": 14.95,
+        "index": 37,
+        "speaker": "SPEAKER_01",
+        "start": 14.84,
+        "text": "my",
+        "type": "word"
+      },
+      {
+        "end": 15.27,
+        "index": 38,
+        "speaker": "SPEAKER_01",
+        "start": 14.95,
+        "text": "ticket",
+        "type": "word"
+      },
+      {
+        "end": 15.62,
+        "index": 39,
+        "speaker": "SPEAKER_01",
+        "start": 15.27,
+        "text": "please",
+        "type": "word"
+      },
+      {
+        "end": 16.45,
+        "index": 40,
+        "speaker": "SPEAKER_01",
+        "start": 16.27,
+        "text": "that's",
+        "type": "word"
+      },
+      {
+        "end": 16.73,
+        "index": 41,
+        "speaker": "SPEAKER_01",
+        "start": 16.45,
+        "text": "quite",
+        "type": "word"
+      },
+      {
+        "end": 16.83,
+        "index": 42,
+        "speaker": "SPEAKER_01",
+        "start": 16.73,
+        "text": "all",
+        "type": "word"
+      },
+      {
+        "end": 17.14,
+        "index": 43,
+        "speaker": "SPEAKER_01",
+        "start": 16.83,
+        "text": "right",
+        "type": "word"
+      },
+      {
+        "end": 17.32,
+        "index": 44,
+        "speaker": "SPEAKER_01",
+        "start": 17.19,
+        "text": "i'll",
+        "type": "word"
+      },
+      {
+        "end": 17.5,
+        "index": 45,
+        "speaker": "SPEAKER_01",
+        "start": 17.32,
+        "text": "get",
+        "type": "word"
+      },
+      {
+        "end": 17.68,
+        "index": 46,
+        "speaker": "SPEAKER_01",
+        "start": 17.5,
+        "text": "right",
+        "type": "word"
+      },
+      {
+        "end": 17.84,
+        "index": 47,
+        "speaker": "SPEAKER_01",
+        "start": 17.68,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 18.03,
+        "index": 48,
+        "speaker": "SPEAKER_01",
+        "start": 17.84,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 18.28,
+        "index": 49,
+        "speaker": "SPEAKER_01",
+        "start": 18.03,
+        "text": "thank",
+        "type": "word"
+      },
+      {
+        "end": 18.64,
+        "index": 50,
+        "speaker": "SPEAKER_00",
+        "start": 18.28,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 19.25,
+        "index": 51,
+        "speaker": "SPEAKER_01",
+        "start": 19.15,
+        "text": "you",
+        "type": "word"
+      },
+      {
+        "end": 19.44,
+        "index": 52,
+        "speaker": "SPEAKER_01",
+        "start": 19.25,
+        "text": "haven't",
+        "type": "word"
+      },
+      {
+        "end": 19.62,
+        "index": 53,
+        "speaker": "SPEAKER_01",
+        "start": 19.44,
+        "text": "even",
+        "type": "word"
+      },
+      {
+        "end": 19.9,
+        "index": 54,
+        "speaker": "SPEAKER_01",
+        "start": 19.62,
+        "text": "asked",
+        "type": "word"
+      },
+      {
+        "end": 20.0,
+        "index": 55,
+        "speaker": "SPEAKER_01",
+        "start": 19.9,
+        "text": "where",
+        "type": "word"
+      },
+      {
+        "end": 20.14,
+        "index": 56,
+        "speaker": "SPEAKER_01",
+        "start": 20.0,
+        "text": "i'd",
+        "type": "word"
+      },
+      {
+        "end": 20.3,
+        "index": 57,
+        "speaker": "SPEAKER_01",
+        "start": 20.14,
+        "text": "like",
+        "type": "word"
+      },
+      {
+        "end": 20.37,
+        "index": 58,
+        "speaker": "SPEAKER_01",
+        "start": 20.3,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 20.64,
+        "index": 59,
+        "speaker": "SPEAKER_01",
+        "start": 20.37,
+        "text": "go",
+        "type": "word"
+      },
+      {
+        "end": 21.0,
+        "index": 60,
+        "speaker": "SPEAKER_01",
+        "start": 20.68,
+        "text": "oh",
+        "type": "word"
+      },
+      {
+        "end": 21.72,
+        "index": 61,
+        "speaker": "SPEAKER_01",
+        "start": 21.31,
+        "text": "um",
+        "type": "word"
+      },
+      {
+        "end": 22.22,
+        "index": 62,
+        "speaker": "SPEAKER_00",
+        "start": 21.96,
+        "text": "sorry",
+        "type": "word"
+      },
+      {
+        "end": 22.34,
+        "index": 63,
+        "speaker": "SPEAKER_00",
+        "start": 22.22,
+        "text": "we're",
+        "type": "word"
+      },
+      {
+        "end": 22.65,
+        "index": 64,
+        "speaker": "SPEAKER_00",
+        "start": 22.34,
+        "text": "busy",
+        "type": "word"
+      },
+      {
+        "end": 23.16,
+        "index": 65,
+        "speaker": "SPEAKER_00",
+        "start": 22.65,
+        "text": "bye",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}
