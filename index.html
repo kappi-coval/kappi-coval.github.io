@@ -164,7 +164,76 @@ def _transcribe_audio_to_segments(
 </code></pre>
 
           <h4>Granite Test</h4>
-          <p>For streo examples I combined them into mono before giving them to the model. I ran two passes, one for speaker attribution and one for timestamps, and then parsed the resultant strings to get the final output.</p>
+          <p>
+            For stereo examples, I downmixed to mono before inference. In this setup, Granite gets a single 16kHz mono waveform rather than separate per-channel passes.
+          </p>
+          <p>
+            The illustrative baseline below is intentionally small, but includes the chunking used in my backend experiment: longer audio is split into fixed windows, timestamp and speaker-attribution prompts are run per chunk, speakers are aligned to words inside each chunk, and then chunk-level timings are offset back into the full-conversation timeline. Notice that at 240s, chunks are longer than most of the examples, so isn't the source of the timestamping innacuracies. I kept the generation deterministic by using argmax token selection.
+          </p>
+<pre><code class="language-python">
+MODEL = "ibm-granite/granite-speech-4.1-2b-plus"
+SYSTEM_PROMPT = (
+  "You are Granite, developed by IBM. You are a helpful AI assistant"
+)
+SAA_PROMPT = (
+  "<|audio|> Speaker attribution: Transcribe and denote who is speaking by adding "
+  "[Speaker 1]: and [Speaker 2]: tags before speaker turns."
+)
+TIMESTAMPS_PROMPT = (
+  "<|audio|> Timestamps: Transcribe the speech. After each word, add a timestamp "
+  "tag showing the end time from the begining of the audio clip in centiseconds, "
+  "e.g. hello [T:45] world [T:82]"
+)
+
+waveform, sr = torchaudio.load(audio_path)              # [channels, samples]
+if waveform.shape[0] &gt; 1:
+  waveform = waveform.mean(dim=0, keepdim=True)         # downmix to mono
+if sr != 16000:
+  waveform = torchaudio.functional.resample(waveform, sr, 16000)
+waveform = waveform.squeeze(0).float()
+
+processor = AutoProcessor.from_pretrained(MODEL, trust_remote_code=True)
+model = AutoModelForSpeechSeq2Seq.from_pretrained(MODEL, trust_remote_code=True).to(device).eval()
+
+chunk_seconds = 240
+chunk_samples = chunk_seconds * 16000
+
+def generate(chunk_waveform, prompt, max_new_tokens):
+  chat = [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
+  text = processor.tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True)
+  inputs = processor(text, chunk_waveform.cpu(), sampling_rate=16000, return_tensors="pt").to(device)
+  output = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False, num_beams=1)
+  return processor.tokenizer.decode(output[0, inputs["input_ids"].shape[-1] :], skip_special_tokens=True).strip()
+
+all_words, all_turns = [], []
+for chunk_start in range(0, waveform.shape[-1], chunk_samples):
+  chunk_end = min(chunk_start + chunk_samples, waveform.shape[-1])
+  chunk_waveform = waveform[chunk_start:chunk_end]
+  chunk_start_seconds = chunk_start / 16000.0
+
+  timestamp_text = generate(chunk_waveform, TIMESTAMPS_PROMPT, max_new_tokens=10000)
+  saa_text = generate(chunk_waveform, SAA_PROMPT, max_new_tokens=4096)
+
+  chunk_words = parse_timestamp_words(timestamp_text)
+  chunk_turns = parse_speaker_turns(saa_text)
+  # Greedy speaker assignment, timestamped words are the canonical transcript, and
+  # speaker turns are aligned to those words. This is a simple approach, and could be 
+  # improved with more sophisticated alignment.
+  chunk_words, chunk_turns = assign_speakers_to_words(chunk_words, chunk_turns)
+
+  for w in chunk_words:
+    w["start"] += chunk_start_seconds
+    w["end"] += chunk_start_seconds
+
+  for t in chunk_turns:
+    t["start"] += chunk_start_seconds
+    t["end"] += chunk_start_seconds
+
+  all_words.extend(chunk_words)
+  all_turns.extend(chunk_turns)
+
+segments = build_segments_from_words(all_words)         # final diarized segments
+</code></pre>
         </section>
 
         <section aria-labelledby="body-heading" class="section">
