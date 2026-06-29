@@ -124,7 +124,7 @@ function resolvePlayerForSeekLink(link) {
   return getDefaultAudioPlayer();
 }
 
-function createWordLink({ text, startSeconds, playerId, fallback = false }) {
+function createWordLink({ text, startSeconds, playerId, fallback = false, tooltipLabel = "Start" }) {
   if (typeof text !== "string" || !text.trim()) {
     return null;
   }
@@ -135,7 +135,7 @@ function createWordLink({ text, startSeconds, playerId, fallback = false }) {
   link.href = `#t=${encodeURIComponent(seekValue)}&p=${encodeURIComponent(playerId)}`;
   link.setAttribute("data-seek", seekValue);
   link.setAttribute("data-player", playerId);
-  link.setAttribute("data-tooltip", `Start: ${seekValue}s`);
+  link.setAttribute("data-tooltip", `${tooltipLabel}: ${seekValue}s`);
   link.textContent = text;
   return link;
 }
@@ -154,7 +154,12 @@ function createTranscriptLine({ speaker }) {
   return line;
 }
 
-function appendWordNodes(line, wordNodes, playerId, { fallbackStart = null, fallback = false } = {}) {
+function appendWordNodes(
+  line,
+  wordNodes,
+  playerId,
+  { fallbackStart = null, fallback = false, tooltipLabel = "Start" } = {}
+) {
   let hasWords = false;
 
   wordNodes.forEach((wordNode) => {
@@ -168,7 +173,7 @@ function appendWordNodes(line, wordNodes, playerId, { fallbackStart = null, fall
       return;
     }
 
-    const link = createWordLink({ text, startSeconds, playerId, fallback });
+    const link = createWordLink({ text, startSeconds, playerId, fallback, tooltipLabel });
     if (!link) {
       return;
     }
@@ -256,9 +261,15 @@ function extractSegmentWords(segment) {
     .filter(Boolean);
 }
 
-function buildTranscriptLines(result, playerId) {
+function buildTranscriptLines(result, playerId, variant = "whisperx") {
   const segments = Array.isArray(result?.segments) ? result.segments : [];
   const timelineWords = extractTimelineWords(result?.timeline);
+  const tooltipLabel = variant === "granite" ? "End" : "Start";
+  const appendWords = (line, wordNodes, options = {}) =>
+    appendWordNodes(line, wordNodes, playerId, {
+      ...options,
+      tooltipLabel,
+    });
 
   const lines = [];
   let usedSegmentFallback = false;
@@ -298,7 +309,7 @@ function buildTranscriptLines(result, playerId) {
             : segmentWords[0]?.speaker,
       });
 
-      if (appendWordNodes(line, segmentWords, playerId)) {
+      if (appendWords(line, segmentWords)) {
         lines.push(line);
         return;
       }
@@ -306,7 +317,7 @@ function buildTranscriptLines(result, playerId) {
       if (typeof segment?.text === "string" && segment.text.trim()) {
         const fallbackTokens = segment.text.trim().split(/\s+/);
         if (
-          appendWordNodes(line, fallbackTokens, playerId, {
+          appendWords(line, fallbackTokens, {
             fallbackStart: segment.start,
             fallback: true,
           })
@@ -320,7 +331,7 @@ function buildTranscriptLines(result, playerId) {
     const leftovers = words.filter((word) => !usedWordKeys.has(word.__key));
     groupWordsBySpeaker(leftovers).forEach((group) => {
       const line = createTranscriptLine({ speaker: group.speaker });
-      if (appendWordNodes(line, group.words, playerId)) {
+      if (appendWords(line, group.words)) {
         lines.push(line);
       }
     });
@@ -334,7 +345,7 @@ function buildTranscriptLines(result, playerId) {
   if (timelineWords.length > 0) {
     groupWordsBySpeaker(timelineWords).forEach((group) => {
       const line = createTranscriptLine({ speaker: group.speaker });
-      if (appendWordNodes(line, group.words, playerId)) {
+      if (appendWords(line, group.words)) {
         lines.push(line);
       }
     });
@@ -359,7 +370,7 @@ function buildTranscriptLines(result, playerId) {
             : words[0]?.speaker,
       });
 
-      if (appendWordNodes(line, words, playerId)) {
+      if (appendWords(line, words)) {
         lines.push(line);
         return;
       }
@@ -367,7 +378,7 @@ function buildTranscriptLines(result, playerId) {
       if (Number.isFinite(segment?.start) && typeof segment?.text === "string" && segment.text.trim()) {
         const fallbackTokens = segment.text.trim().split(/\s+/);
         if (
-          appendWordNodes(line, fallbackTokens, playerId, {
+          appendWords(line, fallbackTokens, {
             fallbackStart: segment.start,
             fallback: true,
           })
@@ -395,7 +406,7 @@ function buildTranscriptLines(result, playerId) {
       });
       const fallbackTokens = segment.text.trim().split(/\s+/);
       if (
-        appendWordNodes(line, fallbackTokens, playerId, {
+        appendWords(line, fallbackTokens, {
           fallbackStart: segment.start,
           fallback: true,
         })
@@ -416,7 +427,7 @@ function buildTranscriptLines(result, playerId) {
     const line = createTranscriptLine({ speaker: "SPEAKER" });
     const fallbackTokens = fullText.split(/\s+/);
     if (
-      appendWordNodes(line, fallbackTokens, playerId, {
+      appendWords(line, fallbackTokens, {
         fallbackStart: 0,
         fallback: true,
       })
@@ -569,21 +580,22 @@ function getSampleDescription(sampleDescriptions, sampleId) {
 }
 
 async function loadTranscriptForEntry(runBasePath, entry) {
+  const transcriptJsonPath = buildTranscriptJsonPath(runBasePath, entry);
+
   if (!entry) {
     return {
       status: "missing-entry",
     };
   }
 
-  const transcriptRelPath = typeof entry?.transcript_json === "string" ? entry.transcript_json.trim() : "";
-  if (!transcriptRelPath) {
+  if (!transcriptJsonPath) {
     return {
       status: "missing-transcript",
     };
   }
 
   try {
-    const transcriptPayload = await fetchJson(`${runBasePath}/${transcriptRelPath}`);
+    const transcriptPayload = await fetchJson(transcriptJsonPath);
     return {
       status: "ok",
       result: transcriptPayload?.result || {},
@@ -596,7 +608,16 @@ async function loadTranscriptForEntry(runBasePath, entry) {
   }
 }
 
-function createTranscriptCard({ title, variant, transcriptState, playerId }) {
+function buildTranscriptJsonPath(runBasePath, entry) {
+  const transcriptRelPath = typeof entry?.transcript_json === "string" ? entry.transcript_json.trim() : "";
+  if (!transcriptRelPath) {
+    return "";
+  }
+
+  return `${runBasePath}/${transcriptRelPath}`;
+}
+
+function createTranscriptCard({ title, variant, transcriptState, playerId, rawJsonPath = "" }) {
   const card = document.createElement("section");
   card.className = `transcript-card transcript-card--${variant}`;
 
@@ -608,10 +629,22 @@ function createTranscriptCard({ title, variant, transcriptState, playerId }) {
   const content = document.createElement("div");
   content.className = "transcript-content";
 
+  if (rawJsonPath) {
+    const rawJsonCaption = document.createElement("p");
+    rawJsonCaption.className = "caption";
+
+    const rawJsonLink = document.createElement("a");
+    rawJsonLink.href = rawJsonPath;
+    rawJsonLink.textContent = "Raw JSON";
+
+    rawJsonCaption.appendChild(rawJsonLink);
+    content.appendChild(rawJsonCaption);
+  }
+
   if (transcriptState.status === "blank") {
     // Intentionally empty transcript card content.
   } else if (transcriptState.status === "ok") {
-    const { lines, usedSegmentFallback } = buildTranscriptLines(transcriptState.result, playerId);
+    const { lines, usedSegmentFallback } = buildTranscriptLines(transcriptState.result, playerId, variant);
     if (lines.length === 0) {
       const empty = document.createElement("p");
       empty.className = "caption";
@@ -648,7 +681,14 @@ function createTranscriptCard({ title, variant, transcriptState, playerId }) {
   return card;
 }
 
-function createSampleSection({ group, graniteState, whisperxState, sampleDescription = "" }) {
+function createSampleSection({
+  group,
+  graniteState,
+  whisperxState,
+  graniteRawJsonPath = "",
+  whisperxRawJsonPath = "",
+  sampleDescription = "",
+}) {
   const sampleId = group.sampleId || "sample";
   const audioFilename = group.audioFilename || "";
   const domIdSuffix = toDomIdFragment(sampleId);
@@ -710,6 +750,7 @@ function createSampleSection({ group, graniteState, whisperxState, sampleDescrip
       variant: "granite",
       transcriptState: graniteState,
       playerId,
+      rawJsonPath: graniteRawJsonPath,
     })
   );
   transcriptGrid.appendChild(
@@ -718,6 +759,7 @@ function createSampleSection({ group, graniteState, whisperxState, sampleDescrip
       variant: "whisperx",
       transcriptState: whisperxState,
       playerId,
+      rawJsonPath: whisperxRawJsonPath,
     })
   );
 
@@ -844,6 +886,9 @@ async function renderSampleComparisons() {
   const whisperxRunBasePath = dirname(whisperxRunIndexPath);
 
   for (const group of groups) {
+    const graniteRawJsonPath = buildTranscriptJsonPath(graniteRunBasePath, group.graniteEntry);
+    const whisperxRawJsonPath = buildTranscriptJsonPath(whisperxRunBasePath, group.whisperxEntry);
+
     const [graniteState, whisperxState] = await Promise.all([
       loadTranscriptForEntry(graniteRunBasePath, group.graniteEntry),
       loadTranscriptForEntry(whisperxRunBasePath, group.whisperxEntry),
@@ -853,6 +898,8 @@ async function renderSampleComparisons() {
       group,
       graniteState,
       whisperxState,
+      graniteRawJsonPath,
+      whisperxRawJsonPath,
       sampleDescription: getSampleDescription(sampleDescriptions, group.sampleId),
     });
 

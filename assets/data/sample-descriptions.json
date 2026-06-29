@@ -1,8 +1,8 @@
 {
-  "sample_0001": "",
-  "sample_0002": "",
-  "sample_0003": "",
-  "sample_0004": "",
+  "sample_0001": "Granite timestamps are ok until the third segment, where they pick up a ~3s offset after a ~7s silence. Speaker attribution identifies two speakers when there are three (two share a channel, but that isn't how Granite assigns them).",
+  "sample_0002": "Granite timestamps lag from the third segment, with the lag increasing until it repeats a phrase around ~116s, and by doing so, strangely corrects its timing, then starts lagging again. Speaker assignment is inconsistent.",
+  "sample_0003": "Granite doesn't hallucinate at the end like WhisperX does, and its timestamps are actually good right up until the last segment after a long silence, but it misses a full repeated phrase at ~179s.",
+  "sample_0004": "Here Granite's timestamps actually lead instead of lag after second segment. It also misses an interrupting speaker at ~44s, but as WhisperX gets split stereo channels, it isn't a fair comparison. ",
   "sample_0005": "",
   "sample_0006": "",
   "sample_0007": "",
