@@ -214,6 +214,8 @@ for chunk_start in range(0, waveform.shape[-1], chunk_samples):
   timestamp_text = generate(chunk_waveform, TIMESTAMPS_PROMPT, max_new_tokens=10000)
   saa_text = generate(chunk_waveform, SAA_PROMPT, max_new_tokens=4096)
 
+  # The timestamps wrap every 10s, so this function parses the text
+  # and converts the timestamps to seconds from the start of the chunk.
   chunk_words = parse_timestamp_words(timestamp_text)
   chunk_turns = parse_speaker_turns(saa_text)
   # Greedy speaker assignment, timestamped words are the canonical transcript, and
