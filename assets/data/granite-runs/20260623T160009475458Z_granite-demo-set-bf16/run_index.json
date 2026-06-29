@@ -64,12 +64,12 @@
       "source": "input_dir"
     },
     {
-      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0009__2DeDT9GVY2dph8GdRHGgnR.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0009__WFYDioQcFJpdjF7e9QRkjC.wav",
       "manifest_row_number": null,
       "source": "input_dir"
     },
     {
-      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0010__real_recording.wav",
       "manifest_row_number": null,
       "source": "input_dir"
     }
@@ -196,34 +196,34 @@
       "transcript_json": "transcripts/0008_sample_0008__dCZKwBjGjcWWyhU4Wm3BHX.json"
     },
     {
-      "audio_filename": "sample_0009__2DeDT9GVY2dph8GdRHGgnR.wav",
-      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0009__2DeDT9GVY2dph8GdRHGgnR.wav",
+      "audio_filename": "sample_0009__WFYDioQcFJpdjF7e9QRkjC.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0009__WFYDioQcFJpdjF7e9QRkjC.wav",
       "error_message": "",
       "index": 9,
-      "manifest_conversation_id": "2DeDT9GVY2dph8GdRHGgnR",
+      "manifest_conversation_id": "WFYDioQcFJpdjF7e9QRkjC",
       "manifest_row_number": 10,
       "manifest_sample_id": "sample_0009",
-      "processing_time_seconds": 0.744,
-      "segments_count": 1,
-      "source": "manifest",
-      "speakers_count": 1,
-      "status": "ok",
-      "transcript_json": "transcripts/0009_sample_0009__2DeDT9GVY2dph8GdRHGgnR.json"
-    },
-    {
-      "audio_filename": "sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
-      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0010__WFYDioQcFJpdjF7e9QRkjC.wav",
-      "error_message": "",
-      "index": 10,
-      "manifest_conversation_id": "WFYDioQcFJpdjF7e9QRkjC",
-      "manifest_row_number": 11,
-      "manifest_sample_id": "sample_0010",
       "processing_time_seconds": 3.868,
       "segments_count": 1,
       "source": "manifest",
       "speakers_count": 1,
       "status": "ok",
-      "transcript_json": "transcripts/0010_sample_0010__WFYDioQcFJpdjF7e9QRkjC.json"
+      "transcript_json": "transcripts/0009_sample_0009__WFYDioQcFJpdjF7e9QRkjC.json"
+    },
+    {
+      "audio_filename": "sample_0010__real_recording.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0010__real_recording.wav",
+      "error_message": "",
+      "index": 10,
+      "manifest_conversation_id": "real_recording",
+      "manifest_row_number": 11,
+      "manifest_sample_id": "sample_0010",
+      "processing_time_seconds": 0.744,0
+      "segments_count": 1,
+      "source": "manifest",
+      "speakers_count": 1,
+      "status": "ok",
+      "transcript_json": "transcripts/sample_0010__real_recording.json"
     }
   ],
   "manifest_skipped": [],
