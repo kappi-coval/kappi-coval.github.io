@@ -515,6 +515,8 @@ function buildAudioPath(audioFilename) {
   return `assets/audio/demo-set/${audioFilename}`;
 }
 
+const SAMPLE_DESCRIPTIONS_PATH = "assets/data/sample-descriptions.json";
+
 async function fetchJson(path) {
   const response = await fetch(path);
   if (!response.ok) {
@@ -527,6 +529,43 @@ async function fetchJson(path) {
 async function loadRunIndex(runIndexPath) {
   const runIndex = await fetchJson(runIndexPath);
   return Array.isArray(runIndex?.entries) ? runIndex.entries : [];
+}
+
+function normalizeSampleDescriptions(rawDescriptions) {
+  if (!rawDescriptions || typeof rawDescriptions !== "object" || Array.isArray(rawDescriptions)) {
+    return {};
+  }
+
+  return Object.entries(rawDescriptions).reduce((acc, [sampleId, description]) => {
+    if (typeof sampleId !== "string" || !sampleId.trim() || typeof description !== "string") {
+      return acc;
+    }
+
+    acc[sampleId.trim()] = description;
+    return acc;
+  }, {});
+}
+
+async function loadSampleDescriptions() {
+  try {
+    const payload = await fetchJson(SAMPLE_DESCRIPTIONS_PATH);
+    return normalizeSampleDescriptions(payload);
+  } catch {
+    return {};
+  }
+}
+
+function getSampleDescription(sampleDescriptions, sampleId) {
+  if (!sampleDescriptions || typeof sampleDescriptions !== "object" || typeof sampleId !== "string") {
+    return "";
+  }
+
+  const description = sampleDescriptions[sampleId];
+  if (typeof description !== "string") {
+    return "";
+  }
+
+  return description.trim();
 }
 
 async function loadTranscriptForEntry(runBasePath, entry) {
@@ -609,7 +648,7 @@ function createTranscriptCard({ title, variant, transcriptState, playerId }) {
   return card;
 }
 
-function createSampleSection({ group, graniteState, whisperxState }) {
+function createSampleSection({ group, graniteState, whisperxState, sampleDescription = "" }) {
   const sampleId = group.sampleId || "sample";
   const audioFilename = group.audioFilename || "";
   const domIdSuffix = toDomIdFragment(sampleId);
@@ -655,6 +694,13 @@ function createSampleSection({ group, graniteState, whisperxState }) {
   }
 
   article.appendChild(playerWrap);
+
+  if (sampleDescription) {
+    const description = document.createElement("p");
+    description.className = "caption";
+    description.textContent = sampleDescription;
+    article.appendChild(description);
+  }
 
   const transcriptGrid = document.createElement("div");
   transcriptGrid.className = "transcript-compare-grid";
@@ -759,10 +805,14 @@ async function renderSampleComparisons() {
 
   container.innerHTML = "";
 
+  const sampleDescriptionsPromise = loadSampleDescriptions();
+
   const [graniteRunResult, whisperxRunResult] = await Promise.allSettled([
     loadRunIndex(graniteRunIndexPath),
     loadRunIndex(whisperxRunIndexPath),
   ]);
+
+  const sampleDescriptions = await sampleDescriptionsPromise;
 
   const graniteEntries = graniteRunResult.status === "fulfilled" ? graniteRunResult.value : [];
   const whisperxEntries = whisperxRunResult.status === "fulfilled" ? whisperxRunResult.value : [];
@@ -803,6 +853,7 @@ async function renderSampleComparisons() {
       group,
       graniteState,
       whisperxState,
+      sampleDescription: getSampleDescription(sampleDescriptions, group.sampleId),
     });
 
     container.appendChild(sampleSection);

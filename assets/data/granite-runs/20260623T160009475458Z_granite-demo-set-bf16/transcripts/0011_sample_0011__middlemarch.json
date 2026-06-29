@@ -1,0 +1,2874 @@
+{
+  "elapsed_seconds": 90.893,
+  "input": {
+    "audio_filename": "sample_0011__middlemarch.wav",
+    "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0011__middlemarch.wav",
+    "manifest_conversation_id": "middlemarch",
+    "manifest_row_number": 2,
+    "manifest_sample_id": "sample_0011",
+    "source": "manifest"
+  },
+  "processed_at": "2026-06-29T13:59:15.613172+00:00",
+  "result": {
+    "full_text": "who that cares much to know the history of man and how the mysterious mixture behaves under the varying experiments of time has not dwelt at least briefly on the life of saint teresa has not smiled with some gentleness at the thought of the little girl walking forth one morning hand in hand with her still smaller brother to go and seek martyrdom in the country of the moors out they toddled from rugged avila wide eyed and helpless looking as two fawns but with human hearts already beating to a national idea until domestic reality met them in the shape of uncles and turned them back from their great resolve that child pilgrimage was a fit beginning teresa's passionate ideal nature demanded an epic life what were many volumed romances of chivalry and the social conquests of a brilliant girl to her her flame quickly burned up that light fuel and fed from within soared after some illimitable satisfaction some object which would never justify weariness which would reconcile self despair with the rapturous rapturous consciousness of life beyond self she found her epos in the reform of a religious order that spanish woman who lived three hundred years ago was certainly not the last of her kind many terases have been born who found for themselves no epic life wherein there was a constant unfolding of far resonant action perhaps only a life of mistakes the offspring of a certain spiritual grandeur ill matched with the meanness of opportunity perhaps a tragic failure which found no sacred poet and sank unwept into oblivion with dim lights and tangled circumstance they tried to shape their thought indeed in noble agreement but after all to commonize their struggles seem mere inconsistency and formlessness for these later born terases were helped by no coherent social faith and order which could perform the function of knowledge for the ardently willing soul their ardor alternated between a vague ideal and the common yearning of womanhood so that the one was disapproved as extravagance and the other condemned as a lapse",
+    "metadata": {
+      "chunking": {
+        "allow_chunking": true,
+        "chunk_count": 1,
+        "configured_chunk_seconds": 240.0,
+        "configured_chunk_seconds_for_mode": 240.0,
+        "configured_timestamp_chunk_seconds": null,
+        "effective_chunk_seconds": 240.0,
+        "enabled": false,
+        "mode_limit_seconds": 300.0
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "duration_seconds": 123.156,
+          "end_seconds": 123.156,
+          "prompt_outputs": {
+            "saa": "[Speaker 1]: Who that cares much to know the history of man and how the mysterious mixture behaves under the varying experiments of time has not dwelt at least briefly on the life of St Teresa, has not smiled with some gentleness at the thought of the little girl walking forth one morning hand in hand with her still smaller brother to go and seek martyrdom in the country of the Moors. Out they toddled from rugged Avila, wide-eyed and helpless, looking as two fawns but with human hearts already beating to a national idea until domestic reality met them in the shape of uncles and turned them back from their great resolve. That child pilgrimage was a fit beginning. Teresa's passionate ideal nature demanded an epic life. What were many-volumed romances of chivalry and the social conquests of a brilliant girl to her? Her flame quickly burned up that light fuel and fed from within soared after some illimitable satisfaction, some object which would never justify weariness, which would reconcile self-despair with the rapturous consciousness of life beyond self. She found her epos in the reform of a religious order. That Spanish woman who lived three hundred years ago was certainly not the last of her kind. Many Terases have been born who found for themselves no epic life wherein there was a constant unfolding of far-resonant action. Perhaps only a life of mistakes, the offspring of a certain spiritual grandeur ill-matched with the meanness of opportunity. Perhaps a tragic failure which found no sacred poet and sank unwept into oblivion. With dim lights and tangled circumstance, they tried to shape their thought and deed in noble agreement, but after all, to commonize their struggles seemed mere inconsistency and formlessness. For these later-born Terases were helped by no coherent social faith and order which could perform the function of knowledge for the ardently willing soul. Their ardor alternated between a vague ideal and the common yearning of womanhood, so that the one was disapproved as extravagance and the other condemned as a lapse.",
+            "timestamps": "_ [T:166] who [T:185] that [T:206] cares [T:241] much [T:270] to [T:286] know [T:308] the [T:317] history [T:358] of [T:368] man [T:409] _ [T:443] and [T:455] how [T:474] the [T:484] mysterious [T:548] mixture [T:588] behaves [T:632] under [T:650] the [T:660] varying [T:699] experiments [T:755] of [T:764] time [T:816] _ [T:848] has [T:864] not [T:888] dwelt [T:930] _ [T:934] at [T:950] least [T:977] briefly [T:24] on [T:38] the [T:46] life [T:75] of [T:84] saint [T:111] teresa [T:169] _ [T:201] has [T:217] not [T:238] smiled [T:280] with [T:296] some [T:316] gentleness [T:377] at [T:390] the [T:399] thought [T:429] of [T:438] the [T:448] little [T:475] girl [T:509] walking [T:550] forth [T:586] one [T:608] morning [T:644] hand [T:682] in [T:691] hand [T:728] with [T:744] her [T:757] still [T:792] smaller [T:830] brother [T:876] _ [T:910] to [T:920] go [T:938] and [T:952] seek [T:977] martyrdom [T:32] in [T:40] the [T:48] country [T:88] of [T:99] the [T:106] moors [T:153] _ [T:226] out [T:254] they [T:270] toddled [T:312] from [T:337] rugged [T:366] avila [T:416] wide [T:460] eyed [T:484] and [T:494] helpless [T:554] looking [T:585] as [T:600] two [T:619] fawns [T:670] but [T:686] with [T:698] human [T:727] hearts [T:777] _ [T:812] already [T:851] beating [T:894] to [T:909] a [T:915] national [T:955] idea [T:16] _ [T:50] until [T:78] domestic [T:131] reality [T:180] met [T:204] them [T:219] in [T:228] the [T:235] shape [T:264] of [T:273] uncles [T:330] _ [T:350] and [T:365] turned [T:393] them [T:405] back [T:432] from [T:447] their [T:459] great [T:488] resolve [T:538] _ [T:603] that [T:626] child [T:665] pilgrimage [T:718] was [T:732] a [T:738] fit [T:763] beginning [T:817] _ [T:860] teresa's [T:911] passionate [T:972] ideal [T:11] nature [T:68] _ [T:76] demanded [T:127] an [T:139] epic [T:175] life [T:216] _ [T:268] what [T:288] were [T:300] many [T:330] volumed [T:374] romances [T:430] of [T:439] chivalry [T:499] and [T:508] the [T:516] social [T:556] conquests [T:616] of [T:625] a [T:630] brilliant [T:672] girl [T:695] to [T:706] her [T:750] _ [T:799] her [T:814] flame [T:856] quickly [T:888] burned [T:925] up [T:944] that [T:966] light [T:996] fuel [T:40] _ [T:63] and [T:76] fed [T:104] from [T:121] within [T:163] soared [T:214] after [T:246] some [T:271] illimitable [T:332] satisfaction [T:425] _ [T:453] some [T:480] object [T:523] which [T:539] would [T:551] never [T:578] justify [T:630] weariness [T:698] _ [T:727] which [T:744] would [T:757] reconcile [T:825] self [T:856] despair [T:907] with [T:920] the [T:928] rapturous [T:1] _ [T:25] rapturous [T:77] consciousness [T:140] of [T:150] life [T:183] beyond [T:214] self [T:255] _ [T:295] she [T:318] found [T:351] her [T:364] epos [T:406] in [T:416] the [T:425] reform [T:474] of [T:485] a [T:491] religious [T:539] order [T:586] _ [T:680] that [T:703] spanish [T:747] woman [T:777] who [T:790] lived [T:818] three [T:844] hundred [T:875] years [T:897] ago [T:926] was [T:942] certainly [T:980] not [T:1] the [T:8] last [T:43] of [T:51] her [T:63] kind [T:109] _ [T:155] many [T:185] terases [T:240] have [T:254] been [T:272] born [T:304] who [T:320] found [T:378] _ [T:381] for [T:404] themselves [T:458] no [T:480] epic [T:514] life [T:554] wherein [T:592] there [T:603] was [T:616] a [T:626] constant [T:690] unfolding [T:747] of [T:757] far [T:785] resonant [T:827] action [T:879] _ [T:927] perhaps [T:967] only [T:997] a [T:3] life [T:29] of [T:40] mistakes [T:116] _ [T:119] the [T:131] offspring [T:180] of [T:189] a [T:195] certain [T:235] spiritual [T:293] grandeur [T:359] _ [T:384] ill [T:403] matched [T:446] with [T:460] the [T:468] meanness [T:518] of [T:526] opportunity [T:608] _ [T:666] perhaps [T:702] a [T:709] tragic [T:753] failure [T:797] which [T:816] found [T:849] no [T:864] sacred [T:905] poet [T:954] _ [T:958] and [T:978] sank [T:14] unwept [T:63] into [T:86] oblivion [T:145] _ [T:201] with [T:220] dim [T:244] lights [T:279] and [T:293] tangled [T:332] circumstance [T:423] _ [T:447] they [T:463] tried [T:501] to [T:509] shape [T:542] their [T:556] thought [T:594] indeed [T:632] in [T:644] noble [T:675] agreement [T:734] _ [T:766] but [T:780] after [T:818] all [T:851] _ [T:862] to [T:872] commonize [T:936] their [T:949] struggles [T:0] seem [T:40] mere [T:84] inconsistency [T:175] and [T:188] formlessness [T:271] _ [T:317] for [T:330] these [T:352] later [T:385] born [T:411] terases [T:462] were [T:475] helped [T:514] by [T:528] no [T:546] coherent [T:596] social [T:634] faith [T:674] _ [T:724] and [T:745] order [T:780] which [T:806] could [T:833] perform [T:876] the [T:885] function [T:921] of [T:930] knowledge [T:971] for [T:985] the [T:996] ardently [T:40] willing [T:73] soul [T:118] _ [T:201] their [T:222] ardor [T:252] alternated [T:312] between [T:339] a [T:345] vague [T:377] ideal [T:426] and [T:438] the [T:446] common [T:480] yearning [T:515] of [T:526] womanhood [T:580] _ [T:617] so [T:637] that [T:658] the [T:666] one [T:695] was [T:713] disapproved [T:780] as [T:791] extravagance [T:872] _ [T:900] and [T:915] the [T:926] other [T:948] condemned [T:998] as [T:12] a [T:20] lapse [T:68] _ [T:308]"
+          },
+          "speaker_turn_count": 1,
+          "start_seconds": 0.0,
+          "step_timings": {
+            "saa_seconds": 13.945,
+            "timestamps_seconds": 76.775
+          },
+          "word_count": 348
+        }
+      ],
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "duration_seconds": 123.156,
+      "granite_mode": "rich",
+      "model_name": "ibm-granite/granite-speech-4.1-2b-plus",
+      "preprocessing": {
+        "channel_selection_applied": false,
+        "downmixed_to_mono": false,
+        "duration_seconds": 123.156,
+        "load_seconds": 0.067,
+        "original_channels": 1,
+        "original_sample_rate": 48000,
+        "resample_seconds": 0.082,
+        "resampled_to_target_rate": true,
+        "sample_count": 1970496,
+        "selected_channel_index": null,
+        "source_audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0011__middlemarch.wav",
+        "target_channels": 1,
+        "target_sample_rate": 16000
+      },
+      "processing_time": 90.893,
+      "step_timings": {
+        "generation_seconds": 90.72,
+        "model_load_seconds": 3.236,
+        "preprocessing_seconds": 0.149,
+        "processing_time": 90.72
+      }
+    },
+    "segments": [
+      {
+        "end": 120.68,
+        "speaker": "SPEAKER_00",
+        "start": 1.66,
+        "text": "who that cares much to know the history of man and how the mysterious mixture behaves under the varying experiments of time has not dwelt at least briefly on the life of saint teresa has not smiled with some gentleness at the thought of the little girl walking forth one morning hand in hand with her still smaller brother to go and seek martyrdom in the country of the moors out they toddled from rugged avila wide eyed and helpless looking as two fawns but with human hearts already beating to a national idea until domestic reality met them in the shape of uncles and turned them back from their great resolve that child pilgrimage was a fit beginning teresa's passionate ideal nature demanded an epic life what were many volumed romances of chivalry and the social conquests of a brilliant girl to her her flame quickly burned up that light fuel and fed from within soared after some illimitable satisfaction some object which would never justify weariness which would reconcile self despair with the rapturous rapturous consciousness of life beyond self she found her epos in the reform of a religious order that spanish woman who lived three hundred years ago was certainly not the last of her kind many terases have been born who found for themselves no epic life wherein there was a constant unfolding of far resonant action perhaps only a life of mistakes the offspring of a certain spiritual grandeur ill matched with the meanness of opportunity perhaps a tragic failure which found no sacred poet and sank unwept into oblivion with dim lights and tangled circumstance they tried to shape their thought indeed in noble agreement but after all to commonize their struggles seem mere inconsistency and formlessness for these later born terases were helped by no coherent social faith and order which could perform the function of knowledge for the ardently willing soul their ardor alternated between a vague ideal and the common yearning of womanhood so that the one was disapproved as extravagance and the other condemned as a lapse"
+      }
+    ],
+    "speakers": [
+      {
+        "segment_count": 1,
+        "speaker": "SPEAKER_00",
+        "total_talk_time_seconds": 119.02
+      }
+    ],
+    "timeline": [
+      {
+        "end": 1.85,
+        "index": 1,
+        "speaker": "SPEAKER_00",
+        "start": 1.66,
+        "text": "who",
+        "type": "word"
+      },
+      {
+        "end": 2.06,
+        "index": 2,
+        "speaker": "SPEAKER_00",
+        "start": 1.85,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 2.41,
+        "index": 3,
+        "speaker": "SPEAKER_00",
+        "start": 2.06,
+        "text": "cares",
+        "type": "word"
+      },
+      {
+        "end": 2.7,
+        "index": 4,
+        "speaker": "SPEAKER_00",
+        "start": 2.41,
+        "text": "much",
+        "type": "word"
+      },
+      {
+        "end": 2.86,
+        "index": 5,
+        "speaker": "SPEAKER_00",
+        "start": 2.7,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 3.08,
+        "index": 6,
+        "speaker": "SPEAKER_00",
+        "start": 2.86,
+        "text": "know",
+        "type": "word"
+      },
+      {
+        "end": 3.17,
+        "index": 7,
+        "speaker": "SPEAKER_00",
+        "start": 3.08,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 3.58,
+        "index": 8,
+        "speaker": "SPEAKER_00",
+        "start": 3.17,
+        "text": "history",
+        "type": "word"
+      },
+      {
+        "end": 3.68,
+        "index": 9,
+        "speaker": "SPEAKER_00",
+        "start": 3.58,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 4.09,
+        "index": 10,
+        "speaker": "SPEAKER_00",
+        "start": 3.68,
+        "text": "man",
+        "type": "word"
+      },
+      {
+        "end": 4.55,
+        "index": 11,
+        "speaker": "SPEAKER_00",
+        "start": 4.43,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 4.74,
+        "index": 12,
+        "speaker": "SPEAKER_00",
+        "start": 4.55,
+        "text": "how",
+        "type": "word"
+      },
+      {
+        "end": 4.84,
+        "index": 13,
+        "speaker": "SPEAKER_00",
+        "start": 4.74,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 5.48,
+        "index": 14,
+        "speaker": "SPEAKER_00",
+        "start": 4.84,
+        "text": "mysterious",
+        "type": "word"
+      },
+      {
+        "end": 5.88,
+        "index": 15,
+        "speaker": "SPEAKER_00",
+        "start": 5.48,
+        "text": "mixture",
+        "type": "word"
+      },
+      {
+        "end": 6.32,
+        "index": 16,
+        "speaker": "SPEAKER_00",
+        "start": 5.88,
+        "text": "behaves",
+        "type": "word"
+      },
+      {
+        "end": 6.5,
+        "index": 17,
+        "speaker": "SPEAKER_00",
+        "start": 6.32,
+        "text": "under",
+        "type": "word"
+      },
+      {
+        "end": 6.6,
+        "index": 18,
+        "speaker": "SPEAKER_00",
+        "start": 6.5,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 6.99,
+        "index": 19,
+        "speaker": "SPEAKER_00",
+        "start": 6.6,
+        "text": "varying",
+        "type": "word"
+      },
+      {
+        "end": 7.55,
+        "index": 20,
+        "speaker": "SPEAKER_00",
+        "start": 6.99,
+        "text": "experiments",
+        "type": "word"
+      },
+      {
+        "end": 7.64,
+        "index": 21,
+        "speaker": "SPEAKER_00",
+        "start": 7.55,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 8.16,
+        "index": 22,
+        "speaker": "SPEAKER_00",
+        "start": 7.64,
+        "text": "time",
+        "type": "word"
+      },
+      {
+        "end": 8.64,
+        "index": 23,
+        "speaker": "SPEAKER_00",
+        "start": 8.48,
+        "text": "has",
+        "type": "word"
+      },
+      {
+        "end": 8.88,
+        "index": 24,
+        "speaker": "SPEAKER_00",
+        "start": 8.64,
+        "text": "not",
+        "type": "word"
+      },
+      {
+        "end": 9.3,
+        "index": 25,
+        "speaker": "SPEAKER_00",
+        "start": 8.88,
+        "text": "dwelt",
+        "type": "word"
+      },
+      {
+        "end": 9.5,
+        "index": 26,
+        "speaker": "SPEAKER_00",
+        "start": 9.34,
+        "text": "at",
+        "type": "word"
+      },
+      {
+        "end": 9.77,
+        "index": 27,
+        "speaker": "SPEAKER_00",
+        "start": 9.5,
+        "text": "least",
+        "type": "word"
+      },
+      {
+        "end": 10.24,
+        "index": 28,
+        "speaker": "SPEAKER_00",
+        "start": 9.77,
+        "text": "briefly",
+        "type": "word"
+      },
+      {
+        "end": 10.38,
+        "index": 29,
+        "speaker": "SPEAKER_00",
+        "start": 10.24,
+        "text": "on",
+        "type": "word"
+      },
+      {
+        "end": 10.46,
+        "index": 30,
+        "speaker": "SPEAKER_00",
+        "start": 10.38,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 10.75,
+        "index": 31,
+        "speaker": "SPEAKER_00",
+        "start": 10.46,
+        "text": "life",
+        "type": "word"
+      },
+      {
+        "end": 10.84,
+        "index": 32,
+        "speaker": "SPEAKER_00",
+        "start": 10.75,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 11.11,
+        "index": 33,
+        "speaker": "SPEAKER_00",
+        "start": 10.84,
+        "text": "saint",
+        "type": "word"
+      },
+      {
+        "end": 11.69,
+        "index": 34,
+        "speaker": "SPEAKER_00",
+        "start": 11.11,
+        "text": "teresa",
+        "type": "word"
+      },
+      {
+        "end": 12.17,
+        "index": 35,
+        "speaker": "SPEAKER_00",
+        "start": 12.01,
+        "text": "has",
+        "type": "word"
+      },
+      {
+        "end": 12.38,
+        "index": 36,
+        "speaker": "SPEAKER_00",
+        "start": 12.17,
+        "text": "not",
+        "type": "word"
+      },
+      {
+        "end": 12.8,
+        "index": 37,
+        "speaker": "SPEAKER_00",
+        "start": 12.38,
+        "text": "smiled",
+        "type": "word"
+      },
+      {
+        "end": 12.96,
+        "index": 38,
+        "speaker": "SPEAKER_00",
+        "start": 12.8,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 13.16,
+        "index": 39,
+        "speaker": "SPEAKER_00",
+        "start": 12.96,
+        "text": "some",
+        "type": "word"
+      },
+      {
+        "end": 13.77,
+        "index": 40,
+        "speaker": "SPEAKER_00",
+        "start": 13.16,
+        "text": "gentleness",
+        "type": "word"
+      },
+      {
+        "end": 13.9,
+        "index": 41,
+        "speaker": "SPEAKER_00",
+        "start": 13.77,
+        "text": "at",
+        "type": "word"
+      },
+      {
+        "end": 13.99,
+        "index": 42,
+        "speaker": "SPEAKER_00",
+        "start": 13.9,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 14.29,
+        "index": 43,
+        "speaker": "SPEAKER_00",
+        "start": 13.99,
+        "text": "thought",
+        "type": "word"
+      },
+      {
+        "end": 14.38,
+        "index": 44,
+        "speaker": "SPEAKER_00",
+        "start": 14.29,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 14.48,
+        "index": 45,
+        "speaker": "SPEAKER_00",
+        "start": 14.38,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 14.75,
+        "index": 46,
+        "speaker": "SPEAKER_00",
+        "start": 14.48,
+        "text": "little",
+        "type": "word"
+      },
+      {
+        "end": 15.09,
+        "index": 47,
+        "speaker": "SPEAKER_00",
+        "start": 14.75,
+        "text": "girl",
+        "type": "word"
+      },
+      {
+        "end": 15.5,
+        "index": 48,
+        "speaker": "SPEAKER_00",
+        "start": 15.09,
+        "text": "walking",
+        "type": "word"
+      },
+      {
+        "end": 15.86,
+        "index": 49,
+        "speaker": "SPEAKER_00",
+        "start": 15.5,
+        "text": "forth",
+        "type": "word"
+      },
+      {
+        "end": 16.08,
+        "index": 50,
+        "speaker": "SPEAKER_00",
+        "start": 15.86,
+        "text": "one",
+        "type": "word"
+      },
+      {
+        "end": 16.44,
+        "index": 51,
+        "speaker": "SPEAKER_00",
+        "start": 16.08,
+        "text": "morning",
+        "type": "word"
+      },
+      {
+        "end": 16.82,
+        "index": 52,
+        "speaker": "SPEAKER_00",
+        "start": 16.44,
+        "text": "hand",
+        "type": "word"
+      },
+      {
+        "end": 16.91,
+        "index": 53,
+        "speaker": "SPEAKER_00",
+        "start": 16.82,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 17.28,
+        "index": 54,
+        "speaker": "SPEAKER_00",
+        "start": 16.91,
+        "text": "hand",
+        "type": "word"
+      },
+      {
+        "end": 17.44,
+        "index": 55,
+        "speaker": "SPEAKER_00",
+        "start": 17.28,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 17.57,
+        "index": 56,
+        "speaker": "SPEAKER_00",
+        "start": 17.44,
+        "text": "her",
+        "type": "word"
+      },
+      {
+        "end": 17.92,
+        "index": 57,
+        "speaker": "SPEAKER_00",
+        "start": 17.57,
+        "text": "still",
+        "type": "word"
+      },
+      {
+        "end": 18.3,
+        "index": 58,
+        "speaker": "SPEAKER_00",
+        "start": 17.92,
+        "text": "smaller",
+        "type": "word"
+      },
+      {
+        "end": 18.76,
+        "index": 59,
+        "speaker": "SPEAKER_00",
+        "start": 18.3,
+        "text": "brother",
+        "type": "word"
+      },
+      {
+        "end": 19.2,
+        "index": 60,
+        "speaker": "SPEAKER_00",
+        "start": 19.1,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 19.38,
+        "index": 61,
+        "speaker": "SPEAKER_00",
+        "start": 19.2,
+        "text": "go",
+        "type": "word"
+      },
+      {
+        "end": 19.52,
+        "index": 62,
+        "speaker": "SPEAKER_00",
+        "start": 19.38,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 19.77,
+        "index": 63,
+        "speaker": "SPEAKER_00",
+        "start": 19.52,
+        "text": "seek",
+        "type": "word"
+      },
+      {
+        "end": 20.32,
+        "index": 64,
+        "speaker": "SPEAKER_00",
+        "start": 19.77,
+        "text": "martyrdom",
+        "type": "word"
+      },
+      {
+        "end": 20.4,
+        "index": 65,
+        "speaker": "SPEAKER_00",
+        "start": 20.32,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 20.48,
+        "index": 66,
+        "speaker": "SPEAKER_00",
+        "start": 20.4,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 20.88,
+        "index": 67,
+        "speaker": "SPEAKER_00",
+        "start": 20.48,
+        "text": "country",
+        "type": "word"
+      },
+      {
+        "end": 20.99,
+        "index": 68,
+        "speaker": "SPEAKER_00",
+        "start": 20.88,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 21.06,
+        "index": 69,
+        "speaker": "SPEAKER_00",
+        "start": 20.99,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 21.53,
+        "index": 70,
+        "speaker": "SPEAKER_00",
+        "start": 21.06,
+        "text": "moors",
+        "type": "word"
+      },
+      {
+        "end": 22.54,
+        "index": 71,
+        "speaker": "SPEAKER_00",
+        "start": 22.26,
+        "text": "out",
+        "type": "word"
+      },
+      {
+        "end": 22.7,
+        "index": 72,
+        "speaker": "SPEAKER_00",
+        "start": 22.54,
+        "text": "they",
+        "type": "word"
+      },
+      {
+        "end": 23.12,
+        "index": 73,
+        "speaker": "SPEAKER_00",
+        "start": 22.7,
+        "text": "toddled",
+        "type": "word"
+      },
+      {
+        "end": 23.37,
+        "index": 74,
+        "speaker": "SPEAKER_00",
+        "start": 23.12,
+        "text": "from",
+        "type": "word"
+      },
+      {
+        "end": 23.66,
+        "index": 75,
+        "speaker": "SPEAKER_00",
+        "start": 23.37,
+        "text": "rugged",
+        "type": "word"
+      },
+      {
+        "end": 24.16,
+        "index": 76,
+        "speaker": "SPEAKER_00",
+        "start": 23.66,
+        "text": "avila",
+        "type": "word"
+      },
+      {
+        "end": 24.6,
+        "index": 77,
+        "speaker": "SPEAKER_00",
+        "start": 24.16,
+        "text": "wide",
+        "type": "word"
+      },
+      {
+        "end": 24.84,
+        "index": 78,
+        "speaker": "SPEAKER_00",
+        "start": 24.6,
+        "text": "eyed",
+        "type": "word"
+      },
+      {
+        "end": 24.94,
+        "index": 79,
+        "speaker": "SPEAKER_00",
+        "start": 24.84,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 25.54,
+        "index": 80,
+        "speaker": "SPEAKER_00",
+        "start": 24.94,
+        "text": "helpless",
+        "type": "word"
+      },
+      {
+        "end": 25.85,
+        "index": 81,
+        "speaker": "SPEAKER_00",
+        "start": 25.54,
+        "text": "looking",
+        "type": "word"
+      },
+      {
+        "end": 26.0,
+        "index": 82,
+        "speaker": "SPEAKER_00",
+        "start": 25.85,
+        "text": "as",
+        "type": "word"
+      },
+      {
+        "end": 26.19,
+        "index": 83,
+        "speaker": "SPEAKER_00",
+        "start": 26.0,
+        "text": "two",
+        "type": "word"
+      },
+      {
+        "end": 26.7,
+        "index": 84,
+        "speaker": "SPEAKER_00",
+        "start": 26.19,
+        "text": "fawns",
+        "type": "word"
+      },
+      {
+        "end": 26.86,
+        "index": 85,
+        "speaker": "SPEAKER_00",
+        "start": 26.7,
+        "text": "but",
+        "type": "word"
+      },
+      {
+        "end": 26.98,
+        "index": 86,
+        "speaker": "SPEAKER_00",
+        "start": 26.86,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 27.27,
+        "index": 87,
+        "speaker": "SPEAKER_00",
+        "start": 26.98,
+        "text": "human",
+        "type": "word"
+      },
+      {
+        "end": 27.77,
+        "index": 88,
+        "speaker": "SPEAKER_00",
+        "start": 27.27,
+        "text": "hearts",
+        "type": "word"
+      },
+      {
+        "end": 28.51,
+        "index": 89,
+        "speaker": "SPEAKER_00",
+        "start": 28.12,
+        "text": "already",
+        "type": "word"
+      },
+      {
+        "end": 28.94,
+        "index": 90,
+        "speaker": "SPEAKER_00",
+        "start": 28.51,
+        "text": "beating",
+        "type": "word"
+      },
+      {
+        "end": 29.09,
+        "index": 91,
+        "speaker": "SPEAKER_00",
+        "start": 28.94,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 29.15,
+        "index": 92,
+        "speaker": "SPEAKER_00",
+        "start": 29.09,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 29.55,
+        "index": 93,
+        "speaker": "SPEAKER_00",
+        "start": 29.15,
+        "text": "national",
+        "type": "word"
+      },
+      {
+        "end": 30.16,
+        "index": 94,
+        "speaker": "SPEAKER_00",
+        "start": 29.55,
+        "text": "idea",
+        "type": "word"
+      },
+      {
+        "end": 30.78,
+        "index": 95,
+        "speaker": "SPEAKER_00",
+        "start": 30.5,
+        "text": "until",
+        "type": "word"
+      },
+      {
+        "end": 31.31,
+        "index": 96,
+        "speaker": "SPEAKER_00",
+        "start": 30.78,
+        "text": "domestic",
+        "type": "word"
+      },
+      {
+        "end": 31.8,
+        "index": 97,
+        "speaker": "SPEAKER_00",
+        "start": 31.31,
+        "text": "reality",
+        "type": "word"
+      },
+      {
+        "end": 32.04,
+        "index": 98,
+        "speaker": "SPEAKER_00",
+        "start": 31.8,
+        "text": "met",
+        "type": "word"
+      },
+      {
+        "end": 32.19,
+        "index": 99,
+        "speaker": "SPEAKER_00",
+        "start": 32.04,
+        "text": "them",
+        "type": "word"
+      },
+      {
+        "end": 32.28,
+        "index": 100,
+        "speaker": "SPEAKER_00",
+        "start": 32.19,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 32.35,
+        "index": 101,
+        "speaker": "SPEAKER_00",
+        "start": 32.28,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 32.64,
+        "index": 102,
+        "speaker": "SPEAKER_00",
+        "start": 32.35,
+        "text": "shape",
+        "type": "word"
+      },
+      {
+        "end": 32.73,
+        "index": 103,
+        "speaker": "SPEAKER_00",
+        "start": 32.64,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 33.3,
+        "index": 104,
+        "speaker": "SPEAKER_00",
+        "start": 32.73,
+        "text": "uncles",
+        "type": "word"
+      },
+      {
+        "end": 33.65,
+        "index": 105,
+        "speaker": "SPEAKER_00",
+        "start": 33.5,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 33.93,
+        "index": 106,
+        "speaker": "SPEAKER_00",
+        "start": 33.65,
+        "text": "turned",
+        "type": "word"
+      },
+      {
+        "end": 34.05,
+        "index": 107,
+        "speaker": "SPEAKER_00",
+        "start": 33.93,
+        "text": "them",
+        "type": "word"
+      },
+      {
+        "end": 34.32,
+        "index": 108,
+        "speaker": "SPEAKER_00",
+        "start": 34.05,
+        "text": "back",
+        "type": "word"
+      },
+      {
+        "end": 34.47,
+        "index": 109,
+        "speaker": "SPEAKER_00",
+        "start": 34.32,
+        "text": "from",
+        "type": "word"
+      },
+      {
+        "end": 34.59,
+        "index": 110,
+        "speaker": "SPEAKER_00",
+        "start": 34.47,
+        "text": "their",
+        "type": "word"
+      },
+      {
+        "end": 34.88,
+        "index": 111,
+        "speaker": "SPEAKER_00",
+        "start": 34.59,
+        "text": "great",
+        "type": "word"
+      },
+      {
+        "end": 35.38,
+        "index": 112,
+        "speaker": "SPEAKER_00",
+        "start": 34.88,
+        "text": "resolve",
+        "type": "word"
+      },
+      {
+        "end": 36.26,
+        "index": 113,
+        "speaker": "SPEAKER_00",
+        "start": 36.03,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 36.65,
+        "index": 114,
+        "speaker": "SPEAKER_00",
+        "start": 36.26,
+        "text": "child",
+        "type": "word"
+      },
+      {
+        "end": 37.18,
+        "index": 115,
+        "speaker": "SPEAKER_00",
+        "start": 36.65,
+        "text": "pilgrimage",
+        "type": "word"
+      },
+      {
+        "end": 37.32,
+        "index": 116,
+        "speaker": "SPEAKER_00",
+        "start": 37.18,
+        "text": "was",
+        "type": "word"
+      },
+      {
+        "end": 37.38,
+        "index": 117,
+        "speaker": "SPEAKER_00",
+        "start": 37.32,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 37.63,
+        "index": 118,
+        "speaker": "SPEAKER_00",
+        "start": 37.38,
+        "text": "fit",
+        "type": "word"
+      },
+      {
+        "end": 38.17,
+        "index": 119,
+        "speaker": "SPEAKER_00",
+        "start": 37.63,
+        "text": "beginning",
+        "type": "word"
+      },
+      {
+        "end": 39.11,
+        "index": 120,
+        "speaker": "SPEAKER_00",
+        "start": 38.6,
+        "text": "teresa's",
+        "type": "word"
+      },
+      {
+        "end": 39.72,
+        "index": 121,
+        "speaker": "SPEAKER_00",
+        "start": 39.11,
+        "text": "passionate",
+        "type": "word"
+      },
+      {
+        "end": 40.11,
+        "index": 122,
+        "speaker": "SPEAKER_00",
+        "start": 39.72,
+        "text": "ideal",
+        "type": "word"
+      },
+      {
+        "end": 40.68,
+        "index": 123,
+        "speaker": "SPEAKER_00",
+        "start": 40.11,
+        "text": "nature",
+        "type": "word"
+      },
+      {
+        "end": 41.27,
+        "index": 124,
+        "speaker": "SPEAKER_00",
+        "start": 40.76,
+        "text": "demanded",
+        "type": "word"
+      },
+      {
+        "end": 41.39,
+        "index": 125,
+        "speaker": "SPEAKER_00",
+        "start": 41.27,
+        "text": "an",
+        "type": "word"
+      },
+      {
+        "end": 41.75,
+        "index": 126,
+        "speaker": "SPEAKER_00",
+        "start": 41.39,
+        "text": "epic",
+        "type": "word"
+      },
+      {
+        "end": 42.16,
+        "index": 127,
+        "speaker": "SPEAKER_00",
+        "start": 41.75,
+        "text": "life",
+        "type": "word"
+      },
+      {
+        "end": 42.88,
+        "index": 128,
+        "speaker": "SPEAKER_00",
+        "start": 42.68,
+        "text": "what",
+        "type": "word"
+      },
+      {
+        "end": 43.0,
+        "index": 129,
+        "speaker": "SPEAKER_00",
+        "start": 42.88,
+        "text": "were",
+        "type": "word"
+      },
+      {
+        "end": 43.3,
+        "index": 130,
+        "speaker": "SPEAKER_00",
+        "start": 43.0,
+        "text": "many",
+        "type": "word"
+      },
+      {
+        "end": 43.74,
+        "index": 131,
+        "speaker": "SPEAKER_00",
+        "start": 43.3,
+        "text": "volumed",
+        "type": "word"
+      },
+      {
+        "end": 44.3,
+        "index": 132,
+        "speaker": "SPEAKER_00",
+        "start": 43.74,
+        "text": "romances",
+        "type": "word"
+      },
+      {
+        "end": 44.39,
+        "index": 133,
+        "speaker": "SPEAKER_00",
+        "start": 44.3,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 44.99,
+        "index": 134,
+        "speaker": "SPEAKER_00",
+        "start": 44.39,
+        "text": "chivalry",
+        "type": "word"
+      },
+      {
+        "end": 45.08,
+        "index": 135,
+        "speaker": "SPEAKER_00",
+        "start": 44.99,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 45.16,
+        "index": 136,
+        "speaker": "SPEAKER_00",
+        "start": 45.08,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 45.56,
+        "index": 137,
+        "speaker": "SPEAKER_00",
+        "start": 45.16,
+        "text": "social",
+        "type": "word"
+      },
+      {
+        "end": 46.16,
+        "index": 138,
+        "speaker": "SPEAKER_00",
+        "start": 45.56,
+        "text": "conquests",
+        "type": "word"
+      },
+      {
+        "end": 46.25,
+        "index": 139,
+        "speaker": "SPEAKER_00",
+        "start": 46.16,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 46.3,
+        "index": 140,
+        "speaker": "SPEAKER_00",
+        "start": 46.25,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 46.72,
+        "index": 141,
+        "speaker": "SPEAKER_00",
+        "start": 46.3,
+        "text": "brilliant",
+        "type": "word"
+      },
+      {
+        "end": 46.95,
+        "index": 142,
+        "speaker": "SPEAKER_00",
+        "start": 46.72,
+        "text": "girl",
+        "type": "word"
+      },
+      {
+        "end": 47.06,
+        "index": 143,
+        "speaker": "SPEAKER_00",
+        "start": 46.95,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 47.5,
+        "index": 144,
+        "speaker": "SPEAKER_00",
+        "start": 47.06,
+        "text": "her",
+        "type": "word"
+      },
+      {
+        "end": 48.14,
+        "index": 145,
+        "speaker": "SPEAKER_00",
+        "start": 47.99,
+        "text": "her",
+        "type": "word"
+      },
+      {
+        "end": 48.56,
+        "index": 146,
+        "speaker": "SPEAKER_00",
+        "start": 48.14,
+        "text": "flame",
+        "type": "word"
+      },
+      {
+        "end": 48.88,
+        "index": 147,
+        "speaker": "SPEAKER_00",
+        "start": 48.56,
+        "text": "quickly",
+        "type": "word"
+      },
+      {
+        "end": 49.25,
+        "index": 148,
+        "speaker": "SPEAKER_00",
+        "start": 48.88,
+        "text": "burned",
+        "type": "word"
+      },
+      {
+        "end": 49.44,
+        "index": 149,
+        "speaker": "SPEAKER_00",
+        "start": 49.25,
+        "text": "up",
+        "type": "word"
+      },
+      {
+        "end": 49.66,
+        "index": 150,
+        "speaker": "SPEAKER_00",
+        "start": 49.44,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 49.96,
+        "index": 151,
+        "speaker": "SPEAKER_00",
+        "start": 49.66,
+        "text": "light",
+        "type": "word"
+      },
+      {
+        "end": 50.4,
+        "index": 152,
+        "speaker": "SPEAKER_00",
+        "start": 49.96,
+        "text": "fuel",
+        "type": "word"
+      },
+      {
+        "end": 50.76,
+        "index": 153,
+        "speaker": "SPEAKER_00",
+        "start": 50.63,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 51.04,
+        "index": 154,
+        "speaker": "SPEAKER_00",
+        "start": 50.76,
+        "text": "fed",
+        "type": "word"
+      },
+      {
+        "end": 51.21,
+        "index": 155,
+        "speaker": "SPEAKER_00",
+        "start": 51.04,
+        "text": "from",
+        "type": "word"
+      },
+      {
+        "end": 51.63,
+        "index": 156,
+        "speaker": "SPEAKER_00",
+        "start": 51.21,
+        "text": "within",
+        "type": "word"
+      },
+      {
+        "end": 52.14,
+        "index": 157,
+        "speaker": "SPEAKER_00",
+        "start": 51.63,
+        "text": "soared",
+        "type": "word"
+      },
+      {
+        "end": 52.46,
+        "index": 158,
+        "speaker": "SPEAKER_00",
+        "start": 52.14,
+        "text": "after",
+        "type": "word"
+      },
+      {
+        "end": 52.71,
+        "index": 159,
+        "speaker": "SPEAKER_00",
+        "start": 52.46,
+        "text": "some",
+        "type": "word"
+      },
+      {
+        "end": 53.32,
+        "index": 160,
+        "speaker": "SPEAKER_00",
+        "start": 52.71,
+        "text": "illimitable",
+        "type": "word"
+      },
+      {
+        "end": 54.25,
+        "index": 161,
+        "speaker": "SPEAKER_00",
+        "start": 53.32,
+        "text": "satisfaction",
+        "type": "word"
+      },
+      {
+        "end": 54.8,
+        "index": 162,
+        "speaker": "SPEAKER_00",
+        "start": 54.53,
+        "text": "some",
+        "type": "word"
+      },
+      {
+        "end": 55.23,
+        "index": 163,
+        "speaker": "SPEAKER_00",
+        "start": 54.8,
+        "text": "object",
+        "type": "word"
+      },
+      {
+        "end": 55.39,
+        "index": 164,
+        "speaker": "SPEAKER_00",
+        "start": 55.23,
+        "text": "which",
+        "type": "word"
+      },
+      {
+        "end": 55.51,
+        "index": 165,
+        "speaker": "SPEAKER_00",
+        "start": 55.39,
+        "text": "would",
+        "type": "word"
+      },
+      {
+        "end": 55.78,
+        "index": 166,
+        "speaker": "SPEAKER_00",
+        "start": 55.51,
+        "text": "never",
+        "type": "word"
+      },
+      {
+        "end": 56.3,
+        "index": 167,
+        "speaker": "SPEAKER_00",
+        "start": 55.78,
+        "text": "justify",
+        "type": "word"
+      },
+      {
+        "end": 56.98,
+        "index": 168,
+        "speaker": "SPEAKER_00",
+        "start": 56.3,
+        "text": "weariness",
+        "type": "word"
+      },
+      {
+        "end": 57.44,
+        "index": 169,
+        "speaker": "SPEAKER_00",
+        "start": 57.27,
+        "text": "which",
+        "type": "word"
+      },
+      {
+        "end": 57.57,
+        "index": 170,
+        "speaker": "SPEAKER_00",
+        "start": 57.44,
+        "text": "would",
+        "type": "word"
+      },
+      {
+        "end": 58.25,
+        "index": 171,
+        "speaker": "SPEAKER_00",
+        "start": 57.57,
+        "text": "reconcile",
+        "type": "word"
+      },
+      {
+        "end": 58.56,
+        "index": 172,
+        "speaker": "SPEAKER_00",
+        "start": 58.25,
+        "text": "self",
+        "type": "word"
+      },
+      {
+        "end": 59.07,
+        "index": 173,
+        "speaker": "SPEAKER_00",
+        "start": 58.56,
+        "text": "despair",
+        "type": "word"
+      },
+      {
+        "end": 59.2,
+        "index": 174,
+        "speaker": "SPEAKER_00",
+        "start": 59.07,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 59.28,
+        "index": 175,
+        "speaker": "SPEAKER_00",
+        "start": 59.2,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 60.01,
+        "index": 176,
+        "speaker": "SPEAKER_00",
+        "start": 59.28,
+        "text": "rapturous",
+        "type": "word"
+      },
+      {
+        "end": 60.77,
+        "index": 177,
+        "speaker": "SPEAKER_00",
+        "start": 60.25,
+        "text": "rapturous",
+        "type": "word"
+      },
+      {
+        "end": 61.4,
+        "index": 178,
+        "speaker": "SPEAKER_00",
+        "start": 60.77,
+        "text": "consciousness",
+        "type": "word"
+      },
+      {
+        "end": 61.5,
+        "index": 179,
+        "speaker": "SPEAKER_00",
+        "start": 61.4,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 61.83,
+        "index": 180,
+        "speaker": "SPEAKER_00",
+        "start": 61.5,
+        "text": "life",
+        "type": "word"
+      },
+      {
+        "end": 62.14,
+        "index": 181,
+        "speaker": "SPEAKER_00",
+        "start": 61.83,
+        "text": "beyond",
+        "type": "word"
+      },
+      {
+        "end": 62.55,
+        "index": 182,
+        "speaker": "SPEAKER_00",
+        "start": 62.14,
+        "text": "self",
+        "type": "word"
+      },
+      {
+        "end": 63.18,
+        "index": 183,
+        "speaker": "SPEAKER_00",
+        "start": 62.95,
+        "text": "she",
+        "type": "word"
+      },
+      {
+        "end": 63.51,
+        "index": 184,
+        "speaker": "SPEAKER_00",
+        "start": 63.18,
+        "text": "found",
+        "type": "word"
+      },
+      {
+        "end": 63.64,
+        "index": 185,
+        "speaker": "SPEAKER_00",
+        "start": 63.51,
+        "text": "her",
+        "type": "word"
+      },
+      {
+        "end": 64.06,
+        "index": 186,
+        "speaker": "SPEAKER_00",
+        "start": 63.64,
+        "text": "epos",
+        "type": "word"
+      },
+      {
+        "end": 64.16,
+        "index": 187,
+        "speaker": "SPEAKER_00",
+        "start": 64.06,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 64.25,
+        "index": 188,
+        "speaker": "SPEAKER_00",
+        "start": 64.16,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 64.74,
+        "index": 189,
+        "speaker": "SPEAKER_00",
+        "start": 64.25,
+        "text": "reform",
+        "type": "word"
+      },
+      {
+        "end": 64.85,
+        "index": 190,
+        "speaker": "SPEAKER_00",
+        "start": 64.74,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 64.91,
+        "index": 191,
+        "speaker": "SPEAKER_00",
+        "start": 64.85,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 65.39,
+        "index": 192,
+        "speaker": "SPEAKER_00",
+        "start": 64.91,
+        "text": "religious",
+        "type": "word"
+      },
+      {
+        "end": 65.86,
+        "index": 193,
+        "speaker": "SPEAKER_00",
+        "start": 65.39,
+        "text": "order",
+        "type": "word"
+      },
+      {
+        "end": 67.03,
+        "index": 194,
+        "speaker": "SPEAKER_00",
+        "start": 66.8,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 67.47,
+        "index": 195,
+        "speaker": "SPEAKER_00",
+        "start": 67.03,
+        "text": "spanish",
+        "type": "word"
+      },
+      {
+        "end": 67.77,
+        "index": 196,
+        "speaker": "SPEAKER_00",
+        "start": 67.47,
+        "text": "woman",
+        "type": "word"
+      },
+      {
+        "end": 67.9,
+        "index": 197,
+        "speaker": "SPEAKER_00",
+        "start": 67.77,
+        "text": "who",
+        "type": "word"
+      },
+      {
+        "end": 68.18,
+        "index": 198,
+        "speaker": "SPEAKER_00",
+        "start": 67.9,
+        "text": "lived",
+        "type": "word"
+      },
+      {
+        "end": 68.44,
+        "index": 199,
+        "speaker": "SPEAKER_00",
+        "start": 68.18,
+        "text": "three",
+        "type": "word"
+      },
+      {
+        "end": 68.75,
+        "index": 200,
+        "speaker": "SPEAKER_00",
+        "start": 68.44,
+        "text": "hundred",
+        "type": "word"
+      },
+      {
+        "end": 68.97,
+        "index": 201,
+        "speaker": "SPEAKER_00",
+        "start": 68.75,
+        "text": "years",
+        "type": "word"
+      },
+      {
+        "end": 69.26,
+        "index": 202,
+        "speaker": "SPEAKER_00",
+        "start": 68.97,
+        "text": "ago",
+        "type": "word"
+      },
+      {
+        "end": 69.42,
+        "index": 203,
+        "speaker": "SPEAKER_00",
+        "start": 69.26,
+        "text": "was",
+        "type": "word"
+      },
+      {
+        "end": 69.8,
+        "index": 204,
+        "speaker": "SPEAKER_00",
+        "start": 69.42,
+        "text": "certainly",
+        "type": "word"
+      },
+      {
+        "end": 70.01,
+        "index": 205,
+        "speaker": "SPEAKER_00",
+        "start": 69.8,
+        "text": "not",
+        "type": "word"
+      },
+      {
+        "end": 70.08,
+        "index": 206,
+        "speaker": "SPEAKER_00",
+        "start": 70.01,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 70.43,
+        "index": 207,
+        "speaker": "SPEAKER_00",
+        "start": 70.08,
+        "text": "last",
+        "type": "word"
+      },
+      {
+        "end": 70.51,
+        "index": 208,
+        "speaker": "SPEAKER_00",
+        "start": 70.43,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 70.63,
+        "index": 209,
+        "speaker": "SPEAKER_00",
+        "start": 70.51,
+        "text": "her",
+        "type": "word"
+      },
+      {
+        "end": 71.09,
+        "index": 210,
+        "speaker": "SPEAKER_00",
+        "start": 70.63,
+        "text": "kind",
+        "type": "word"
+      },
+      {
+        "end": 71.85,
+        "index": 211,
+        "speaker": "SPEAKER_00",
+        "start": 71.55,
+        "text": "many",
+        "type": "word"
+      },
+      {
+        "end": 72.4,
+        "index": 212,
+        "speaker": "SPEAKER_00",
+        "start": 71.85,
+        "text": "terases",
+        "type": "word"
+      },
+      {
+        "end": 72.54,
+        "index": 213,
+        "speaker": "SPEAKER_00",
+        "start": 72.4,
+        "text": "have",
+        "type": "word"
+      },
+      {
+        "end": 72.72,
+        "index": 214,
+        "speaker": "SPEAKER_00",
+        "start": 72.54,
+        "text": "been",
+        "type": "word"
+      },
+      {
+        "end": 73.04,
+        "index": 215,
+        "speaker": "SPEAKER_00",
+        "start": 72.72,
+        "text": "born",
+        "type": "word"
+      },
+      {
+        "end": 73.2,
+        "index": 216,
+        "speaker": "SPEAKER_00",
+        "start": 73.04,
+        "text": "who",
+        "type": "word"
+      },
+      {
+        "end": 73.78,
+        "index": 217,
+        "speaker": "SPEAKER_00",
+        "start": 73.2,
+        "text": "found",
+        "type": "word"
+      },
+      {
+        "end": 74.04,
+        "index": 218,
+        "speaker": "SPEAKER_00",
+        "start": 73.81,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 74.58,
+        "index": 219,
+        "speaker": "SPEAKER_00",
+        "start": 74.04,
+        "text": "themselves",
+        "type": "word"
+      },
+      {
+        "end": 74.8,
+        "index": 220,
+        "speaker": "SPEAKER_00",
+        "start": 74.58,
+        "text": "no",
+        "type": "word"
+      },
+      {
+        "end": 75.14,
+        "index": 221,
+        "speaker": "SPEAKER_00",
+        "start": 74.8,
+        "text": "epic",
+        "type": "word"
+      },
+      {
+        "end": 75.54,
+        "index": 222,
+        "speaker": "SPEAKER_00",
+        "start": 75.14,
+        "text": "life",
+        "type": "word"
+      },
+      {
+        "end": 75.92,
+        "index": 223,
+        "speaker": "SPEAKER_00",
+        "start": 75.54,
+        "text": "wherein",
+        "type": "word"
+      },
+      {
+        "end": 76.03,
+        "index": 224,
+        "speaker": "SPEAKER_00",
+        "start": 75.92,
+        "text": "there",
+        "type": "word"
+      },
+      {
+        "end": 76.16,
+        "index": 225,
+        "speaker": "SPEAKER_00",
+        "start": 76.03,
+        "text": "was",
+        "type": "word"
+      },
+      {
+        "end": 76.26,
+        "index": 226,
+        "speaker": "SPEAKER_00",
+        "start": 76.16,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 76.9,
+        "index": 227,
+        "speaker": "SPEAKER_00",
+        "start": 76.26,
+        "text": "constant",
+        "type": "word"
+      },
+      {
+        "end": 77.47,
+        "index": 228,
+        "speaker": "SPEAKER_00",
+        "start": 76.9,
+        "text": "unfolding",
+        "type": "word"
+      },
+      {
+        "end": 77.57,
+        "index": 229,
+        "speaker": "SPEAKER_00",
+        "start": 77.47,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 77.85,
+        "index": 230,
+        "speaker": "SPEAKER_00",
+        "start": 77.57,
+        "text": "far",
+        "type": "word"
+      },
+      {
+        "end": 78.27,
+        "index": 231,
+        "speaker": "SPEAKER_00",
+        "start": 77.85,
+        "text": "resonant",
+        "type": "word"
+      },
+      {
+        "end": 78.79,
+        "index": 232,
+        "speaker": "SPEAKER_00",
+        "start": 78.27,
+        "text": "action",
+        "type": "word"
+      },
+      {
+        "end": 79.67,
+        "index": 233,
+        "speaker": "SPEAKER_00",
+        "start": 79.27,
+        "text": "perhaps",
+        "type": "word"
+      },
+      {
+        "end": 79.97,
+        "index": 234,
+        "speaker": "SPEAKER_00",
+        "start": 79.67,
+        "text": "only",
+        "type": "word"
+      },
+      {
+        "end": 80.03,
+        "index": 235,
+        "speaker": "SPEAKER_00",
+        "start": 79.97,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 80.29,
+        "index": 236,
+        "speaker": "SPEAKER_00",
+        "start": 80.03,
+        "text": "life",
+        "type": "word"
+      },
+      {
+        "end": 80.4,
+        "index": 237,
+        "speaker": "SPEAKER_00",
+        "start": 80.29,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 81.16,
+        "index": 238,
+        "speaker": "SPEAKER_00",
+        "start": 80.4,
+        "text": "mistakes",
+        "type": "word"
+      },
+      {
+        "end": 81.31,
+        "index": 239,
+        "speaker": "SPEAKER_00",
+        "start": 81.19,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 81.8,
+        "index": 240,
+        "speaker": "SPEAKER_00",
+        "start": 81.31,
+        "text": "offspring",
+        "type": "word"
+      },
+      {
+        "end": 81.89,
+        "index": 241,
+        "speaker": "SPEAKER_00",
+        "start": 81.8,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 81.95,
+        "index": 242,
+        "speaker": "SPEAKER_00",
+        "start": 81.89,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 82.35,
+        "index": 243,
+        "speaker": "SPEAKER_00",
+        "start": 81.95,
+        "text": "certain",
+        "type": "word"
+      },
+      {
+        "end": 82.93,
+        "index": 244,
+        "speaker": "SPEAKER_00",
+        "start": 82.35,
+        "text": "spiritual",
+        "type": "word"
+      },
+      {
+        "end": 83.59,
+        "index": 245,
+        "speaker": "SPEAKER_00",
+        "start": 82.93,
+        "text": "grandeur",
+        "type": "word"
+      },
+      {
+        "end": 84.03,
+        "index": 246,
+        "speaker": "SPEAKER_00",
+        "start": 83.84,
+        "text": "ill",
+        "type": "word"
+      },
+      {
+        "end": 84.46,
+        "index": 247,
+        "speaker": "SPEAKER_00",
+        "start": 84.03,
+        "text": "matched",
+        "type": "word"
+      },
+      {
+        "end": 84.6,
+        "index": 248,
+        "speaker": "SPEAKER_00",
+        "start": 84.46,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 84.68,
+        "index": 249,
+        "speaker": "SPEAKER_00",
+        "start": 84.6,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 85.18,
+        "index": 250,
+        "speaker": "SPEAKER_00",
+        "start": 84.68,
+        "text": "meanness",
+        "type": "word"
+      },
+      {
+        "end": 85.26,
+        "index": 251,
+        "speaker": "SPEAKER_00",
+        "start": 85.18,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 86.08,
+        "index": 252,
+        "speaker": "SPEAKER_00",
+        "start": 85.26,
+        "text": "opportunity",
+        "type": "word"
+      },
+      {
+        "end": 87.02,
+        "index": 253,
+        "speaker": "SPEAKER_00",
+        "start": 86.66,
+        "text": "perhaps",
+        "type": "word"
+      },
+      {
+        "end": 87.09,
+        "index": 254,
+        "speaker": "SPEAKER_00",
+        "start": 87.02,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 87.53,
+        "index": 255,
+        "speaker": "SPEAKER_00",
+        "start": 87.09,
+        "text": "tragic",
+        "type": "word"
+      },
+      {
+        "end": 87.97,
+        "index": 256,
+        "speaker": "SPEAKER_00",
+        "start": 87.53,
+        "text": "failure",
+        "type": "word"
+      },
+      {
+        "end": 88.16,
+        "index": 257,
+        "speaker": "SPEAKER_00",
+        "start": 87.97,
+        "text": "which",
+        "type": "word"
+      },
+      {
+        "end": 88.49,
+        "index": 258,
+        "speaker": "SPEAKER_00",
+        "start": 88.16,
+        "text": "found",
+        "type": "word"
+      },
+      {
+        "end": 88.64,
+        "index": 259,
+        "speaker": "SPEAKER_00",
+        "start": 88.49,
+        "text": "no",
+        "type": "word"
+      },
+      {
+        "end": 89.05,
+        "index": 260,
+        "speaker": "SPEAKER_00",
+        "start": 88.64,
+        "text": "sacred",
+        "type": "word"
+      },
+      {
+        "end": 89.54,
+        "index": 261,
+        "speaker": "SPEAKER_00",
+        "start": 89.05,
+        "text": "poet",
+        "type": "word"
+      },
+      {
+        "end": 89.78,
+        "index": 262,
+        "speaker": "SPEAKER_00",
+        "start": 89.58,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 90.14,
+        "index": 263,
+        "speaker": "SPEAKER_00",
+        "start": 89.78,
+        "text": "sank",
+        "type": "word"
+      },
+      {
+        "end": 90.63,
+        "index": 264,
+        "speaker": "SPEAKER_00",
+        "start": 90.14,
+        "text": "unwept",
+        "type": "word"
+      },
+      {
+        "end": 90.86,
+        "index": 265,
+        "speaker": "SPEAKER_00",
+        "start": 90.63,
+        "text": "into",
+        "type": "word"
+      },
+      {
+        "end": 91.45,
+        "index": 266,
+        "speaker": "SPEAKER_00",
+        "start": 90.86,
+        "text": "oblivion",
+        "type": "word"
+      },
+      {
+        "end": 92.2,
+        "index": 267,
+        "speaker": "SPEAKER_00",
+        "start": 92.01,
+        "text": "with",
+        "type": "word"
+      },
+      {
+        "end": 92.44,
+        "index": 268,
+        "speaker": "SPEAKER_00",
+        "start": 92.2,
+        "text": "dim",
+        "type": "word"
+      },
+      {
+        "end": 92.79,
+        "index": 269,
+        "speaker": "SPEAKER_00",
+        "start": 92.44,
+        "text": "lights",
+        "type": "word"
+      },
+      {
+        "end": 92.93,
+        "index": 270,
+        "speaker": "SPEAKER_00",
+        "start": 92.79,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 93.32,
+        "index": 271,
+        "speaker": "SPEAKER_00",
+        "start": 92.93,
+        "text": "tangled",
+        "type": "word"
+      },
+      {
+        "end": 94.23,
+        "index": 272,
+        "speaker": "SPEAKER_00",
+        "start": 93.32,
+        "text": "circumstance",
+        "type": "word"
+      },
+      {
+        "end": 94.63,
+        "index": 273,
+        "speaker": "SPEAKER_00",
+        "start": 94.47,
+        "text": "they",
+        "type": "word"
+      },
+      {
+        "end": 95.01,
+        "index": 274,
+        "speaker": "SPEAKER_00",
+        "start": 94.63,
+        "text": "tried",
+        "type": "word"
+      },
+      {
+        "end": 95.09,
+        "index": 275,
+        "speaker": "SPEAKER_00",
+        "start": 95.01,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 95.42,
+        "index": 276,
+        "speaker": "SPEAKER_00",
+        "start": 95.09,
+        "text": "shape",
+        "type": "word"
+      },
+      {
+        "end": 95.56,
+        "index": 277,
+        "speaker": "SPEAKER_00",
+        "start": 95.42,
+        "text": "their",
+        "type": "word"
+      },
+      {
+        "end": 95.94,
+        "index": 278,
+        "speaker": "SPEAKER_00",
+        "start": 95.56,
+        "text": "thought",
+        "type": "word"
+      },
+      {
+        "end": 96.32,
+        "index": 279,
+        "speaker": "SPEAKER_00",
+        "start": 95.94,
+        "text": "indeed",
+        "type": "word"
+      },
+      {
+        "end": 96.44,
+        "index": 280,
+        "speaker": "SPEAKER_00",
+        "start": 96.32,
+        "text": "in",
+        "type": "word"
+      },
+      {
+        "end": 96.75,
+        "index": 281,
+        "speaker": "SPEAKER_00",
+        "start": 96.44,
+        "text": "noble",
+        "type": "word"
+      },
+      {
+        "end": 97.34,
+        "index": 282,
+        "speaker": "SPEAKER_00",
+        "start": 96.75,
+        "text": "agreement",
+        "type": "word"
+      },
+      {
+        "end": 97.8,
+        "index": 283,
+        "speaker": "SPEAKER_00",
+        "start": 97.66,
+        "text": "but",
+        "type": "word"
+      },
+      {
+        "end": 98.18,
+        "index": 284,
+        "speaker": "SPEAKER_00",
+        "start": 97.8,
+        "text": "after",
+        "type": "word"
+      },
+      {
+        "end": 98.51,
+        "index": 285,
+        "speaker": "SPEAKER_00",
+        "start": 98.18,
+        "text": "all",
+        "type": "word"
+      },
+      {
+        "end": 98.72,
+        "index": 286,
+        "speaker": "SPEAKER_00",
+        "start": 98.62,
+        "text": "to",
+        "type": "word"
+      },
+      {
+        "end": 99.36,
+        "index": 287,
+        "speaker": "SPEAKER_00",
+        "start": 98.72,
+        "text": "commonize",
+        "type": "word"
+      },
+      {
+        "end": 99.49,
+        "index": 288,
+        "speaker": "SPEAKER_00",
+        "start": 99.36,
+        "text": "their",
+        "type": "word"
+      },
+      {
+        "end": 100.0,
+        "index": 289,
+        "speaker": "SPEAKER_00",
+        "start": 99.49,
+        "text": "struggles",
+        "type": "word"
+      },
+      {
+        "end": 100.4,
+        "index": 290,
+        "speaker": "SPEAKER_00",
+        "start": 100.0,
+        "text": "seem",
+        "type": "word"
+      },
+      {
+        "end": 100.84,
+        "index": 291,
+        "speaker": "SPEAKER_00",
+        "start": 100.4,
+        "text": "mere",
+        "type": "word"
+      },
+      {
+        "end": 101.75,
+        "index": 292,
+        "speaker": "SPEAKER_00",
+        "start": 100.84,
+        "text": "inconsistency",
+        "type": "word"
+      },
+      {
+        "end": 101.88,
+        "index": 293,
+        "speaker": "SPEAKER_00",
+        "start": 101.75,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 102.71,
+        "index": 294,
+        "speaker": "SPEAKER_00",
+        "start": 101.88,
+        "text": "formlessness",
+        "type": "word"
+      },
+      {
+        "end": 103.3,
+        "index": 295,
+        "speaker": "SPEAKER_00",
+        "start": 103.17,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 103.52,
+        "index": 296,
+        "speaker": "SPEAKER_00",
+        "start": 103.3,
+        "text": "these",
+        "type": "word"
+      },
+      {
+        "end": 103.85,
+        "index": 297,
+        "speaker": "SPEAKER_00",
+        "start": 103.52,
+        "text": "later",
+        "type": "word"
+      },
+      {
+        "end": 104.11,
+        "index": 298,
+        "speaker": "SPEAKER_00",
+        "start": 103.85,
+        "text": "born",
+        "type": "word"
+      },
+      {
+        "end": 104.62,
+        "index": 299,
+        "speaker": "SPEAKER_00",
+        "start": 104.11,
+        "text": "terases",
+        "type": "word"
+      },
+      {
+        "end": 104.75,
+        "index": 300,
+        "speaker": "SPEAKER_00",
+        "start": 104.62,
+        "text": "were",
+        "type": "word"
+      },
+      {
+        "end": 105.14,
+        "index": 301,
+        "speaker": "SPEAKER_00",
+        "start": 104.75,
+        "text": "helped",
+        "type": "word"
+      },
+      {
+        "end": 105.28,
+        "index": 302,
+        "speaker": "SPEAKER_00",
+        "start": 105.14,
+        "text": "by",
+        "type": "word"
+      },
+      {
+        "end": 105.46,
+        "index": 303,
+        "speaker": "SPEAKER_00",
+        "start": 105.28,
+        "text": "no",
+        "type": "word"
+      },
+      {
+        "end": 105.96,
+        "index": 304,
+        "speaker": "SPEAKER_00",
+        "start": 105.46,
+        "text": "coherent",
+        "type": "word"
+      },
+      {
+        "end": 106.34,
+        "index": 305,
+        "speaker": "SPEAKER_00",
+        "start": 105.96,
+        "text": "social",
+        "type": "word"
+      },
+      {
+        "end": 106.74,
+        "index": 306,
+        "speaker": "SPEAKER_00",
+        "start": 106.34,
+        "text": "faith",
+        "type": "word"
+      },
+      {
+        "end": 107.45,
+        "index": 307,
+        "speaker": "SPEAKER_00",
+        "start": 107.24,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 107.8,
+        "index": 308,
+        "speaker": "SPEAKER_00",
+        "start": 107.45,
+        "text": "order",
+        "type": "word"
+      },
+      {
+        "end": 108.06,
+        "index": 309,
+        "speaker": "SPEAKER_00",
+        "start": 107.8,
+        "text": "which",
+        "type": "word"
+      },
+      {
+        "end": 108.33,
+        "index": 310,
+        "speaker": "SPEAKER_00",
+        "start": 108.06,
+        "text": "could",
+        "type": "word"
+      },
+      {
+        "end": 108.76,
+        "index": 311,
+        "speaker": "SPEAKER_00",
+        "start": 108.33,
+        "text": "perform",
+        "type": "word"
+      },
+      {
+        "end": 108.85,
+        "index": 312,
+        "speaker": "SPEAKER_00",
+        "start": 108.76,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 109.21,
+        "index": 313,
+        "speaker": "SPEAKER_00",
+        "start": 108.85,
+        "text": "function",
+        "type": "word"
+      },
+      {
+        "end": 109.3,
+        "index": 314,
+        "speaker": "SPEAKER_00",
+        "start": 109.21,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 109.71,
+        "index": 315,
+        "speaker": "SPEAKER_00",
+        "start": 109.3,
+        "text": "knowledge",
+        "type": "word"
+      },
+      {
+        "end": 109.85,
+        "index": 316,
+        "speaker": "SPEAKER_00",
+        "start": 109.71,
+        "text": "for",
+        "type": "word"
+      },
+      {
+        "end": 109.96,
+        "index": 317,
+        "speaker": "SPEAKER_00",
+        "start": 109.85,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 110.4,
+        "index": 318,
+        "speaker": "SPEAKER_00",
+        "start": 109.96,
+        "text": "ardently",
+        "type": "word"
+      },
+      {
+        "end": 110.73,
+        "index": 319,
+        "speaker": "SPEAKER_00",
+        "start": 110.4,
+        "text": "willing",
+        "type": "word"
+      },
+      {
+        "end": 111.18,
+        "index": 320,
+        "speaker": "SPEAKER_00",
+        "start": 110.73,
+        "text": "soul",
+        "type": "word"
+      },
+      {
+        "end": 112.22,
+        "index": 321,
+        "speaker": "SPEAKER_00",
+        "start": 112.01,
+        "text": "their",
+        "type": "word"
+      },
+      {
+        "end": 112.52,
+        "index": 322,
+        "speaker": "SPEAKER_00",
+        "start": 112.22,
+        "text": "ardor",
+        "type": "word"
+      },
+      {
+        "end": 113.12,
+        "index": 323,
+        "speaker": "SPEAKER_00",
+        "start": 112.52,
+        "text": "alternated",
+        "type": "word"
+      },
+      {
+        "end": 113.39,
+        "index": 324,
+        "speaker": "SPEAKER_00",
+        "start": 113.12,
+        "text": "between",
+        "type": "word"
+      },
+      {
+        "end": 113.45,
+        "index": 325,
+        "speaker": "SPEAKER_00",
+        "start": 113.39,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 113.77,
+        "index": 326,
+        "speaker": "SPEAKER_00",
+        "start": 113.45,
+        "text": "vague",
+        "type": "word"
+      },
+      {
+        "end": 114.26,
+        "index": 327,
+        "speaker": "SPEAKER_00",
+        "start": 113.77,
+        "text": "ideal",
+        "type": "word"
+      },
+      {
+        "end": 114.38,
+        "index": 328,
+        "speaker": "SPEAKER_00",
+        "start": 114.26,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 114.46,
+        "index": 329,
+        "speaker": "SPEAKER_00",
+        "start": 114.38,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 114.8,
+        "index": 330,
+        "speaker": "SPEAKER_00",
+        "start": 114.46,
+        "text": "common",
+        "type": "word"
+      },
+      {
+        "end": 115.15,
+        "index": 331,
+        "speaker": "SPEAKER_00",
+        "start": 114.8,
+        "text": "yearning",
+        "type": "word"
+      },
+      {
+        "end": 115.26,
+        "index": 332,
+        "speaker": "SPEAKER_00",
+        "start": 115.15,
+        "text": "of",
+        "type": "word"
+      },
+      {
+        "end": 115.8,
+        "index": 333,
+        "speaker": "SPEAKER_00",
+        "start": 115.26,
+        "text": "womanhood",
+        "type": "word"
+      },
+      {
+        "end": 116.37,
+        "index": 334,
+        "speaker": "SPEAKER_00",
+        "start": 116.17,
+        "text": "so",
+        "type": "word"
+      },
+      {
+        "end": 116.58,
+        "index": 335,
+        "speaker": "SPEAKER_00",
+        "start": 116.37,
+        "text": "that",
+        "type": "word"
+      },
+      {
+        "end": 116.66,
+        "index": 336,
+        "speaker": "SPEAKER_00",
+        "start": 116.58,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 116.95,
+        "index": 337,
+        "speaker": "SPEAKER_00",
+        "start": 116.66,
+        "text": "one",
+        "type": "word"
+      },
+      {
+        "end": 117.13,
+        "index": 338,
+        "speaker": "SPEAKER_00",
+        "start": 116.95,
+        "text": "was",
+        "type": "word"
+      },
+      {
+        "end": 117.8,
+        "index": 339,
+        "speaker": "SPEAKER_00",
+        "start": 117.13,
+        "text": "disapproved",
+        "type": "word"
+      },
+      {
+        "end": 117.91,
+        "index": 340,
+        "speaker": "SPEAKER_00",
+        "start": 117.8,
+        "text": "as",
+        "type": "word"
+      },
+      {
+        "end": 118.72,
+        "index": 341,
+        "speaker": "SPEAKER_00",
+        "start": 117.91,
+        "text": "extravagance",
+        "type": "word"
+      },
+      {
+        "end": 119.15,
+        "index": 342,
+        "speaker": "SPEAKER_00",
+        "start": 119.0,
+        "text": "and",
+        "type": "word"
+      },
+      {
+        "end": 119.26,
+        "index": 343,
+        "speaker": "SPEAKER_00",
+        "start": 119.15,
+        "text": "the",
+        "type": "word"
+      },
+      {
+        "end": 119.48,
+        "index": 344,
+        "speaker": "SPEAKER_00",
+        "start": 119.26,
+        "text": "other",
+        "type": "word"
+      },
+      {
+        "end": 119.98,
+        "index": 345,
+        "speaker": "SPEAKER_00",
+        "start": 119.48,
+        "text": "condemned",
+        "type": "word"
+      },
+      {
+        "end": 120.12,
+        "index": 346,
+        "speaker": "SPEAKER_00",
+        "start": 119.98,
+        "text": "as",
+        "type": "word"
+      },
+      {
+        "end": 120.2,
+        "index": 347,
+        "speaker": "SPEAKER_00",
+        "start": 120.12,
+        "text": "a",
+        "type": "word"
+      },
+      {
+        "end": 120.68,
+        "index": 348,
+        "speaker": "SPEAKER_00",
+        "start": 120.2,
+        "text": "lapse",
+        "type": "word"
+      }
+    ]
+  },
+  "status": "ok"
+}

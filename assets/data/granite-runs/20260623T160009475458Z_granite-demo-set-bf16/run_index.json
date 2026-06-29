@@ -224,6 +224,21 @@
       "speakers_count": 1,
       "status": "ok",
       "transcript_json": "transcripts/sample_0010__real_recording.json"
+    },
+    {
+      "audio_filename": "sample_0011__middlemarch.wav",
+      "audio_path": "/workspace/backend/tmp/granite_examples/input/sample_0011__middlemarch.wav",
+      "error_message": "",
+      "index": 11,
+      "manifest_conversation_id": "middlemarch",
+      "manifest_row_number": 12,
+      "manifest_sample_id": "sample_0011",
+      "processing_time_seconds": 90.893,
+      "segments_count": 1,
+      "source": "manifest",
+      "speakers_count": 1,
+      "status": "ok",
+      "transcript_json": "transcripts/0011_sample_0011__middlemarch.json"
     }
   ],
   "manifest_skipped": [],
@@ -242,8 +257,8 @@
     "duplicates_skipped": 10,
     "errors": 0,
     "manifest_rows_skipped": 0,
-    "ok": 10,
-    "total_inputs_discovered": 20,
-    "total_unique_inputs": 10
+    "ok": 11,
+    "total_inputs_discovered": 21,
+    "total_unique_inputs": 11
   }
 }

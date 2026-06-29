@@ -209,7 +209,10 @@ def generate(chunk_waveform, prompt, max_new_tokens):
   text = processor.tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True)
   inputs = processor(text, chunk_waveform.cpu(), sampling_rate=16000, return_tensors="pt").to(device)
   output = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False, num_beams=1)
-  return processor.tokenizer.decode(output[0, inputs["input_ids"].shape[-1] :], skip_special_tokens=True).strip()
+  return processor.tokenizer.decode(
+            output[0, inputs["input_ids"].shape[-1] :], 
+            skip_special_tokens=True
+          ).strip()
 
 all_words, all_turns = [], []
 for chunk_start in range(0, waveform.shape[-1], chunk_samples):
@@ -251,7 +254,7 @@ segments = build_segments_from_words(all_words)         # final diarized segment
           </p>
           <p>Some general observations:</p>
           <ul>
-            <li>Granite's transcription quality is good-it hallucinates less than WhisperX-but its timestamping and speaker attribution really suffers in comparison, and given that you get punctuation and capitalization from Whisper, it doesn't seem worth modifying a WhipserX pipeline by swapping out the core Faster Whisper model for Granite.</li>
+            <li>Granite's transcription quality is pretty good-it hallucinates less than WhisperX-but its timestamping and speaker attribution really suffers in comparison, and given that you get punctuation and capitalization from Whisper, it doesn't seem worth modifying a WhipserX pipeline by swapping out the core Faster Whisper model for Granite.</li>
             <li>Granite is a lot slower than WhisperX, even with VAD and alignment turned on.</li>
           </ul>
           <div
